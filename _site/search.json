@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this blog",
+      "description": "Some additional details about the blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2022-01-08T07:55:00-08:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Math 58(B) Introduction to (Bio)Statistics",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2022-01-08T07:55:00-08:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

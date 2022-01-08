@@ -1,0 +1,24 @@
+---
+title: "Class Notes"
+description: |
+  Daily class notes for Math 154, Computational Statistics, Pomona College
+author:
+  - name: Jo Hardin 
+    url: https://m154-comp-stats.netlify.app/
+    affiliation: Pomona College
+    affiliation_url: https://hardin47.netlify.app/
+output: distill::distill_article
+---
+
+
+Class notes can be found at <a href="http://st47s.com/Math154/Notes/" target="_blank">http://st47s.com/Math154/Notes/</a>.
+
+<p>   </p>
+
+```{r layout="l-page", out.extra='style="border: none;"', echo = FALSE}
+knitr::include_url("https://st47s.com/Math154/Notes/")
+```
+
+
+
+

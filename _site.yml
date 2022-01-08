@@ -1,0 +1,40 @@
+name: "m58-intro-stats"
+title: "Math 58(B) Introduction to (Bio)Statistics"
+description: |
+  Math 58(B), Introduction to (Bio)Statistics, Pomona College
+output_dir: "_site"
+include: ["*.Rmd"]
+base_url: https://m58-intro-stats.netlify.app/
+repository_url: https://github.com/hardin47/m58-intro-stats
+creative_commons: CC BY
+twitter:
+  site: "@jo_hardin47"
+navbar:
+  logo:
+    image: images/st47s.png
+    href: https://hardin47.netlify.app/
+  right:
+    - text: "Daily"
+      href: daily.html
+    - text: "Syllabus"
+      href: syllabus.html
+    - text: "Class Notes"
+      href: notes.html
+    - text: "Project"
+      menu: 
+        - text: "Project Assignment"
+          href: project.html
+        - text: "Group Roles"
+          href: roles.html
+        - text: "Rubric"
+          href: rubric.html
+        - text: "Data Sources"
+          href: https://hardin47.netlify.app/courses/data/
+    - text: "GitHub"
+      href: github.html
+output: 
+  distill::distill_article:
+    css: theme.css
+favicon: images/favicon.ico
+
+

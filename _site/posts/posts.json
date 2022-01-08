@@ -1,0 +1,19 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to Math 58(B) Introduction to (Bio)Statistics",
+    "description": "Welcome to our new blog, Math 58(B) Introduction to (Bio)Statistics. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2022-01-08",
+    "categories": [],
+    "contents": "\n\n\n\n",
+    "preview": {},
+    "last_modified": "2022-01-08T07:55:00-08:00",
+    "input_file": {}
+  }
+]
