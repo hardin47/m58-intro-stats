@@ -1,0 +1,59 @@
+---
+title: "Rubric for Semester Project"
+description: |
+  Assessment will be based on the presentation and the final report. Your group itself, your class peers, and your professor will all provide feedback on the success of the project.
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+
+
+
+### Group Dynamic Report
+
+Ideally, all group members would be equally involved and able and committed to the project. In reality, it doesn't always work that way. Individuals should be rewarded fairly for their group efforts; it's inevitable that there will be variation in how high a priority people put on this class and how much effort they put into this project.
+
+To this end, I would like each of you (individually) to describe how well (or how poorly!) your project group worked together and shared the load. This can take the form of an email (not GitHub because of the personal nature), to be submitted by the Tuesday December 14th. Also give some specific comments describing each member's overall effort. Were there certain group members who really put out exceptional effort and deserve special recognition? Conversely, were there group members who really weren't carrying their own weight? And then, at the end of your assessment, estimate the percentage of the total amount of work/effort done by each member. (Be sure your percentages sum to 100%!)
+
+For example, suppose you have 3 group members: X, Y and Z. In the event that each member contributed equally, you could assign:
+
+* 33.3% for member X, 33.3% for member Y, and 33.3% for member Z
+
+Or in case person Z did twice as much work as each other member, you could assign:
+
+* 25% for member X, 25% for member Y, and 50% for member Z
+
+Or if member Y didn't really do squat, you could assign:
+
+* 45% for member X, 10% for member Y, and 45% for member Z
+
+I will find a fair way to synthesize the (possibly conflicting) assessments within each group and fairly incorporate this assessment of effort and cooperation in each individual's overall grade. Don't pressure one another to give everyone glowing reports unless it's warranted, and don't feel pressured to share your reports with one another. Just be fair to yourselves and to one another. Let me know if you have any questions or if you run into any problems. Also keep in mind that GitHub tracks who is committing and who is not committing.
+
+# Assessment Criteria
+
+Your project will be evaluated based on the following criteria:
+
+* Originality/Interest: Is the topic original, interesting, and substantial – or is it trite, pedantic, and trivial? How much creativity, initiative, and ambition did the group demonstrate? Is the basic question driving the project worth investigating, or is it obviously answerable without a data-based study?
+* Degree of Difficulty: How challenging was the project? Were the data particularly large, complex, and/or messy? Did the data come in an obscure format? Was a scraper or API necessary to acquire the data? Was a challenging visualization or applet constructed? Were any elements from outside the coursework necessary to complete the project?
+* Design: How well were the graphical elements of the project designed? Were they clunky or elegant? Was a truly original view of the data presented? Were any interactive elements usable?
+* Meaning/Analysis: Did we learn anything meaningful from this project? Are the chosen analyses appropriate for the variables/relationships under investigation, and are the assumptions underlying these analyses met? Are the analyses carried out correctly? Did the group make appropriate conclusions from the analyses, and are these conclusions justified?
+* Write-Up: How effectively does the write-up communicate the goals, procedures, and results of the study? Are the claims adequately supported? Does the writing style enhance what the group is trying to communicate? How well is it edited? Are the statistical claims justified? Are text and analyses effectively interwoven? Clear writing, correct spelling, and good grammar are important.
+* Oral Presentation: How effectively does the oral presentation communicate the goals, procedures, and results of the study? Do the slides help to illustrate the points being made by the speaker without distracting the audience? Do the presenters seem to be well-rehearsed? Did they properly budget their time? Do they appear to be confident in what they are saying? Are her arguments persuasive?
+
+## Presentation Evaluation
+
+The questions below will be used to evaluate the oral presentations.
+
+### Peer rubric
+
+Each of you will evaluate the presentations of your peers keeping the following grading rubrics in mind.
+
+   * Mastery of the material (understanding of the material is strong and well communicated)
+   * Background, completeness (thoroughly explains all key points)
+   * Presentation evaluation (organized, communicates effectively with the audience)
+

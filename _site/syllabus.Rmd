@@ -1,0 +1,233 @@
+---
+title: "Syllabus"
+description: |
+  The plan, the details, and the logistics.
+author:
+  - name: Jo Hardin 
+    url: https://m154-comp-stats.netlify.app/
+    affiliation: Pomona College
+    affiliation_url: https://hardin47.netlify.app/
+output: distill::distill_article
+---
+
+
+# Computational Statistics
+## Math 154, Fall 2021
+
+Jo Hardin
+2351 Estella
+jo.hardin@pomona.edu
+
+**Office Hours: Wed 9-11am, Th 1:30-3pm, or by appointment**
+
+**Mentor Sessions:**  
+Sun 9-10pm, Wed 8-10pm   
+Estella 1021 (Emmy Noether Room)  
+Mentor: JJ Shankar  
+
+
+```{r fig.cap = "Artwork by @allison_horst.", fig.alt = "Monsters going through the phases of writing code.", preview = TRUE, echo = FALSE}
+knitr::include_graphics("images/debugging.jpg")
+```
+
+## The course 
+
+Computational Statistics will be an introduction to statistical methods that rely heavily on the use of computers. The course will generally have three parts. The first section will include communicating and working with data in a modern era. This includes data wrangling, data visualization, data ethics, and collaborative research (via GitHub). The second part of the course will focus on traditional statistical inference done through computational methods (e.g., permutation tests and bootstrapping). The last part of the course will focus on machine learning ideas such as classification, clustering, and dimension reduction techniques. Some of the methods were invented before the ubiquitous use of personal computers, but only because the calculus used to solve the problem was relatively straightforward (or because the method wasn't actually every used). Some of the methods have been developed quite recently.
+
+
+**Anonymous Feedback**  As someone who is constantly learning and growing in many ways, I welcome your feedback about the course, the classroom dynamics, or anything else you'd like me to know.  There is a link to an anonymous feedback form on the landing page of our Sakai webpage.  Please provide me with feedback at any time!  
+
+## Course Goals:
+
+* to be able to work through the entire computational statistics flow chart as a data analyst.
+* to be able to use graphical representations of data to communicate ideas about the data.
+* to be able to identify, understand, and describe the uses and misuses of algorithms and data collection from an ethical lens with the purpose of preventing harms from data science.
+* to critically evaluate analyses / graphics of data (typically big data or dynamic data).
+* to communicate results effectively.
+
+
+## Diversity and Inclusion Statement 
+(adapted from Monica Linden, Brown University):
+
+In an ideal world, science would be objective. However, much of science is subjective and is historically built on a small subset of privileged voices. In this class, we will make an effort to recognize how science (and statistics!) has played a role in both understanding diversity as well as in promoting systems of power and privilege. I acknowledge that it is possible that there may be both overt and covert biases in the material due to the lens with which it was written, even though the material is primarily of a scientific nature. Integrating a diverse set of experiences is important for a more comprehensive understanding of science. I would like to discuss issues of diversity in statistics as part of the course from time to time.
+
+Please contact me if you have any suggestions to improve the quality of the course materials.
+
+Furthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, etc.) To help accomplish this:
+
+* If you have a name and/or set of pronouns that differ from those that appear in your official records, please let me know!
+* If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me.  You can also relay information to me via your mentors.  I want to be a resource for you. If you prefer to speak with someone outside of the course, the math liaisons, Dean of Students, or QSC staff are all excellent resources.
+I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it.  As a participant in course discussions, you should also strive to honor the diversity of your classmates.
+
+## Texts:  
+
+All resources are freely available.  They also all have print versions which can be purchased.  Using the online version of the books is expected.
+
+### First section of the course (data science, data viz, wrangling, simulating, permutation tests, bootstrapping, ethics)
+
+:::note
+* Content: **Modern Data Science with R**; Baumer, Kaplan, and Horton, <a href="https://mdsr-book.github.io/mdsr2e/" target="_blank">https://mdsr-book.github.io/mdsr2e/</a>  
+* R resource: **R for Data Science**, Wickham, <a href = "https://r4ds.had.co.nz/" target="_blank">https://r4ds.had.co.nz/</a>  
+* Recommended: Visual and Statistical Thinking: Displays of Evidence for Making Decisions; Tufte <a href="http://www.edwardtufte.com/tufte/books_textb" target="_blank">http://www.edwardtufte.com/tufte/books_textb</a> 
+:::
+
+### Second section of the course (bootstrapping, knn, trees, bagging, random forests, support vector machines, clustering)
+
+:::note
+* Content: **An Introduction to Statistical Learning**; James, Witten, Hastie, and Tibshirani <a href="https://www.statlearning.com/" target="_blank">https://www.statlearning.com/</a>  
+* R resource: **Tidy Modeling with R**; Kuhn and Silge <a href="https://www.tmwr.org/" target="_blank">https://www.tmwr.org/</a>
+:::
+
+## Important Dates:
+
+:::note
+* 10/14 + 15/21 Exam 1 (not during class) 
+* 10/24/21 Take home 1 due (on GitHub + Gradescope by midnight) 
+* 10/26/21 Initial Project Proposal due (via email to me by midnight) 
+* 11/2/21 Final Project Proposal due (on GitHub by midnight) 
+* 11/18/21 2021 Data Science Panel with industry data scientists
+* 11/19/21 Project Update due (on GitHub by midnight) 
+* 11/30/21 Take home 2 due (on GitHub by midnight) 
+* 12/2 + 3/21 Exam 2 (not during class) 
+* 12/10/21 (Friday) or 12/14/21 (Tuesday) Group Presentations (2-5pm) 
+* 12/14/21 Final write-up due (on GitHub by midnight) 
+:::
+
+## Links to resources:
+
+### Git resources
+
+:::note
+* Best and most comprehensive Git help: <a href="http://happygitwithr.com/" target="_blank">http://happygitwithr.com/</a>
+* <a href="http://swcarpentry.github.io/git-novice/" target="_blank">Version control with Git</a>
+* <a href="https://aberdeenstudygroup.github.io/studyGroup/lessons/SG-T1-GitHubVersionControl/VersionControl/#2.4.2." target="_blank">More on Git</a>
+* <a href="https://git-scm.com/book/en/v2" target="_blank">Online Git book</a> with lots of info
+:::
+
+### R resources
+
+:::note
+* <a href="https://rstudio.cloud/learn/primers" target="_blank">interactive tutorials</a> for working through "R for Data Science"
+* <a href="https://education.rstudio.com/learn/" target="_blank">for a good start</a> to R in general
+* A fantastic <a href="https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/" target="_blank">ggplot2 tutorial</a>
+* Great tutorials through the <a href="https://ourcodingclub.github.io/tutorials/" target="_blank">Coding Club</a>
+* <a href="http://www.rseek.org/" target="_blank">Google for R</a>
+* some <a href = "someRideas.html" target="_blank">R ideas</a> that I wrote up 
+* Incredibly helpful <a href="https://www.rstudio.com/resources/cheatsheets/" target="_blank">cheatsheets</a> from RStudio.
+   * <a href="https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf" target="_blank">data wrangling</a>
+   * <a href="https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf" target="_blank">ggplot2</a>
+   * <a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf" target="_blank">R Markdown</a>
+   * <a href="https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf" target="_blank">RStudio IDE</a>
+:::
+
+## Homework:
+
+Homework will be assigned from the text(s) with some additional problems. One homework grade will be dropped. Homework will be done using the statistical software package R (in the RStudio IDE) and posted to GitHub + Gradescope. All homework must be done in RMarkdown and compiled to pdf.  
+
+  * Homework will be due on Thursdays by 11:59pm to GitHub + Gradescope. 
+  * Non-homework activities (e.g., from the text) may be collected and added to your participation grade.
+  * HW should be turned in to your GitHub repository and posted to Gradescope by Thursday at 11:59pm.
+  * Always post both a PDF and R Markdown file to GitHub (and a pdf to Gradescope), unless otherwise requested.
+  * HW is graded on a scale of 5/4/3/2/1. See the first HW assignment for more information.
+  * HW file should be in the format of: ma154-hw#-lname-fname.pdf
+
+##### HW format
+
+   * please be neat and organized which will help me, the grader, and you (in the future) to follow your work.
+   * write your name on your assignment.
+   * please include at least the number of the problem, or a summary of the question (which will also be helpful to you in the future to prepare for exams).
+   * it is strongly recommended that you look through the questions as soon as you get the assignment. This will help you to start thinking how to solve them!
+   * for R problems, it is required to use R Markdown 
+ 	* in case of questions, or if you get stuck please don't hesitate to email me (though I'm much less sympathetic to such questions if I receive emails within 24 hours of the due date for the assignment).
+ 	
+ 	
+##### HW Grading
+
+Homework assignments will be graded out of 5 points, which are based on a combination of accuracy and effort. Below are rough guidelines for grading.
+
+[5] All problems completed with detailed solutions provided and 75% or more of the problems are fully correct. Additionally, there are no extraneous messages, warnings, or printed lists of numbers.  
+[4] All problems completed with detailed solutions and 50-75% correct; OR close to all problems completed and 75%-100% correct. **Or all problems are completed and there are extraneous messages, warnings, or printed lists of numbers.**  
+[3] Close to all problems completed with less than 75% correct.  
+[2] More than half but fewer than all problems completed and > 75% correct.  
+[1] More than half but fewer than all problems completed and < 75% correct; OR less than half of problems completed.  
+[0] No work submitted, OR half or less than half of the problems submitted and without any detail/work shown to explain the solutions. You will get a zero if your file is not compiled and submitted on GitHub.  
+
+
+## Projects:
+
+There will be a semester long group project. Your task is to use data to tell us something interesting. This project is deliberately open-ended to allow you to fully explore your creativity. There are three main rules that must be followed: (1) data centered, (2) tell us something, (3) do something new. The project information is available here: [Math 154 Semester Project](/project/)
+
+
+## Computing:
+
+* GitHub will be used as a way to practice reproducible and collaborative science. There may be a slight learning curve, but knowing Git will be an extremely useful skill as you venture on after this class.
+
+* R will be used for all homework assignments. R is freely available at <a href="http://www.r-project.org/" target="_blank">http://www.r-project.org/</a> and is already installed on college computers. Additionally, you need to install R Studio in order to use R Markdown, <a href="http://rstudio.org/" target="_blank">http://rstudio.org/</a>. If you are not already familiar with R, please work through some of the materials provided ASAP. 
+
+* You are welcome to use Pomona's R Studio server at <a href="https://rstudio.campus.pomona.edu/" target="_blank">https://rstudio.campus.pomona.edu/</a> (or <a href="https://rstudio.pomona.edu" target="_blank">https://rstudio.pomona.edu</a> if you are off campus). If you use the server, you can connect directly to your Git account without installing Git locally on your own computer. [If you are not a Pomona student, you will need to get an account from Pomona's ITS. Go to ITS, tell them that you are taking a Pomona course, and ask for an account for using RStudio.]
+
+## Participation:
+
+* This class will be interactive, and your participation is expected (every day in class). Although notes will be posted, your participation is an integral part of the in-class learning process.
+
+* In class: after answering one question, wait until 5 other people have spoken before answering another question. [Feel free to ask as many questions as often as you like!]
+ 	
+
+## Academic Honesty:
+You are on your honor to present only your work as part of your course  assessments.  Below, I've provided Pomona's academic honesty policy.  But before the policy, I've given some thoughts on cheating which I have taken from Nick Ball's CHEM 147 Collective (thank you, Prof Ball!).  Prof Ball gives us all something to think about when we are learning in a classroom as well as on our journey to become scientists and professionals:
+
+There are many known reasons why we may feel the need to "cheat" on problem sets or exams:
+
+:::note
+  * An academic environment that values grades above learning.
+  * Financial aid is critical for remaining in school that places undue pressure on maintaining a high GPA.
+  * Navigating school, work, and/or family obligations that  have diverted focus from class.
+  * Challenges balancing coursework and mental health.
+  * Balancing academic, family, peer, or personal issues.
+:::
+
+Being accused of cheating – whether it has occurred or not – can be devastating for students. The college requires me to respond to potential academic dishonesty with a process that is very long and damaging. As your instructor, I care about you and want to offer alternatives to prevent us from having to go through this process. If you find yourself in a situation where "cheating" seems like the only option:
+
+**Please come talk to me.  We will figure this out together.**
+
+Pomona College is an academic community, all of whose members are expected to abide by ethical standards both in their conduct and in their exercise of responsibilities toward other members of the community. The college expects students to understand and adhere to basic standards of honesty and academic integrity. These standards include, but are not limited to, the following:
+
+:::note
+* In projects and assignments prepared independently, students never represent the ideas or the language of others as their own.
+* Students do not destroy or alter either the work of other students or the educational resources and materials of the College.
+* Students neither give nor receive assistance in examinations.
+* Students do not take unfair advantage of fellow students by representing work completed for one course as original work for another or by deliberately disregarding course rules and regulations.
+* In laboratory or research projects involving the collection of data, students accurately report data observed and do not alter these data for any reason.
+:::
+
+## Covid Safety Awareness.
+
+The faculty at Pomona College knows that person-to-person interaction provides the best liberal arts education. The best learning occurs in small communities. This year we are gathering in person for what we do best: create, generate, and share knowledge. During the past academic year, we built community remotely, and this year we will build on the pedagogical improvements we acquired last year. For example, we might meet on zoom from time to time, or hold discussions online on Sakai Discussions Board. 
+ 
+Our health, both mental and physical, is paramount. We must consider the health of others inside and outside the classroom. All Claremont Colleges students have signed agreements regulating on-campus behavior during the pandemic; in the classroom, we will uphold these agreements. We need to take care of each other for this course to be successful. I ask you therefore to adhere to the following principles: 
+
+* There is a mask mandate for all indoor spaces on campus. You must wear a mask for the entire class; eating and drinking are not permitted. Your mask must cover your mouth and nose. The college has zero-tolerance for violations of this policy, and our shared commitment to the health and safety of our community members means if you come to class unmasked you will have to leave class for the day. 
+
+* Class attendance is required, but if you need to miss class for health reasons, concerning symptoms, suspected Covid exposure, unexpected dependent care, technology issues, or other emergency reasons I will work with you. Let me underscore this: please make your decisions always based on health, safety, and wellness—yours and others—and I will work with you at the other end. Take any potential symptoms seriously; we're counting on each other.
+
+* When not in class, avoid closed public spaces, and if you can't avoid them: wear your mask properly, wash your hands, and maintain social distance.    
+
+* If you, or a family member, are experiencing hardship because of the pandemic, talk to me or to someone in the Dean of Students office. You are not alone during this time. 
+ 
+The pandemic is fast-moving, and we might have to adjust the principles as the semester evolves. I am always happy to receive your feedback to make this course work. 
+ 
+Let's care for each other, show empathy, and be supportive. While there will likely be some community transmission and breakthrough infections, together, we can minimize their effect on our community and on your learning.
+
+
+## Advice:
+
+Please email and / or set up a time to talk if you have any questions about or difficulty with the material, the computing, or the course.  Talk to me as soon as possible if you find yourself struggling. The material will build on itself, so it will be much easier to catch up if the concepts get clarified earlier rather than later.  **This semester is going to be fun.**  Let's do it.
+
+### Grading:
+   
+:::note 
+  * 25% Homework
+  * 45% Midterms 
+  * 25% Group Project & Presentation 
+  * 5% Class Participation 
+:::
