@@ -1,7 +1,7 @@
 name: "m58-intro-stats"
-title: "Math 58(B) Introduction to (Bio)Statistics"
+title: "Math 58B Introduction to Biostatistics"
 description: |
-  Math 58(B), Introduction to (Bio)Statistics, Pomona College
+  Math 58B, Introduction to Biostatistics, Pomona College
 output_dir: "_site"
 include: ["*.Rmd"]
 base_url: https://m58-intro-stats.netlify.app/
