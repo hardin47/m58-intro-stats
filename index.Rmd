@@ -1,5 +1,60 @@
 ---
-title: "Math 58(B) Introduction to (Bio)Statistics"
-site: distill::distill_website
-listing: posts
+title: "Schedule"
+description: |
+  Schedule for Math 58B, Introduction to Biostatistics, Spring 2022
 ---
+
+
+```{r echo = FALSE}
+library(tidyverse)
+library(kableExtra)
+library(knitr)
+```
+
+Here's your roadmap for the semester!
+Each week, follow the general process outlined below:
+
+- Before class on Monday, read the suggested article <i class="fas fa-newspaper"></i>
+
+- Enjoy the notes / readings <i class="fas fa-book-open"></i>  
+
+- Attend class, review the warm-up <i class="fas fa-pencil-alt"></i> if you have any questions after completing it during class.
+
+- Complete the HW <i class="fas fa-laptop"></i> and Lab <i class="fas fa-desktop"></i> assignments 
+   - Lab due every Tuesday by 11:59pm
+   - HW due every Thursday by 11:59pm
+
+- Discuss the reflection questions <i class="fas fa-lightbulb" target="_blank"></i> and ethics considerations <i class="fas fa-balance-scale"></i> (see class notes) with your classmates, mentor, and professor  
+
+- IMS: *Introduction to Modern Statistics* by Çetinkaya-Rundel and Hardin, https://openintro-ims.netlify.app/.
+
+- ISCAM: *Investigating Statistics, Concepts, Applications, and Methods* by Chance and Rossman http://www.rossmanchance.com/iscam3/
+   - <a href = "http://www.rossmanchance.com/applets/index2021.html" target = "_blank">ISCAM applets</a>
+
+
+
+```{r echo = FALSE}
+schedule <- tribble(
+  ~`date`, ~topic, ~agenda, ~readings, ~article, ~assignments,
+  "1.18.22", 'Intro + <br> variables &  <br> studies <br> SLR',"$\\boldsymbol{\\cdot}$ course info <br> $\\boldsymbol{\\cdot}$ tests <br> $\\boldsymbol{\\cdot}$ studies", 
+  '<a href="https://st47s.com/Math58/Notes/intro.html"><i class="fas fa-book-open"></i> Introduction</a> <br> <a href="https://st47s.com/Math58/Notes/experim.html"><i class="fas fa-book-open"></i> Studies</a>  <br> <a href = "http://www.rossmanchance.com/applets/index2021.html" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 1.1</a> <br> <a href="https://openintro-ims.netlify.app/data-hello.html"><i class="fas fa-book-open"></i> IMS 1.2 + 1.4</a>',
+  '<a href="https://m158-lin-mod.netlify.app/slides/2022-01-18-reprodgit"><i class="fas fa-newspaper"></i> </a> <br> ',
+  '<a href="https://m58-intro-stats.netlify.app/slides/wu1_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU1</a> <br> <a href="https://m58-intro-stats/slides/wu2_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU2</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab1_m58_intro_to_data.pdf"><i class="fas fa-desktop"></i> Lab1 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab1_m58_intro_to_data.Rmd"><i class="fas fa-desktop"></i> Lab1 Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW1s21.pdf"><i class="fas fa-laptop"></i> HW1 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW1s21.Rmd"><i class="fas fa-laptop"></i> HW1 Rmd</a>'
+  )
+```
+
+
+```{r echo = FALSE, layout = "l-page"}
+schedule %>% 
+  mutate_all(linebreak) %>% # required for linebreaks to work
+  kbl(escape = FALSE, align = c(rep('l',7))) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"),
+                full_width = TRUE) %>%
+  column_spec(1:6,extra_css = "vertical-align:top;")
+```
+
+
+
+
+
+

@@ -22,7 +22,7 @@ You will undertake a computational statistics project on a topic of your choice 
 
 ## Group Formation
 
-You will work in a group of (approximately) three students. You may choose your own groups, or I would be happy to assign you to a group. The best groups will have team members with similar interests as far as application areas (e.g., biology, economics, etc.) but differing abilities and interests in terms of computational statistics (e.g., a stronger programmer combined with a visualization designer combined with a domain knowledge expert). See <a href = "https://m154-comp-stats.netlify.app/roles.html" target="_blank">Group Roles</a> for more information on allocating tasks.
+You will work in a group of (approximately) three students. You may choose your own groups, or I would be happy to assign you to a group. The best groups will have team members with similar interests as far as application areas (e.g., biology, economics, etc.) but differing abilities and interests in terms of computational statistics (e.g., a stronger programmer combined with a visualization designer combined with a domain knowledge expert). See <a href = "https://m58-intro-stats.netlify.app/roles.html" target="_blank">Group Roles</a> for more information on allocating tasks.
 
 ## Assignment
 
@@ -74,7 +74,7 @@ The topic is completely open to your choice, but keep in mind the three main rul
 
 Your initial (via email) and revised (via GitHub) proposals should contain the following content:
 
-1. Group Members: List the members of your group. For the revised proposal, add additional information about each person's role. Each member of the group should have two jobs: (1) a group dynamic role, (2) a project role. See <a href = "https://m154-comp-stats.netlify.app/roles.html" target="_blank">Group Roles</a> for more information on allocating tasks.
+1. Group Members: List the members of your group. For the revised proposal, add additional information about each person's role. Each member of the group should have two jobs: (1) a group dynamic role, (2) a project role. See <a href = "https://m58-intro-stats.netlify.app/roles.html" target="_blank">Group Roles</a> for more information on allocating tasks.
 
 2. Title: The title of your project
 

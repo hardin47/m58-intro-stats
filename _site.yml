@@ -14,8 +14,6 @@ navbar:
     image: images/st47s.png
     href: https://hardin47.netlify.app/
   right:
-    - text: "Daily"
-      href: daily.html
     - text: "Syllabus"
       href: syllabus.html
     - text: "Class Notes"
@@ -30,8 +28,7 @@ navbar:
           href: rubric.html
         - text: "Data Sources"
           href: https://hardin47.netlify.app/courses/data/
-    - text: "GitHub"
-      href: github.html
+
 output: 
   distill::distill_article:
     css: theme.css

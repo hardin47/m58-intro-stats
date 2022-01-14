@@ -4,15 +4,15 @@ description: |
   The plan, the details, and the logistics.
 author:
   - name: Jo Hardin 
-    url: https://m154-comp-stats.netlify.app/
+    url: https://m58-intro-stats.netlify.app/
     affiliation: Pomona College
     affiliation_url: https://hardin47.netlify.app/
 output: distill::distill_article
 ---
 
 
-# Computational Statistics
-## Math 154, Fall 2021
+# Introduction to Biostatistics
+## Math 58B, Spring 2022
 
 Jo Hardin
 2351 Estella
@@ -23,7 +23,7 @@ jo.hardin@pomona.edu
 **Mentor Sessions:**  
 Sun 9-10pm, Wed 8-10pm   
 Estella 1021 (Emmy Noether Room)  
-Mentor: JJ Shankar  
+Mentor:   
 
 
 ```{r fig.cap = "Artwork by @allison_horst.", fig.alt = "Monsters going through the phases of writing code.", preview = TRUE, echo = FALSE}
@@ -122,14 +122,12 @@ All resources are freely available.  They also all have print versions which can
 
 ## Homework:
 
-Homework will be assigned from the text(s) with some additional problems. One homework grade will be dropped. Homework will be done using the statistical software package R (in the RStudio IDE) and posted to GitHub + Gradescope. All homework must be done in RMarkdown and compiled to pdf.  
+Homework will be assigned from the text(s) with some additional problems. One homework grade will be dropped. Homework will be done using the statistical software package R (in the RStudio IDE) and posted to Gradescope. All homework must be done in RMarkdown and compiled to pdf.  
 
-  * Homework will be due on Thursdays by 11:59pm to GitHub + Gradescope. 
+  * Homework (a rendered pdf file) will be due on Thursdays by 11:59pm to Gradescope, Labs are due Tuesdays by 11:59pm to Gradescope.
   * Non-homework activities (e.g., from the text) may be collected and added to your participation grade.
-  * HW should be turned in to your GitHub repository and posted to Gradescope by Thursday at 11:59pm.
-  * Always post both a PDF and R Markdown file to GitHub (and a pdf to Gradescope), unless otherwise requested.
   * HW is graded on a scale of 5/4/3/2/1. See the first HW assignment for more information.
-  * HW file should be in the format of: ma154-hw#-lname-fname.pdf
+  * HW file should be in the format of: ma58B-hw#-lname-fname.pdf
 
 ##### HW format
 
@@ -155,7 +153,7 @@ Homework assignments will be graded out of 5 points, which are based on a combin
 
 ## Projects:
 
-There will be a semester long group project. Your task is to use data to tell us something interesting. This project is deliberately open-ended to allow you to fully explore your creativity. There are three main rules that must be followed: (1) data centered, (2) tell us something, (3) do something new. The project information is available here: [Math 154 Semester Project](/project/)
+There will be a semester long group project. Your task is to use data to tell us something interesting. This project is deliberately open-ended to allow you to fully explore your creativity. There are three main rules that must be followed: (1) data centered, (2) tell us something, (3) do something new. The project information is available here: [Math 58B Semester Project](/project/)
 
 
 ## Computing:
