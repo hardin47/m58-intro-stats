@@ -2288,29 +2288,41 @@ Project
 <h1 id="introduction-to-biostatistics">Introduction to Biostatistics</h1>
 <h2 id="math-58b-spring-2022">Math 58B, Spring 2022</h2>
 <p>Jo Hardin 2351 Estella <a href="mailto:jo.hardin@pomona.edu" class="email">jo.hardin@pomona.edu</a></p>
-<p><strong>Office Hours: Wed 9-11am, Th 1:30-3pm, or by appointment</strong></p>
-<p><strong>Mentor Sessions:</strong><br />
-Sun 9-10pm, Wed 8-10pm<br />
-Estella 1021 (Emmy Noether Room)<br />
+<p><strong>Office Hours:</strong> (Zoom + Estella 2351)<br />
+Tuesday 9:30-11am<br />
+Wed 1:30-4pm<br />
+Thurs 10-11:30am</p>
+<p><strong>Mentor Sessions:</strong> Estella 2131<br />
 Mentor:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-1"></span>
-<img src="images/debugging.jpg" alt="Monsters going through the phases of writing code." width="3364" data-distill-preview=1 />
+<img src="images/type_2_errors.png" alt="Monsters going through the phases of writing code." width="3162" data-distill-preview=1 />
 <p class="caption">
 Figure 1: Artwork by <span class="citation" data-cites="allison_horst">@allison_horst</span>.
 </p>
 </div>
 </div>
 <h2 id="the-course">The course</h2>
-<p>Computational Statistics will be an introduction to statistical methods that rely heavily on the use of computers. The course will generally have three parts. The first section will include communicating and working with data in a modern era. This includes data wrangling, data visualization, data ethics, and collaborative research (via GitHub). The second part of the course will focus on traditional statistical inference done through computational methods (e.g., permutation tests and bootstrapping). The last part of the course will focus on machine learning ideas such as classification, clustering, and dimension reduction techniques. Some of the methods were invented before the ubiquitous use of personal computers, but only because the calculus used to solve the problem was relatively straightforward (or because the method wasn’t actually every used). Some of the methods have been developed quite recently.</p>
+<p><strong>Introduction to Biostatistics</strong> is an introduction to statistical ideas using R. We will cover the majority of statistical methods which are used in standard analyses (e.g., t-tests, chi-squared analysis, regression, confidence intervals, binomial tests, etc.). The main inferential techniques will be covered using both theoretical approximations (e.g., the central limit theorem) as well as computational methods (e.g., permutation tests and bootstrapping). Focus will be on understanding the methods and interpreting results.</p>
 <p><strong>Anonymous Feedback</strong> As someone who is constantly learning and growing in many ways, I welcome your feedback about the course, the classroom dynamics, or anything else you’d like me to know. There is a link to an anonymous feedback form on the landing page of our Sakai webpage. Please provide me with feedback at any time!</p>
-<h2 id="course-goals">Course Goals:</h2>
+<h2 id="student-learning-outcomes">Student Learning Outcomes:</h2>
+<p>By the end of the semester, students will be able to do the following:</p>
 <ul>
-<li>to be able to work through the entire computational statistics flow chart as a data analyst.</li>
-<li>to be able to use graphical representations of data to communicate ideas about the data.</li>
-<li>to be able to identify, understand, and describe the uses and misuses of algorithms and data collection from an ethical lens with the purpose of preventing harms from data science.</li>
-<li>to critically evaluate analyses / graphics of data (typically big data or dynamic data).</li>
-<li>to communicate results effectively.</li>
+<li>Given a study, identify population, sample, parameter, statistic, observational unit, and variable.</li>
+<li>Describe the differences between, benefits of each, and conclusions which can be drawn in observational studies versus experiments.</li>
+<li>Given a dataset and research query, create an appropriate figure in R.</li>
+<li>Given a dataset and research query, compute appropriate statistics in R.</li>
+<li>Describe the difference between the distribution of a sample of data and a sampling distribution of a particular statistic.</li>
+<li>For a particular research question, identify whether the task requires descriptive analysis / model, graphic, confidence interval, or hypothesis test,</li>
+<li>Apply the empirical rule to as an approximation to confidence intervals and hypothesis testing in settings of means and proportions.</li>
+<li>Be able to describe in words what a p-value is and what it is not.</li>
+<li>Write down appropriate null and alternative hypotheses, and choose the correct analysis technique.</li>
+<li>Run the hypothesis test / confidence interval analysis in R.</li>
+<li>Identify when it is and when it is not appropriate to summarize the relationship between two variables using a least squares line. Describe the optimization procedure the leads to a least squares fit (although not necessarily to do the calculations).</li>
+<li>Provide the settings in which a causal claim is warranted, and when a strong correlation is possibly due to spurious relationships.</li>
+<li>Use a regression line to make predictions and distinguish between a prediction interval for an independent response as compared to a confidence interval for the slope parameter.</li>
+<li>For each descriptive analysis, visualization, confidence interval, or hypothesis test, in words communicate the conclusion of the analysis in the original context of the data.</li>
+<li>Use R Markdown to run reproducible analyses that include all aspects of the data analysis.</li>
 </ul>
 <h2 id="diversity-and-inclusion-statement">Diversity and Inclusion Statement</h2>
 <p>(adapted from Monica Linden, Brown University):</p>
@@ -2322,40 +2334,24 @@ Figure 1: Artwork by <span class="citation" data-cites="allison_horst">@allison_
 <li>If you feel like your performance in the class is being impacted by your experiences outside of class, please don’t hesitate to come and talk with me. You can also relay information to me via your mentors. I want to be a resource for you. If you prefer to speak with someone outside of the course, the math liaisons, Dean of Students, or QSC staff are all excellent resources. I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it. As a participant in course discussions, you should also strive to honor the diversity of your classmates.</li>
 </ul>
 <h2 id="texts">Texts:</h2>
-<p>All resources are freely available. They also all have print versions which can be purchased. Using the online version of the books is expected.</p>
-<h3 id="first-section-of-the-course-data-science-data-viz-wrangling-simulating-permutation-tests-bootstrapping-ethics">First section of the course (data science, data viz, wrangling, simulating, permutation tests, bootstrapping, ethics)</h3>
-<div class="note">
 <ul>
-<li>Content: <strong>Modern Data Science with R</strong>; Baumer, Kaplan, and Horton, <a href="https://mdsr-book.github.io/mdsr2e/" target="_blank">https://mdsr-book.github.io/mdsr2e/</a><br />
-</li>
-<li>R resource: <strong>R for Data Science</strong>, Wickham, <a href = "https://r4ds.had.co.nz/" target="_blank">https://r4ds.had.co.nz/</a><br />
-</li>
-<li>Recommended: Visual and Statistical Thinking: Displays of Evidence for Making Decisions; Tufte <a href="http://www.edwardtufte.com/tufte/books_textb" target="_blank">http://www.edwardtufte.com/tufte/books_textb</a></li>
-</ul>
-</div>
-<h3 id="second-section-of-the-course-bootstrapping-knn-trees-bagging-random-forests-support-vector-machines-clustering">Second section of the course (bootstrapping, knn, trees, bagging, random forests, support vector machines, clustering)</h3>
-<div class="note">
+<li><p>IMS: <em>Introduction to Modern Statistics</em> by Çetinkaya-Rundel and Hardin, <a href="https://openintro-ims.netlify.app/" class="uri">https://openintro-ims.netlify.app/</a>.</p></li>
+<li><p>ISCAM: <em>Investigating Statistics, Concepts, Applications, and Methods</em> by Chance and Rossman <a href="http://www.rossmanchance.com/iscam3/" class="uri">http://www.rossmanchance.com/iscam3/</a>. Many of the examples come from ISCAM, a pdf of which can be purchased for $5.</p>
 <ul>
-<li>Content: <strong>An Introduction to Statistical Learning</strong>; James, Witten, Hastie, and Tibshirani <a href="https://www.statlearning.com/" target="_blank">https://www.statlearning.com/</a><br />
-</li>
-<li>R resource: <strong>Tidy Modeling with R</strong>; Kuhn and Silge <a href="https://www.tmwr.org/" target="_blank">https://www.tmwr.org/</a></li>
+<li><a href = "http://www.rossmanchance.com/applets/index2021.html" target = "_blank">ISCAM applets</a></li>
+</ul></li>
 </ul>
-</div>
 <h2 id="important-dates">Important Dates:</h2>
-<div class="note">
 <ul>
-<li>10/14 + 15/21 Exam 1 (not during class)</li>
-<li>10/24/21 Take home 1 due (on GitHub + Gradescope by midnight)</li>
-<li>10/26/21 Initial Project Proposal due (via email to me by midnight)</li>
-<li>11/2/21 Final Project Proposal due (on GitHub by midnight)</li>
-<li>11/18/21 2021 Data Science Panel with industry data scientists</li>
-<li>11/19/21 Project Update due (on GitHub by midnight)</li>
-<li>11/30/21 Take home 2 due (on GitHub by midnight)</li>
-<li>12/2 + 3/21 Exam 2 (not during class)</li>
-<li>12/10/21 (Friday) or 12/14/21 (Tuesday) Group Presentations (2-5pm)</li>
-<li>12/14/21 Final write-up due (on GitHub by midnight)</li>
+<li>3/10/22 (Thursday) Exam 1</li>
+<li>3/29/22 (Tuesday) Project 1: Pilot</li>
+<li>4/5/22 (Tuesday) Project 2: Power</li>
+<li>4/19/22 (Tuesday) Project 3: Analysis</li>
+<li>4/28/22 (Thursday) Exam 2</li>
+<li>5/3/22 (Tuesday) Project 4: Full draft</li>
+<li>5/6 or 13/22 (Friday) Project presentation</li>
+<li>5/13/22 (Friday) Project 5: Final (edited) Project</li>
 </ul>
-</div>
 <h2 id="links-to-resources">Links to resources:</h2>
 <h3 id="git-resources">Git resources</h3>
 <div class="note">

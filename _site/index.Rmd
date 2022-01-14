@@ -32,7 +32,6 @@ Each week, follow the general process outlined below:
    - <a href = "http://www.rossmanchance.com/applets/index2021.html" target = "_blank">ISCAM applets</a>
 
 
-
 ```{r echo = FALSE}
 schedule <- tribble(
   ~`date`, ~topic, ~agenda, ~readings, ~article, ~assignments,
@@ -70,21 +69,39 @@ schedule <- tribble(
   '<a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#diffprop"><i class="fas fa-book-open"></i> diff props</a> <br> <a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#rr"><i class="fas fa-book-open"></i> RR</a>  <br> <a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#or"><i class="fas fa-book-open"></i> OR</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 3.9-3.11</a> <br> <a href="https://openintro-ims.netlify.app/inference-two-props.html"><i class="fas fa-book-open"></i> IMS 17</a>',
   '<a href=""><i class="fas fa-newspaper"></i> </a> <br> ',
   '<a href="https://m58-intro-stats.netlify.app/slides/wu_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU</a> <br> <a href="https://m58-intro-stats/slides/wu_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab_m58_.pdf"><i class="fas fa-desktop"></i> Lab pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab_m58_.Rmd"><i class="fas fa-desktop"></i> Lab Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HWs21.pdf"><i class="fas fa-laptop"></i> HW pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HWs21.Rmd"><i class="fas fa-laptop"></i> HW Rmd</a>',
+
+  '3.8.22', 'catch-up',"", 
+  '',
+  '',
+  '', 
   
-  "3.8.22", 'OR + <br> $\\chi^2$ Test',"$\\boldsymbol{\\cdot}$  <br> $\\boldsymbol{\\cdot}$ <br> $\\boldsymbol{\\cdot}$ ", 
+'<font color = "#114B5F"><b>3.10.22</b></font>', '<font color = "#114B5F"><b>Exam 1</b></font>',"", 
+  '',
+  '',
+  '',    
+  
+  "3.22.22", 'OR + <br> $\\chi^2$ Test',"$\\boldsymbol{\\cdot}$  <br> $\\boldsymbol{\\cdot}$ <br> $\\boldsymbol{\\cdot}$ ", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#or"><i class="fas fa-book-open"></i> OR</a> <br> <a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#chisq2"><i class="fas fa-book-open"></i> $\\chi^2$ Test</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 3.2</a> <br> <a href="https://openintro-ims.netlify.app/inference-tables.html"><i class="fas fa-book-open"></i> IMS 18</a>',
   '<a href=""><i class="fas fa-newspaper"></i> </a> <br> ',
   '<a href="https://m58-intro-stats.netlify.app/slides/wu_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU</a> <br> <a href="https://m58-intro-stats/slides/wu_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab_m58_.pdf"><i class="fas fa-desktop"></i> Lab pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab_m58_.Rmd"><i class="fas fa-desktop"></i> Lab Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HWs21.pdf"><i class="fas fa-laptop"></i> HW pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HWs21.Rmd"><i class="fas fa-laptop"></i> HW Rmd</a>',
   
-  "3.22.22", '1 mean +<br>pred interval',"$\\boldsymbol{\\cdot}$  <br> $\\boldsymbol{\\cdot}$ <br> $\\boldsymbol{\\cdot}$ ", 
+  "3.29.22", '1 mean +<br>pred interval',"$\\boldsymbol{\\cdot}$  <br> $\\boldsymbol{\\cdot}$ <br> $\\boldsymbol{\\cdot}$ ", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean1inf"><i class="fas fa-book-open"></i> 1 mean</a> <br> <a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean1inf"><i class="fas fa-book-open"></i> pred int</a>  <br> <a href="https://openintro-ims.netlify.app/inference-one-mean.html"><i class="fas fa-book-open"></i> IMS 19</a>',
   '<a href=""><i class="fas fa-newspaper"></i> </a> <br> ',
   '<a href="https://m58-intro-stats.netlify.app/slides/wu_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU</a> <br> <a href="https://m58-intro-stats/slides/wu_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab_m58_.pdf"><i class="fas fa-desktop"></i> Lab pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab_m58_.Rmd"><i class="fas fa-desktop"></i> Lab Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HWs21.pdf"><i class="fas fa-laptop"></i> HW pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HWs21.Rmd"><i class="fas fa-laptop"></i> HW Rmd</a>',
+
+'<font color = "#114B5F"><b>3.29.22</b></font>', '<font color = "#114B5F"><b>Proj 1: Pilot</b></font>',"", 
+  '','',
+  '<a href=""><i class="fas fa-pencil-alt"></i> Proj 1: Pilot</a>',
   
-  "3.29.22", '2 means +<br>t-proced',"$\\boldsymbol{\\cdot}$  <br> $\\boldsymbol{\\cdot}$ <br> $\\boldsymbol{\\cdot}$ ", 
+  "4.5.22", '2 means +<br>t-proced',"$\\boldsymbol{\\cdot}$  <br> $\\boldsymbol{\\cdot}$ <br> $\\boldsymbol{\\cdot}$ ", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean2inf"><i class="fas fa-book-open"></i> 2 means</a>  <br> <a href = "http://www.rossmanchance.com/applets/index2021.html" target = "_blank"><i class="fas fa-gamepad"></i> 2 samples</a> <br> <a href="https://openintro-ims.netlify.app/inference-two-means.html"><i class="fas fa-book-open"></i> IMS 20</a>',
   '<a href=""><i class="fas fa-newspaper"></i> </a> <br> ',
   '<a href="https://m58-intro-stats.netlify.app/slides/wu_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU</a> <br> <a href="https://m58-intro-stats/slides/wu_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab_m58_.pdf"><i class="fas fa-desktop"></i> Lab pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab_m58_.Rmd"><i class="fas fa-desktop"></i> Lab Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HWs21.pdf"><i class="fas fa-laptop"></i> HW pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HWs21.Rmd"><i class="fas fa-laptop"></i> HW Rmd</a>' ,
+
+'<font color = "#114B5F"><b>4.5.22</b></font>', '<font color = "#114B5F"><b>Proj 2: Power</b></font>',"", 
+  '','',
+  '<a href=""><i class="fas fa-pencil-alt"></i> Proj 2: Power</a>',
 
   "4.12.22", 'ANOVA +<br> Inf $\\beta_1$',"$\\boldsymbol{\\cdot}$  <br> $\\boldsymbol{\\cdot}$ <br> $\\boldsymbol{\\cdot}$ ", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#ANOVA"><i class="fas fa-book-open"></i> ANOVA</a>  <br> <a href="https://st47s.com/Math58/Notes/reginf.html#infbeta1"><i class="fas fa-book-open"></i> Inf on $\\beta_1$</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class="fas fa-gamepad"></i> slopes</a> <br> <a href="https://openintro-ims.netlify.app/inference-many-means.html"><i class="fas fa-book-open"></i> IMS 22</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-slr.html"><i class="fas fa-book-open"></i> IMS 24</a>',
@@ -95,11 +112,32 @@ schedule <- tribble(
   '<a href="https://st47s.com/Math58/Notes/reginf.html#lmtechcond"><i class="fas fa-book-open"></i> Tech Cond</a>  <br> <a href = "https://st47s.com/Math58/Notes/reginf.html#MLR" target = "_blank"><i class="fas fa-gamepad"></i> MLR</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-mlr.html"><i class="fas fa-book-open"></i> IMS 25</a>',
   '<a href=""><i class="fas fa-newspaper"></i> </a> <br> ',
   '<a href="https://m58-intro-stats.netlify.app/slides/wu_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU</a> <br> <a href="https://m58-intro-stats/slides/wu_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab_m58_.pdf"><i class="fas fa-desktop"></i> Lab pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab_m58_.Rmd"><i class="fas fa-desktop"></i> Lab Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HWs21.pdf"><i class="fas fa-laptop"></i> HW pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HWs21.Rmd"><i class="fas fa-laptop"></i> HW Rmd</a>', 
-  
+
+'<font color = "#114B5F"><b>4.19.22</b></font>', '<font color = "#114B5F"><b>Proj 3: Analysis</b></font>',"", 
+  '','',
+  '<a href=""><i class="fas fa-pencil-alt"></i> Proj 3: Analysis</a>',
+
   "4.26.22", 'MLR',"$\\boldsymbol{\\cdot}$  <br> $\\boldsymbol{\\cdot}$ <br> $\\boldsymbol{\\cdot}$ ", 
   '<a href="https://st47s.com/Math58/Notes/reginf.html#MLRmod"><i class="fas fa-book-open"></i> MLR</a>  <br> <a href="https://openintro-ims.netlify.app/inf-model-mlr.html"><i class="fas fa-book-open"></i> IMS 25</a>',
   '<a href=""><i class="fas fa-newspaper"></i> </a> <br> ',
-  '<a href="https://m58-intro-stats.netlify.app/slides/wu_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU</a> <br> <a href="https://m58-intro-stats/slides/wu_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab_m58_.pdf"><i class="fas fa-desktop"></i> Lab pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab_m58_.Rmd"><i class="fas fa-desktop"></i> Lab Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HWs21.pdf"><i class="fas fa-laptop"></i> HW pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HWs21.Rmd"><i class="fas fa-laptop"></i> HW Rmd</a>' 
+  '<a href="https://m58-intro-stats.netlify.app/slides/wu_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU</a> <br> <a href="https://m58-intro-stats/slides/wu_ma58b_s22.pdf"><i class="fas fa-pencil-alt"></i> WU</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab_m58_.pdf"><i class="fas fa-desktop"></i> Lab pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab_m58_.Rmd"><i class="fas fa-desktop"></i> Lab Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HWs21.pdf"><i class="fas fa-laptop"></i> HW pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HWs21.Rmd"><i class="fas fa-laptop"></i> HW Rmd</a>' ,
+  
+'<font color = "#114B5F"><b>4.28.22</b></font>', '<font color = "#114B5F"><b>Exam 2</b></font>',"", 
+  '',
+  '',
+  '', 
+
+'<font color = "#114B5F"><b>5.3.22</b></font>', '<font color = "#114B5F"><b>Proj 4: Full draft</b></font>',"", 
+  '','',
+  '<a href=""><i class="fas fa-pencil-alt"></i> Proj 4: Full draft</a>',
+
+'<font color = "#114B5F"><b>5.6 + 13.22</b></font>', '<font color = "#114B5F"><b>Proj Presentation</b></font>',"", 
+  '','',
+  '<a href=""><i class="fas fa-pencil-alt"></i> Proj Presentation</a>',
+
+'<font color = "#114B5F"><b>5.13.22</b></font>', '<font color = "#114B5F"><b>Proj 5: Final Project</b></font>',"", 
+  '','',
+  '<a href=""><i class="fas fa-pencil-alt"></i> Proj 5: Final Project</a>'
   
     )
 ```
