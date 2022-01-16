@@ -93,20 +93,9 @@ I (like many people) am still in the process of learning about diverse perspecti
 
 
 
-## Links to resources:
+## Links to R resources:
 
-### Git resources
-
-:::note
-* Best and most comprehensive Git help: <a href="http://happygitwithr.com/" target="_blank">http://happygitwithr.com/</a>
-* <a href="http://swcarpentry.github.io/git-novice/" target="_blank">Version control with Git</a>
-* <a href="https://aberdeenstudygroup.github.io/studyGroup/lessons/SG-T1-GitHubVersionControl/VersionControl/#2.4.2." target="_blank">More on Git</a>
-* <a href="https://git-scm.com/book/en/v2" target="_blank">Online Git book</a> with lots of info
-:::
-
-### R resources
-
-:::note
+* A true beginner's <a href = "https://spielmanlab.github.io/introverse/index.html" target = "_blank">introduction to the tidyverse</a>, the **introverse**.
 * <a href="https://rstudio.cloud/learn/primers" target="_blank">interactive tutorials</a> for working through "R for Data Science"
 * <a href="https://education.rstudio.com/learn/" target="_blank">for a good start</a> to R in general
 * A fantastic <a href="https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/" target="_blank">ggplot2 tutorial</a>
@@ -118,7 +107,7 @@ I (like many people) am still in the process of learning about diverse perspecti
    * <a href="https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf" target="_blank">ggplot2</a>
    * <a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf" target="_blank">R Markdown</a>
    * <a href="https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf" target="_blank">RStudio IDE</a>
-:::
+
 
 ## Homework:
 
