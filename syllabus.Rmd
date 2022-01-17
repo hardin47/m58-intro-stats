@@ -17,9 +17,9 @@ output: distill::distill_article
 Class: Tuesdays & Thursdays, 1:15 - 2:30pm  
 Lab: Fridays, 11-11:50am  
 
-Jo Hardin
-2351 Estella
-jo.hardin@pomona.edu
+Jo Hardin  
+2351 Estella  
+jo.hardin@pomona.edu  
 
 **Office Hours:** (Zoom + Estella 2351)   
 Tuesday 9:30-11am  
