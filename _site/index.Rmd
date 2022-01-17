@@ -14,7 +14,7 @@ library(knitr)
 Here's your roadmap for the semester!
 Each week, follow the general process outlined below:
 
-- Before class on Monday, read the suggested article <i class="fas fa-newspaper"></i>
+- Before class on Tuesday, read the suggested article <i class="fas fa-newspaper"></i>
 
 - Enjoy the notes / readings <i class="fas fa-book-open"></i>  
 
