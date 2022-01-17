@@ -14,6 +14,9 @@ output: distill::distill_article
 # Introduction to Biostatistics
 ## Math 58B, Spring 2022
 
+Class: Tuesdays & Thursdays, 1:15 - 2:30pm  
+Lab: Fridays, 11-11:50am  
+
 Jo Hardin
 2351 Estella
 jo.hardin@pomona.edu
