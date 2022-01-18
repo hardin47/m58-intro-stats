@@ -214,8 +214,8 @@ Please email and / or set up a time to talk if you have any questions about or d
 ### Grading:
    
 :::note 
-  * 25% Homework
-  * 45% Midterms 
+  * 20% Homework
+  * 50% Midterms 
   * 25% Group Project & Presentation 
   * 5% Class Participation 
 :::
