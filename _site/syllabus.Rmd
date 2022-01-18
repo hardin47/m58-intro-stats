@@ -140,7 +140,7 @@ Homework assignments will be graded out of 5 points, which are based on a combin
 [3] Close to all problems completed with less than 75% correct.  
 [2] More than half but fewer than all problems completed and > 75% correct.  
 [1] More than half but fewer than all problems completed and < 75% correct; OR less than half of problems completed.  
-[0] No work submitted, OR half or less than half of the problems submitted and without any detail/work shown to explain the solutions. You will get a zero if your file is not compiled and submitted on GitHub.  
+[0] No work submitted, OR half or less than half of the problems submitted and without any detail/work shown to explain the solutions. 
 
 
 ## Projects:
@@ -150,11 +150,9 @@ There will be a semester long group project. Your task is to use data to tell us
 
 ## Computing:
 
-* GitHub will be used as a way to practice reproducible and collaborative science. There may be a slight learning curve, but knowing Git will be an extremely useful skill as you venture on after this class.
+* R will be used for all homework assignments. R is freely available at <a href="http://www.r-project.org/" target="_blank">http://www.r-project.org/</a> and is already installed on college computers. Additionally, you need to install R Studio in order to use R Markdown, <a href="http://rstudio.org/" target="_blank">http://rstudio.org/</a>.  
 
-* R will be used for all homework assignments. R is freely available at <a href="http://www.r-project.org/" target="_blank">http://www.r-project.org/</a> and is already installed on college computers. Additionally, you need to install R Studio in order to use R Markdown, <a href="http://rstudio.org/" target="_blank">http://rstudio.org/</a>. If you are not already familiar with R, please work through some of the materials provided ASAP. 
-
-* You are welcome to use Pomona's R Studio server at <a href="https://rstudio.campus.pomona.edu/" target="_blank">https://rstudio.campus.pomona.edu/</a> (or <a href="https://rstudio.pomona.edu" target="_blank">https://rstudio.pomona.edu</a> if you are off campus). If you use the server, you can connect directly to your Git account without installing Git locally on your own computer. [If you are not a Pomona student, you will need to get an account from Pomona's ITS. Go to ITS, tell them that you are taking a Pomona course, and ask for an account for using RStudio.]
+* You are welcome to use Pomona's R Studio server at <a href="https://rstudio.campus.pomona.edu/" target="_blank">https://rstudio.campus.pomona.edu/</a> (or <a href="https://rstudio.cloud" target="_blank">https://rstudio.cloud</a> -- use your mymail email address).  [If you are not a Pomona student and want to use the server, please let me know, it's easy to get accounts for 5C students.]
 
 ## Participation:
 
