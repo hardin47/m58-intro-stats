@@ -385,17 +385,19 @@ LGA seems to have the highest on time departure percentage, so that's the airpor
 
 ## To Turn In
 
-5.  Mutate the data frame so that it includes a new variable that contains the 
+5.  Have you been able to meet with your learning community yet?  Anything I should know about getting things up and running?
+
+6.  Mutate the data frame so that it includes a new variable that contains the 
     average speed, `avg_speed` traveled by the plane for each flight (in mph).
     **Hint:** Average speed can be calculated as distance divided by
     number of hours of travel, and note that `air_time` is given in minutes.
     
     
-6.  Another useful filtering helper function is `between()`. What does it do? Use it to find flights that arrived between 0 and 60 minutes late.  How many such flights are there? (Hint: you'll need to use `between()` **inside** one of the wrangling verbs.)
+7.  Another useful filtering helper function is `between()`. What does it do? Use it to find flights that arrived between 0 and 60 minutes late.  How many such flights are there? (Hint: you'll need to use `between()` **inside** one of the wrangling verbs.)
 
 
 
-7.  Suppose you really dislike departure delays, and you want to schedule 
+8.  Suppose you really dislike departure delays, and you want to schedule 
     your travel in a month that minimizes your potential departure delay leaving 
     NYC. One option is to choose the month with the lowest mean departure delay.
     Another option is to choose the month with the lowest median departure delay.
