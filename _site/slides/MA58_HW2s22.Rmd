@@ -54,13 +54,13 @@ ice <- read_delim("http://www.rossmanchance.com/iscam2/data/NenanaIceBreak.txt",
                         
 (e)	What date would the regression model predict for the ice break-up in the year 2005?  What about 2020?  Explain why you should regard these predictions cautiously.
 
-#### Q3. Identify relationships, Part II., IMS Section 3.1 #4^[https://openintro-ims.netlify.app/intro-linear-models.html#line-residuals-correlation-exercises]
+#### Q3. Identify relationships, Part II., IMS Section 7.5 #4^[https://openintro-ims.netlify.app/model-slr.html#chp7-exercises]
 
 For each of the six plots (see text), identify the strength of the relationship (e.g. weak, moderate, or strong) in the data and whether fitting a linear model would be reasonable.
 
 
 
-#### Q4. Graduate degrees and salaries., IMS Section 3.1 #14^[https://openintro-ims.netlify.app/intro-linear-models.html#line-residuals-correlation-exercises]
+#### Q4. Graduate degrees and salaries., IMS Section 7.5 #14^[https://openintro-ims.netlify.app/model-slr.html#chp7-exercises]
 
 What would be the correlation between the annual salaries of people with and without a graduate degree at a company if for a certain type of position someone with a graduate degree always made
 
@@ -70,7 +70,7 @@ What would be the correlation between the annual salaries of people with and wit
 
 
 
-#### Q5. The Coast Starlight, regression. IMS Section 3.2 #7^[https://openintro-ims.netlify.app/intro-linear-models.html#least-squares-regression-exercises]
+#### Q5. The Coast Starlight, regression. IMS Section 7.5 #21^[https://openintro-ims.netlify.app/model-slr.html#chp7-exercises]
 
 Hint: look at the text for the scatterplot and also for how to compute the slope and intercept by hand.  By hand computing will not be a regular thing, but it doesn't hurt to do it once so as to understand the computation.
 
