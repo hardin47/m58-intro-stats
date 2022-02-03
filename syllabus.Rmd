@@ -21,19 +21,14 @@ Jo Hardin
 2351 Estella  
 jo.hardin@pomona.edu  
 
-**Office Hours:** (Zoom + Estella 2351)   
+**Office Hours:** (Estella 2351)   
 Tuesday 9:30-11am  
 Wed 1:30-4pm  
 Thurs 9-10:30am  
 
-(see Sakai front page for zoom link)
 
-
-**Mentor Sessions:** (Zoom + Estella 2113)   
+**Mentor Sessions:** (Estella 2113)     
 Mon & Wed 6-8pm
-(see Sakai front page for zoom link)
-
-
 
 ```{r fig.cap = "Artwork by @allison_horst.", fig.alt = "Monsters going through the phases of writing code.", preview = TRUE, echo = FALSE}
 knitr::include_graphics("images/type_2_errors.png")
