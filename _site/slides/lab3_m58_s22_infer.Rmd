@@ -89,7 +89,7 @@ The first thing we need to do is to find the observed statistic of interest (her
 
 Well, okay, first as a calculator:
 ```{r}
-(48/116) - (31/117)
+(49/117) - (32/118)
 ```
 
 Now using the infer syntax, we'll specify the variables of interest (which is response and which is explanatory?).  Also, we'll need to specify what a "success" means and the order of subtraction.  Note that we get the same value as we did when using R as a calculator.
@@ -104,7 +104,7 @@ diff_obs
 
 ####  Step 2. Shuffle the data under H0
 
-The point of the hypothesis test structure is to have an understanding of what types of values might be seen just by chance (if the type of gargle really wasn't doing anything).  The idea is that 79 people were going to have some coughing after surgery anyway (regardless of gargle) -- that's the null hypothesis!  And we expect some variability in which group those 79 people end up.  How big are the differences in proportions?  is 14.9% big?  or is it small?
+The point of the hypothesis test structure is to have an understanding of what types of values might be seen just by chance (if the type of gargle really wasn't doing anything).  The idea is that 81 people were going to have some coughing after surgery anyway (regardless of gargle) -- that's the null hypothesis!  And we expect some variability in which group those 81 people end up.  How big are the differences in proportions?  is 14.8% big?  or is it small?
 
 Hint:  go back to this applet to see how the shuffling works!  http://www.rossmanchance.com/applets/2021/chisqshuffle/ChiSqShuffle.htm?FET=1
 
@@ -129,9 +129,10 @@ The last step ties it all together:
 
 * `calculate()` finds the statistic (here our statistic is the difference in proportions) for each of the permuted datasets.  
 
-Keep all of those differences, and take a look at them.  Is 14.9% is big?  or is it small?  can you tell?
+Keep all of those differences, and take a look at them.  Is 14.8% is big?  or is it small?  can you tell?
 
 ```{r}
+set.seed(4774)
 null_licorice <- licorice_study %>%
   specify(cough ~ gargle, success = "some") %>%
   hypothesize(null = "independence") %>%
@@ -148,7 +149,7 @@ Fortunately for us, we saved all the differences in proportions into an object t
 ```{r}
 visualize(null_licorice) 
 ```
-It is still a little bit hard to tell where that 14.9% falls.  It doesn't seem way outside the range, but it is in the tails.  Let's plot the observed difference on the plot of null differences.  Remember, when adding layers to a plot we use `+` instead of `%>%`.
+It is still a little bit hard to tell where that 14.8% falls.  It doesn't seem way outside the range, but it is in the tails.  Let's plot the observed difference on the plot of null differences.  Remember, when adding layers to a plot we use `+` instead of `%>%`.
 
 Fun activity:  the direction argument has different options.  Try them out:  `direction = "less"` or `direction = "two-sided"`.  What happens to the plot?
 
@@ -171,7 +172,7 @@ null_licorice %>%
 
 #### Step 5.  Make a conclusion
 
-The p-value here is 0.0115.  We're saying that if those 79 people were going to cough anyway, regardless of gargle, only 1.15% of the time would so many of them have landed in the sugar group just by chance.  The probability of the observed difference seems pretty small.  It makes us think that chance was probably not the mechanism that put so many patients into the sugar group.  Instead, this process makes us believe that it was actually the licorice (in contrast to the sugar) that reduced the coughing.
+The p-value here is 0.034.  We're saying that if those 81 people were going to cough anyway, regardless of gargle, only 3.4% of the time would so many of them have landed in the sugar group just by chance.  The probability of the observed difference seems pretty small.  It makes us think that chance was probably not the mechanism that put so many patients into the sugar group.  Instead, this process makes us believe that it was actually the licorice (in contrast to the sugar) that reduced the coughing.
 
 Because this was a randomized trial, all other characteristics of the patients are balanced out.  And we seem to have ruled out chance as the mechanism.
 

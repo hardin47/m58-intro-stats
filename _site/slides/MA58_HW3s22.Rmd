@@ -1,0 +1,138 @@
+---
+title: "HW 3 -- Math 58B"
+author: "your name here"
+date: "due Thursday, February 10, 2022"
+output: pdf_document
+---
+
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(message=FALSE, warning=FALSE, fig.height=3, fig.width=5, 
+                      fig.align = "center", cache=TRUE)
+library(tidyverse)
+library(broom)
+library(infer)
+library(praise)
+```
+
+
+### Assignment Summary (Goals)
+* practice setting up hypotheses
+* practice conclusions from complete hypothesis test
+* practice simulating under the scenario where the null hypothesis is true
+
+Note:  you'll need many of the skills covered in lab 3 to complete the assignment!  After Wednesday, the solutions to Lab 3 will be posted on Sakai.
+
+#### Q1. Learning Community Q
+Describe one thing you learned from someone in your learning community this week (it could be: content, logistical help, background material, R information, etc.)  1-3 sentences.
+
+#### Q2. Kissing the Right Way, (ISCAM, Inv 1.5)
+
+> Most people are right-handed and even the right eye is dominant for most people. Researchers have long believed that late-stage human embryos tend to turn their heads to the right. German biopsychologist Onur Gunturkun (Nature 2003) conjectured that this tendency to turn to the right manifests itself in other ways as well, so he studied kissing couples to see if both people tended to lean to their right more often than to their left (and if so, how strong the tendency is). He and his researchers observed couples from age 13 to 70 in public places such as airports, train stations, beaches, and parks in the United States, Germany, and Turkey. They were careful not to include couples who were holding objects such as luggage that might have affected which direction they turned. We will assume these couples are representative of the overall decision making process when kissing.
+
+> In total, 124 kissing pairs were observed with 80 couples leaning right.
+
+(a) What are the 
+* observational units?
+* the variable?  is it categorical or quantitative?
+* the statistic?
+* the parameter?
+
+
+(b) Do the data from the kissing study provide convincing evidence that the probability of leaning right is **smaller** than 0.8? 
+* State the hypotheses
+* report the p-value [describing how you determined it] 
+* clarifying what it is in words / terms of the probability of ...
+* interpret the strength of evidence against the null hypothesis).  
+
+To find the p-value, use the simulation structure from the infer package (but this time, note that the null hypothesis is different from lab 3 because we only have **one** variable!!!).  Much of the simulation code is written below.  You need to do two thing to the code:  (1) toggle to `eval=TRUE` and (2) fill in all the blank spaces below.
+
+```{r eval=FALSE}
+library(infer)
+
+# to control the randomness
+set.seed(47)
+
+# first create a data frame with the kissing data
+kissing <- data.frame(side = c(rep("right", ___ ), rep("left", ___ )))
+
+# then find the proportion who kiss right 
+p_obs_right <- kissing %>%
+    specify(response = ___ , ___ = "right") %>%  # note, only one variable here!!!
+    calculate(stat = "prop") 
+
+p_obs_right   #  does the computer print the correct number?
+
+# now apply the framework to get the p-value
+null_kiss <- ___  %>%
+  specify(response = ___ , success = "___ ") %>%
+  hypothesize(null = "point", p = .8) %>%    # new null hypothesis!  Here H0: p = 0.8
+  generate(reps = 1000, type = "simulate") %>% 
+  calculate(stat = "prop")
+
+# visualize the null sampling distribution
+visualize(___ ) +
+  shade_p_value(obs_stat = ___ , direction = "___ ")
+
+# calculate the actual p-value
+null_kiss %>%
+  get_p_value(obs_stat = ___ , direction = "___ ")
+```
+
+
+(c) Do the data from the kissing study provide convincing evidence that the probability of leaning right **differs** from 0.8? (Aha, the alternative hypothesis has changed!)
+
+(Use the code and instructions from part (b).)  
+
+
+(d) Reconsider part (b), the one-sided test:  how would your results have differed if you had chosen "kiss left" instead of "kiss right"?   Explain in words and re-run the code providing a full conclusion to the study (in words).    
+
+
+(e) Reconsider part (b), again the one-sided test:  how would your results have differed if you had the same proportional data but one quarter of the observations  (that is, data were 20 right kissers out of 31)?  Explain in words and re-run the code providing a full conclusion to the study (in words).    
+
+
+
+### Q3. Side effects of Avandia 
+
+> Rosiglitazone is the active ingredient in the controversial type 2 diabetes medicine Avandia and has been linked to an increased risk of serious cardiovascular problems such as stroke, heart failure, and death. A common alternative treatment is pioglitazone, the active ingredient in a diabetes medicine called Actos. In a nationwide retrospective observational study of 227,571 Medicare beneficiaries aged 65 years or older, it was found that 2,593 of the 67,593 patients using rosiglitazone and 5,386 of the 159,978 using pioglitazone had serious cardiovascular problems. These data are summarized in the contingency table below. [D.J. Graham et al. "Risk of acute myocardial infarction, stroke, heart failure, and death in elderly Medicare patients treated with rosiglitazone or pioglitazone". In: JAMA 304.4 (2010), p. 411. issn: 0098-7484.]
+
+|           |               | Cardiovascular | problems |         |
+|-----------|---------------|----------------|----------|---------|
+|           |               | yes            | no       | total   |
+| Treatment | Rosiglitazone | 2,593          | 65,000   | 67,593  |
+|           | Pioglitazone  | 5,386          | 154,592  | 159,978 |
+|           | Total       | 7,979          | 219,592  | 227,571 |
+
+Determine if each of the following statements is true or false. If false, explain why. Be careful: The reasoning may be wrong even if the statement's conclusion is correct. In such cases, the statement should be considered false.
+
+
+(a) Since more patients on pioglitazone had cardiovascular problems (5,386 vs. 2,593), we can conclude that the rate of cardiovascular problems for those on a pioglitazone treatment is higher.
+
+(b) The data suggest that diabetic patients who are taking rosiglitazone are more likely to have cardiovascular problems since the rate of incidence was (2,593 / 67,593 = 0.038) 3.8% for patients on this treatment, while it was only (5,386 / 159,978 = 0.034) 3.4% for patients on pioglitazone.
+
+(c) The fact that the rate of incidence is higher for the rosiglitazone group proves that rosiglitazone causes serious cardiovascular problems.
+
+(d) Based on the information provided so far, we cannot tell if the difference between the rates of incidences is due to a relationship between the two variables or due to chance. 
+
+[There is work to be done for part (d).  Hint: with such a huge sample size, the simulation is slow, you might try only a few hundred reps.]
+
+
+
+### Q4. Crime concerns in China. 
+
+> A 2013 poll of 563 people found that 24% of Chinese adults see crime as a very big problem.  The standard error for this estimate, which can reasonably be modeled using a normal distribution, is SE = 1.8% (= 0.018)^[Environmental Concerns on the Rise in China. September 19, 2013. Pew Research.]. Suppose an issue will get special attention from the Chinese government if more than 1-in-5 Chinese adults express concern on an issue.
+
+(a) Construct hypotheses regarding whether or not crime should receive special attention by the Chinese government according to the 1-in-5 guideline.  [Remember, each hypothesis is a separate claim (i.e., sentence, although it may look like a mathematical equation) about the **population**.]
+
+(b) Discuss the appropriateness of using a one-sided or two-sided test for this exercise. Consider: for this decision process, would we care about one or both directions?
+
+(c) Consider the hypothesis testing framework (that is, the last few steps where a probability is found and a conclusion is made).
+
+* What is the probability you would need to calculate for this problem?
+* If you can use any **coin** (that is, a coin with any particular probability of heads), how could you use the coin to calculate the desired probability? Be specific so someone could follow your instructions. 
+* What are the possible conclusion outcomes for the study given the probability calculation?
+
+
+```{r}
+praise()
+```
