@@ -163,7 +163,7 @@ Fortunately for us, we saved all the differences in proportions into an object t
 visualize(boot_sick) 
 ```
 
-We can tell that the bootstrapped proportions fall roughly between 0.30 and 0.36.  But we can quantify the interval of interest by finding the middle 90% or 95% of 99% of the bootstrapped proportions to correspond to the confidence interval values. 
+We can tell that the bootstrapped proportions fall roughly between 0.15 and 0.20  (ish).  But we can quantify the interval of interest by finding the middle 90% or 95% or 99% of the bootstrapped proportions to correspond to the confidence interval values. 
 
 
 Remember, when adding layers to a plot use `+` instead of `%>%`.
@@ -188,7 +188,7 @@ ci_sick_95
 
 #### Step 5.  Make a conclusion
 
-**Conclusion:**  We are 90% (95%) confident that the in the larger population of people from whom these data were selected (e.g., patients with no primary care physician who were seeking help from a detoxification unit), the true proportion of people who get sick more often than others (as defined by a response of definitely true or mostly true) is between 0.163 and 0.197 (95% interval: 0.160 to 0.200).
+**Conclusion:**  We are 90% (95%) confident that the in the larger population of people from whom these data were selected (e.g., patients with no primary care physician who were seeking help from a detoxification unit), the true proportion of people who get sick more often than others (as defined by a response of definitely true or mostly true) is between 0.163 and 0.197 (95% interval: 0.160 to 0.201).
 
 ***
 
