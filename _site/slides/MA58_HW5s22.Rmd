@@ -30,9 +30,6 @@ Suppose the true population proportion were p = 0.1. The figure below (see the p
 
 Describe how the distribution of the sample proportion, $\hat{p}$, changes as n becomes larger.
 
-```{r fig.cap = "From OpenIntro.", out.width = "50%", echo = FALSE}
-knitr::include_graphics("pdist.png")
-```
 
 #### Q3.  Area under the curve
 
