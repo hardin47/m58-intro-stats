@@ -74,7 +74,7 @@ schedule <- tribble(
   "",
   '<i class="fas fa-book-open"></i> study materials <br> (see Sakai)',
   "",
-  '<a href="https://m58-intro-stats.netlify.app/slides/lab7_m58_s22_ORCI.pdf" target = "_blank"><i class="fas fa-desktop"></i> Lab 7 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab7_m58_s22_ORCI.Rmd" target = "_blank"><i class="fas fa-desktop"></i> Lab 7 Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW7s22.pdf" target = "_blank"><i class="fas fa-laptop"></i> HW 7 pdf</a> (not due) <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW7s22.Rmd" target = "_blank"><i class="fas fa-laptop"></i> HW 7 Rmd</a> (not due)',
+  '<a href="https://m58-intro-stats.netlify.app/slides/lab7_m58_s22_RROR.pdf" target = "_blank"><i class="fas fa-desktop"></i> Lab 7 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab7_m58_s22_RROR.Rmd" target = "_blank"><i class="fas fa-desktop"></i> Lab 7 Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW7s22.pdf" target = "_blank"><i class="fas fa-laptop"></i> HW 7 pdf</a> (not due) <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW7s22.Rmd" target = "_blank"><i class="fas fa-laptop"></i> HW 7 Rmd</a> (not due)',
   
   
 '<font color = "#114B5F"><b>3.10.22</b></font>', '<font color = "#114B5F"><b>Exam 1</b></font>',"", 
