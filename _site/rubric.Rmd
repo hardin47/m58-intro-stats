@@ -9,49 +9,57 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-
-
-
-
-
-### Group Dynamic Report
-
-Ideally, all group members would be equally involved and able and committed to the project. In reality, it doesn't always work that way. Individuals should be rewarded fairly for their group efforts; it's inevitable that there will be variation in how high a priority people put on this class and how much effort they put into this project.
-
-To this end, I would like each of you (individually) to describe how well (or how poorly!) your project group worked together and shared the load. This can take the form of an email, to be submitted by the Friday May 13th. Also give some specific comments describing each member's overall effort. Were there certain group members who really put out exceptional effort and deserve special recognition? Conversely, were there group members who really weren't carrying their own weight? And then, at the end of your assessment, estimate the percentage of the total amount of work/effort done by each member. (Be sure your percentages sum to 100%!)
-
-For example, suppose you have 3 group members: X, Y and Z. In the event that each member contributed equally, you could assign:
-
-* 33.3% for member X, 33.3% for member Y, and 33.3% for member Z
-
-Or in case person Z did twice as much work as each other member, you could assign:
-
-* 25% for member X, 25% for member Y, and 50% for member Z
-
-Or if member Y didn't really do squat, you could assign:
-
-* 45% for member X, 10% for member Y, and 45% for member Z
-
-I will find a fair way to synthesize the (possibly conflicting) assessments within each group and fairly incorporate this assessment of effort and cooperation in each individual's overall grade. Don't pressure one another to give everyone glowing reports unless it's warranted, and don't feel pressured to share your reports with one another. Just be fair to yourselves and to one another. Let me know if you have any questions or if you run into any problems. Also keep in mind that GitHub tracks who is committing and who is not committing.
-
 # Assessment Criteria
 
-Your project will be evaluated based on the following criteria:
+## Final Report
 
-* Originality/Interest: Is the topic original, interesting, and substantial – or is it trite, pedantic, and trivial? How much creativity, initiative, and ambition did the group demonstrate? Is the basic question driving the project worth investigating, or is it obviously answerable without a data-based study?
-* Degree of Difficulty: How challenging was the project? Were the data particularly large, complex, and/or messy? Did the data come in an obscure format? Was a scraper or API necessary to acquire the data? Was a challenging visualization or applet constructed? Were any elements from outside the coursework necessary to complete the project?
-* Design: How well were the graphical elements of the project designed? Were they clunky or elegant? Was a truly original view of the data presented? Were any interactive elements usable?
-* Meaning/Analysis: Did we learn anything meaningful from this project? Are the chosen analyses appropriate for the variables/relationships under investigation, and are the assumptions underlying these analyses met? Are the analyses carried out correctly? Did the group make appropriate conclusions from the analyses, and are these conclusions justified?
-* Write-Up: How effectively does the write-up communicate the goals, procedures, and results of the study? Are the claims adequately supported? Does the writing style enhance what the group is trying to communicate? How well is it edited? Are the statistical claims justified? Are text and analyses effectively interwoven? Clear writing, correct spelling, and good grammar are important.
-* Oral Presentation: How effectively does the oral presentation communicate the goals, procedures, and results of the study? Do the slides help to illustrate the points being made by the speaker without distracting the audience? Do the presenters seem to be well-rehearsed? Did they properly budget their time? Do they appear to be confident in what they are saying? Are her arguments persuasive?
+### Introduction
 
-## Presentation Evaluation
+The introduction should include:
 
-The questions below will be used to evaluate the oral presentations.
+*  Brief background (Has an explanation been given for why the research was done? Why is the work important? What is its relevance?)
+*  Objective or Research question (Is the brief description of the hypothesis/goals and findings of the paper clearly stated for the reader?)
 
-### Peer rubric
+### Methods
 
-Each of you will evaluate the presentations of your peers keeping the following grading rubrics in mind.
+Methods should include description of:
+
+*  Study design (enough info for someone to replicate)
+*  Sampling method and eligibility criteria
+*  Treatment (i.e., explanatory variable)
+*  Outcome definition(s) (i.e., response variable)
+*  Sample size justification
+*  Statistical methods which were applied
+
+### Results
+
+Results should communicate / describe / summarize:
+
+*  Baseline data (including numbers analyzed – explain the explanatory variables, summarize the explanatory variables, plot the explanatory variables, etc.)
+*  Outcomes (explain the response variable, summarize the response variable, plot the response variable).  Is your treatment liable to do harm?  Are you worried about type I vs type II errors when considering the outcome?
+*  Each model is completely described
+*  Each figure / table is completely described
+*  Connections between analyses; e.g., between figures and model results
+*  Discussion
+*  Conclusion (i.e., answer to the research question), interpretation
+*  Limitations
+*  Ideas for future studies
+
+### Coverage, Clarity
+
+Full analysis should be clear, concise, well-organized, reproducible, and engaging:
+
+*  Dataset is complete, available, tidy (rows are observations, columns are variables, no exceptions)
+*  All information was provided
+*  Presentation was organized
+*  Presentation was clear, understandable
+*  Tables and figures were used well (axes labeled, etc.)
+*  Work is completely reproducible (the instructor must be able to run the .Rmd file on their own computer)  
+
+
+## Peer/self rubric
+
+Each of you will evaluate your own work and that of your peers keeping the following topics in mind.
 
    * Mastery of the material (understanding of the material is strong and well communicated)
    * Background, completeness (thoroughly explains all key points)
