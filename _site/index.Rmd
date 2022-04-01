@@ -133,7 +133,7 @@ schedule <- tribble(
 '<font color = "#114B5F"><b>4.28.22</b></font>', '<font color = "#114B5F"><b>Exam 2</b></font>',"", 
   '',
   '',
-  '', 
+  '<a href="https://m58-intro-stats.netlify.app/slides/param_est.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> when to use what</a>', 
 
 '<font color = "#114B5F"><b>5.3.22</b></font>', '<font color = "#114B5F"><b>Proj 4: Full draft</b></font>',"", 
   '','',
