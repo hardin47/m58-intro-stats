@@ -74,7 +74,7 @@ You'll need to create the prediction interval by hand (i.e., using R as a calcul
 Much of the material covered in the class so far has followed a consistent structure.  That is, interest is in parameters (numerical descriptions of the population) -- sometimes testing the values of the parameters, sometimes estimating (with confidence intervals) the values of the parameters.  Taking a step back to reflect on how the methods we've covered are similar and how they are different will help you understand all of the material.
 
 
-Below you will find a series of examples^[See the following handout for more inferential summaries: https://m58-intro-stats.netlify.app/slides/param_est.pdf].  For each example, 
+Below you will find a series of examples^[See the following handout for more inferential summaries: https://m58-intro-stats.netlify.app/slides/param_est_58.pdf].  For each example, 
 
 Assigned:  
 
