@@ -1,5 +1,5 @@
 ---
-title: 'Lab 10 - Math 58B: Inference on Two Means'
+title: 'Lab 10 - Math 58B: Inference on Two Means / Medians'
 author: "your name here"
 date: "due Tuesday April 12, 2022"
 output:
@@ -115,7 +115,7 @@ births14 %>%
 
 Using the distributions above, the CI for $\mu_1 - \mu_2$ can be taken directly from the bootstrap sampling distributions.
 
-We are 93% confident that the true difference in average weeks of gestation between mature versus younger moms is between -1.03 weeks and 0.066 weeks.  Note that because the confidence interval overlaps zero, we know that the value of zero is a plausible parameter.
+We are 93% confident that the true difference in average weeks of gestation between mature versus younger moms is between -0.468 weeks and 0.220 weeks.  Note that because the confidence interval overlaps zero, we know that the value of zero is a plausible parameter.
 
 
 ```{r eval = FALSE}
