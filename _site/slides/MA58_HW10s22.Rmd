@@ -1,0 +1,111 @@
+---
+title: "HW 10 -- Math 58B"
+author: "your name here"
+date: "due Thursday, April 14, 2022"
+output: pdf_document
+---
+
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(message=FALSE, warning=FALSE, fig.height=3, fig.width=5, 
+                      fig.align = "center", cache=TRUE)
+library(tidyverse)
+library(infer)
+library(mosaic)
+library(praise)
+```
+
+
+### Assignment Summary (Goals)
+practice creating & interpreting:
+
+* t-tests for two population means
+* t-intervals for the difference in population means 
+
+
+#### Q1. Learning Community Q
+
+Describe one thing you learned from someone in your learning community this week (it could be: content, logistical help, background material, R information, etc.)  1-3 sentences.
+
+
+#### Q2. Feeling Motivated?^[From ISCAM, HW 4.5]
+
+
+A psychology study investigated whether people display more creativity when they are thinking about intrinsic or extrinsic motivations. The subjects were 47 people with extensive experience with creative writing. They were randomly assigned to one of two groups: one group answered a survey about intrinsic motivations for writing (such as the pleasure of self-expression) and the other group answered a survey about extrinsic motivations (such as public recognition). Then all subjects were instructed to write a Haiku poem, and these poems were evaluated for creativity by a panel of judges. The researchers conjectured that subjects who were thinking about intrinsic motivations would display more creativity than subjects who were thinking about extrinsic motivations.  The creativity scores from this study are below and also in the file creativity.txt (http://www.rossmanchance.com/iscam2/data/creativity.txt).  
+
+(a)	Identify the explanatory and response variables. Also classify each as categorical or quantitative.  
+
+(b)	Is this an observational study or a randomized experiment? Explain how you know.  
+
+
+(c)	Create a boxplot of the scores broken down by the two groups (intrinsic and extrinsic motivation).  Comment on what they reveal about the researchers' conjecture.  
+
+```{r}
+creativity <- read_delim("http://www.rossmanchance.com/iscam2/data/creativity.txt", "\t") 
+```
+
+
+(d)	Report the mean of the creativity scores for each group.  Do these summary values indicate that the intrinsically motivated group did indeed display more creativity than the intrinsically motivated group?  
+
+
+(e) Use `t.test()` to complete a t-test to test whether there is a difference in the average creativity score for intrinsic vs extrinsic motivation.  Provide the hypotheses and p-values.
+
+The R code may look something like this (The period connects the dataset to the function, don't change the period, just change the name of the `data`set, the `response` variable, and the `explanatory` variable.)
+
+```
+data %>%
+  t.test(response ~ explanatory, data = .)
+```
+
+
+(f)	Changing the research question slightly, suppose you thought the intrinsic motivation would, on average, add 10 points to the creativity scores.  Specify the corresponding null and (two-sided) alternative hypotheses. 
+
+(g)	Use R to compute a 95% confidence interval comparing the two groups.  Include your output and interpret the interval.  [Hint: the 10 point addition is not including in building the CI.]
+
+(h)	Using the confidence interval, does 10 appear to be a plausible value for the difference in the underlying treatment means?  Explain your reasoning.  
+
+
+(i)	Summarize your conclusion in the context of this study. Include an explanation of the reasoning process behind your conclusion. Be sure to address the issues of causation (i.e., is a cause-and-effect conclusion warranted?) and generalizability (i.e., how broadly can you legitimately generalize your conclusion?), as well as the issue of statistical significance.  
+
+#### Q3. Low Carb Diet^[From ISCAM, HW 4.9]
+
+
+A study by Foster el al., reported in The New England Journal of Medicine (May, 2003), investigated the effectiveness of a popular "low-carb" diet. The researchers randomly assigned 63 obese men and women to either a low-carbohydrate, high-protein, high-fat (Atkins) diet or a low-calorie, high-carbohydrate, low-fat (conventional) diet. The mean amount of weight lost, as percent of body weight, after 3 months, 6 months and 12 months are shown in the table below.  
+
+(The baseline weight was carried forward in the case of missing values.)  
+
++---------+--------------+-----+------+-----+   
+| Time    | Diet         | n   | Mean | SD  |    
++=========+==============+=====+======+=====+  
+| 3       | Low-carb     | 33  | 6.8  | 5.0 |   
+| months  | Conventional | 30  | 2.7  | 3.7 |   
++---------+--------------+-----+------+-----+   
+| 6       | Low-carb     | 33  | 7.0  | 6.5 |   
+| months  | Conventional | 30  | 3.2  | 5.6 |   
++---------+--------------+-----+------+-----+   
+| 12      | Low-carb     | 33  | 4.4  | 6.7 |    
+| months  | Conventional | 30  | 2.5  | 6.3 |   
++---------+--------------+-----+------+-----+
+
+ 
+(a)	Is this an observational study or an experiment? Explain.  
+
+(b)	Identify the explanatory and response variables.  
+
+(c)	Report the relevant hypotheses (in symbols) for testing whether the mean weight losses differ significantly between the two diets. 
+
+(d)	Calculate the t-test statistic for testing these hypotheses at the 3-month point. Also report the p-value and your test decision at the .05 significance level.  [You'll have to do most of it by hand / using R as a calculator.  Also, use `xpt()` to calculate the p-value.]
+
+
+(e)	Repeat (d) for comparing the weight losses between the two diets at the 6-month point and again at the 12-month point.  
+
+
+(f)	Summarize your conclusions from these three tests. In particular, what do you notice about the trend in the p-value as time passes, and what does that reveal?  
+
+
+
+
+
+```{r}
+praise()
+```
