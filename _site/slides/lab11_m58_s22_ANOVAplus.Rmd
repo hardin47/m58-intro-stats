@@ -50,6 +50,7 @@ What are the observational units?  What are the variables?  Are the variables nu
 ### Q2. Plot the data
 
 Try making many different plots.  
+
 * Use new `geoms_XXX()`s. 
 * The usual ones: `geom_point()`, `geom_boxplot()`, `geom_jitter()`, `geom_bar()`,... 
 * New ones: `geom_smooth()` `geom_line()`, `geom_violin()` 
@@ -68,7 +69,6 @@ Try things like:
 ### Q4. ANOVA
 
 Run an ANOVA on the `body_mass_g` variable broken down by `species`.  That is, you'll be testing the following:
-
 $$H_0: \mu_{Adelie} = \mu_{Chinstrap} = \mu_{Gentoo}$$
 
 where $\mu$ represents the average `body_mass_g` for the entire species in the Palmer Station region of Antarctica.
