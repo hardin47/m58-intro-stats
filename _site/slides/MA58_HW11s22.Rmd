@@ -39,9 +39,9 @@ c. Simulate samples of size 20 from populations with equal means and (varying) s
 
 d. Do the error rates you found in a, b, and c vary by sample size (when sample sizes are equal)?  (That is, if the samples are still equal but much larger or much smaller, do you see the same variability in error rates?)
 
-e. Next repeat your simulation study with sample sizes 10, 20, and 30. How do results differ?
+e. Next repeat your simulation study with sample sizes $n_1 = 10, n_2 = 20, and n_3 = 30$. How do results differ?
 
-f. Finally, repeat the above simulation studies, but specify population means to be -3, 0, and 3, so that you study the power of the test under different conditions. (Remember that if the means are not all equal, then $H_A$ will be true.  So if you reject $H_0$ you will be measuring power and not the type I error rate.)  How does the power change with equal/unequal standard deviations and/or equal/unequal sample sizes?  Explain.
+f. Finally, repeat the above (both $n_1 = n_2 = n_3 = 20$ and $n_1=10, n_2=20, n_3=30$) simulation studies, but specify population means to be -3, 0, and 3, so that you study the power of the test under different conditions. (Remember that if the means are not all equal, then $H_A$ will be true.  So if you reject $H_0$ you will be measuring power and not the type I error rate.)  How does the power change with equal/unequal standard deviations and/or equal/unequal sample sizes?  Explain.
 
 
 #### Q3. Crash Tests
