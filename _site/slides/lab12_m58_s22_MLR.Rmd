@@ -265,6 +265,9 @@ proportion of students that filled out evaluations, class size, course level,
 number of professors, number of credits, average beauty rating, outfit, and 
 picture color.
 
+0. Learning Community Question  
+Describe one thing you learned from someone in your pod this week (it could be: content, logistical help, background material, R information, etc.)  1-3 sentences.
+
 1. Which variable would you expect to have the highest p-value in this model? 
     Why? *Hint:* Think about which variable would you expect to not have any 
     association with the professor score.  (Use your instincts, not anything technical about the data.)
