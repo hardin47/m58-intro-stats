@@ -33,6 +33,7 @@ Each week, follow the general process outlined below:
 
 - ISCAM: *Investigating Statistics, Concepts, Applications, and Methods* by Chance and Rossman http://www.rossmanchance.com/iscam3/.  Many of the examples come from ISCAM, a pdf of which can be purchased for $5.
    - <a href = "http://www.rossmanchance.com/applets/index2021.html" target = "_blank">ISCAM applets</a>
+   - <a href = "https://www.lock5stat.com/StatKey/" target = "_blank">StatKey (boostrapping) applets</a>
 
 ```{r}
 #| echo: false

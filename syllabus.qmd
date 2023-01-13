@@ -16,8 +16,8 @@ jo.hardin@pomona.edu
 
 #### Office Hours (Estella 2351)
 
-Mondays 1:30-3pm
-Tuesdays 2:30-3:30pm
+Mondays 1:30-3pm  
+Tuesdays 2:30-3:30pm  
 Wednesday 9-11am  
 Thursday 3-4pm   
 or by Appointment
@@ -84,7 +84,7 @@ I (like many people) am still in the process of learning about diverse perspecti
 
 - ISCAM: *Investigating Statistics, Concepts, Applications, and Methods* by Chance and Rossman http://www.rossmanchance.com/iscam3/.  Many of the examples come from ISCAM, a pdf of which can be purchased for $5.
    - <a href = "http://www.rossmanchance.com/applets/index2021.html" target = "_blank">ISCAM applets</a>
-
+   - <a href = "https://www.lock5stat.com/StatKey/" target = "_blank">StatKey (boostrapping) applets</a>
 
 :::{.callout-tip icon=false}
 ## Exam dates
@@ -119,13 +119,13 @@ I (like many people) am still in the process of learning about diverse perspecti
 #### Using R (through the RStudio IDE)
 
 R will be used for all homework assignments.
-You can use R on the Pomona server: https://rstudio.pomona.edu/ (All Pomona students will be able to log in immediately.
+You can use R on the Pomona server: <a href = "https://rstudio.pomona.edu/" target = "_blank">https://rstudio.pomona.edu/</a> (All Pomona students will be able to log in immediately.
 Non-Pomona students need to get Pomona login information.)
 
 Alternatively, feel free to download R onto your own computer.
-R is freely available at http://www.r-project.org/ and is already installed on college computers.
-Additionally, you are required to install RStudio and turn in all R assignments using RMarkdown. http://rstudio.org/.
-(You can use the LaTeX compiler at:  https://yihui.name/tinytex/)
+R is freely available at <a href = "http://www.r-project.org/" target = "_blank">http://www.r-project.org/</a> and is already installed on college computers.
+Additionally, you are required to install RStudio and turn in all R assignments using RMarkdown. <a href = "http://rstudio.org/" target = "_blank">http://rstudio.org/</a>.
+(You can use the LaTeX compiler at:  <a href = "https://yihui.name/tinytex/" target = "_blank">https://yihui.name/tinytex/</a>)
 
 
 #### Canvas
