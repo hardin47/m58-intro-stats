@@ -1,0 +1,56 @@
+name: "m58-intro-stats"
+
+project:
+  type: website
+  output-dir: _site
+  resources: 
+    - "slides/*"
+  
+website:
+  title: "Introduction to Biostatistics"
+  image: "images/st47s.png"
+  favicon: "images/favicon.ico"
+  site-url: https://m58-intro-stats.netlify.app/
+  repo-url: https://github.com/hardin47/m58-intro-stats
+  page-navigation: true
+  navbar:
+    title: "Introduction to Biostatistics"
+    description: |
+      Math 58B, Methods in Biostatistics, Pomona College
+    background: success
+    foreground: secondary
+    search: true
+    right:
+      - text: "Syllabus"
+        href: syllabus.qmd
+      - text: "Class Notes"
+        href: notes.qmd
+      - text: "Project"
+        href: project.qmd
+      - text: "Clicker Q"
+        href: clicker_study.qmd
+    logo: images/st47s.png
+    logo-href: https://m58-intro-stats.netlify.app/
+  page-footer:
+    left: |
+      [{{< fa book >}}](https://hardin47.netlify.app/research/)
+      <a href ="https://hardin47.netlify.app/resume.pdf" target = "_blank"><i class="fa-solid fa-bookmark"></i></a>
+      <a href="mailto:jo.hardin@pomona.edu" target = "_blank"><i class="fa-solid fa-at"></i></a>
+      <a href="https://scholar.google.com/citations?user=c5Y77poAAAAJ&hl=en" target = "_blank"><i class="fa-brands fa-google-scholar"></i></a>
+      <a href="https://www.researchgate.net/scientific-contributions/Johanna-Hardin-9764530" target = "_blank"><i class="fa-brands fa-researchgate"></i></a>    
+      <a href="https://mobile.twitter.com/jo_hardin47" target = "_blank"><i class ="fa-brands fa-twitter"></i></a>
+      <a href="https://github.com/hardin47" target = "_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jo-hardin-b91a4b55" target = "_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+    center:
+      - text: |
+          <br> © Jo Hardin, 2023 -- <a href = "mailto: jo.hardin@pomona.edu">jo.hardin@pomona.edu</a> -- <a href="https://hardin47.netlify.app/">https://hardin47.netlify.app/</a> <br> <br>
+          Math 58B -- Introduction to Biostatistics -- Pomona College, Claremont, CA <br>
+license: "CC BY"
+format:
+  html:
+    theme: 
+      - cosmo
+      - colors.scss
+
+
+

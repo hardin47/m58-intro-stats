@@ -112,7 +112,7 @@ Note that if we keep (using `<-`) the output of `chisq.test`, we can pull out th
 
 The only change to previous randomization tests with this syntax (e.g., `type = "permute"`) is that the statistic is now specified as `stat = "Chisq"`.
 
-As with the mathematical chi-squared test, for the permutation test: state the hypotheses, find the observed $X^2$ value, calculate the p-value, and provide a conclusion in words of the problem.
+As with the mathematical chi-squared test, for the randomization test: state the hypotheses, find the observed $X^2$ value, calculate the p-value, and provide a conclusion in words of the problem.
 
 Note: although the two tests use the same statistic ($X^2$), the name of the test comes from the mathematical distribution which is called the "chi-squared distribution."  When we use the computational method (and not the mathematical distribution), we no longer call it a chi-sq test.  For ease in understanding, the developers of the **infer** package that we use call the $X^2$ statistic "Chisq" because it is the same statistic used in the Chi-sq test.
 

@@ -1,0 +1,42 @@
+---
+---
+<!-- the two formats are html and revealjs -->
+
+# Clicker Q
+
+to go with **Practicing Statistics** by Kuiper & Sklar.  Math 150 - Methods in Biostatistics.
+
+```{=html}
+<style>
+.reveal ol ol {
+   list-style-type: lower-alpha;
+}
+</style>
+```
+
+
+---
+
+1. The Central Limit Theorem (CLT) says:[^1]
+   a. The sample average (statistic) converges to the true   average (parameter)
+   b. The sample average (statistic) converges to some point
+   c. The distribution of the sample average (statistic) converges to a normal distribution
+   d. The distribution of the sample average (statistic) converges to some distribution
+   e. I have no idea what the CLT says
+   
+
+[^1]:  c. The distribution of the sample average (statistic) converges to a normal distribution
+
+---
+
+2. Why do we use a t distribution (instead of a z / normal distribution) in the t-test?[^2]
+   a. the technical conditions don’t hold
+   b. the means are quite variable
+   c. we like the letter t
+   d. we have two samples
+   e. we don’t know the true standard deviation parameter
+
+[^2]:  e. we don’t know the true standard deviation parameter
+
+---
+

@@ -1,0 +1,17 @@
+---
+title: "Class Notes"
+description: |
+  Daily class notes for Math 58B, Introduction to Biostatistics, Pomona College
+format: html
+---
+
+
+Class notes can be found at <a href="http://st47s.com/Math58/Notes/" target="_blank">http://st47s.com/Math58/Notes/</a>.
+
+<p>   </p>
+
+
+:::{.column-page}
+<iframe src="https://st47s.com/Math58/Notes/" title="Class Notes for Math 58B" width="1000" height="500" data-external="1"></iframe>
+:::
+

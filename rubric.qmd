@@ -1,0 +1,69 @@
+---
+title: "Rubric for Semester Project"
+description: |
+  Assessment will be based on the presentation and the final report. Your group itself, your class peers, and your professor will all provide feedback on the success of the project.
+format: html
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Assessment Criteria
+
+The <a href = "https://m58-intro-stats.netlify.app/slides/Rubric_m58_s22_Islands.docx" target = "_blank">grading rubric</a> tries to lay out the main aspects of the project inluding the analysis parts and the communication parts.  Please ask if you have any questions.
+
+## Final Report
+
+### Introduction
+
+The introduction should include:
+
+*  Brief background (Has an explanation been given for why the research was done? Why is the work important? What is its relevance?)
+*  Objective or Research question (Is the brief description of the hypothesis/goals and findings of the paper clearly stated for the reader?)
+
+### Methods
+
+Methods should include description of:
+
+*  Study design (enough info for someone to replicate)
+*  Sampling method and eligibility criteria
+*  Treatment (i.e., explanatory variable)
+*  Outcome definition(s) (i.e., response variable)
+*  Sample size justification
+*  Statistical methods which were applied
+
+### Results
+
+Results should communicate / describe / summarize:
+
+*  Baseline data (including numbers analyzed – explain the explanatory variables, summarize the explanatory variables, plot the explanatory variables, etc.)
+*  Outcomes (explain the response variable, summarize the response variable, plot the response variable).  Is your treatment liable to do harm?  Are you worried about type I vs type II errors when considering the outcome?
+*  Each model is completely described
+*  Each figure / table is completely described
+*  Connections between analyses; e.g., between figures and model results
+*  Discussion
+*  Conclusion (i.e., answer to the research question), interpretation
+*  Limitations
+*  Ideas for future studies
+
+### Coverage, Clarity
+
+Full analysis should be clear, concise, well-organized, reproducible, and engaging:
+
+*  Dataset is complete, available, tidy (rows are observations, columns are variables, no exceptions)
+*  All information was provided
+*  Presentation was organized
+*  Presentation was clear, understandable
+*  Tables and figures were used well (axes labeled, etc.)
+*  Work is completely reproducible (the instructor must be able to run the .Rmd file on their own computer)  
+
+
+## Peer/self rubric
+
+Each of you will evaluate your own work and that of your peers keeping the following topics in mind.
+
+   * Mastery of the material (understanding of the material is strong and well communicated)
+   * Background, completeness (thoroughly explains all key points)
+   * Presentation evaluation (organized, communicates effectively with the audience)
+

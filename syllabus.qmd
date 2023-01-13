@@ -1,0 +1,218 @@
+---
+title: "syllabus"
+format: html
+---
+
+# Introduction to Biostatistics
+## Math 58B, Spring 2023
+
+Class: Tuesdays & Thursdays, 9:35 - 10:50 am  
+Lab: Fridays, 11-11:50am  
+
+Jo Hardin  
+2351 Estella  
+jo.hardin@pomona.edu  
+
+
+#### Office Hours (Estella 2351)
+
+Mondays 1:30-3pm
+Tuesdays 2:30-3:30pm
+Wednesday 9-11am  
+Thursday 3-4pm   
+or by Appointment
+
+## Mentor Sessions: (Estella 2113)     
+TBD
+
+```{r fig.cap = "Artwork by @allison_horst.", fig.alt = "Monsters going through the phases of writing code.", preview = TRUE, echo = FALSE}
+knitr::include_graphics("images/type_2_errors.png")
+```
+
+
+## The course 
+
+**Introduction to Biostatistics** is an introduction to statistical ideas using R. We will cover the majority of statistical methods which are used in standard analyses (e.g., t-tests, chi-squared analysis, regression, confidence intervals, binomial tests, etc.). The main inferential techniques will be covered using both theoretical approximations (e.g., the central limit theorem) as well as computational methods (e.g., randomization tests and bootstrapping). Focus will be on understanding the methods and interpreting results. 
+
+
+:::{.callout-tip icon=false}
+## Anonymous Feedback
+
+As someone who is, myself, constantly learning and growing in many ways, I welcome your feedback about the course, the classroom dynamics, or anything else you'd like me to know.  There is a link to an anonymous feedback form on the landing page of our Canvas webpage.  Please provide me with feedback at any time!  
+:::
+
+## Student Learning Outcomes:
+By the end of the semester, students will be able to do the following:
+
+* Given a study, identify population, sample, parameter, statistic, observational unit, and variable.
+* Describe the differences between, benefits of each, and conclusions which can be drawn in observational studies versus experiments.
+* Given a dataset and research query, create an appropriate figure in R.
+* Given a dataset and research query, compute appropriate statistics in R.
+* Describe the difference between the distribution of a sample of data and a sampling distribution of a particular statistic.
+* For a particular research question, identify whether the task requires descriptive analysis / model, graphic, confidence interval, or hypothesis test,
+* Apply the empirical rule to as an approximation to confidence intervals and hypothesis testing in settings of means and proportions.
+* Be able to describe in words what a p-value is and what it is not.
+* Write down appropriate null and alternative hypotheses, and choose the correct analysis technique.
+* Run the hypothesis test / confidence interval analysis in R.
+* Identify when it is and when it is not appropriate to summarize the relationship between two variables using a least squares line.
+Describe the optimization procedure the leads to a least squares fit (although not necessarily to do the calculations).
+* Provide the settings in which a causal claim is warranted, and when a strong correlation is possibly due to spurious relationships.
+* Use a regression line to make predictions and distinguish between a prediction interval for an independent response as compared to a confidence interval for the slope parameter.
+* For each descriptive analysis, visualization, confidence interval, or hypothesis test, in words communicate the conclusion of the analysis in the original context of the data.
+* Use R Markdown to run reproducible analyses that include all aspects of the data analysis.
+
+
+
+## Inclusion Goals^[adapted from Monica Linden, Brown University]
+
+In an ideal world, science would be objective. However, much of science is subjective and is historically built on a small subset of privileged voices. In this class, we will make an effort to recognize how science (and statistics!) has played a role in both understanding diversity as well as in promoting systems of power and privilege. I acknowledge that there may be both overt and covert biases in the material due to the lens with which it was written, even though the material is primarily of a scientific nature. Integrating a diverse set of experiences is important for a more comprehensive understanding of science. I would like to discuss issues of diversity in statistics as part of the course from time to time.
+
+Please contact me if you have any suggestions to improve the quality of the course materials.
+
+Furthermore, I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, etc.) To help accomplish this:
+
+* If you have a name and/or set of pronouns that differ from those that appear in your official records, please let me know!
+* If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me.  You can also relay information to me via your mentors.  I want to be a resource for you. If you prefer to speak with someone outside of the course, the math liaisons, Dean of Students, or QSC staff are all excellent resources.
+
+I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it.  As a participant in course discussions, you should also strive to honor the diversity of your classmates.
+
+## Technical Details
+
+##### Texts:  
+
+- IMS: *Introduction to Modern Statistics* by Çetinkaya-Rundel and Hardin, https://openintro-ims.netlify.app/.
+
+- ISCAM: *Investigating Statistics, Concepts, Applications, and Methods* by Chance and Rossman http://www.rossmanchance.com/iscam3/.  Many of the examples come from ISCAM, a pdf of which can be purchased for $5.
+   - <a href = "http://www.rossmanchance.com/applets/index2021.html" target = "_blank">ISCAM applets</a>
+
+
+:::{.callout-tip icon=false}
+## Exam dates
+
+* 3/10/22 (Thursday) Exam 1
+* 3/29/22 (Tuesday) Project 1: Pilot
+* 4/5/22 (Tuesday) Project 2: Power
+* 4/19/22 (Tuesday) Project 3: Analysis
+* 4/28/22 (Thursday) Exam 2
+* 5/3/22 (Tuesday) Project 4: Full draft
+* 5/6 or 13/22 (Friday) Project presentation
+* 5/13/22 (Friday) Project 5: Final (edited) Project
+:::
+
+#### R links:
+
+* <a href = "http://cran.r-project.org/web/packages/mosaic/vignettes/V1MinimalR.pdf" target = "_blank">Enough R</a>
+* <a href = "https://pages.pomona.edu/~jsh04747/courses/RTutorial.pdf" target = "_blank">R tutorial</a>
+* Great tutorials through the <a href = "https://ourcodingclub.github.io/tutorials.html" target = "_blank">Coding Club</a>
+* A true beginner's <a href = "https://spielmanlab.github.io/introverse/index.html" target = "_blank">introduction to the tidyverse</a>, the **introverse**.
+* <a href="https://education.rstudio.com/learn/" target="_blank">for a good start</a> to R in general
+* A fantastic <a href="https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/" target="_blank">ggplot2 tutorial</a>
+* Great tutorials through the <a href="https://ourcodingclub.github.io/tutorials/" target="_blank">Coding Club</a>
+* <a href="http://www.rseek.org/" target="_blank">Google for R</a>
+* some <a href = "http://st47s.com/Math152/Notes/rfunc.html" target="_blank">R ideas</a> that I wrote up 
+* Incredibly helpful <a href="https://www.rstudio.com/resources/cheatsheets/" target="_blank">cheatsheets</a> from RStudio.
+   * <a href="https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf" target="_blank">data wrangling</a>
+   * <a href="https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf" target="_blank">ggplot2</a>
+   * <a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf" target="_blank">R Markdown</a>
+   * <a href="https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf" target="_blank">RStudio IDE</a>
+
+#### Using R (through the RStudio IDE)
+
+R will be used for all homework assignments.
+You can use R on the Pomona server: https://rstudio.pomona.edu/ (All Pomona students will be able to log in immediately.
+Non-Pomona students need to get Pomona login information.)
+
+Alternatively, feel free to download R onto your own computer.
+R is freely available at http://www.r-project.org/ and is already installed on college computers.
+Additionally, you are required to install RStudio and turn in all R assignments using RMarkdown. http://rstudio.org/.
+(You can use the LaTeX compiler at:  https://yihui.name/tinytex/)
+
+
+#### Canvas
+
+This course uses Canvas as the main learning management system. The Canvas login is <a href = "http://canvas.pomona.edu/" target = "_blank">http://canvas.pomona.edu/</a>.
+If you haven't used Canvas before, I recommend bookmarking <a href = "https://community.canvaslms.com/t5/Student-Guide/tkb-p/student" target = "_blank">Canvas Student Guides</a> and <a href = "https://community.canvaslms.com/t5/Video-Guide/tkb-p/videos#student-videos" target = "_blank">Canvas Student Videos</a> for easy reference to tips and tutorials.
+If you run into an issue with Canvas, help is available.
+
+* From anywhere in Canvas, select the Help button, located in the blue Global Navigation menu on the left.
+   - Click on Pomona Service Desk - Canvas Support to report a problem by submitting a service request ticket. Be sure to include "Canvas Issue" in your subject line.
+   - For additional assistance, you can click on Ask Your Instructor or simply send me an email.
+   
+Please be proactive and reach out for help as soon as possible to resolve the issue you are experiencing.
+
+## Important Features
+
+#### Prerequisites:
+
+The prerequisites for this class are Introductory Statistics (Math 58 or equivalent) and completion of one semester of calculus. We rely heavily on these prerequisites, and students with no background in statistics or very light mathematics background will find themselves trying to catch up throughout the semester. You should be familiar with topics such as probability, confidence intervals, hypothesis testing, p-values, linear regression.
+
+#### Homework:
+
+Homework will be assigned from the text and due every Wednesday at 11:59pm.
+One homework grade will be automatically dropped, so there are no late assignments.
+Homework will be turned in via Gradescope on Canvas.
+
+##### HW Grading
+
+Homework assignments will be graded out of 5 points, which are based on a combination of accuracy and effort. Below are rough guidelines for grading.
+
+[5] All problems completed with detailed solutions provided and 75% or more of the problems are fully correct. Additionally, there are no extraneous messages, warnings, or printed lists of numbers.  
+[4] All problems completed with detailed solutions and 50-75% correct; OR close to all problems completed and 75%-100% correct. **Or all problems are completed and there are extraneous messages, warnings, or printed lists of numbers.**  
+[3] Close to all problems completed with less than 75% correct.  
+[2] More than half but fewer than all problems completed and > 75% correct.  
+[1] More than half but fewer than all problems completed and < 75% correct; OR less than half of problems completed.  
+[0] No work submitted, OR half or less than half of the problems submitted and without any detail/work shown to explain the solutions. 
+
+#### Projects:
+
+There will be a semester long group project. Your task is to use data to tell us something interesting. This project is deliberately open-ended to allow you to fully explore your creativity. There are three main rules that must be followed: (1) data centered, (2) tell us something, (3) do something new. The project information is available here: [Math 58B Semester Project](/project/)
+
+#### Participation:
+
+* This class will be interactive, and your participation is expected (every day in class). Although notes will be posted, your participation is an integral part of the in-class learning process.
+
+* In class: after answering one question, wait until 5 other people have spoken before answering another question. [Feel free to ask as many questions as often as you like!]
+
+#### Academic Honesty:
+
+Throughout the semester, you will be challenged, and you may find yourself stuck.
+Every single one of us has been there, I promise.
+Below, I've provided Pomona's academic honesty policy.  But before the policy, I've given some thoughts on cheating which I have taken from Nick Ball's CHEM 147 Collective (thank you, Prof Ball!).
+Prof Ball gives us all something to think about when we are learning in a classroom as well as on our journey to become scientists and professionals:
+
+:::{.callout-tip icon=false}
+## Why Cheat?
+There are many known reasons why we may feel the need to "cheat" on problem sets or exams:
+
+* An academic environment that values grades above learning.
+* Financial aid is critical for remaining in school that places undue pressure on maintaining a high GPA.
+* Navigating school, work, and/or family obligations that  have diverted focus from class.
+* Challenges balancing coursework and mental health.
+* Balancing academic, family, peer, or personal issues.
+
+Being accused of cheating – whether it has occurred or not – can be devastating for students. The college requires me to respond to potential academic dishonesty with a process that is very long and damaging. As your instructor, I care about you and want to offer alternatives to prevent us from having to go through this process.
+:::
+
+If you find yourself in a situation where "cheating" seems like the only option, please come talk to me.  We will figure this out together.
+
+Pomona College is an academic community, all of whose members are expected to abide by ethical standards both in their conduct and in their exercise of responsibilities toward other members of the community. The college expects students to understand and adhere to basic standards of honesty and academic integrity. These standards include, but are not limited to, the following:
+
+* In projects and assignments prepared independently, students never represent the ideas or the language of others as their own.
+* Students do not destroy or alter either the work of other students or the educational resources and materials of the College.
+* Students neither give nor receive assistance in examinations.
+* Students do not take unfair advantage of fellow students by representing work completed for one course as original work for another or by deliberately disregarding course rules and regulations.
+* In laboratory or research projects involving the collection of data, students accurately report data observed and do not alter these data for any reason.
+
+
+#### Advice:
+
+Please email and / or set up a time to talk if you have any questions about or difficulty with the material, the computing, or the course.  Talk to me as soon as possible if you find yourself struggling. The material will build on itself, so it will be much easier to catch up if the concepts get clarified earlier rather than later.  This semester is going to be fun.  Let's do it.
+
+
+:::{.callout-tip icon=false}
+## Grading
+  * 20% Homework
+  * 50% Midterms 
+  * 25% Group Project & Presentation 
+  * 5% Class Participation 
+:::
