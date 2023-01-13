@@ -2,6 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://m58-intro-stats.netlify.app/index.html</loc>
-    <lastmod>2023-01-13T22:13:03.854Z</lastmod>
+    <lastmod>2023-01-13T22:22:27.175Z</lastmod>
+  </url>
+  <url>
+    <loc>https://m58-intro-stats.netlify.app/project.html</loc>
+    <lastmod>2023-01-13T22:21:53.154Z</lastmod>
+  </url>
+  <url>
+    <loc>https://m58-intro-stats.netlify.app/roles.html</loc>
+    <lastmod>2023-01-13T22:21:31.072Z</lastmod>
+  </url>
+  <url>
+    <loc>https://m58-intro-stats.netlify.app/about.html</loc>
+    <lastmod>2023-01-13T22:21:27.761Z</lastmod>
+  </url>
+  <url>
+    <loc>https://m58-intro-stats.netlify.app/syllabus.html</loc>
+    <lastmod>2023-01-13T22:21:29.487Z</lastmod>
+  </url>
+  <url>
+    <loc>https://m58-intro-stats.netlify.app/rubric.html</loc>
+    <lastmod>2023-01-13T22:21:41.778Z</lastmod>
+  </url>
+  <url>
+    <loc>https://m58-intro-stats.netlify.app/clicker_study.html</loc>
+    <lastmod>2023-01-13T22:22:10.338Z</lastmod>
+  </url>
+  <url>
+    <loc>https://m58-intro-stats.netlify.app/clicker.html</loc>
+    <lastmod>2023-01-13T22:21:58.314Z</lastmod>
+  </url>
+  <url>
+    <loc>https://m58-intro-stats.netlify.app/clicker_slides.html</loc>
+    <lastmod>2023-01-13T22:22:04.439Z</lastmod>
   </url>
 </urlset>
