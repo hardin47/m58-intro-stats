@@ -95,14 +95,14 @@
     "href": "clicker_study.html",
     "title": "Introduction to Biostatistics",
     "section": "",
-    "text": "Clicker Q\nto go with Introduction to Modern Statistics by Çentinkaya-Rundel & Hardin. Math 58B - Introduction to Biostatistics.\n\n\n\n\nIf 16 infants with no genuine preference choose 16 toys, what is the most likely number of “helping” toys that will be chosen?1\n\n\n4\n7\n8\n9\n10\n\n\n\n\nWhy do we use a t distribution (instead of a z / normal distribution) in the t-test?2\n\nthe technical conditions don’t hold\nthe means are quite variable\nwe like the letter t\nwe have two samples\nwe don’t know the true standard deviation parameter\n\n\n\n\n\n\n\n\nFootnotes\n\n\n\n8\n\n↩︎\n\nwe don’t know the true standard deviation parameter\n\n↩︎\n\nReusehttps://creativecommons.org/licenses/by/4.0/"
+    "text": "Clicker Q\nto go with Introduction to Modern Statistics by Çentinkaya-Rundel & Hardin. Math 58B - Introduction to Biostatistics.\n\n\n\nIf 16 infants with no genuine preference choose 16 toys, what is the most likely number of “helping” toys that will be chosen?1\n\n4\n7\n8\n9\n10\n\n\n\n\nHow likely is it that exactly 8 helpers will be chosen (if there is no preference)?2\n\n0-15%\n16-30%\n31-49%\n50%\n51-100%\n\n\n\n\nWhat if we flipped a coin 160 times? What percent of the time will the simulation flip exactly 80 heads?3\n\n0-15%\n16-30%\n31-49%\n50%\n51-100%\n\n\n\n\n\n\n\nFootnotes\n\n\n\n8\n\n↩︎\n\n0.196 (19.6% of the time)\n\n↩︎\n\n0.063 (6.3% of the time)\n\n↩︎\n\nReusehttps://creativecommons.org/licenses/by/4.0/"
   },
   {
     "objectID": "clicker.html",
     "href": "clicker.html",
     "title": "Introduction to Biostatistics",
     "section": "",
-    "text": "Clicker Q\nto go with Introduction to Modern Statistics by Çentinkaya-Rundel & Hardin. Math 58B - Introduction to Biostatistics.\n\n\n\n\nIf 16 infants with no genuine preference choose 16 toys, what is the most likely number of “helping” toys that will be chosen?1\n\n\n4\n7\n8\n9\n10\n\n\n\n\nWhy do we use a t distribution (instead of a z / normal distribution) in the t-test?2\n\nthe technical conditions don’t hold\nthe means are quite variable\nwe like the letter t\nwe have two samples\nwe don’t know the true standard deviation parameter\n\n\n\n\n\n\n\n\nFootnotes\n\n\n\n8\n\n↩︎\n\nwe don’t know the true standard deviation parameter\n\n↩︎\n\nReusehttps://creativecommons.org/licenses/by/4.0/"
+    "text": "Clicker Q\nto go with Introduction to Modern Statistics by Çentinkaya-Rundel & Hardin. Math 58B - Introduction to Biostatistics.\n\n\n\nIf 16 infants with no genuine preference choose 16 toys, what is the most likely number of “helping” toys that will be chosen?1\n\n4\n7\n8\n9\n10\n\n\n\n\nHow likely is it that exactly 8 helpers will be chosen (if there is no preference)?2\n\n0-15%\n16-30%\n31-49%\n50%\n51-100%\n\n\n\n\nWhat if we flipped a coin 160 times? What percent of the time will the simulation flip exactly 80 heads?3\n\n0-15%\n16-30%\n31-49%\n50%\n51-100%\n\n\n\n\n\n\n\nFootnotes\n\n\n\n8\n\n↩︎\n\n0.196 (19.6% of the time)\n\n↩︎\n\n0.063 (6.3% of the time)\n\n↩︎\n\nReusehttps://creativecommons.org/licenses/by/4.0/"
   },
   {
     "objectID": "notes.html",
