@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://m58-intro-stats.netlify.app/index.html</loc>
-    <lastmod>2023-01-13T22:28:52.105Z</lastmod>
+    <lastmod>2023-01-15T18:42:56.515Z</lastmod>
   </url>
   <url>
     <loc>https://m58-intro-stats.netlify.app/project.html</loc>
-    <lastmod>2023-01-13T22:21:53.154Z</lastmod>
+    <lastmod>2023-01-15T18:42:21.142Z</lastmod>
   </url>
   <url>
     <loc>https://m58-intro-stats.netlify.app/roles.html</loc>
-    <lastmod>2023-01-13T22:21:31.072Z</lastmod>
+    <lastmod>2023-01-15T18:42:30.261Z</lastmod>
   </url>
   <url>
     <loc>https://m58-intro-stats.netlify.app/about.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://m58-intro-stats.netlify.app/syllabus.html</loc>
-    <lastmod>2023-01-13T22:27:32.696Z</lastmod>
+    <lastmod>2023-01-15T18:42:24.760Z</lastmod>
   </url>
   <url>
     <loc>https://m58-intro-stats.netlify.app/rubric.html</loc>
@@ -35,5 +35,9 @@
   <url>
     <loc>https://m58-intro-stats.netlify.app/clicker_slides.html</loc>
     <lastmod>2023-01-13T22:22:04.439Z</lastmod>
+  </url>
+  <url>
+    <loc>https://m58-intro-stats.netlify.app/notes.html</loc>
+    <lastmod>2023-01-15T18:42:42.818Z</lastmod>
   </url>
 </urlset>

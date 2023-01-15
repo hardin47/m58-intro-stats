@@ -17,14 +17,16 @@ knitr::include_graphics("images/project.png")
 
 # Project Instructions
 
-Important dates:
+:::{.callout-tip icon=false}
+## Important dates
 
-* 3/29/22 (Tuesday) Project 1: Pilot  
-* 4/5/22 (Tuesday) Project 2: Power  
-* 4/19/22 (Tuesday) Project 3: Preliminary Analysis  
-* 5/3/22 (Tuesday) Project 4: Full draft  
-* 5/6 or 13/22 (Friday) Project presentation  
-* 5/13/22 (Friday) Project 5: Final (edited) Project  
+* 3/28/23 (Tuesday) Project 1: Pilot
+* 4/4/23 (Tuesday) Project 2: Power
+* 4/18/23 (Tuesday) Project 3: Analysis
+* 5/2/23 (Tuesday) Project 4: Full draft
+* 5/4 or 12/23 (Friday) Project presentation
+* 5/12/23 (Friday) Project 5: Final (edited) Project
+::: 
 
 ## Pilot
 

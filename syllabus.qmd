@@ -80,23 +80,23 @@ I (like many people) am still in the process of learning about diverse perspecti
 
 ##### Texts:  
 
-- IMS: *Introduction to Modern Statistics* by Çetinkaya-Rundel and Hardin, https://openintro-ims.netlify.app/.
+- IMS: <a href = "https://openintro-ims.netlify.app/" target = "_blank"><b>Introduction to Modern Statistics</b></a> by Çetinkaya-Rundel and Hardin.
 
-- ISCAM: *Investigating Statistics, Concepts, Applications, and Methods* by Chance and Rossman http://www.rossmanchance.com/iscam3/.  Many of the examples come from ISCAM, a pdf of which can be purchased for $5.
+- ISCAM: <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><b>Investigating Statistics, Concepts, Applications, and Methods</b></a> by Chance and Rossman.  Many of the examples come from ISCAM, a pdf of which can be purchased for $5.
    - <a href = "http://www.rossmanchance.com/applets/index2021.html" target = "_blank">ISCAM applets</a>
    - <a href = "https://www.lock5stat.com/StatKey/" target = "_blank">StatKey (boostrapping) applets</a>
 
 :::{.callout-tip icon=false}
-## Exam dates
+## Important dates
 
-* 3/10/22 (Thursday) Exam 1
-* 3/29/22 (Tuesday) Project 1: Pilot
-* 4/5/22 (Tuesday) Project 2: Power
-* 4/19/22 (Tuesday) Project 3: Analysis
-* 4/28/22 (Thursday) Exam 2
-* 5/3/22 (Tuesday) Project 4: Full draft
-* 5/6 or 13/22 (Friday) Project presentation
-* 5/13/22 (Friday) Project 5: Final (edited) Project
+* 3/9/23 (Thursday) Exam 1
+* 3/28/23 (Tuesday) Project 1: Pilot
+* 4/4/23 (Tuesday) Project 2: Power
+* 4/18/23 (Tuesday) Project 3: Analysis
+* 4/27/23 (Thursday) Exam 2
+* 5/2/23 (Tuesday) Project 4: Full draft
+* 5/4 or 12/23 (Friday) Project presentation
+* 5/12/23 (Friday) Project 5: Final (edited) Project
 :::
 
 #### R links:
@@ -109,7 +109,7 @@ I (like many people) am still in the process of learning about diverse perspecti
 * A fantastic <a href="https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/" target="_blank">ggplot2 tutorial</a>
 * Great tutorials through the <a href="https://ourcodingclub.github.io/tutorials/" target="_blank">Coding Club</a>
 * <a href="http://www.rseek.org/" target="_blank">Google for R</a>
-* some <a href = "http://st47s.com/Math152/Notes/rfunc.html" target="_blank">R ideas</a> that I wrote up 
+* some <a href = "http://st47s.com/Math58/Notes/rfunc.html" target="_blank">R ideas</a> that I wrote up 
 * Incredibly helpful <a href="https://www.rstudio.com/resources/cheatsheets/" target="_blank">cheatsheets</a> from RStudio.
    * <a href="https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf" target="_blank">data wrangling</a>
    * <a href="https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf" target="_blank">ggplot2</a>
