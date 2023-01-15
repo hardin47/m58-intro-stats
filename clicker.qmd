@@ -132,19 +132,27 @@ The value of the correlation, r, is:[^11]
     (c)	-0.5 < r <  0.5
     (d)	 0.5 < r <  0.9
     (e)	 0.9 < r <  1
-    
+
+
+[^11]: c. r = -0.416    
+---
+
 ```{r}
-#| echo = FALSE
+#| echo: false
+#| warning: false
+#| message: false
+#| 
 x_value <- c(rep(17, 25), rep(18, 25), rep(19, 25), rep(20, 25), 1)
 y_value <- c(rep(1, 25), rep(2, 25), rep(3, 25), rep(4, 25), 20)
 
 #cor(x_value, y_value)
-
-plot(x_value, y_value, pch = 18)
+library(ggplot2)
+ggplot(data.frame(x_value, y_value)) + 
+  geom_point(aes(x = x_value, y = y_value)) +
+  theme(aspect.ratio = 1)
 ```
 
 
-[^11]: c. r = -0.416
 
 ---
 
