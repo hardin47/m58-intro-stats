@@ -4,7 +4,7 @@
 
 # Clicker Q
 
-to go with **Practicing Statistics** by Kuiper & Sklar.  Math 150 - Methods in Biostatistics.
+to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.  Math 58B - Introduction to Biostatistics.
 
 ```{=html}
 <style>
@@ -17,15 +17,15 @@ to go with **Practicing Statistics** by Kuiper & Sklar.  Math 150 - Methods in B
 
 ---
 
-1. The Central Limit Theorem (CLT) says:[^1]
-   a. The sample average (statistic) converges to the true   average (parameter)
-   b. The sample average (statistic) converges to some point
-   c. The distribution of the sample average (statistic) converges to a normal distribution
-   d. The distribution of the sample average (statistic) converges to some distribution
-   e. I have no idea what the CLT says
-   
+1. 1.	If 16 infants with **no genuine preference** choose 16 toys, what is the most likely number of "helping" toys that will be chosen?[^1]
+   (a)	4
+   (b)	7
+   (c)	8
+   (d)	9
+   (e)	10
 
-[^1]:  c. The distribution of the sample average (statistic) converges to a normal distribution
+
+[^1]:  c.	8
 
 ---
 
