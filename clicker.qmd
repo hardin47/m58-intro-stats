@@ -127,11 +127,12 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 11. Perfect Correlation... if not for a single outlier  
 n = 101 observations:  1 observation in top left, 25 observations in each in of the points near the bottom right.    
 The value of the correlation, r, is:[^11]
-    (a)	-1 < r < -.9
-    (b)	-.9 < r < -.5
-    (c)	-.5 < r <  .5
-    (d)	.5 < r < .9
-    (e)	.9 < r < 1
+    (a)	-1   < r < -0.9
+    (b)	-0.9 < r < -0.5
+    (c)	-0.5 < r <  0.5
+    (d)	 0.5 < r <  0.9
+    (e)	 0.9 < r <  1
+    
 ```{r}
 #| echo = FALSE
 x_value <- c(rep(17, 25), rep(18, 25), rep(19, 25), rep(20, 25), 1)
@@ -144,6 +145,78 @@ plot(x_value, y_value, pch = 18)
 
 
 [^11]: c. r = -0.416
+
+---
+
+12. The sum of residuals from the sample mean (no X):[^12] 
+$$\sum_{i=1}^n(Y_i - \overline{Y})$$
+    (a) is positive
+    (b) is negative
+    (c) is zero
+    (d) is different for every dataset
+
+[^12]: c. always zero
+
+---
+
+13. A good measure of how well the prediction (of the sample mean) fits the data is:[^13]
+    (a) $\sum_{i=1}^n(Y_i - \overline{Y})$
+    (b) $\sum_{i=1}^n(Y_i - \overline{Y})^2$
+    (c) $\sum_{i=1}^n|Y_i - \overline{Y}|$
+    (d) $\mbox{median}(Y_i - \overline{Y})$
+    (e) $\mbox{median}|Y_i - \overline{Y}|$
+
+[^13]: we usually use b. $\sum_{i=1}^n(Y_i - \overline{Y})^2$ (for calculus and historical reasons), but c. and e. are also totally reasonably answers.
+
+---
+
+
+14. A good measure of how well the prediction (of the sample mean) fits the data is:[^14]
+    (a) $\sum_{i=1}^n(Y_i - \hat{Y}_i)$
+    (b) $\sum_{i=1}^n(Y_i - \hat{Y}_i)^2$
+    (c) $\sum_{i=1}^n|Y_i - \hat{Y}_i|$
+    (d) $\mbox{median}(Y_i -\hat{Y}_i)$
+    (e) $\mbox{median}|Y_i -\hat{Y}_i|$
+
+[^14]: we usually use b. $\sum_{i=1}^n(Y_i - \hat{Y}_i)^2$ (for calculus and historical reasons), but c. and e. are also totally reasonably answers.
+
+---
+
+15. What math is used to find the value of $m$ that minimizes:[^15]
+$$\sum_{i=1}^n(Y_i - m)^2$$
+    (a) combinatorics
+    (b) derivative
+    (c) integral
+    (d) linear algebra
+
+[^15]: b. derivative
+
+---
+
+16. $\sum_i(Y_i - \overline{Y})^2$ is sometimes $\geq \sum_i(Y_i - \hat{Y}_i)^2$[^16]
+
+    a. TRUE
+    b. FALSE, $\sum_i(Y_i - \overline{Y})^2$ is always $\geq \sum_i(Y_i - \hat{Y}_i)^2$
+    c. FALSE, $\sum_i(Y_i - \overline{Y})^2$ is never $\geq \sum_i(Y_i - \hat{Y}_i)^2$
+
+[^16]: b. FALSE, $\sum_i(Y_i - \overline{Y})^2$ is always $\geq \sum_i(Y_i - \hat{Y}_i)^2$
+
+---
+
+17. When writing the regression equation, why is there a hat ( ^) on the response variable?[^17]
+    (a) because the prediction is an estimate
+    (b) because the prediction is an average
+    (c) because the prediction may be due to extrapolation
+    (d) a & b
+    (e) all of the above
+
+[^17]: d. due to estimation and average
+
+---
+
+
+
+
 
 
 

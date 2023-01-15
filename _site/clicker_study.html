@@ -60,6 +60,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -239,13 +240,81 @@ ul.task-list li input[type="checkbox"] {
 n = 101 observations: 1 observation in top left, 25 observations in each in of the points near the bottom right.<br>
 The value of the correlation, r, is:<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>
 <ol type="a">
-<li>-1 &lt; r &lt; -.9</li>
-<li>-.9 &lt; r &lt; -.5</li>
-<li>-.5 &lt; r &lt; .5</li>
-<li>.5 &lt; r &lt; .9</li>
-<li>.9 &lt; r &lt; 1 ::: {.cell} ::: {.cell-output-display} <img src="clicker_study_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"> ::: :::</li>
+<li>-1 &lt; r &lt; -0.9</li>
+<li>-0.9 &lt; r &lt; -0.5</li>
+<li>-0.5 &lt; r &lt; 0.5</li>
+<li>0.5 &lt; r &lt; 0.9</li>
+<li>0.9 &lt; r &lt; 1</li>
 </ol></li>
 </ol>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="clicker_study_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<hr>
+<ol start="12" type="1">
+<li>The sum of residuals from the sample mean (no X):<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> <span class="math display">\[\sum_{i=1}^n(Y_i - \overline{Y})\]</span>
+<ol type="a">
+<li>is positive</li>
+<li>is negative</li>
+<li>is zero</li>
+<li>is different for every dataset</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="13" type="1">
+<li>A good measure of how well the prediction (of the sample mean) fits the data is:<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a>
+<ol type="a">
+<li><span class="math inline">\(\sum_{i=1}^n(Y_i - \overline{Y})\)</span></li>
+<li><span class="math inline">\(\sum_{i=1}^n(Y_i - \overline{Y})^2\)</span></li>
+<li><span class="math inline">\(\sum_{i=1}^n|Y_i - \overline{Y}|\)</span></li>
+<li><span class="math inline">\(\mbox{median}(Y_i - \overline{Y})\)</span></li>
+<li><span class="math inline">\(\mbox{median}|Y_i - \overline{Y}|\)</span></li>
+</ol></li>
+</ol>
+<hr>
+<ol start="14" type="1">
+<li>A good measure of how well the prediction (of the sample mean) fits the data is:<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a>
+<ol type="a">
+<li><span class="math inline">\(\sum_{i=1}^n(Y_i - \hat{Y}_i)\)</span></li>
+<li><span class="math inline">\(\sum_{i=1}^n(Y_i - \hat{Y}_i)^2\)</span></li>
+<li><span class="math inline">\(\sum_{i=1}^n|Y_i - \hat{Y}_i|\)</span></li>
+<li><span class="math inline">\(\mbox{median}(Y_i -\hat{Y}_i)\)</span></li>
+<li><span class="math inline">\(\mbox{median}|Y_i -\hat{Y}_i|\)</span></li>
+</ol></li>
+</ol>
+<hr>
+<ol start="15" type="1">
+<li>What math is used to find the value of <span class="math inline">\(m\)</span> that minimizes:<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> <span class="math display">\[\sum_{i=1}^n(Y_i - m)^2\]</span>
+<ol type="a">
+<li>combinatorics</li>
+<li>derivative</li>
+<li>integral</li>
+<li>linear algebra</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="16" type="1">
+<li><p><span class="math inline">\(\sum_i(Y_i - \overline{Y})^2\)</span> is sometimes <span class="math inline">\(\geq \sum_i(Y_i - \hat{Y}_i)^2\)</span><a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></p>
+<ol type="a">
+<li>TRUE</li>
+<li>FALSE, <span class="math inline">\(\sum_i(Y_i - \overline{Y})^2\)</span> is always <span class="math inline">\(\geq \sum_i(Y_i - \hat{Y}_i)^2\)</span></li>
+<li>FALSE, <span class="math inline">\(\sum_i(Y_i - \overline{Y})^2\)</span> is never <span class="math inline">\(\geq \sum_i(Y_i - \hat{Y}_i)^2\)</span></li>
+</ol></li>
+</ol>
+<hr>
+<ol start="17" type="1">
+<li>When writing the regression equation, why is there a hat ( ^) on the response variable?<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a>
+<ol type="a">
+<li>because the prediction is an estimate</li>
+<li>because the prediction is an average</li>
+<li>because the prediction may be due to extrapolation</li>
+<li>a &amp; b</li>
+<li>all of the above</li>
+</ol></li>
+</ol>
+<hr>
 
 
 </section>
@@ -298,6 +367,24 @@ The value of the correlation, r, is:<a href="#fn11" class="footnote-ref" id="fnr
 <li>r = -0.416</li>
 </ol>
 <a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn12"><ol start="3" type="a">
+<li>always zero</li>
+</ol>
+<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn13"><p>we usually use b. <span class="math inline">\(\sum_{i=1}^n(Y_i - \overline{Y})^2\)</span> (for calculus and historical reasons), but c.&nbsp;and e. are also totally reasonably answers.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>we usually use b. <span class="math inline">\(\sum_{i=1}^n(Y_i - \hat{Y}_i)^2\)</span> (for calculus and historical reasons), but c.&nbsp;and e. are also totally reasonably answers.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><ol start="2" type="a">
+<li>derivative</li>
+</ol>
+<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn16"><ol start="2" type="a">
+<li>FALSE, <span class="math inline">\(\sum_i(Y_i - \overline{Y})^2\)</span> is always <span class="math inline">\(\geq \sum_i(Y_i - \hat{Y}_i)^2\)</span></li>
+</ol>
+<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn17"><ol start="4" type="a">
+<li>due to estimation and average</li>
+</ol>
+<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></li>
 </ol>
 </section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
