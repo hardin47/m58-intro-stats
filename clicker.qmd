@@ -50,8 +50,100 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 [^3]: a. 0.063 (6.3% of the time)
 
+---
+
+4. Is our actual result of 14 (under the coin model)...[^4]
+   (a) very surprising?
+   (b) somewhat surprising?
+   (c) not very surprising?
+   
+[^4]: a. very surprising (prob of 14 or more is 0.0021)
+
+---
+
+5. Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored ten points higher on the final than on the midterm:[^5]
+    (a) r = -1
+    (b) -1 < r < 0
+    (c) r = 0
+    (d) 0 < r < 1
+    (e) r = 1
+
+[^5]: e. r = 1
+
+---
+
+6. Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored five points lower on the final than on the midterm:[^6]
+    (a) r = -1
+    (b) -1 < r < 0
+    (c) r = 0
+    (d) 0 < r < 1
+    (e) r = 1
+    
+[^6]: e. r = 1
+
+---
+
+7. Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored twice as many points on the final than on the midterm:[^7]
+   (a) r = -1
+   (b) -1 < r < 0
+   (c) r = 0
+   (d) 0 < r < 1
+   (e) r = 1
+
+[^7]: e. r = 1
+
+---
+
+8. Suppose you guessed every value correctly (guess the correlation applet), what would be the value of the correlation coefficient between your guesses and the actual correlations?[^8]
+   (a) r = -1
+   (b) -1 < r < 0
+   (c) r = 0
+   (d) 0 < r < 1
+   (e) r = 1
+
+[^8]: e. r = 1
+
+---
+
+9. Suppose each of your guesses was too high by 0.2 from the actual value of the correlation coefficient, what would be the value of the correlation coefficient between your guesses and the actual correlations?[^9]
+   (a) r = -1
+   (b) -1 < r < 0
+   (c) r = 0
+   (d) 0 < r < 1
+   (e) r = 1
+
+[^9]: e. r = 1
+
+---
+
+10. A correlation coefficient equal to 1 indicates that you are a good guesser.[^10]
+    (a) TRUE
+    (b) FALSE
+
+[^10]: b. FALSE.  You could get every single value wrong and still have a correlation of one.
+
+---
+
+11. Perfect Correlation... if not for a single outlier  
+n = 101 observations:  1 observation in top left, 25 observations in each in of the points near the bottom right.    
+The value of the correlation, r, is:[^11]
+    (a)	-1 < r < -.9
+    (b)	-.9 < r < -.5
+    (c)	-.5 < r <  .5
+    (d)	.5 < r < .9
+    (e)	.9 < r < 1
+```{r}
+#| echo = FALSE
+x_value <- c(rep(17, 25), rep(18, 25), rep(19, 25), rep(20, 25), 1)
+y_value <- c(rep(1, 25), rep(2, 25), rep(3, 25), rep(4, 25), 20)
+
+#cor(x_value, y_value)
+
+plot(x_value, y_value, pch = 18)
+```
 
 
+[^11]: c. r = -0.416
 
 
 
