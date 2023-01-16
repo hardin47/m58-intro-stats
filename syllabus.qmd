@@ -26,7 +26,7 @@ or by appointment
 TBD (likely Monday and Wednesday)  
 Estella 2131
 
-```{r fig.cap = "Artwork by @allison_horst.", fig.alt = "Monsters going through the phases of writing code.", preview = TRUE, echo = FALSE}
+```{r fig.cap = "Artwork by @allison_horst.", fig.alt = "Baby normal curves who think they came from the same population because they look very similar.  The big parent (population) normal curves are very distinct.", preview = TRUE, echo = FALSE}
 knitr::include_graphics("images/type_2_errors.png")
 ```
 

@@ -17,7 +17,7 @@ library(knitr)
 Here's your roadmap for the semester!
 Each week, follow the general process outlined below:
 
-- Before class on Tuesday, read the suggested article <i class="fas fa-newspaper"></i>
+- Before class on Tuesday, read the suggested article {{< fa newspaper >}} <i class="fas fa-newspaper"></i>
 
 - Enjoy the notes / readings <i class="fas fa-book-open"></i>  
 
@@ -41,12 +41,12 @@ schedule <- tribble(
   ~`date`, ~topic, ~agenda, ~readings, ~`article (Tues)`, ~assignments,
   "Week 1 <br> 1.17.23", 'Intro + <br> variables &  <br> studies <br> SLR',"• course info <br> • tests <br> • studies", 
   '<a href="https://st47s.com/Math58/Notes/intro.html#intro" target = "_blank"><i class="fas fa-book-open"></i> Introduction</a> <br> <a href="https://st47s.com/Math58/Notes/intro.html#experim" target = "_blank"><i class="fas fa-book-open"></i> Studies</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 1.1</a> <br> <a href="https://openintro-ims.netlify.app/data-hello.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 1 + 2</a>',
-  '<a href="https://www.wired.com/story/the-astrazeneca-covid-vaccine-data-isnt-up-to-snuff/" target = "_blank"><i class="fas fa-newspaper"></i> AstraZeneca</a> <br> ',
+  '<i class="fas fa-newspaper"></i> none',
   '',
   
-  "Week 2 <br> 1.24.23", 'Correlation + <br>Least<br>squares<br> ',"• causation <br> • correlation<br> • linear<br>model <br> • correlation<br> • $R^2$", 
+  "Week 2 <br> 1.24.23", 'Correlation + <br>Least<br>squares<br> ',"• causation <br> • correlation<br> • linear<br>model <br> • correlation<br> • R^2", 
   '<a href="https://st47s.com/Math58/Notes/regdesc.html#cor" target = "_blank"><i class="fas fa-book-open"></i> Cor</a> <br> <a href="https://st47s.com/Math58/Notes/regdesc.html#ls" target = "_blank"><i class="fas fa-book-open"></i> Least Sq</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 5.6, 5.7, 5.8</a> <br> <a href="https://openintro-ims.netlify.app/model-slr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 7</a> <br> <a href = "http://www.rossmanchance.com/applets/2021/guesscorrelation/GuessCorrelation.html" target = "_blank"><i class = "fas fa-gamepad"></i> guess corr</a> <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class = "fas fa-gamepad"></i> least sq</a>',
-  '<i class="fas fa-newspaper"></i> none <br> ',
+  '<a href="https://www.wired.com/story/the-astrazeneca-covid-vaccine-data-isnt-up-to-snuff/" target = "_blank"><i class="fas fa-newspaper"></i> AstraZeneca</a>',
   '',
   
   "Week 3 <br> 1.31.23", 'Hyp Test + <br>Randomization<br>Test<br> ',"•  structure of<br> hypothesis<br> testing", 
@@ -92,12 +92,12 @@ schedule <- tribble(
   '', 
   
   
-  "Week 9 <br> 3.21.23", '$\\chi^2$ Test',"• expected counts <br> • $X^2$ statistic <br> • $\\chi^2$ test", 
-  '<a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#chisq2" target = "_blank"><i class="fas fa-book-open"></i> $\\chi^2$ Test</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 3.2</a> <br> <a href="https://openintro-ims.netlify.app/inference-tables.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 18</a>',
+  "Week 9 <br> 3.21.23", 'χ^2 Test',"• expected counts <br> • X^2 statistic <br> • χ^2 test", 
+  '<a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#chisq2" target = "_blank"><i class="fas fa-book-open"></i> χ^2 Test</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 3.2</a> <br> <a href="https://openintro-ims.netlify.app/inference-tables.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 18</a>',
   '<a href="https://static1.squarespace.com/static/5d2633cb0ef5e4000134fa02/t/5d72cb394452727586b69c2e/1567804217938/policy_brief_indigenous_data_sovereignty_in_the_united_states.pdf" target = "_blank"><i class="fas fa-newspaper"></i> Data sovereignty</a> <br> ',
   '',
   
-  "Week 10 <br> 3.28.23", '1 mean +<br>pred interval',"• dist of $\\overline{X}$ <br> • $SE(\\overline{X})$ <br> • t-test of $\\mu$  <br> • t-CI for $\\mu$  <br> • PI for $X_{n+1}$", 
+  "Week 10 <br> 3.28.23", '1 mean +<br>pred interval',"• dist of X-bar <br> • SE(X-bar) <br> • t-test of μ<br> • t-CI for μ <br> • PI for X_{n+1}", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean1inf" target = "_blank"><i class="fas fa-book-open"></i> 1 mean</a> <br> <a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean1inf" target = "_blank"><i class="fas fa-book-open"></i> pred int</a>  <br> <a href="https://openintro-ims.netlify.app/inference-one-mean.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 19</a>',
   '<a href="https://wwwnc.cdc.gov/eid/article/26/11/20-3003_article" target = "_blank"><i class="fas fa-newspaper"></i> masks</a> <br> ',
   '',
@@ -106,7 +106,7 @@ schedule <- tribble(
   '','',
   '<a href="https://m58-intro-stats.netlify.app/slides/Pilot_m58_s22_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 1: Pilot</a>',
   
-  "Week 11 <br> 4.4.23", '2 means +<br>t-proced',"• dist of $\\overline{X}_1 - \\overline{X}_2$ <br> • $SE(\\overline{X}_1 - \\overline{X}_2)$ <br> • t-test of $\\mu_1 - \\mu_2$ <br> • t-CI for $\\mu_1 - \\mu_2$", 
+  "Week 11 <br> 4.4.23", '2 means +<br>t-proced',"• dist of X-bar_1 - X-bar_2 <br> • SE(X-bar_1 - X-bar_2) <br> • t-test of μ_1 - μ_2 <br> • t-CI for μ_1 - μ_2", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean2inf" target = "_blank"><i class="fas fa-book-open"></i> 2 means</a>  <br> <a href = "http://www.rossmanchance.com/applets/index2021.html" target = "_blank"><i class="fas fa-gamepad"></i> 2 samples</a> <br> <a href="https://openintro-ims.netlify.app/inference-two-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 20</a>',
   '<a href="http://www.nytimes.com/2010/09/19/health/research/19trial.html?hp" target = "_blank"><i class="fas fa-newspaper"></i> clinical trials</a>',
   '',
@@ -116,11 +116,11 @@ schedule <- tribble(
   '<a href="https://m58-intro-stats.netlify.app/slides/Power_m58_s22_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 2: Power Analysis</a>',
 
   "Week 12 <br> 4.11.23", 'ANOVA',"• MSG <br> • MSE <br>• F-test ", 
-  '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#ANOVA" target = "_blank"><i class="fas fa-book-open"></i> ANOVA</a>  <br> <a href="https://st47s.com/Math58/Notes/reginf.html#infbeta1" target = "_blank"><i class="fas fa-book-open"></i> Inf on $\\beta_1$</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class="fas fa-gamepad"></i> slopes</a> <br> <a href="https://openintro-ims.netlify.app/inference-many-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 22</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-slr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 24</a>',
+  '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#ANOVA" target = "_blank"><i class="fas fa-book-open"></i> ANOVA</a>  <br> <a href="https://st47s.com/Math58/Notes/reginf.html#infbeta1" target = "_blank"><i class="fas fa-book-open"></i> Inf on β_1</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class="fas fa-gamepad"></i> slopes</a> <br> <a href="https://openintro-ims.netlify.app/inference-many-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 22</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-slr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 24</a>',
   '<a href="https://www.buzzfeednews.com/article/stephaniemlee/brian-wansink-cornell-p-hacking" target = "_blank"><i class="fas fa-newspaper"></i> p-hacking</a> <br> ',
   '',
   
-  "Week 13 <br> 4.18.23", 'Inference $\\beta_1$ + <br>Tech cond + <br>MLR',"•  SE($\\beta_1$) <br> • residual plots <br> • multiple X", 
+  "Week 13 <br> 4.18.23", 'Inference β_1 + <br>Tech cond + <br>MLR',"•  SE(β_1) <br> • residual plots <br> • multiple X", 
   '<a href="https://st47s.com/Math58/Notes/reginf.html#lmtechcond" target = "_blank"><i class="fas fa-book-open"></i> Tech Cond</a>  <br> <a href = "https://st47s.com/Math58/Notes/reginf.html#MLR" target = "_blank"><i class="fas fa-gamepad"></i> MLR</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-mlr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 25</a>',
   '<a href="https://jamanetwork.com/journals/jama/fullarticle/208354" target = "_blank"><i class="fas fa-newspaper"></i> 1918 flu</a> <br> ',
   '',
