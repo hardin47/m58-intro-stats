@@ -16,8 +16,8 @@ jo.hardin@pomona.edu
 
 #### Office Hours (Estella 2351)
 
-Mondays 1:30-3pm  
-Tuesdays 2:30-3:30pm  
+Monday 1:30-3pm  
+Tuesday 2:30-3:30pm  
 Wednesday 9-11am  
 Thursday 3-4pm   
 or by appointment
@@ -145,7 +145,7 @@ Please be proactive and reach out for help as soon as possible to resolve the is
 
 #### Prerequisites:
 
-The prerequisites for this class are Introductory Statistics (Math 58 or equivalent) and completion of one semester of calculus. We rely heavily on these prerequisites, and students with no background in statistics or very light mathematics background will find themselves trying to catch up throughout the semester. You should be familiar with topics such as probability, confidence intervals, hypothesis testing, p-values, linear regression.
+There are no statistics prerequisites for this class; nor is there an R prerequisite.  Instead, the prerequisite is that you should feel comfortable with mathematical notation and computational thinking.  Although we do not actually do any calculus, having had at least a semester of calculus indicates that you are at the right level mathematically.
 
 #### Homework:
 
