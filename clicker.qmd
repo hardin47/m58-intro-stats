@@ -61,72 +61,172 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-5. Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored ten points higher on the final than on the midterm:[^5]
+5.	Based on the first handwriting study, can we conclude that cursive causes higher scores (on average)?[^5]
+    (a)	Yes
+    (b)	No
+    (c)	It depends
+
+[^5]: b. No, we can't establish causation from an observational study.
+
+---
+
+6.	Based on the second handwriting study, can we conclude that cursive causes higher scores (on average)?[^6]
+    (a)	Yes
+    (b)	No
+    (c)	It depends
+
+[^6]: a. Yes.  For the exam(s?) under study, cursive caused higher scores on average.
+
+---
+
+7. A possible confounding variable for the handwriting study is:[^7]
+   (a) grade of the student (age)
+   (b) region of country where the SAT was taken
+   (c) academic ability of the student
+   (d) gender identity of the student
+   (e) number of siblings of the student.
+
+[^7]: You must connect the variable to both the explanatory and response variable.  For me, that is easiest to do with c. academic ability of the student.
+
+---
+
+8. The main reason we randomly assign the explanatory variable is:[^8]
+   (a) To get the smallest p-value possible
+   (b) To balance the expected causal mechanism across the two groups
+   (c) To balance every possible variable except the causal mechanism across the two groups
+   (d) So that our sample is representative of the population
+   (e) So that the sampling process is unbiased 
+
+[^8]: c. To balance every possible variable except the causal mechanism across the two groups
+
+---
+
+9. The main reason we take random samples from the population is:[^9]
+   (a) To get the smallest p-value possible
+   (b) To balance the expected causal mechanism across the two groups
+   (c) To balance every possible variable except the expected causal mechanism across the two groups
+   (d) So that our sample is representative of the population
+   (e) So that the sampling process is unbiased
+
+[^9]: d. So that our sample is representative of the population
+
+---
+
+10. Are there effects of second-hand smoke on the health of children?[^10]
+    (a) definitely obs study
+    (b) definitely experiment
+    (c) unhappily obs study
+    (d) unhappily experiment
+
+[^10]: c. unhappily obs study (becuase we want to establish causation)
+
+---
+
+11. Do people tend to spend more money in stores located next to food outlets with pleasing smells?[^11]
+    (a) definitely obs study
+    (b) definitely experiment
+    (c) unhappily obs study
+    (d) unhappily experiment
+
+[^11]: a. definitely obs study (do we care about causation?  maybe.  maybe not.)
+---
+
+12. Does cell phone use increase the rate of automobile accidents?[^12]
+    (a) definitely obs study
+    (b) definitely experiment
+    (c) unhappily obs study
+    (d) unhappily experiment
+
+[^12]: c. unhappily obs study
+
+---
+
+13. Do people consume different amounts of ice cream depending on the size of bowl used?[^13]
+    (a) definitely obs study
+    (b) definitely experiment
+    (c) unhappily obs study
+    (d) unhappily experiment
+
+[^13]: b. definitely experiment
+
+---
+
+14.	Which is more effective: diet A or diet B?[^14]
+    (a) definitely obs study
+    (b) definitely experiment
+    (c) unhappily obs study
+    (d) unhappily experiment
+
+[^14]: b. definitely experiment
+
+---
+
+15. Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored ten points higher on the final than on the midterm:[^15]
     (a) r = -1
     (b) -1 < r < 0
     (c) r = 0
     (d) 0 < r < 1
     (e) r = 1
 
-[^5]: e. r = 1
+[^15]: e. r = 1
 
 ---
 
-6. Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored five points lower on the final than on the midterm:[^6]
+16. Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored five points lower on the final than on the midterm:[^16]
     (a) r = -1
     (b) -1 < r < 0
     (c) r = 0
     (d) 0 < r < 1
     (e) r = 1
     
-[^6]: e. r = 1
+[^16]: e. r = 1
 
 ---
 
-7. Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored twice as many points on the final than on the midterm:[^7]
-   (a) r = -1
-   (b) -1 < r < 0
-   (c) r = 0
-   (d) 0 < r < 1
-   (e) r = 1
+17. Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored twice as many points on the final than on the midterm:[^17]
+    (a) r = -1
+    (b) -1 < r < 0
+    (c) r = 0
+    (d) 0 < r < 1
+    (e) r = 1
 
-[^7]: e. r = 1
-
----
-
-8. Suppose you guessed every value correctly (guess the correlation applet), what would be the value of the correlation coefficient between your guesses and the actual correlations?[^8]
-   (a) r = -1
-   (b) -1 < r < 0
-   (c) r = 0
-   (d) 0 < r < 1
-   (e) r = 1
-
-[^8]: e. r = 1
+[^17]: e. r = 1
 
 ---
 
-9. Suppose each of your guesses was too high by 0.2 from the actual value of the correlation coefficient, what would be the value of the correlation coefficient between your guesses and the actual correlations?[^9]
-   (a) r = -1
-   (b) -1 < r < 0
-   (c) r = 0
-   (d) 0 < r < 1
-   (e) r = 1
+18. Suppose you guessed every value correctly (guess the correlation applet), what would be the value of the correlation coefficient between your guesses and the actual correlations?[^18]
+    (a) r = -1
+    (b) -1 < r < 0
+    (c) r = 0
+    (d) 0 < r < 1
+    (e) r = 1
 
-[^9]: e. r = 1
+[^18]: e. r = 1
 
 ---
 
-10. A correlation coefficient equal to 1 indicates that you are a good guesser.[^10]
+19. Suppose each of your guesses was too high by 0.2 from the actual value of the correlation coefficient, what would be the value of the correlation coefficient between your guesses and the actual correlations?[^19]
+    (a) r = -1
+    (b) -1 < r < 0
+    (c) r = 0
+    (d) 0 < r < 1
+    (e) r = 1
+
+[^19]: e. r = 1
+
+---
+
+20. A correlation coefficient equal to 1 indicates that you are a good guesser.[^20]
     (a) TRUE
     (b) FALSE
 
-[^10]: b. FALSE.  You could get every single value wrong and still have a correlation of one.
+[^20]: b. FALSE.  You could get every single value wrong and still have a correlation of one.
 
 ---
 
-11. Perfect Correlation... if not for a single outlier  
+21. Perfect Correlation... if not for a single outlier  
 n = 101 observations:  1 observation in top left, 25 observations in each in of the points near the bottom right.    
-The value of the correlation, r, is:[^11]
+The value of the correlation, r, is:[^21]
     (a)	-1   < r < -0.9
     (b)	-0.9 < r < -0.5
     (c)	-0.5 < r <  0.5
@@ -134,7 +234,7 @@ The value of the correlation, r, is:[^11]
     (e)	 0.9 < r <  1
 
 
-[^11]: c. r = -0.416    
+[^21]: c. r = -0.416    
 ---
 
 ```{r}
@@ -156,74 +256,110 @@ ggplot(data.frame(x_value, y_value)) +
 
 ---
 
-12. The sum of residuals from the sample mean (no X):[^12] 
+22. The sum of residuals from the sample mean (no X):[^22] 
 $$\sum_{i=1}^n(Y_i - \overline{Y})$$
     (a) is positive
     (b) is negative
     (c) is zero
     (d) is different for every dataset
 
-[^12]: c. always zero
+[^22]: c. always zero
 
 ---
 
-13. A good measure of how well the prediction (of the sample mean) fits the data is:[^13]
+23. A good measure of how well the prediction (of the sample mean) fits the data is:[^23]
     (a) $\sum_{i=1}^n(Y_i - \overline{Y})$
     (b) $\sum_{i=1}^n(Y_i - \overline{Y})^2$
     (c) $\sum_{i=1}^n|Y_i - \overline{Y}|$
     (d) $\mbox{median}(Y_i - \overline{Y})$
     (e) $\mbox{median}|Y_i - \overline{Y}|$
 
-[^13]: we usually use b. $\sum_{i=1}^n(Y_i - \overline{Y})^2$ (for calculus and historical reasons), but c. and e. are also totally reasonably answers.
+[^23]: we usually use b. $\sum_{i=1}^n(Y_i - \overline{Y})^2$ (for calculus and historical reasons), but c. and e. are also totally reasonably answers.
 
 ---
 
 
-14. A good measure of how well the prediction (of the sample mean) fits the data is:[^14]
+24. A good measure of how well the prediction (of the sample mean) fits the data is:[^24]
     (a) $\sum_{i=1}^n(Y_i - \hat{Y}_i)$
     (b) $\sum_{i=1}^n(Y_i - \hat{Y}_i)^2$
     (c) $\sum_{i=1}^n|Y_i - \hat{Y}_i|$
     (d) $\mbox{median}(Y_i -\hat{Y}_i)$
     (e) $\mbox{median}|Y_i -\hat{Y}_i|$
 
-[^14]: we usually use b. $\sum_{i=1}^n(Y_i - \hat{Y}_i)^2$ (for calculus and historical reasons), but c. and e. are also totally reasonably answers.
+[^24]: we usually use b. $\sum_{i=1}^n(Y_i - \hat{Y}_i)^2$ (for calculus and historical reasons), but c. and e. are also totally reasonably answers.
 
 ---
 
-15. What math is used to find the value of $m$ that minimizes:[^15]
+25. What math is used to find the value of $m$ that minimizes:[^25]
 $$\sum_{i=1}^n(Y_i - m)^2$$
     (a) combinatorics
     (b) derivative
     (c) integral
     (d) linear algebra
 
-[^15]: b. derivative
+[^25]: b. derivative
 
 ---
 
-16. $\sum_i(Y_i - \overline{Y})^2$ is sometimes $\geq \sum_i(Y_i - \hat{Y}_i)^2$[^16]
-
+26. $\sum_i(Y_i - \overline{Y})^2$ is sometimes $\geq \sum_i(Y_i - \hat{Y}_i)^2$[^26]
     a. TRUE
     b. FALSE, $\sum_i(Y_i - \overline{Y})^2$ is always $\geq \sum_i(Y_i - \hat{Y}_i)^2$
     c. FALSE, $\sum_i(Y_i - \overline{Y})^2$ is never $\geq \sum_i(Y_i - \hat{Y}_i)^2$
 
-[^16]: b. FALSE, $\sum_i(Y_i - \overline{Y})^2$ is always $\geq \sum_i(Y_i - \hat{Y}_i)^2$
+[^26]: b. FALSE, $\sum_i(Y_i - \overline{Y})^2$ is always $\geq \sum_i(Y_i - \hat{Y}_i)^2$
 
 ---
 
-17. When writing the regression equation, why is there a hat ( ^) on the response variable?[^17]
+27. When writing the regression equation, why is there a hat ( ^) on the response variable?[^27]
     (a) because the prediction is an estimate
     (b) because the prediction is an average
     (c) because the prediction may be due to extrapolation
     (d) a & b
     (e) all of the above
 
-[^17]: d. due to estimation and average
+[^27]: d. due to estimation and average
 
 ---
 
 
 
+```{r echo = FALSE, eval = FALSE}
+10.	 The "random" part in clinical trials typically comes from:[^10]
+    (a) random samples
+    (b) random allocation of treatment
+
+[^10]: b. random allocation of treatment
+
+---
+
+11. The "random" part in polling typically comes from:[^11]
+    (a) random samples
+    (b) random allocation of treatment
+
+[^11]: random samples
+
+74. You want to collect data to investigate whether teenagers in the United States have read fewer Harry Potter books (from the original series of seven books) than teenagers in the United Kingdom.  Would you make use of random sampling, random assignment, both, or neither?  
+
+(a)	Random sampling
+(b)	Random assignment
+(c)	Both
+(d)	Neither
+ 
+75.	An instructor wants to investigate whether using a red pen to grade assignments leads to lower scores on exams than using a blue pen to grade assignments.  Would you advise the professor to make use of random sampling, random assignment, both, or neither?  
+
+(a)	Random sampling
+(b)	Random assignment
+(c)	Both
+(d)	Neither
+ 
+76.	A student decides to investigate whether NFL football games played in indoor stadiums tend to have more points scored than games played outdoors.  The student examines points scored in every NFL game of the 2019 season. Has the student used random sampling, random assignment, both, or neither? 
+
+(a)	Random sampling
+(b)	Random assignment
+(c)	Both
+(d)	Neither
+
+```
 
 
 
