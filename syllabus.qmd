@@ -23,7 +23,10 @@ Thursday 3-4pm
 or by appointment
 
 ##### Mentor Sessions:     
-TBD (likely Monday and Wednesday)  
+Mentors: Sara Colando, Anu Krishnan, Naomi Meurice, and Kyle Torres 
+
+Monday 8-10pm  
+Wednesday 6-8pm  
 Estella 2131
 
 ```{r fig.cap = "Artwork by @allison_horst.", fig.alt = "Baby normal curves who think they came from the same population because they look very similar.  The big parent (population) normal curves are very distinct.", preview = TRUE, echo = FALSE}
