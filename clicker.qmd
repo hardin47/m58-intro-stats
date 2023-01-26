@@ -279,7 +279,7 @@ $$\sum_{i=1}^n(Y_i - \overline{Y})$$
 ---
 
 
-24. A good measure of how well the prediction (of the sample mean) fits the data is:[^24]
+24. A good measure of how well the prediction (of the regression line) fits the data is:[^24]
     (a) $\sum_{i=1}^n(Y_i - \hat{Y}_i)$
     (b) $\sum_{i=1}^n(Y_i - \hat{Y}_i)^2$
     (c) $\sum_{i=1}^n|Y_i - \hat{Y}_i|$
