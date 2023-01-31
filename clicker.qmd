@@ -321,6 +321,161 @@ $$\sum_{i=1}^n(Y_i - m)^2$$
 
 ---
 
+29. "Observed data or more extreme" is:[^29]
+    (a) fewer than 9
+    (b) 9 or fewer
+    (c) 9 or more
+    (d) more than 9
+
+[^29]: c. 9 or more
+
+---
+
+
+30. What is the mean value of the null sampling distribution for the number of Botox therapy who showed pain reduction?[^30]
+    (a) 0
+    (b) 9
+    (c) 5.3
+    (d) 11
+    (e) 15
+
+[^30]: c. 5.3 because (15/31)*11 = 5.3
+
+---
+
+28. In the Botox and Pain Relief example, the p-value is calculated.  What does "probability" refer to?[^28]
+    (a) random allocation
+    (b) random sample
+
+[^28]: a. random allocation
+
+---
+
+p-value = probability of the observed data or more extreme given the null hypothesis is true.
+
+---
+
+31. What conclusion would you draw from the Back Pain and Botox study?[^31]
+    (a) Not enough evidence to conclude that Botox is more effective than the placebo.
+    (b) Strong evidence that Botox is equally as effective as the placebo.
+    (c) Strong evidence that Botox is more effective than the placebo.
+    
+[^31]: c. Strong evidence that Botox is more effective than the placebo. p-value was roughly 0.005.
+
+---
+
+32. If we consider those in the study with back pain to be representative of all people with back pain, what would you conclude about the percentage of people who will have reduced back pain if they use Botox?[^32]
+    (a) Substantially greater than 50%
+    (b) Substantially less than 50%
+    (c) Very close to 50%
+
+[^32]: c. Close to 50%  (the point estimate is 0.6)
+
+---
+
+33. Material check-in
+    (a) So far, so good
+    (b) Concepts are good, R is confusing
+    (c) R is good, concepts are confusing
+    (d) Everything is confusing
+    
+---
+
+34. People check-in
+    (a) So far, so good
+    (b) I can go to office hours / mentor sessions / learning community check-ins, but I didn't go this week.
+    (c) I can't make the scheduled office hours / mentor sessions / learning community check-ins
+    (d) I'm looking for someone to study with
+    
+---
+
+See Canvas front page for **anonymous** survey / feedback for the class.  Also, if you are looking for people to work with, you could contact me directly (non-anonymously!) so that I can connect you to people.
+
+---
+
+35. If communication medium and cheating are independent variables, how many of the email senders (out of 26) would you expect to cheat?[^35]
+    (a)	10 (ish)
+    (b)	13 (ish)
+    (c)	16 (ish)
+    (d)	20 (ish)
+    (e)	24 (ish)
+
+[^35]: d. 20 (ish), 26*(38/48) = 20.58
+
+---
+
+36. When looking at the null differences, is the observed result of 28.7%:[^36]
+    (a)	Very surprising
+    (b)	Somewhat surprising
+    (c)	Not very surprising
+
+[^36]: b. Somewhat surprising, p-value was 0.04
+
+---
+
+37. Hypothesis: the number of hours that grade-school children spend doing homework predicts their future success on standardized tests.[^37]
+    (a) null, one sided
+    (b) null, two sided
+    (c) alternative, one sided
+    (d) alternative, two sided
+
+[^37]: c. alternative, one sided (because probably we are studying that it **increases** their success rate)
+
+---
+
+38. Hypothesis: king cheetahs on average run the same speed as standard spotted cheetahs.[^38]
+    (a) null, one sided
+    (b) null, two sided
+    (c) alternative, one sided
+    (d) alternative, two sided
+
+[^38]: a. null, two sided (because I have no idea which cheetah might run faster)
+
+---
+
+39. Hypothesis: the mean length of African elephant tusks has changed over the last 100 years.[^39]
+    (a) null, one sided
+    (b) null, two sided
+    (c) alternative, one sided
+    (d) alternative, two sided
+
+[^39]: d. alternative, two sided (because I have no idea whether they've increased or decreased)
+
+---
+
+40. Hypothesis: the risk of facial clefts is equal for babies born to mothers who take folic acid supplements compared with those from mothers who do not.[^40]
+    (a) null, one sided
+    (b) null, two sided
+    (c) alternative, one sided
+    (d) alternative, two sided
+
+[^40]: a. null, one sided (because I happen to know that folic acid is thought to prevent facial clefts)
+
+---
+
+41. Hypothesis: caffeine intake during pregnancy affects mean birth weight.[^41]
+    (a) null, one sided
+    (b) null, two sided
+    (c) alternative, one sided
+    (d) alternative, two sided
+
+[^41]: c. alternative, one sided (because I happen to know that caffeine is thought to decrease baby's birth weight)
+
+---
+
+42. In this class, the word parameter means:[^42]
+    (a) The values in a model
+    (b) Numbers that need to be tuned
+    (c) A number which is calculated from a sample of data.
+    (d) A number which (is almost always unknown and) describes a population.
+
+[^42]: d. A number which (is almost always unknown and) describes a population.
+
+---
+
+    
+    
+    
 
 
 ```{r echo = FALSE, eval = FALSE}
