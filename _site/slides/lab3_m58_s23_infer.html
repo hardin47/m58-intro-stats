@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.256">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Your Name Here">
+<meta name="dcterms.date" content="2023-02-07">
+
+<title>Introduction to Biostatistics - Lab 3 - Math 58B: Randomization Test with infer</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="https://m58-intro-stats.netlify.app/" class="navbar-brand navbar-brand-logo">
+    <img src="../images/st47s.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="https://m58-intro-stats.netlify.app/">
+    <span class="navbar-title">Introduction to Biostatistics</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../notes.html">
+ <span class="menu-text">Class Notes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../project.html">
+ <span class="menu-text">Project</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../clicker_study.html">
+ <span class="menu-text">Clicker Q</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab 3 - Math 58B: Randomization Test with <code>infer</code></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Your Name Here </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 7, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Building on the work we’ve done this week to run a hypothesis test, we will use the <strong>infer</strong> package to complete an entire randomization test.</p>
+<p>The goals for today include:</p>
+<ul>
+<li>using infer to complete a <strong>randomization</strong> hypothesis test</li>
+<li>creating a histogram representing a null sampling distribution</li>
+<li>calculating a p-value</li>
+<li>summarizing the hypothesis test in words of the problem</li>
+</ul>
+<section id="advice-for-turning-in-the-assignment" class="level2">
+<h2 class="anchored" data-anchor-id="advice-for-turning-in-the-assignment">Advice for turning in the assignment</h2>
+<ul>
+<li><p>knit early and often. In fact, go ahead and knit your .Rmd file right now. Maybe set a timer so that you knit every 5 minutes. Do <strong>not</strong> wait until you are done with the assignment to knit.</p></li>
+<li><p>The <strong>assignment</strong> part of the lab is <strong>ONLY</strong> the last six questions at the very bottom. However, the commands in the first half of the assignment are key to doing the second half.</p></li>
+<li><p>Save the .Rmd file somewhere you can find it. Don’t keep everything in your downloads folder. Maybe make a folder called <code>StatsHW</code> or something. That folder could live on your Desktop. Or maybe in your Dropbox.</p></li>
+</ul>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<p>The infer vignette is excellent: https://infer-dev.netlify.app/index.html</p>
+<p>As we go through the lab today, focus on the names of the function to make sure that you connect the <strong>name</strong> of the function to the <strong>action</strong> of the function.</p>
+<section id="load-packages-data" class="level3">
+<h3 class="anchored" data-anchor-id="load-packages-data">Load packages / data</h3>
+<p>In this lab we will use new syntax from the <strong>infer</strong> package. The syntax is meant to focus understanding on the hypothesis testing process. So for each line, pay attention to what the code is doing.</p>
+<p>The data come from a randomized clinical trial to discern the difference between a sugar gargle versus licorice gargle after undergoing elective thoracic surgery on the amount of coughing post-surgery (reference and data here: https://www.causeweb.org/tshs/licorice-gargle/).</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(infer)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>licorice_study <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="st">"http://pages.pomona.edu/~jsh04747/courses/math58/Licorice.csv"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">gargle =</span> <span class="fu">case_when</span>(</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    treat <span class="sc">==</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"sugar"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    treat <span class="sc">==</span> <span class="dv">1</span> <span class="sc">~</span> <span class="st">"licorice"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">cough =</span> <span class="fu">case_when</span>(</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    pod1am_cough <span class="sc">==</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"none"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"some"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(gargle, cough)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>licorice_study <span class="sc">%&gt;%</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">table</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          cough
+gargle     none some
+  licorice   86   32
+  sugar      68   49</code></pre>
+</div>
+</div>
+<section id="logic-for-hypothesis-testing-spoiler" class="level4">
+<h4 class="anchored" data-anchor-id="logic-for-hypothesis-testing-spoiler">Logic for Hypothesis Testing (spoiler)</h4>
+<ol type="1">
+<li><p>We know that the study was an experiment, so there should be no <strong>systematic</strong> differences (in other variables) between the group who received the sugar versus the licorice gargle.</p></li>
+<li><p>We hope to rule out random chance as the reason for the difference in proportions of the who is coughing after surgery. (We hope to reject the null hypothesis.)</p></li>
+<li><p>If we can reject the null hypothesis, we conclude that the gargle type and coughing outcome are not independent. That is, the type of gargle used changes the probability that the patient will have coughing after surgery.</p></li>
+</ol>
+</section>
+</section>
+<section id="a-randomization-test" class="level3">
+<h3 class="anchored" data-anchor-id="a-randomization-test">A randomization test</h3>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># to control the randomness</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">47</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>licorice_study <span class="sc">%&gt;%</span> <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 2
+  gargle   cough
+  &lt;chr&gt;    &lt;chr&gt;
+1 licorice none 
+2 licorice none 
+3 licorice none 
+4 licorice none 
+5 licorice none 
+6 licorice none </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>licorice_study <span class="sc">%&gt;%</span> <span class="fu">table</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          cough
+gargle     none some
+  licorice   86   32
+  sugar      68   49</code></pre>
+</div>
+</div>
+<section id="step-1.-observed-statistic" class="level4">
+<h4 class="anchored" data-anchor-id="step-1.-observed-statistic">Step 1. Observed Statistic</h4>
+<p>The first thing we need to do is to find the observed statistic of interest (here the difference in sample proportions). Note that R is happy to act as a calculator, but we’re going to use the syntax associated with the test to get the value of interest.</p>
+<p>Well, okay, first as a calculator:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">49</span><span class="sc">/</span><span class="dv">117</span>) <span class="sc">-</span> (<span class="dv">32</span><span class="sc">/</span><span class="dv">118</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.147617</code></pre>
+</div>
+</div>
+<p>Now using the infer syntax, we’ll specify the variables of interest (which is response and which is explanatory?). Also, we’ll need to specify what a “success” means and the order of subtraction. Note that we get the same value as we did when using R as a calculator.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>diff_obs <span class="ot">&lt;-</span> licorice_study <span class="sc">%&gt;%</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">specify</span>(cough <span class="sc">~</span> gargle, <span class="at">success =</span> <span class="st">"some"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">calculate</span>(<span class="at">stat =</span> <span class="st">"diff in props"</span>, <span class="at">order =</span> <span class="fu">c</span>(<span class="st">"sugar"</span>, <span class="st">"licorice"</span>))</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>diff_obs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Response: cough (factor)
+Explanatory: gargle (factor)
+# A tibble: 1 × 1
+   stat
+  &lt;dbl&gt;
+1 0.148</code></pre>
+</div>
+</div>
+</section>
+<section id="step-2.-shuffle-the-data-under-h0" class="level4">
+<h4 class="anchored" data-anchor-id="step-2.-shuffle-the-data-under-h0">Step 2. Shuffle the data under H0</h4>
+<p>The point of the hypothesis test structure is to have an understanding of what types of values might be seen just by chance (if the type of gargle really wasn’t doing anything). The idea is that 81 people were going to have some coughing after surgery anyway (regardless of gargle) – that’s the null hypothesis! And we expect some variability in which group those 81 people end up. How big are the differences in proportions? is 14.8% big? or is it small?</p>
+<p>Hint: go back to this applet to see how the shuffling works! http://www.rossmanchance.com/applets/2021/chisqshuffle/ChiSqShuffle.htm?FET=1</p>
+<p>A note on the code… pay attention to the steps here:</p>
+<ul>
+<li><code>specify()</code> gives the appropriate information on the variable types. Always: <code>responsevariable ~ explanatoryvariable</code></li>
+<li><code>hypothesize()</code> gives the null hypothesis of interest. Here we are performing a test of independence, but that will change over the semester as we do different types of tests.</li>
+<li><code>generate()</code> swaps things around as if the null hypothesis were true. Here we are permuting the data (randomly reassigning it) as if the gargle didn’t have an impact.</li>
+</ul>
+<p>Take a look at the output of the first three steps, before calculating the difference in proportions. It’s hard to tell just by looking at the dataframe, but really what you see is that different people have been assigned to different treatments (sugar or licorice).</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>licorice_study <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">specify</span>(cough <span class="sc">~</span> gargle, <span class="at">success =</span> <span class="st">"some"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hypothesize</span>(<span class="at">null =</span> <span class="st">"independence"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">generate</span>(<span class="at">reps =</span> <span class="dv">4</span>, <span class="at">type =</span> <span class="st">"permute"</span>) <span class="sc">%&gt;%</span>   <span class="co"># set reps=4 just to see the process</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+# Groups:   replicate [1]
+  cough gargle   replicate
+  &lt;fct&gt; &lt;fct&gt;        &lt;int&gt;
+1 none  licorice         1
+2 none  licorice         1
+3 some  licorice         1
+4 none  licorice         1
+5 none  licorice         1
+6 some  licorice         1</code></pre>
+</div>
+</div>
+<p>The last step ties it all together:</p>
+<ul>
+<li><code>calculate()</code> finds the statistic (here our statistic is the difference in proportions) for each of the permuted datasets.</li>
+</ul>
+<p>Keep all of those differences, and take a look at them. Is 14.8% is big? or is it small? can you tell?</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">4774</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>null_licorice <span class="ot">&lt;-</span> licorice_study <span class="sc">%&gt;%</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">specify</span>(cough <span class="sc">~</span> gargle, <span class="at">success =</span> <span class="st">"some"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">hypothesize</span>(<span class="at">null =</span> <span class="st">"independence"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">generate</span>(<span class="at">reps =</span> <span class="dv">1000</span>, <span class="at">type =</span> <span class="st">"permute"</span>) <span class="sc">%&gt;%</span>  <span class="co"># need a lot of reps to truly understand</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">calculate</span>(<span class="at">stat =</span> <span class="st">"diff in props"</span>, <span class="at">order =</span> <span class="fu">c</span>(<span class="st">"sugar"</span>, <span class="st">"licorice"</span>))</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>null_licorice <span class="sc">%&gt;%</span> <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Response: cough (factor)
+Explanatory: gargle (factor)
+Null Hypothesis: independence
+# A tibble: 6 × 2
+  replicate     stat
+      &lt;int&gt;    &lt;dbl&gt;
+1         1 -0.0566 
+2         2 -0.125  
+3         3 -0.00558
+4         4 -0.00558
+5         5  0.0285 
+6         6  0.0114 </code></pre>
+</div>
+</div>
+</section>
+<section id="step-3.-look-at-all-the-differences" class="level4">
+<h4 class="anchored" data-anchor-id="step-3.-look-at-all-the-differences">Step 3. Look at all the differences</h4>
+<p>Fortunately for us, we saved all the differences in proportions into an object that was called <code>null_licorice</code>. We can <code>visuzlize()</code> the differences!</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">visualize</span>(null_licorice) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lab3_m58_s23_infer_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>It is still a little bit hard to tell where that 14.8% falls. It doesn’t seem way outside the range, but it is in the tails. Let’s plot the observed difference on the plot of null differences. Remember, when adding layers to a plot we use <code>+</code> instead of <code>%&gt;%</code>.</p>
+<p>Fun activity: the direction argument has different options. Try them out: <code>direction = "less"</code> or <code>direction = "two-sided"</code>. What happens to the plot?</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">visualize</span>(null_licorice) <span class="sc">+</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">shade_p_value</span>(<span class="at">obs_stat =</span> diff_obs, <span class="at">direction =</span> <span class="st">"greater"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lab3_m58_s23_infer_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="step-4.-calculate-the-p-value" class="level4">
+<h4 class="anchored" data-anchor-id="step-4.-calculate-the-p-value">Step 4. Calculate the p-value</h4>
+<p>Recall that the p-value is the probability of the observed difference or more extreme if the variables are independent (that is, if the null hypothesis is true and licorice doesn’t impact whether or not you are more likely to cough post-surgery).</p>
+<p>Fun activity: the direction argument has different options. Try them out: <code>direction = "less"</code> or <code>direction = "two-sided"</code>. What happens to the p-value?</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>null_licorice <span class="sc">%&gt;%</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">get_p_value</span>(<span class="at">obs_stat =</span> diff_obs, <span class="at">direction =</span> <span class="st">"greater"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 1
+  p_value
+    &lt;dbl&gt;
+1   0.017</code></pre>
+</div>
+</div>
+</section>
+<section id="step-5.-make-a-conclusion" class="level4">
+<h4 class="anchored" data-anchor-id="step-5.-make-a-conclusion">Step 5. Make a conclusion</h4>
+<p>The p-value here is 0.034. We’re saying that if those 81 people were going to cough anyway, regardless of gargle, only 3.4% of the time would so many of them have landed in the sugar group just by chance. The probability of the observed difference seems pretty small. It makes us think that chance was probably not the mechanism that put so many patients into the sugar group. Instead, this process makes us believe that it was actually the licorice (in contrast to the sugar) that reduced the coughing.</p>
+<p>Because this was a randomized trial, all other characteristics of the patients are balanced out. And we seem to have ruled out chance as the mechanism.</p>
+<p><strong>Conclusion:</strong> the difference in probability of coughing is due to the choice of gargle. That is, licorice gargle reduces the probability of coughing post-operative for this particular elective thoracic surgery.</p>
+<hr>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+</section>
+<section id="to-turn-in" class="level2">
+<h2 class="anchored" data-anchor-id="to-turn-in">To Turn In</h2>
+<section id="the-data" class="level3">
+<h3 class="anchored" data-anchor-id="the-data">The data</h3>
+<p>The data for the write-up part of the lab is on a diabetes clinical trial<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and available from the <strong>openintro</strong> package. (Note: in the original study there were three treatments, today we’ll just compare metformin with a lifestyle-intervention program.)</p>
+<blockquote class="blockquote">
+<p>Three treatments were compared to test their relative efficacy (effectiveness) in treating Type 2 Diabetes in patients aged 10-17 who were being treated with metformin. The primary outcome was lack of glycemic control (or not); lacking glycemic control means the patient still needed insulin, which is not the preferred outcome for a patient.</p>
+</blockquote>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(infer)  <span class="co"># for doing the randomization test</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(openintro)  <span class="co"># home of the dataset for the lab</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(diabetes2)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>diabetes <span class="ot">&lt;-</span> diabetes2 <span class="sc">%&gt;%</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(treatment <span class="sc">!=</span> <span class="st">"rosi"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">treatment =</span> <span class="fu">droplevels</span>(treatment))</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>diabetes <span class="sc">%&gt;%</span> <span class="fu">table</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           outcome
+treatment   failure success
+  lifestyle     109     125
+  met           120     112</code></pre>
+</div>
+</div>
+<section id="q1.-learning-community-q" class="level4">
+<h4 class="anchored" data-anchor-id="q1.-learning-community-q">Q1. Learning Community Q</h4>
+<p>Describe one thing you learned from someone in your learning community this week (it could be: content, logistical help, background material, R information, etc.) 1-3 sentences.</p>
+</section>
+<section id="q2.-the-study" class="level4">
+<h4 class="anchored" data-anchor-id="q2.-the-study">Q2. The study</h4>
+<p>Answer the following questions with respect to the study (feel free to read about the study more on your own, or you might type into the console: <code>?diabetes2</code>).</p>
+<ul>
+<li>What are the observational units?</li>
+<li>What are the variables? Label them as explanatory and response.</li>
+<li>Is it an experiment or an observational study?</li>
+<li>Was the treatment randomly assigned? If so, what might you conclude at the end of this lab? If not, what are you unable to conclude? Explain.</li>
+<li>Were the observational units randomly selected from the population? (Please specify the population which you think is most relevant here.). If so, what might you conclude at the end of the lab? If not what are you unable to conclude? Explain.</li>
+</ul>
+</section>
+<section id="q3.-hypotheses" class="level4">
+<h4 class="anchored" data-anchor-id="q3.-hypotheses">Q3. Hypotheses</h4>
+<p>Write out the null and alternative hypotheses. Use words like diabetes in your claims. For this lab, let’s say you don’t have scientific background to think that one treatment over the other might be best. Instead, the goal is to find out whether there is a difference between the two treatments.</p>
+</section>
+<section id="q4.-observed-test-statistic" class="level4">
+<h4 class="anchored" data-anchor-id="q4.-observed-test-statistic">Q4. Observed test statistic</h4>
+<p>Using the infer syntax, calculate the observed test statistic.</p>
+</section>
+<section id="q5.-null-test-statistics" class="level4">
+<h4 class="anchored" data-anchor-id="q5.-null-test-statistics">Q5. Null test statistics</h4>
+<p>Calculate 1000 null test statistics from 1000 different permutations of the data.</p>
+</section>
+<section id="q6.-visualize" class="level4">
+<h4 class="anchored" data-anchor-id="q6.-visualize">Q6. Visualize</h4>
+<p>Using the results from Q5, make a histogram to visualize the observed test statistic. Include the observed statistic, and shade the area of the histogram which is “more extreme” from the observed statistic. (Remember that the hypothesis claim here is that the treatments are different.)</p>
+</section>
+<section id="q7.-p-value" class="level4">
+<h4 class="anchored" data-anchor-id="q7.-p-value">Q7. p-value</h4>
+<p>Calculate the p-value. Remember that the hypothesis claim here is that the treatments are different.</p>
+</section>
+<section id="q8.-conclusion" class="level4">
+<h4 class="anchored" data-anchor-id="q8.-conclusion">Q8. Conclusion</h4>
+<p>Give a conclusion about the hypothesis claims. Do you reject H0 or not? Do you have evidence for cause? To what population can you / can’t you generalize the results?</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">praise</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "You are amazing!"</code></pre>
+</div>
+</div>
+<hr>
+<div style="page-break-after: always;"></div>
+<p><strong>HW &amp; Lab assignments</strong> will be graded out of 5 points, which are based on a combination of accuracy and effort. Below are rough guidelines for grading.</p>
+</section>
+</section>
+<section id="score-description" class="level3">
+<h3 class="anchored" data-anchor-id="score-description">Score &amp; Description</h3>
+<p>5 points: All problems completed with detailed solutions provided and 75% or more of the problems are fully correct.</p>
+<p>4 points: All problems completed with detailed solutions and 50-75% correct; OR close to all problems completed and 75%-100% correct. An assignment will earn a 4 if there is superfluous information printed out on the assignment.</p>
+<p>3 points: Close to all problems completed with less than 75% correct</p>
+<p>2 points: More than half but fewer than all problems completed and &gt; 75% correct</p>
+<p>1 point: More than half but fewer than all problems completed and &lt; 75% correct; OR less than half of problems completed</p>
+<p>0 points: No work submitted, OR half or less than half of the problems submitted and without any detail/work shown to explain the solutions.</p>
+</section>
+<section id="general-notes-on-homework-assignments-also-see-syllabus-for-policies-and-suggestions" class="level3">
+<h3 class="anchored" data-anchor-id="general-notes-on-homework-assignments-also-see-syllabus-for-policies-and-suggestions">General notes on homework assignments (also see syllabus for policies and suggestions):</h3>
+<ul>
+<li><p>please be neat and organized, this will help me, the grader, and you (in the future) to follow your work.</p></li>
+<li><p>be sure to include your name on the assignment</p></li>
+<li><p>please include at least the number of the problem, or a summary of this question (this will also be helpful to you in the future to prepare for exams).</p></li>
+<li><p>for R problems, it is required to use R Markdown. You can write out other problems with pencil and combine pdf as appropriate.</p></li>
+<li><p>please do not print errors, messages, warnings, or anything else that makes your homework unwieldy. You will be graded down for superfluous printouts.</p></li>
+<li><p>in case of questions, or if you get stuck please don’t hesitate to email me or DM on Discord! The sooner (and more often) questions get asked, the better for everyone.</p></li>
+</ul>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Zeitler P, et al.&nbsp;2012. A Clinical Trial to Maintain Glycemic Control in Youth with Type 2 Diabetes. N Engl J Med.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><a href="https://hardin47.netlify.app/research/"></a> <a href="https://hardin47.netlify.app/resume.pdf" target="_blank"><i class="fa-solid fa-bookmark"></i></a> <a href="mailto:jo.hardin@pomona.edu" target="_blank"><i class="fa-solid fa-at"></i></a> <a href="https://scholar.google.com/citations?user=c5Y77poAAAAJ&amp;hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i></a> <a href="https://www.researchgate.net/scientific-contributions/Johanna-Hardin-9764530" target="_blank"><i class="fa-brands fa-researchgate"></i></a><br>
+<a href="https://mobile.twitter.com/jo_hardin47" target="_blank"><i class="fa-brands fa-twitter"></i></a> <a href="https://github.com/hardin47" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/jo-hardin-b91a4b55" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>   
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ <br> © Jo Hardin, 2023 -- <a href="mailto: jo.hardin@pomona.edu">jo.hardin@pomona.edu</a> -- <a href="https://hardin47.netlify.app/">https://hardin47.netlify.app/</a> <br> <br>
+Math 58B -- Introduction to Biostatistics -- Pomona College, Claremont, CA <br>
+  </li>  
+</ul>
+      </div>
+  </div>
+</footer>
+
+
+
+</body></html>

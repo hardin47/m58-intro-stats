@@ -321,33 +321,32 @@ $$\sum_{i=1}^n(Y_i - m)^2$$
 
 ---
 
-29. "Observed data or more extreme" is:[^29]
+28. "Observed data or more extreme" is:[^28]
     (a) fewer than 9
     (b) 9 or fewer
     (c) 9 or more
     (d) more than 9
 
-[^29]: c. 9 or more
+[^28]: c. 9 or more
 
 ---
 
-
-30. What is the mean value of the null sampling distribution for the number of Botox therapy who showed pain reduction?[^30]
+29. What is the mean value of the null sampling distribution for the number of Botox therapy who showed pain reduction?[^29]
     (a) 0
     (b) 9
     (c) 5.3
     (d) 11
     (e) 15
 
-[^30]: c. 5.3 because (15/31)*11 = 5.3
+[^29]: c. 5.3 because (15/31)*11 = 5.3
 
 ---
 
-28. In the Botox and Pain Relief example, the p-value is calculated.  What does "probability" refer to?[^28]
+30. In the Botox and Pain Relief example, the p-value is calculated.  What does "probability" refer to?[^30]
     (a) random allocation
     (b) random sample
 
-[^28]: a. random allocation
+[^30]: a. random allocation
 
 ---
 
