@@ -472,7 +472,11 @@ See Canvas front page for **anonymous** survey / feedback for the class.  Also, 
 
 ---
 
-    
+43. I know where to find: the solutions to the warm-ups, the clicker questions (with solutions), and the HW/Lab solutions[^43]
+     (a) TRUE
+     (b) FALSE
+     
+[^43]: The warm-up solutions and clicker questions are on the main course website.  The HW & Lab solutions are on Canvas under Files.
     
     
 
