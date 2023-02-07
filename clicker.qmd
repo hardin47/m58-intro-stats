@@ -478,7 +478,80 @@ See Canvas front page for **anonymous** survey / feedback for the class.  Also, 
      
 [^43]: The warm-up solutions and clicker questions are on the main course website.  The HW & Lab solutions are on Canvas under Files.
     
+---
+
+44. You have a sample of size n = 50.  You sample with replacement 1000 times (to get 1000 bootstrap resamples). What is the sample size of each bootstrap resample?[^44]
+    (a) 50
+    (b) 1000
+
+[^44]: a. 50
+
+---
+
+45. You have a sample of size n = 50.  You sample with replacement 1000 times (to get 1000 bootstrap resamples). How many bootstrap statistics will you have?[^45] 
+     (a) 50
+     (b) 1000
+
+[^45]: b. 1000
+---
+
+46. Let’s say you take a random sample and compute $\hat{p}=0.3.$  After bootstrapping, you see that the bootstrapped resamples produce almost all the $\hat{p}_{boot}$ within plus or minus 0.01 of your original statistic. It seems that the parameter $p$ is probably:[^46]
+	   a. 0.3
+	   b. between (0.2, 0.4)
+	   c. between (0.29, 0.31)
+	   d. between (0.28, 0.32)
+	   e. huh?  how can we get $p$ from $\hat{p}?$
+
+[^46]: c. between (0.29, 0.31)
+
+---
+
+47. In a second analysis, I create a 90% CI for the true proportion $p.$ What is the impact (of switching from 95% to 90%) on the CI?[^47]
+    (a) narrower
+    (b) less likely (long-run) to capture the parameter
+    (c) neither
+    (d) both
+
+[^47]: b. less likely (long-run) to capture the parameter
+
+---
+
+48. In a second study, I set out to obtain twice as much data (as in the first study) in order to create a 95% CI for the true proportion $p.$ What is the impact (of the larger sample) on the CI?[^48]
+    (a) narrower
+    (b) more likely (long-run) to capture the parameter
+    (c) neither
+    (d) both
+
+[^48]: a. narrower (the sample size will not change the capture rate)
+
+---
+
+49. What is one main reason to use bootstrapping to find a confidence interval?[^49]
+    (a) larger coverage probabilities
+    (b) narrower intervals
+    (c) more resistant to outliers
+    (d) can be done for any statistic
     
+[^49]: d. can be done for any statistic
+
+---
+ 
+50. 95% CI for the true median mercury:[^50]
+    (a) (0.025 mg/kg, 0.975 mg/kg)
+    (b) (0.469 mg/kg, 0.053 mg/kg)
+    (c) (0.053 mg/kg, 0.469 mg/kg)
+    (d) (0.34 mg/kg, 0.56 mg/kg)
+
+[^50]: d. (0.34 mg/kg, 0.56 mg/kg)
+---
+
+```{r fig.cap = "From StatKey applet: https://www.lock5stat.com/StatKey/",  out.width="95%", fig.align='center', echo=FALSE}
+knitr::include_graphics("images/merc_boot.jpg")
+```
+
+
+---
+
 
 
 ```{r echo = FALSE, eval = FALSE}

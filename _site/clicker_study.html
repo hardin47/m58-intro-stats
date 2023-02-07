@@ -575,6 +575,85 @@ The value of the correlation, r, is:<a href="#fn21" class="footnote-ref" id="fnr
 <li>FALSE</li>
 </ol></li>
 </ol>
+<hr>
+<ol start="44" type="1">
+<li>You have a sample of size n = 50. You sample with replacement 1000 times (to get 1000 bootstrap resamples). What is the sample size of each bootstrap resample?<a href="#fn42" class="footnote-ref" id="fnref42" role="doc-noteref"><sup>42</sup></a>
+<ol type="a">
+<li>50</li>
+<li>1000</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="45" type="1">
+<li>You have a sample of size n = 50. You sample with replacement 1000 times (to get 1000 bootstrap resamples). How many bootstrap statistics will you have?<a href="#fn43" class="footnote-ref" id="fnref43" role="doc-noteref"><sup>43</sup></a>
+<ol type="a">
+<li>50</li>
+<li>1000</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="46" type="1">
+<li>Let’s say you take a random sample and compute <span class="math inline">\(\hat{p}=0.3.\)</span> After bootstrapping, you see that the bootstrapped resamples produce almost all the <span class="math inline">\(\hat{p}_{boot}\)</span> within plus or minus 0.01 of your original statistic. It seems that the parameter <span class="math inline">\(p\)</span> is probably:<a href="#fn44" class="footnote-ref" id="fnref44" role="doc-noteref"><sup>44</sup></a>
+<ol type="a">
+<li>0.3</li>
+<li>between (0.2, 0.4)</li>
+<li>between (0.29, 0.31)</li>
+<li>between (0.28, 0.32)</li>
+<li>huh? how can we get <span class="math inline">\(p\)</span> from <span class="math inline">\(\hat{p}?\)</span></li>
+</ol></li>
+</ol>
+<hr>
+<ol start="47" type="1">
+<li>In a second analysis, I create a 90% CI for the true proportion <span class="math inline">\(p.\)</span> What is the impact (of switching from 95% to 90%) on the CI?<a href="#fn45" class="footnote-ref" id="fnref45" role="doc-noteref"><sup>45</sup></a>
+<ol type="a">
+<li>narrower</li>
+<li>less likely (long-run) to capture the parameter</li>
+<li>neither</li>
+<li>both</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="48" type="1">
+<li>In a second study, I set out to obtain twice as much data (as in the first study) in order to create a 95% CI for the true proportion <span class="math inline">\(p.\)</span> What is the impact (of the larger sample) on the CI?<a href="#fn46" class="footnote-ref" id="fnref46" role="doc-noteref"><sup>46</sup></a>
+<ol type="a">
+<li>narrower</li>
+<li>more likely (long-run) to capture the parameter</li>
+<li>neither</li>
+<li>both</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="49" type="1">
+<li>What is one main reason to use bootstrapping to find a confidence interval?<a href="#fn47" class="footnote-ref" id="fnref47" role="doc-noteref"><sup>47</sup></a>
+<ol type="a">
+<li>larger coverage probabilities</li>
+<li>narrower intervals</li>
+<li>more resistant to outliers</li>
+<li>can be done for any statistic</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="50" type="1">
+<li>95% CI for the true median mercury:<a href="#fn48" class="footnote-ref" id="fnref48" role="doc-noteref"><sup>48</sup></a>
+<ol type="a">
+<li>(0.025 mg/kg, 0.975 mg/kg)</li>
+<li>(0.469 mg/kg, 0.053 mg/kg)</li>
+<li>(0.053 mg/kg, 0.469 mg/kg)</li>
+<li>(0.34 mg/kg, 0.56 mg/kg)</li>
+</ol></li>
+</ol>
+<hr>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/merc_boot.png" class="img-fluid figure-img" style="width:95.0%"></p>
+<p></p><figcaption class="figure-caption">From StatKey applet: https://www.lock5stat.com/StatKey/</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
 <div class="cell">
 
 </div>
@@ -737,7 +816,35 @@ The value of the correlation, r, is:<a href="#fn21" class="footnote-ref" id="fnr
 <li>A number which (is almost always unknown and) describes a population.</li>
 </ol>
 <a href="#fnref40" class="footnote-back" role="doc-backlink">↩︎</a></li>
-<li id="fn41"><p>The warm-up solutions and clicker questions are on the main course website. The HW solutions are on Canvas under Files.<a href="#fnref41" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn41"><p>The warm-up solutions and clicker questions are on the main course website. The HW &amp; Lab solutions are on Canvas under Files.<a href="#fnref41" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn42"><ol type="a">
+<li>50</li>
+</ol>
+<a href="#fnref42" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn43"><ol start="2" type="a">
+<li>1000</li>
+</ol>
+<a href="#fnref43" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn44"><ol start="3" type="a">
+<li>between (0.29, 0.31)</li>
+</ol>
+<a href="#fnref44" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn45"><ol start="2" type="a">
+<li>less likely (long-run) to capture the parameter</li>
+</ol>
+<a href="#fnref45" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn46"><ol type="a">
+<li>narrower (the sample size will not change the capture rate)</li>
+</ol>
+<a href="#fnref46" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn47"><ol start="4" type="a">
+<li>can be done for any statistic</li>
+</ol>
+<a href="#fnref47" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn48"><ol start="4" type="a">
+<li>(0.34 mg/kg, 0.56 mg/kg)</li>
+</ol>
+<a href="#fnref48" class="footnote-back" role="doc-backlink">↩︎</a></li>
 </ol>
 </section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
