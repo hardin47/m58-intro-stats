@@ -512,7 +512,7 @@ See Canvas front page for **anonymous** survey / feedback for the class.  Also, 
     (c) neither
     (d) both
 
-[^47]: b. less likely (long-run) to capture the parameter
+[^47]: d. both.  the intervals will be less likely (long-run) to capture the parameter *and* they will be narrower.
 
 ---
 
