@@ -552,6 +552,229 @@ knitr::include_graphics("images/merc_boot.jpg")
 
 ---
 
+51. What are the observational units for your individual candy study?[^51]
+     a. Color of the candy
+     b. Piece of candy
+     c. Cup of candy
+     d. The Hershey Company
+     e. Proportion that are orange
+
+[^51]: b. Piece of candy
+
+---
+
+52. What are the observational units for the class compilation (dotplot)?[^52]
+     a. Color of the candy
+     b. Piece of candy
+     c. Cup of candy
+     d. The Hershey Company
+     e. Proportion that are orange
+
+[^52]: c. Cup of candy
+
+---
+
+53. How does the sampling distribution for the sample proportion change as n changes (for a fixed p)?[^53]
+     a. The spread changes
+     b. The symmetry changes
+     c. The center changes
+     d. The shape changes
+
+[^53]: a. The spread changes
+
+---
+
+54. How does the sampling distribution change as p changes (for a fixed n)?[^54]
+     a. The spread changes
+     b. The symmetry changes
+     c. The center changes
+     d. The shape changes
+     
+[^54]: c. The center changes (the spread also changes a little bit, but mostly the center)
+
+---
+
+55. The Central Limit Theorem says that the distribution of $\hat{p}$ will be approximately normal with what center:[^55]
+    (a) $\hat{p}$
+    (b) $p$
+    (c) 0.5
+    (d) 1
+    (e) $\sqrt{p(1-p) / n}$
+
+[^55]: b. p
+
+---
+
+
+56. The standardized score (z-score) counts:[^56]
+    (a) the number of standard deviations from the mean
+    (b) the number of standard deviations above the mean
+    (c) the number of standard deviations below the mean
+    (d) the distance from the mean
+    (e) the distance from the standard deviation
+
+[^56]: a. the number of standard deviations from the mean
+
+---
+
+57. If the normal distribution is a good model, we would expect the large majority of our z scores to be:[^57]
+    (a) within $\pm$ 1 of the mean
+    (b) within $\pm$ 2 of the mean
+    (c) within $\pm$ 1 
+    (d) within $\pm$ 2 
+
+[^57]: d. within $\pm$ 2
+
+---
+
+58. With your cup of candy, you personally got a Z score of:[^58]
+    (a) between (-1, 1) (not including 1)
+    (b) between (-2, -1] or [1, 2)
+    (c) between (-3, -2] or [2, 3)
+    (d) -3 or smaller or 3 or above
+
+[^58]: a. or b.  you most likely got between -2 and 2
+
+---
+
+59. Assume n = 100 and p= 0.8  (note: $\sqrt{(0.8 \cdot 0.2)/100} = 0.4/10 = 0.04$)  
+What is the largest reasonable distance between $\hat{p}$ and $p$?  
+That is, we would expect $\hat{p}$ and $p$ to be no more than _____ apart[^59]
+    (a) 0.04
+    (b) 0.08
+    (c) 0.12
+    (d) 0.16
+    (e) 0.24
+
+[^59]: b. 0.08 (we usually consider two standard deviations)
+
+---
+
+
+60. Assume n = 100 and p= 0.8  (note: $\sqrt{(0.8 \cdot 0.2)/100} = 0.4/10 = 0.04$) Which statement is true?[^60]
+    (a) 95% of $\hat{p}$ are between (0.76, 0.84)
+    (b) 95% of $\hat{p}$ are between (0.72, 0.88)
+    (c) 95% of $\hat{p}$ are between (0.68, 0.92)
+    (d) 95% of $p$ are between (0.76, 0.84)
+    (e) 95% of $p$ are between (0.72, 0.88)
+
+[^60]: b. 95% of $\hat{p}$ are between (0.72, 0.88)
+
+---
+
+61.  If you want a 90% confidence interval for p, your z* multiplier should be[^61]
+     (a) less than 1
+     (b) less than 2 (but greater than 1)
+     (c) equal to 2
+     (d) greater than 2 (but less than 3)
+     (e) greater than 3
+
+[^61]: b. less than 2 (but greater than 1)
+
+---
+
+62. What is the difference between Z* and a Z score?[^62]
+     a. Z score comes from the data, Z* and is a pre-defined unit of measurement.
+     b. Z* comes from the data, and Z score is a pre-defined unit of measurement
+     c. Z score assumes the null hypothesis is true and Z* doesn’t.
+     d. Z* assumes the null hypothesis is true, and Z score doesn’t
+
+[^62]: a. Z score comes from the data, Z* and is a pre-defined unit of measurement.
+
+---
+
+63. Let’s say we are making confidence intervals (not doing a hypothesis test), what is your best guess for $SE(\hat{p})$?[^63]
+    (a) $\sqrt{0.5 \cdot (1 - 0.5) / n}$
+    (b) $\sqrt{p \cdot (1 - p) / n}$
+    (c) $\sqrt{\hat{p} \cdot (1 - \hat{p}) / n}$
+    (d) $\sqrt{X \cdot (1 - X) / n}$
+    (e) $\sqrt{0.95 \cdot (1 - 0.95) / n}$
+
+[^63]: c. $\sqrt{\hat{p} \cdot (1 - \hat{p}) / n}$
+
+---
+
+64. The following is a correct interpretation of the CI:[^64]  
+
+> 95% confident that the interval includes the sample proportion who believe that the global poverty rate has doubled. 
+
+   a. TRUE
+   b. FALSE
+
+[^64]: a. TRUE
+
+---
+
+65.  The following is a correct interpretation of the CI:[^65]  
+
+> If researchers were to select a new sample of 1005 adult Americans, then we're 95% confident that between 56% and 62% of those people would answer "doubled" to the question. 
+
+   a. TRUE
+   b. FALSE
+
+[^65]: b. FALSE (we are 95% confident that the new interval will contain the true value.  We do not think that the new interval will be the same as the original interval.)
+
+---
+
+66.  Let’s say that the null hypothesis (e.g., p=0.47) is TRUE.   My level of significance is 0.03 (reject if p-value < 0.03). How often will I reject the null hypothesis?[^66]
+     (a) 1 % of the time
+     (b) 3% of the time
+     (c) 5 % of the time
+     (d) 95% of the time
+     (e) 97% of the time
+
+[^66]: b. 3% of the time
+
+---
+
+What does "of the time" mean???
+
+It means in repeated samples.  That is, in 3% of all datasets we'd take from that exact same population, we would mistakenly reject the actually true hypothesis that p=0.47.
+
+---
+
+67. Let’s say that the null hypothesis (e.g., p=0.47) is TRUE.   My level of significance is 0.03.  
+How often will p be in a 97% confidence interval?[^67]
+    (a) 1 % of the time
+    (b) 3% of the time
+    (c) 5 % of the time
+    (d) 95% of the time
+    (e) 97% of the time
+
+[^67]: e. 97% of the time
+
+---
+
+What does "of the time" mean???
+
+It means in repeated samples.  That is, in 97% of all datasets we'd take from that exact same population, we would capture the true population proportion of 0.47.
+
+---
+
+68.  Suppose the sample is 10 times larger.  The SE of the statistic:[^68]
+     a. increases
+     b. stays the same
+     c. decrease
+
+[^68]: c. decreases
+
+---
+
+69.  Suppose the population is 10 times larger.  The SE of the statistic:[^69]
+     a. increases
+     b. stays the same
+     c. decrease
+
+[^69]: b. stays the same (the population size has no effect on the sampling distribution of the statistic)
+
+---
+
+70. Suppose the sample is 10 times larger.  The variability of the data:[^70]
+     a. increases
+     b. stays the same
+     c. decrease
+
+[^70]: b. stays the same (the variability of the data should be the same as the variability of the population, regardless of the sample size)
 
 
 ```{r echo = FALSE, eval = FALSE}
