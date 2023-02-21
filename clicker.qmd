@@ -495,7 +495,7 @@ See Canvas front page for **anonymous** survey / feedback for the class.  Also, 
 [^45]: b. 1000
 ---
 
-46. Let’s say you take a random sample and compute $\hat{p}=0.3.$  After bootstrapping, you see that the bootstrapped resamples produce almost all the $\hat{p}_{boot}$ within plus or minus 0.01 of your original statistic. It seems that the parameter $p$ is probably:[^46]
+46. Let's say you take a random sample and compute $\hat{p}=0.3.$  After bootstrapping, you see that the bootstrapped resamples produce almost all the $\hat{p}_{boot}$ within plus or minus 0.01 of your original statistic. It seems that the parameter $p$ is probably:[^46]
 	   a. 0.3
 	   b. between (0.2, 0.4)
 	   c. between (0.29, 0.31)
@@ -683,14 +683,14 @@ That is, we would expect $\hat{p}$ and $p$ to be no more than _____ apart[^60]
 63. What is the difference between Z* and a Z score?[^63]
      a. Z score comes from the data, Z* and is a pre-defined unit of measurement.
      b. Z* comes from the data, and Z score is a pre-defined unit of measurement
-     c. Z score assumes the null hypothesis is true and Z* doesn’t.
-     d. Z* assumes the null hypothesis is true, and Z score doesn’t
+     c. Z score assumes the null hypothesis is true and Z* doesn't.
+     d. Z* assumes the null hypothesis is true, and Z score doesn't
 
 [^63]: a. Z score comes from the data, Z* and is a pre-defined unit of measurement.
 
 ---
 
-64. Let’s say we are making confidence intervals (not doing a hypothesis test), what is your best guess for $SE(\hat{p})$?[^64]
+64. Let's say we are making confidence intervals (not doing a hypothesis test), what is your best guess for $SE(\hat{p})$?[^64]
     (a) $\sqrt{0.5 \cdot (1 - 0.5) / n}$
     (b) $\sqrt{p \cdot (1 - p) / n}$
     (c) $\sqrt{\hat{p} \cdot (1 - \hat{p}) / n}$
@@ -723,7 +723,7 @@ That is, we would expect $\hat{p}$ and $p$ to be no more than _____ apart[^60]
 
 ---
 
-67.  Let’s say that the null hypothesis (e.g., p=0.47) is TRUE.   My level of significance is 0.03 (reject if p-value < 0.03). How often will I reject the null hypothesis?[^67]
+67.  Let's say that the null hypothesis (e.g., p=0.47) is TRUE.   My level of significance is 0.03 (reject if p-value < 0.03). How often will I reject the null hypothesis?[^67]
      (a) 1 % of the time
      (b) 3% of the time
      (c) 5 % of the time
@@ -740,7 +740,7 @@ It means in repeated samples.  That is, in 3% of all datasets we'd take from tha
 
 ---
 
-68. Let’s say that the null hypothesis (e.g., p=0.47) is TRUE.   My level of significance is 0.03.  
+68. Let's say that the null hypothesis (e.g., p=0.47) is TRUE.   My level of significance is 0.03.  
 How often will p be in a 97% confidence interval?[^68]
     (a) 1 % of the time
     (b) 3% of the time
@@ -783,6 +783,100 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 [^71]: b. stays the same (the variability of the data should be the same as the variability of the population, regardless of the sample size)
 
+
+---
+
+72. How many hits out of 20 at bats would make you believe him?[^72]
+(a)	5
+(b)	6
+(c)	7
+(d)	8
+(e)	9
+
+[^72]: e. 9
+
+---
+
+73. Type I error is[^73]
+(a)	We give him a raise when he deserves it.
+(b)	We don't give him a raise when he deserves it.
+(c)	We give him a raise when he doesn't deserve it.
+(d)	We don't give him a raise when he doesn't deserve it.
+ 
+[^73]: c. We give him a raise when he doesn't deserve it.
+
+---
+
+74. Type II error is[^74]
+(a)	We give him a raise when he deserves it.
+(b)	We don't give him a raise when he deserves it.
+(c)	We give him a raise when he doesn't deserve it.
+(d)	We don't give him a raise when he doesn't deserve it.
+
+[^74]: c. We don't give him a raise when he deserves it.
+
+---
+
+75. Power is the probability that:[^75]
+(a)	We give him a raise when he deserves it.
+(b)	We don't give him a raise when he deserves it.
+(c)	We give him a raise when he doesn't deserve it.
+(d)	We don't give him a raise when he doesn't deserve it.
+
+[^75]: a. We give him a raise when he deserves it.
+
+---
+
+76. The player is more worried about[^76]
+(a)	A type I error
+(b)	A type II error
+
+[^76] b. A type I error
+
+---
+
+77. The manager is more worried about[^77]
+(a)	A type I error
+(b)	A type II error
+
+[^77]: a. A type I error
+
+---
+
+78. Increasing your sample size[^78]
+(a)	Increases your power
+(b)	Decreases your power
+
+[^78]: a. Increases your power
+
+---
+
+79.	Making your significance level more stringent ($\alpha$ smaller)[^79]
+(a)	Increases your power
+(b)	Decreases your power
+
+[^79]: b. Decreases your power
+
+---
+
+80.	 A more extreme alternative[^80]:
+(a)	Increases your power
+(b)	Decreases your power
+
+[^80]: a. Increases your power
+
+```{r eval = FALSE, echo = FALSE}
+
+63.	A newspaper article claims that the average age for people who receive food stamps is 40 years. You believe that the average age is less than that. You take a random sample of 100 people who receive food stamps and find their average age to be 39.2 years. You find that this is significantly lower than the age of 40 stated in the article (p < 0.05). What would be an appropriate interpretation of this result?
+(a) The statistically significant result indicates that the majority of people who receive food stamps is younger than 40.
+(b) Although the result is statistically significant, the difference in age is not of practical importance.
+(c) An error must have been made. This difference is too small to be statistically significant.
+64.	In order to investigate a claim that the average time required for the county fire department to respond to a reported fire is greater than 5 minutes, county staff determined the response times for 40 randomly selected fire reports.  The data was used to test H0:  μ = 5 versus Ha:  μ > 5 and the computed p-value was 0.12.  If a 0.05 level of significance is used, what conclusions can be drawn?
+
+(a) There is convincing evidence that the mean response time is 5 minutes (or less).
+(b) There is convincing evidence that the mean response time is greater than 5 minutes.
+(c) There is not convincing evidence that the mean response time is greater than 5 minutes. 
+```
 
 ```{r echo = FALSE, eval = FALSE}
 10.	 The "random" part in clinical trials typically comes from:[^10]

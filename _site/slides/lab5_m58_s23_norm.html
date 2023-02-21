@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.256">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="your name here">
+<meta name="dcterms.date" content="2023-02-21">
+
+<title>Introduction to Biostatistics - Lab 5 - Math 58B: One Proportion CIs w Normality</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="https://m58-intro-stats.netlify.app/" class="navbar-brand navbar-brand-logo">
+    <img src="../images/st47s.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="https://m58-intro-stats.netlify.app/">
+    <span class="navbar-title">Introduction to Biostatistics</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../notes.html">
+ <span class="menu-text">Class Notes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../project.html">
+ <span class="menu-text">Project</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../clicker_study.html">
+ <span class="menu-text">Clicker Q</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab 5 - Math 58B: One Proportion CIs w Normality</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>your name here </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 21, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Using the normal distribution, confidence intervals for any confidence level will be created! And we’ll keep trying to understand what “confidence” means.</p>
+<section id="advice-for-turning-in-the-assignment" class="level2">
+<h2 class="anchored" data-anchor-id="advice-for-turning-in-the-assignment">Advice for turning in the assignment</h2>
+<ul>
+<li><p>knit early and often. In fact, go ahead and knit your .Rmd file right now. Maybe set a timer so that you knit every 5 minutes. Do <strong>not</strong> wait until you are done with the assignment to knit.</p></li>
+<li><p>The <strong>assignment</strong> part of the lab is <strong>ONLY</strong> the last six questions at the very bottom. However, the commands in the first half of the assignment are key to doing the second half.</p></li>
+<li><p>Save the .Rmd file somewhere you can find it. Don’t keep everything in your downloads folder. Maybe make a folder called <code>StatsHW</code> or something. That folder could live on your Desktop. Or maybe in your Dropbox.</p></li>
+</ul>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<p>The <strong>mosaic</strong> package provides great functions for calculating normal probabilities and normal cutoffs: <code>xpnorm()</code> and <code>xqnorm()</code> respectively.</p>
+</section>
+<section id="lab-goals" class="level2">
+<h2 class="anchored" data-anchor-id="lab-goals">Lab Goals</h2>
+<p>Computing a confidence interval for a single proportion</p>
+<ul>
+<li>wait, what <em>is</em> a confidence interval?</li>
+<li>using <code>xqnorm()</code> (find the number on the x-axis!) [Note: feel free to use <code>plot=FALSE</code> if you understand what is going on and don’t want the visual representation.]</li>
+<li>practice with <code>ggplot()</code></li>
+</ul>
+<section id="load-packages" class="level3">
+<h3 class="anchored" data-anchor-id="load-packages">Load packages</h3>
+<p>In lab #5 we will use the <code>xpnorm()</code> and <code>xqnorm()</code> functions which are in the <strong>mosaic</strong> package.</p>
+<p>Let’s load the packages.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)  <span class="co"># ggplot lives in the tidyverse</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mosaic)     <span class="co"># where xqnorm and xpnorm live</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(infer)      <span class="co"># for a function we are only using today</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="the-data" class="level3">
+<h3 class="anchored" data-anchor-id="the-data">The data</h3>
+<p>Consider the research study done in 2017 describing the support of marijuana legalization in Washington State.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>From the abstract of the paper:</p>
+<blockquote class="blockquote">
+<p>Data come from geographically representative general population samples of adult (aged 18 and over) Washington residents collected over five timepoints (every six months) between January 2014 and April 2016 (N=4101). Random Digit Dial was used for recruitment. Statistical analyses involved bivariate comparisons of proportions across timepoints and subgroups (defined by age, gender, and marijuana user status), and multivariable logistic regression controlling for timepoint (time) to formally test for trend while controlling for demographic and substance use covariates. All analyses adjusted for probability of selection.</p>
+</blockquote>
+<p>The results are given as:</p>
+<blockquote class="blockquote">
+<p>Support for legalization in Washington has significantly increased: support was 64.0% (95% CI: 61.2%-67.8%) at timepoint 1 and 77.9% (95% CI: 73.2%-81.9%) at timepoint 5. With each six months’ passing, support increased 19% on average. We found no statistically significant change in support for home-growing.</p>
+</blockquote>
+<p>For lab #5, we’re going to <strong>pretend</strong> to have a population. Here, it is the population of Washington State in 2016 (about 7 million people), 75% of whom think that marijuana should be legalized. (I made up those numbers, but they seem reasonable!)</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>legal <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">support =</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"yes"</span>, <span class="dv">5250000</span>), <span class="fu">rep</span>(<span class="st">"no"</span>, <span class="dv">1750000</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="step-1.-take-a-random-sample." class="level4">
+<h4 class="anchored" data-anchor-id="step-1.-take-a-random-sample.">Step 1. Take a random sample.</h4>
+<p>Let’s start with a random sample of 50 people. How many of them support legalization? Is it the same proportion as your neighbor?</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>samp_n <span class="ot">&lt;-</span> <span class="dv">50</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>legal_samp <span class="ot">&lt;-</span> <span class="fu">sample_n</span>(legal, samp_n)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(legal_samp)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>support
+ no yes 
+ 11  39 </code></pre>
+</div>
+</div>
+</section>
+<section id="step-2.-find-the-z-value-associated-with-92" class="level4">
+<h4 class="anchored" data-anchor-id="step-2.-find-the-z-value-associated-with-92">Step 2. Find the Z value associated with 92%</h4>
+<p>Find the quantile associated with 92% of the statistics (here <span class="math inline">\(\hat{p}\)</span>) in the sampling distribution. That is, how many SDs from the mean will 92% of <span class="math inline">\(\hat{p}\)</span> statistics be? It might be best to run each line one at a time.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xqnorm</span>(<span class="fl">0.92</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lab5_m58_s23_norm_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.405072</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xqnorm</span>(<span class="fl">0.96</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lab5_m58_s23_norm_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.750686</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xqnorm</span>(<span class="fl">0.04</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lab5_m58_s23_norm_files/figure-html/unnamed-chunk-4-3.png" class="img-fluid figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] -1.750686</code></pre>
+</div>
+</div>
+<p>Let’s check to find the probabilities associated with each of the quantile cutoffs. Which one is the correct one to use for the 92% CI? Again, try running the lines one at a time.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xpnorm</span>(<span class="fl">1.405</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lab5_m58_s23_norm_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.9199894</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xpnorm</span>(<span class="fu">c</span>(<span class="sc">-</span><span class="fl">1.405</span>, <span class="fl">1.405</span>), <span class="dv">0</span>, <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lab5_m58_s23_norm_files/figure-html/unnamed-chunk-5-2.png" class="img-fluid figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.08001064 0.91998936</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xpnorm</span>(<span class="fl">1.751</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lab5_m58_s23_norm_files/figure-html/unnamed-chunk-5-3.png" class="img-fluid figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.960027</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xpnorm</span>(<span class="fu">c</span>(<span class="sc">-</span><span class="fl">1.751</span>, <span class="fl">1.751</span>), <span class="dv">0</span>, <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lab5_m58_s23_norm_files/figure-html/unnamed-chunk-5-4.png" class="img-fluid figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.03997296 0.96002704</code></pre>
+</div>
+</div>
+<p>Note that there are two “x” functions:</p>
+<ul>
+<li>The first function has a “q” in it for “quantile” (<code>xqnorm()</code>). The quantile provides a cutoff value for a particular percentage. The median is the 50%. You may also be familiar with the quantile associated with the 90% on the SAT.</li>
+<li>The second function has a “p” in it for “probability” (<code>xpnorm()</code>). The probability function provides the appropriate percentages of the distribution at the given quantiles.</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>margin of error</strong> is the quantile times the standard error:</p>
+</blockquote>
+<p><span class="math display">\[me = Z^* \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\]</span></p>
+</section>
+<section id="step-3.-create-a-ci" class="level4">
+<h4 class="anchored" data-anchor-id="step-3.-create-a-ci">Step 3. Create a CI</h4>
+<p>Using the following formula &amp; your sample of 50 people, find a 92% CI for the true proportion of people who support legalizing marijuana use. Feel free to use R as a calculator.</p>
+<p><span class="math display">\[\hat{p} \pm 1.751*\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\]</span></p>
+<p>Note a few things… 1.751 is used instead of 2 for Z* (because we wanted a 92% interval instead of a 95% interval). And <span class="math inline">\(\hat{p}\)</span> was used instead of p in the SE (because we don’t usually know <span class="math inline">\(p\)</span> and we use the closest thing we have, <span class="math inline">\(\hat{p}\)</span>).</p>
+<p>Does your CI capture the true value of p (which we know / we set to be 0.75)? Does your neighbor’s CI capture the true value of p?</p>
+</section>
+<section id="step-4.-create-a-tidy-ci" class="level4">
+<h4 class="anchored" data-anchor-id="step-4.-create-a-tidy-ci">Step 4. Create a tidy CI</h4>
+<p>Now use the following “tidy” formula to calculate the CI one more time. Did you get the same interval as in #2?</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>(z_star_92 <span class="ot">&lt;-</span> <span class="fu">xqnorm</span>(<span class="fl">0.96</span>, <span class="dv">0</span>, <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lab5_m58_s23_norm_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.750686</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>legal_samp <span class="sc">%&gt;%</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">p_hat =</span> <span class="fu">sum</span>(support <span class="sc">==</span> <span class="st">"yes"</span>) <span class="sc">/</span> samp_n, </span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">se =</span> <span class="fu">sqrt</span>(p_hat<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>p_hat)<span class="sc">/</span>samp_n),  <span class="co"># se stands for "standard error"</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">me =</span> z_star_92 <span class="sc">*</span> se,  <span class="co"># me stands for "margin of error"</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">lower =</span> p_hat <span class="sc">-</span> me,   <span class="co"># lower is for the lower bound of the CI</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">upper =</span> p_hat <span class="sc">+</span> me)   <span class="co"># upper is for the upper bound of the CI</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  p_hat         se        me     lower     upper
+1  0.78 0.05858327 0.1025609 0.6774391 0.8825609</code></pre>
+</div>
+</div>
+</section>
+<section id="step-5.-force-reproducibility" class="level4">
+<h4 class="anchored" data-anchor-id="step-5.-force-reproducibility">Step 5. Force reproducibility</h4>
+<p>If you have run your code a few different times, you may have gotten <strong>different</strong> samples of size 50. If you want to get the same exact sample (e.g., so that you can write about your results), set your randomness by using <code>set.seed()</code> before you sample, where the argument to the <code>set.seed()</code> function is your favorite integer. Try it and see if you can get the same repeated results.</p>
+</section>
+<section id="step-6.-create-100-cis" class="level4">
+<h4 class="anchored" data-anchor-id="step-6.-create-100-cis">Step 6. Create 100 CIs</h4>
+<p>Because each student took a different random sample, we’d expect 92% of the classroom intervals to capture the true parameter value.</p>
+<p>Using R, we’re going to collect many samples to learn more about how sample means and confidence intervals vary from one sample to another.</p>
+<p>Here is the rough outline:</p>
+<ul>
+<li>Obtain a random sample.</li>
+<li>Calculate the sample proportion and use it to calculate and store the lower and upper bounds of the confidence intervals.</li>
+<li>Repeat 100 times.</li>
+</ul>
+<p>We can get many CIs using the <code>rep_sample_n()</code> function. The following lines of code take 100 random samples of size <code>samp_n</code> from the population (and remember <code>samp_n</code> <span class="math inline">\(= 50\)</span> as defined earlier) and computes the upper and lower bounds of the confidence intervals separately for each of the 100 samples.</p>
+<p>Note: you don’t need to memorize the code, but you should understand what it is doing.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">47</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>ci <span class="ot">&lt;-</span> legal <span class="sc">%&gt;%</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  infer<span class="sc">::</span><span class="fu">rep_sample_n</span>(<span class="at">size =</span> samp_n, <span class="at">reps =</span> <span class="dv">100</span>, <span class="at">replace =</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">p_hat =</span> <span class="fu">sum</span>(support <span class="sc">==</span> <span class="st">"yes"</span>) <span class="sc">/</span> samp_n, </span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">se =</span> <span class="fu">sqrt</span>(p_hat<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>p_hat)<span class="sc">/</span>samp_n),  <span class="co"># se stands for "standard error"</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">me =</span> z_star_92 <span class="sc">*</span> se,  <span class="co"># me stands for "margin of error"</span></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">lower =</span> p_hat <span class="sc">-</span> me,   <span class="co"># lower is for the lower bound of the CI</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">upper =</span> p_hat <span class="sc">+</span> me)   <span class="co"># upper is for the upper bound of the CI</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Let’s view the first five intervals:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>ci <span class="sc">%&gt;%</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 6
+  replicate p_hat     se     me lower upper
+      &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+1         1  0.8  0.0566 0.0990 0.701 0.899
+2         2  0.72 0.0635 0.111  0.609 0.831
+3         3  0.76 0.0604 0.106  0.654 0.866
+4         4  0.76 0.0604 0.106  0.654 0.866
+5         5  0.7  0.0648 0.113  0.587 0.813</code></pre>
+</div>
+</div>
+<p>Next we’ll create a plot similar to the <a href="http://www.rossmanchance.com/applets/2021/confsim/ConfSim.html">Confidence Interval applet</a> and also to Figure 13.11 in <a href="https://openintro-ims.netlify.app/foundations-mathematical.html#variability-of-the-statistic-6">Introduction to Modern Statistics</a>. The first step will be to create a new variable in the <code>ci</code> data frame that indicates whether the interval does or does not capture the true population mean. Note that capturing the true parameter value would mean the lower bound of the confidence interval is below the value and upper bound of the confidence interval is above the value. Remember that new variables are created using the <code>mutate()</code> function.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>ci <span class="ot">&lt;-</span> ci <span class="sc">%&gt;%</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">capture_p =</span> <span class="fu">case_when</span>(</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    lower <span class="sc">&lt;</span> <span class="fl">0.75</span> <span class="sc">&amp;</span> upper <span class="sc">&gt;</span> <span class="fl">0.75</span> <span class="sc">~</span> <span class="st">"yes"</span>,</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"no"</span>))</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>ci <span class="sc">%&gt;%</span> <span class="fu">select</span>(p_hat, lower, upper, capture_p) <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 4
+  p_hat lower upper capture_p
+  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    
+1  0.8  0.701 0.899 yes      
+2  0.72 0.609 0.831 yes      
+3  0.76 0.654 0.866 yes      
+4  0.76 0.654 0.866 yes      
+5  0.7  0.587 0.813 yes      </code></pre>
+</div>
+</div>
+<p>All that is left is to create the plot.</p>
+<p>Note that the <code>geom_errorbar()</code> function only understands <code>y</code> values, and thus we have used the <code>coord_flip()</code> function to flip the coordinates of the entire plot back to the more familiar vertical orientation.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(ci, <span class="fu">aes</span>(<span class="at">x =</span> replicate, <span class="at">y =</span> p_hat, <span class="at">color =</span> capture_p)) <span class="sc">+</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> lower, <span class="at">ymax =</span> upper)) <span class="sc">+</span> </span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="fl">0.75</span>, <span class="at">color =</span> <span class="st">"darkgray"</span>) <span class="sc">+</span> <span class="co"># draw vertical line</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lab5_m58_s23_norm_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>You can count how many confidence intervals capture the true proportion by using the <code>summarize</code> function. [Aside: what is the difference between <code>=</code> and <code>==</code> in the code below?]</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>ci <span class="sc">%&gt;%</span> </span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">capturecount =</span> <span class="fu">count</span>(capture_p <span class="sc">==</span> <span class="st">"yes"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 1
+  capturecount
+         &lt;int&gt;
+1           94</code></pre>
+</div>
+</div>
+</section>
+<section id="review-of-logic" class="level4">
+<h4 class="anchored" data-anchor-id="review-of-logic">Review of logic</h4>
+<p>One more time with the logic of how the CI was created:</p>
+<blockquote class="blockquote">
+<p>92% of the <span class="math inline">\(\hat{p}\)</span> are within plus or minus 1.751*SE ( = margin of error) of the true <span class="math inline">\(p\)</span>. If you add / subtract the exact same amount (i.e., add and subtract the margin of error) around <span class="math inline">\(\hat{p}\)</span> (instead of around <span class="math inline">\(p\)</span>), then the statistics which are close enough to the true value will “capture” the true value. The 8% which are far out, will not be close enough to touch the true parameter.</p>
+</blockquote>
+<p>Ask in class / talk to your neighbor / use the applet to make sure the logic of the CI creation makes sense to you.</p>
+</section>
+</section>
+</section>
+<section id="to-turn-in" class="level2">
+<h2 class="anchored" data-anchor-id="to-turn-in">To Turn In</h2>
+<section id="q1.-learning-community-q" class="level4">
+<h4 class="anchored" data-anchor-id="q1.-learning-community-q">Q1. Learning Community Q</h4>
+<p>Describe one thing you learned from someone in your learning community this week (it could be: content, logistical help, background material, R information, etc.) 1-3 sentences.</p>
+</section>
+<section id="q2.-original-study" class="level4">
+<h4 class="anchored" data-anchor-id="q2.-original-study">Q2. Original Study</h4>
+<p>Consider the original study on marijuana legalization. Provide one sentence (not a number) describing each of the following:</p>
+<ul>
+<li>observational unit:<br>
+</li>
+<li>variable:<br>
+</li>
+<li>statistic:<br>
+</li>
+<li>parameter:</li>
+</ul>
+</section>
+<section id="q3.bar-plot" class="level4">
+<h4 class="anchored" data-anchor-id="q3.bar-plot">Q3.Bar plot</h4>
+<p>Create a bar plot of the first sample you took (above) from the hypothetical population that I made up. Use <code>geom_bar()</code>.</p>
+</section>
+<section id="q4.-multiplier" class="level4">
+<h4 class="anchored" data-anchor-id="q4.-multiplier">Q4. Multiplier</h4>
+<p>Pick a confidence level of your choosing <em>other than</em> 92% or 95%. What is the number you will use for multiplying the SE? (What is Z*, aalled the “multiplier”?)</p>
+</section>
+<section id="q5.-100-cis" class="level4">
+<h4 class="anchored" data-anchor-id="q5.-100-cis">Q5. 100 CIs</h4>
+<p>Calculate 100 confidence intervals at the confidence level you chose in the previous question, plot all intervals on one plot, and calculate the proportion of intervals that include the true population proportion. How does the percentage compare to the confidence level selected (in the previous question) for the intervals? Make sure to include the plot in your answer.</p>
+</section>
+<section id="q6.-1000-cis" class="level4">
+<h4 class="anchored" data-anchor-id="q6.-1000-cis">Q6. 1000 CIs</h4>
+<p>To get a better sense of the actual coverage rate, calculate 1000 intervals (don’t try to plot 1000 intervals on one graphic). How many of your intervals captured the true population value? Was it close to the confidence level you chose?</p>
+</section>
+<section id="q7.-bigger-sample" class="level4">
+<h4 class="anchored" data-anchor-id="q7.-bigger-sample">Q7. Bigger sample</h4>
+<p>Repeat the previous two questions using <span class="math inline">\(n=610\)</span> (as in the original study). Answer the following:</p>
+<ul>
+<li>How is the plot different across <span class="math inline">\(n=50\)</span> and <span class="math inline">\(n=610\)</span>?<br>
+</li>
+<li>Does the coverage rate (how often a sample will capture the true value) depends on <span class="math inline">\(n\)</span>? Explain.</li>
+</ul>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>MS Subbaraman and WC Kerr, “Support for marijuana legalization in the US state of Washington has continued to increase through 2016”, <em>Drug and Alcohol Dependence</em>, Vol 175: 205-209, 2017. https://www.ncbi.nlm.nih.gov/pubmed/28448904<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><a href="https://hardin47.netlify.app/research/"></a> <a href="https://hardin47.netlify.app/resume.pdf" target="_blank"><i class="fa-solid fa-bookmark"></i></a> <a href="mailto:jo.hardin@pomona.edu" target="_blank"><i class="fa-solid fa-at"></i></a> <a href="https://scholar.google.com/citations?user=c5Y77poAAAAJ&amp;hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i></a> <a href="https://www.researchgate.net/scientific-contributions/Johanna-Hardin-9764530" target="_blank"><i class="fa-brands fa-researchgate"></i></a><br>
+<a href="https://mobile.twitter.com/jo_hardin47" target="_blank"><i class="fa-brands fa-twitter"></i></a> <a href="https://github.com/hardin47" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/jo-hardin-b91a4b55" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>   
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ <br> © Jo Hardin, 2023 -- <a href="mailto: jo.hardin@pomona.edu">jo.hardin@pomona.edu</a> -- <a href="https://hardin47.netlify.app/">https://hardin47.netlify.app/</a> <br> <br>
+Math 58B -- Introduction to Biostatistics -- Pomona College, Claremont, CA <br>
+  </li>  
+</ul>
+      </div>
+  </div>
+</footer>
+
+
+
+</body></html>
