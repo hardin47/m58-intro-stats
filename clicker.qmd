@@ -787,83 +787,157 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 ---
 
 72. How many hits out of 20 at bats would make you believe him?[^72]
-(a)	5
-(b)	6
-(c)	7
-(d)	8
-(e)	9
+    (a)	5
+    (b)	6
+    (c)	7
+    (d)	8
+    (e)	9
 
 [^72]: e. 9
 
 ---
 
 73. Type I error is[^73]
-(a)	We give him a raise when he deserves it.
-(b)	We don't give him a raise when he deserves it.
-(c)	We give him a raise when he doesn't deserve it.
-(d)	We don't give him a raise when he doesn't deserve it.
+    (a)	We give him a raise when he deserves it.
+    (b)	We don't give him a raise when he deserves it.
+    (c)	We give him a raise when he doesn't deserve it.
+    (d)	We don't give him a raise when he doesn't deserve it.
  
 [^73]: c. We give him a raise when he doesn't deserve it.
 
 ---
 
 74. Type II error is[^74]
-(a)	We give him a raise when he deserves it.
-(b)	We don't give him a raise when he deserves it.
-(c)	We give him a raise when he doesn't deserve it.
-(d)	We don't give him a raise when he doesn't deserve it.
+    (a)	We give him a raise when he deserves it.
+    (b)	We don't give him a raise when he deserves it.
+    (c)	We give him a raise when he doesn't deserve it.
+    (d)	We don't give him a raise when he doesn't deserve it.
 
 [^74]: c. We don't give him a raise when he deserves it.
 
 ---
 
 75. Power is the probability that:[^75]
-(a)	We give him a raise when he deserves it.
-(b)	We don't give him a raise when he deserves it.
-(c)	We give him a raise when he doesn't deserve it.
-(d)	We don't give him a raise when he doesn't deserve it.
+    (a)	We give him a raise when he deserves it.
+    (b)	We don't give him a raise when he deserves it.
+    (c)	We give him a raise when he doesn't deserve it.
+    (d)	We don't give him a raise when he doesn't deserve it.
 
 [^75]: a. We give him a raise when he deserves it.
 
 ---
 
 76. The player is more worried about[^76]
-(a)	A type I error
-(b)	A type II error
+    (a)	A type I error
+    (b)	A type II error
 
-[^76] b. A type I error
+[^76]: b. A type I error
 
 ---
 
 77. The manager is more worried about[^77]
-(a)	A type I error
-(b)	A type II error
+    (a)	A type I error
+    (b)	A type II error
 
 [^77]: a. A type I error
 
 ---
 
 78. Increasing your sample size[^78]
-(a)	Increases your power
-(b)	Decreases your power
+    (a)	Increases your power
+    (b)	Decreases your power
 
 [^78]: a. Increases your power
 
 ---
 
-79.	Making your significance level more stringent ($\alpha$ smaller)[^79]
-(a)	Increases your power
-(b)	Decreases your power
+79. Making your significance level more stringent ($\alpha$ smaller)[^79]
+    (a)	Increases your power
+    (b)	Decreases your power
 
 [^79]: b. Decreases your power
 
 ---
 
-80.	 A more extreme alternative[^80]:
-(a)	Increases your power
-(b)	Decreases your power
+80. A more extreme alternative[^80]:
+    (a)	Increases your power
+    (b)	Decreases your power
 
 [^80]: a. Increases your power
+
+---
+
+81. Is the Alien’s interval for the true proportion of all humans who self-identify as female consistent with your lived experience?[^81]
+    (a) Yes
+    (b) No
+    (c) I don’t understand what the confidence interval represents.
+
+[^81]: b. No.  My experience is that close to 50% of humans self-identify as female.
+
+---
+
+82. As we’ve seen with the applet, about 5% of all 95% intervals fail to capture the actual value of the population parameter.  Do you think the alien just got a "red" interval?[^82]
+    (a)	Yes
+    (b)	No
+
+[^82]: b. No.  They didn't just "get unlucky".  Instead, the reason the interval failed to capture the true parameter is because the sample was not representative of the population.  
+
+---
+
+83.	 Would it be reasonable for the alien to conclude, with 95% confidence, that between 16.5% and 33.5% of US Senators in the year 2023 self-identify as female?[^83]
+     (a)	Yes
+     (b)	No
+
+[^83]: b. No. We know (for sure, with 100% confidence) that exactly 25% of U.S. senators in 2019 self identify as female. If that’s the entire population of interest, there’s no reason to calculate a confidence interval.
+
+---
+
+84. The "random" part in clinical trials typically comes from:[^84]
+    (a) random samples
+    (b) random allocation of treatment
+
+[^84]: b. random allocation of treatment
+
+---
+
+85. The "random" part in polling typically comes from:[^85]
+    (a) random samples
+    (b) random allocation of treatment
+
+[^85]: random samples
+
+---
+
+86. You want to collect data to investigate whether teenagers in the United States have read fewer Harry Potter books than teenagers in the United Kingdom.  Would you make use of random sampling, random assignment, both, or neither?[^86]
+    (a)	Random sampling
+    (b)	Random assignment
+    (c)	Both
+    (d)	Neither
+
+[^86]: b. Random sampling, although it would be pretty hard to do a *true* random sample from either country.
+
+---
+
+87.	An instructor wants to investigate whether using a red pen to grade assignments leads to lower scores on exams than using a blue pen to grade assignments.  Would you advise the professor to make use of random sampling, random assignment, both, or neither?[^87]
+    (a)	Random sampling
+    (b)	Random assignment
+    (c)	Both
+    (d)	Neither
+
+[^87]: b. Random assignment.  Randomly decide which exams to grade with which pen, and then record the scores.
+
+---
+
+88.	A student decides to investigate whether NFL football games played in indoor stadiums tend to have more points scored than games played outdoors.  The student examines points scored in every NFL game of the 2022 season. Has the student used random sampling, random assignment, both, or neither?[^88]
+    (a)	Random sampling
+    (b)	Random assignment
+    (c)	Both
+    (d)	Neither
+
+[^88]: d. Neither.  The student has the entire population of teams and was not able to randomly assign stadium type.
+
+
+
 
 ```{r eval = FALSE, echo = FALSE}
 
@@ -877,45 +951,4 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 (b) There is convincing evidence that the mean response time is greater than 5 minutes.
 (c) There is not convincing evidence that the mean response time is greater than 5 minutes. 
 ```
-
-```{r echo = FALSE, eval = FALSE}
-10.	 The "random" part in clinical trials typically comes from:[^10]
-    (a) random samples
-    (b) random allocation of treatment
-
-[^10]: b. random allocation of treatment
-
----
-
-11. The "random" part in polling typically comes from:[^11]
-    (a) random samples
-    (b) random allocation of treatment
-
-[^11]: random samples
-
-74. You want to collect data to investigate whether teenagers in the United States have read fewer Harry Potter books (from the original series of seven books) than teenagers in the United Kingdom.  Would you make use of random sampling, random assignment, both, or neither?  
-
-(a)	Random sampling
-(b)	Random assignment
-(c)	Both
-(d)	Neither
- 
-75.	An instructor wants to investigate whether using a red pen to grade assignments leads to lower scores on exams than using a blue pen to grade assignments.  Would you advise the professor to make use of random sampling, random assignment, both, or neither?  
-
-(a)	Random sampling
-(b)	Random assignment
-(c)	Both
-(d)	Neither
- 
-76.	A student decides to investigate whether NFL football games played in indoor stadiums tend to have more points scored than games played outdoors.  The student examines points scored in every NFL game of the 2019 season. Has the student used random sampling, random assignment, both, or neither? 
-
-(a)	Random sampling
-(b)	Random assignment
-(c)	Both
-(d)	Neither
-
-```
-
-
-
 
