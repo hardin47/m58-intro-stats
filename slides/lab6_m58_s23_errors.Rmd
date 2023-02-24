@@ -41,7 +41,7 @@ library(infer)      # simulation inference code
 
 #### Preliminary personal level of significance
 
-Follow the link here and click through the scatterplot images: https://www.openintro.org/stat/why05.php?stat_book=os  
+Follow the link here and click through the scatterplot images: https://www.openintro.org/book/stat/why05/  
 
 (a) What is your personal level of significance?  
 
