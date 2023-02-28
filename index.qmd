@@ -77,7 +77,7 @@ schedule <- tribble(
 
   'Week 8 <br> 3.7.23', 'catch-up',
   "",
-  '<i class="fas fa-book-open"></i> study materials <br> (see Canvas)',
+  '<i class="fas fa-book-open"></i> study materials <br> (see Canvas) <br> <a href="https://m58-intro-stats.netlify.app/slides/adviceExam1_s23.docx" target = "_blank"><i class="fas fa-pencil-alt"></i>advice for exam 1</a>',
   "",
   '',
   
