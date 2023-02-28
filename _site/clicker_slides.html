@@ -1419,6 +1419,77 @@ How often will p be in a 97% confidence interval?<a href="#/footnotes" class="fo
 <li>Neither</li>
 </ol></li>
 </ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="89" type="1">
+<li>Relative Risk is<a href="#/footnotes" class="footnote-ref" id="fnref87" role="doc-noteref" data-footnote-href="#/fn87" onclick=""><sup>87</sup></a>
+<ol type="a">
+<li>the difference of two proportions</li>
+<li>the ratio of two proportions</li>
+<li>the log of the ratio of two proportions</li>
+<li>the log of the difference of two proportions</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="90" type="1">
+<li>In order to find a CI for the true RR, our steps are:<a href="#/footnotes" class="footnote-ref" id="fnref88" role="doc-noteref" data-footnote-href="#/fn88" onclick=""><sup>88</sup></a><br>
+Step 1. ln(RR-hat)<br>
+Step 2. add ± z* sqrt( 1/A - 1/(A+C) + 1/B - 1/(B+D) )<br>
+Step 3. find exp of the endpoints
+<ol type="a">
+<li>because the sampling distribution of RR is normal</li>
+<li>because RR is typically greater than 1</li>
+<li>because the ln transformation makes the sampling distribution almost normal</li>
+<li>because RR is invariant to the choice of explanatory or response variable</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="91" type="1">
+<li>In finding a CI for <span class="math inline">\(p_1\)</span>/<span class="math inline">\(p_2\)</span>, why is it okay to exponentiate the end points of the interval for ln(<span class="math inline">\(p_1\)</span>/<span class="math inline">\(p_2\)</span>)?<a href="#/footnotes" class="footnote-ref" id="fnref89" role="doc-noteref" data-footnote-href="#/fn89" onclick=""><sup>89</sup></a>
+<ol type="a">
+<li>if ln(<span class="math inline">\(p_1\)</span>/<span class="math inline">\(p_2\)</span>) is in the natural log-interval, <span class="math inline">\(p_1\)</span>/<span class="math inline">\(p_2\)</span> will be in the exponentiated interval.</li>
+<li>the natural log of the RR makes the distribution approximately normal.</li>
+<li>the natural log compresses values that are &gt; 1 and spreads values &lt; 1.</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="92" type="1">
+<li>Usually, the CI for <span class="math inline">\(p_1\)</span>/<span class="math inline">\(p_2\)</span> is considered to be “significant” if<a href="#/footnotes" class="footnote-ref" id="fnref90" role="doc-noteref" data-footnote-href="#/fn90" onclick=""><sup>90</sup></a>
+<ol type="a">
+<li><span class="math inline">\(p_1\)</span>/<span class="math inline">\(p_2\)</span> is not in the interval</li>
+<li><span class="math inline">\(\hat{p}_1 / \hat{p}_2\)</span> is not in the interval</li>
+<li>0 is not in the interval</li>
+<li>1 is not in the interval</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="93" type="1">
+<li>In order to find a CI for the true OR, our steps are:<a href="#/footnotes" class="footnote-ref" id="fnref91" role="doc-noteref" data-footnote-href="#/fn91" onclick=""><sup>91</sup></a><br>
+Step 1. ln(OR-hat)<br>
+Step 2. add ± z* sqrt( 1/A + 1/B + 1/C + 1/D )<br>
+Step 3. find exp of the endpoints
+<ol type="a">
+<li>because the sampling distribution of OR is normal</li>
+<li>because OR is typically greater than 1</li>
+<li>because the ln transformation makes the sampling distribution almost normal</li>
+<li>because OR is invariant to the choice of explanatory or response variable</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<div class="cell">
+
+</div>
 <div class="cell">
 
 </div>
@@ -1426,7 +1497,7 @@ How often will p be in a 97% confidence interval?<a href="#/footnotes" class="fo
 <div class="footer footer-default">
 
 </div>
-<aside></aside></section></section>
+</section></section>
 <section id="footnotes" class="footnotes footnotes-end-of-document smaller scrollable" role="doc-endnotes"><h2>Footnotes</h2>
 
 <ol>
@@ -1757,6 +1828,26 @@ How often will p be in a 97% confidence interval?<a href="#/footnotes" class="fo
 </li>
 <li id="fn86"><ol start="4" type="a">
 <li>Neither. The student has the entire population of teams and was not able to randomly assign stadium type.</li>
+</ol>
+</li>
+<li id="fn87"><ol start="2" type="a">
+<li>the ratio of two proportions</li>
+</ol>
+</li>
+<li id="fn88"><ol start="3" type="a">
+<li>because the ln transformation makes the sampling distribution almost normal</li>
+</ol>
+</li>
+<li id="fn89"><ol type="a">
+<li>if ln(<span class="math inline">\(p_1\)</span>/<span class="math inline">\(p_2\)</span>) is in the natural log-interval, <span class="math inline">\(p_1\)</span>/<span class="math inline">\(p_2\)</span> will be in the exponentiated interval. (Where “okay” means you have 95% coverage in repeated samples.)</li>
+</ol>
+</li>
+<li id="fn90"><ol start="4" type="a">
+<li>1 is not in the interval</li>
+</ol>
+</li>
+<li id="fn91"><ol start="3" type="a">
+<li>because the ln transformation makes the sampling distribution almost normal</li>
 </ol>
 </li>
 </ol>

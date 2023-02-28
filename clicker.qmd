@@ -937,6 +937,114 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 [^88]: d. Neither.  The student has the entire population of teams and was not able to randomly assign stadium type.
 
 
+---
+
+89. Relative Risk is[^89]
+    (a) the difference of two proportions
+    (b) the ratio of two proportions
+    (c) the log of the ratio of two proportions
+    (d) the log of the difference of two proportions
+
+[^89]: b. the ratio of two proportions
+
+---
+
+90. In order to find a CI for the true RR, our steps are:[^90]  
+Step 1. ln(RR-hat)  
+Step 2. add ± z* sqrt( 1/A - 1/(A+C) + 1/B - 1/(B+D) )  
+Step 3. find exp of the endpoints   
+    (a) because the sampling distribution of RR is normal
+    (b) because RR is typically greater than 1
+    (c) because the ln transformation makes the sampling distribution almost normal
+    (d) because RR is invariant to the choice of explanatory or response variable
+
+[^90]: c. because the ln transformation makes the sampling distribution almost normal
+
+---
+
+91. In finding a CI for $p_1$/$p_2$, why is it okay to exponentiate the end points of the interval for ln($p_1$/$p_2$)?[^91] 
+    (a) if ln($p_1$/$p_2$) is in the natural log-interval, $p_1$/$p_2$ will be in the exponentiated interval.
+    (b) the natural log of the RR makes the distribution approximately normal.
+    (c) the natural log compresses values that are > 1 and spreads values < 1.
+
+[^91]: a. if ln($p_1$/$p_2$) is in the natural log-interval, $p_1$/$p_2$ will be in the exponentiated interval.  (Where "okay" means you have 95% coverage in repeated samples.)
+
+---
+
+92.   Usually, the CI for  $p_1$/$p_2$ is considered to be "significant" if[^92] 
+      (a) $p_1$/$p_2$ is not in the interval
+      (b) $\hat{p}_1 / \hat{p}_2$ is not in the interval
+      (c) 0 is not in the interval
+      (d) 1 is not in the interval
+
+[^92]: d. 1 is not in the interval
+
+---
+
+93. In order to find a CI for the true OR, our steps are:[^93]  
+Step 1. ln(OR-hat)  
+Step 2. add ± z* sqrt( 1/A + 1/B + 1/C + 1/D )  
+Step 3. find exp of the endpoints   
+     (a) because the sampling distribution of OR is normal
+     (b) because OR is typically greater than 1
+     (c) because the ln transformation makes the sampling distribution almost normal
+     (d) because OR is invariant to the choice of explanatory or response variable
+
+[^93]: c. because the ln transformation makes the sampling distribution almost normal
+
+---
+
+```{r echo = FALSE, eval = FALSE}
+73. Sample 1,000,000 people who are over 6’ tall and 1,000,000 people who are under 6’ tall.  Record if the person is in the NBA.  
+What is measurable?
+(a) P(NBA if 6’ tall)
+(b) P(6’ tall if in the NBA)
+(c) both
+(d) neither  
+
+(cohort: cannot measure the probability of the explanatory variable given the response) 
+
+74.  Sample 100 people who are in the NBA and 100 people who are not in the NBA. Record if the person is over 6’ tall. What is measurable?
+(a) P(NBA if 6’ tall)
+(b) P(6’ tall if in the NBA)
+(c) both
+(d) neither  
+
+(case-control:  cannot measure the probability of the response variable given a level of the explanatory variable)
+ 
+75.  Sample 10,000,000 people.  Record their height and whether or not they are in the NBA.  
+What is measurable?
+(a) P(NBA if 6’ tall)
+(b) P(6’ tall if in the NBA)
+(c) both
+(d) neither  
+
+
+(cross-classification: can measure all the probabilities)
+
+76.  When we randomly select individuals based on the explanatory variable, we cannot accurately measure
+(a) the proportion of people in the population in each explanatory category
+(b) the proportion of people in the population in each response group
+(c) anything about the population
+(d) confounding variables
+ 
+
+77. The odds ratio is invariant to which variable is explanatory and which is response means:
+(a) we always put the bigger odds in the numerator
+(b) we must collect data so that we can estimate the response in the population
+(c) which variable is called the explanatory changes the value of the OR
+(d) which variable is called the explanatory does not change the value of the OR
+ 
+78.  One reason we should be careful interpreting relative risks is if:
+(a) we don’t know the difference in proportions
+(b) we don’t know the SE of the relative risk
+(c) we might be dividing by zero
+(d) we don’t know the baseline risk
+
+ 
+
+```
+
 
 
 ```{r eval = FALSE, echo = FALSE}
