@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.256">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="your name here">
+<meta name="dcterms.date" content="2023-02-28">
+
+<title>Introduction to Biostatistics - Lab 6 - Math 58b: error rates</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="https://m58-intro-stats.netlify.app/" class="navbar-brand navbar-brand-logo">
+    <img src="../images/st47s.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="https://m58-intro-stats.netlify.app/">
+    <span class="navbar-title">Introduction to Biostatistics</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../notes.html">
+ <span class="menu-text">Class Notes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../project.html">
+ <span class="menu-text">Project</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../clicker_study.html">
+ <span class="menu-text">Clicker Q</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab 6 - Math 58b: error rates</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>your name here </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 28, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="lab-goals" class="level2">
+<h2 class="anchored" data-anchor-id="lab-goals">Lab Goals</h2>
+<p>By assessing our own comfort with randomness, we investigate 0.05. Additionally, we analyze data without a clear decision as to whether or not the null hypothesis should be rejected.</p>
+<ul>
+<li>why 0.05?</li>
+<li>what does a p-value really mean?</li>
+<li>how / why is there (is there not) always a single result for a research questions?</li>
+</ul>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<section id="load-packages" class="level3">
+<h3 class="anchored" data-anchor-id="load-packages">Load packages</h3>
+<p>In this lab we will continue to use <strong>infer</strong> syntax and the <code>xpnorm()</code> function which is in the <strong>mosaic</strong> package.</p>
+<p>Let’s load the packages.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)  <span class="co"># ggplot and %&gt;% </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mosaic)     <span class="co"># xpnorm and xqnorm </span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(infer)      <span class="co"># simulation inference code </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="preliminary-personal-level-of-significance" class="level4">
+<h4 class="anchored" data-anchor-id="preliminary-personal-level-of-significance">Preliminary personal level of significance</h4>
+<p>Follow the link here and click through the scatterplot images: https://www.openintro.org/book/stat/why05/</p>
+<ol type="a">
+<li><p>What is your personal level of significance?</p></li>
+<li><p>When you hear new information, do you consider yourself on the skeptical side or on the believing side? (There is no right answer!)</p></li>
+</ol>
+</section>
+</section>
+<section id="the-data" class="level3">
+<h3 class="anchored" data-anchor-id="the-data">The data</h3>
+<p>(The data is only for Q2. The other questions do not require data.)</p>
+<p>Researchers have conjectured that the use of the word “forbid” is more off-putting than the word “allow” (in affecting people’s responses to survey questions). In particular, the suggestion is that people do not like to “forbid” anything. Students in an introductory statistics class were randomly assigned to answer one of the following questions:</p>
+<ul>
+<li>Should your college allow speeches on campus that might incite violence?<br>
+</li>
+<li>Should your college forbid speeches on campus that might incite violence?</li>
+</ul>
+<p>Of the 14 students who received the first question, 8 responded yes. Of the 15 students who received the second question, 13 said no. Think carefully about the response variable. It should <em>not</em> be coded as “yes” and “no” as answered on the questionnaire.</p>
+<section id="what-do-the-data-look-like" class="level4">
+<h4 class="anchored" data-anchor-id="what-do-the-data-look-like">What do the data look like?</h4>
+<p>Using the information above, create a 2x2 table (with your pencil) describing the dataset. What are your two variables? How many people are in each group? Again, do not code with “yes” and “no”, use descriptive words.</p>
+</section>
+<section id="hypothesis-test" class="level4">
+<h4 class="anchored" data-anchor-id="hypothesis-test">Hypothesis test</h4>
+<p>In order to formally test the researchers’ conjecture (that the words can be off-putting), a null sampling distribution must be created (in order to compare the observed data against). You will create the null sampling distribution in two ways:</p>
+<ol type="1">
+<li>Using the <strong>infer</strong> syntax.</li>
+<li>Using the Central Limit Theorem</li>
+</ol>
+<blockquote class="blockquote">
+<p>The Central Limit Theorem: the sample average (e.g., sample mean, sample proportion, etc.) in repeated random samples taken from a population will be normally distributed if the sample size is large enough.</p>
+</blockquote>
+<p>Note that for the two proportion case, if the sample sizes are large enough the CLT says:</p>
+<p><span class="math display">\[\hat{p}_1 - \hat{p}_2 \sim N\bigg(p_1 - p_2, \sqrt{\frac{\hat{p}_1(1-\hat{p_1})}{n_1} + \frac{\hat{p}_2(1-\hat{p_2})}{n_2}}\bigg)\]</span></p>
+<p>It isn’t a hard and fast rule, but generally the CLT approximation is good if there are at least 10 (or possibly 5) successes and at least 10 (possibly 5) failures in each group.</p>
+</section>
+</section>
+</section>
+<section id="to-turn-in" class="level2">
+<h2 class="anchored" data-anchor-id="to-turn-in">To Turn In</h2>
+<section id="q1.-learning-community-q" class="level4">
+<h4 class="anchored" data-anchor-id="q1.-learning-community-q">Q1. Learning Community Q</h4>
+<p>Describe one thing you learned from someone in your learning community this week (it could be: content, logistical help, background material, R information, etc.) 1-3 sentences.</p>
+</section>
+<section id="q2.-speeches-and-violence" class="level4">
+<h4 class="anchored" data-anchor-id="q2.-speeches-and-violence">Q2. Speeches and Violence</h4>
+<p>In this first question, you will analyze the data described above using some old ideas and some new ideas.</p>
+<p>To create a dataset, use the <code>rep()</code> function to replicate an appropriate number of times. Use the <code>c()</code> function to create a column. You should be able to do this on your own. For now, fill in the blanks (and then change to <code>eval = TRUE</code>).</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># first create a data frame with the survey data</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>decision <span class="ot">&lt;-</span> <span class="fu">data.frame</span>( <span class="at">___ =</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"___"</span>, <span class="dv">14</span>), <span class="fu">rep</span>(<span class="st">"___"</span>, <span class="dv">15</span>)), </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                         <span class="at">___  =</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"___"</span>, <span class="dv">8</span>), <span class="fu">rep</span>(<span class="st">"___"</span>, <span class="dv">6</span>),</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>                                   <span class="fu">rep</span>(<span class="st">"___"</span>, <span class="dv">13</span>), <span class="fu">rep</span>(<span class="st">"___"</span>, <span class="dv">2</span>)))</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(decison)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol type="a">
+<li><p>Plot the observed data using <code>geom_bar()</code> and use <code>fill = response</code> to fill the bars in with appropriate colors, where the word <code>response</code> represents whatever you called the variable representing how the students responded to the survey.</p></li>
+<li><p>Use <strong>infer</strong> to analyze the data. Report the one-sided p-value (you will report the conclusion in words below in part d.).</p></li>
+<li><p>Use the following formula to create a Z-score for the same test (different p-value calculation) as was done with <strong>infer</strong>. Use R as a calculator to find the relevant Z-score, and find the one-sided p-value (you will report the conclusion in words below in part d.).</p></li>
+</ol>
+<p><span class="math display">\[\mbox{Z score} = \frac{(\hat{p}_1 - \hat{p}_2) - 0}{\sqrt{\frac{\hat{p}_1(1-\hat{p_1})}{n_1} + \frac{\hat{p}_2(1-\hat{p_2})}{n_2}}}\]</span></p>
+<ol start="4" type="a">
+<li>Give a complete conclusion to the data analysis / hypothesis test (that is, conclude what you think is most appropriate). State the null and alternative hypotheses, provide what you believe is the most accurate significance result (compare parts b. and c.&nbsp;above), and give a sense of to whom (what population, if any) the results can be applied.</li>
+</ol>
+</section>
+<section id="q3.-p-values" class="level4">
+<h4 class="anchored" data-anchor-id="q3.-p-values">Q3. p-values</h4>
+<p>Read the ASA’s statement on p-values: http://www.tandfonline.com/doi/pdf/10.1080/00031305.2016.1154108</p>
+<p>Choose <strong>two different</strong> principles (pg 131-132) and explain each (separately) as if to a peer in a science class who is making conclusions about a recent study. Explain in your own words.</p>
+</section>
+<section id="q4.-p-values-take-two" class="level4">
+<h4 class="anchored" data-anchor-id="q4.-p-values-take-two">Q4. p-values, take two</h4>
+<p>Why use p-values at all? That is, what is benefit of having a p-value (as opposed to simply descriptive statistics or graphs of the data)?</p>
+<hr>
+<div style="page-break-after: always;"></div>
+</section>
+<section id="if-you-are-still-curious-about-the-ideas-in-this-lab-not-part-of-the-assignment" class="level3">
+<h3 class="anchored" data-anchor-id="if-you-are-still-curious-about-the-ideas-in-this-lab-not-part-of-the-assignment">If you are still curious about the ideas in this lab (not part of the assignment):</h3>
+<p>None of the queries below are part of the lab. I offer them here for people who are intrigued by the ideas we’ve covered and want to know more. Indeed, the article linked below (which has been cited 3000+ times and viewed almost 3 million times) has a provocative title (and is incredibly well written).</p>
+<p>Q5. Read Ioannidis (2005), “Why Most Published Research Findings are False” http://www.plosmedicine.org/article/fetchObject.action?uri=info%3Adoi%2F10.1371%2Fjournal.pmed.0020124&amp;representation=PDF</p>
+<ol type="a">
+<li>Consider table 1. Suppose that the level of significance is taken to be 0.05 and the power is 0.8. Also, set R (the number of true to not true relationships) to be 2 (for every 3 experiments, one is null). What percent of research findings (i.e., “significant” findings) are actually true (i.e., Ha is true)? [hint: for ease of calculation, you can set c to be something like 10,000.]</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Finding</th>
+<th>True Yes</th>
+<th>True No</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Yes</td>
+<td>5333</td>
+<td>167</td>
+<td>5500</td>
+</tr>
+<tr class="even">
+<td>No</td>
+<td>1334</td>
+<td>3166</td>
+<td>4500</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>6667</td>
+<td>3333</td>
+<td>10000</td>
+</tr>
+</tbody>
+</table>
+<p>Out of the 5500 significant findings, it turns out the 5333 of them are true. Therefore, the proportion of significant findings is 5333/5500 = 0.9696364.</p>
+<ol start="2" type="a">
+<li>Consider table 1. Suppose that the level of significance is taken to be 0.05 and the power is 0.3. Also, set R (the number of true to not true relationships) to be 0.1 (for every 11 experiments, 10 are null). What percent of research findings (i.e., “significant” findings) are actually true (i.e., Ha is true)? [hint: for ease of calculation, you can set c to be something like 10,000.]</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Finding</th>
+<th>True Yes</th>
+<th>True No</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Yes</td>
+<td>273</td>
+<td>455</td>
+<td>728</td>
+</tr>
+<tr class="even">
+<td>No</td>
+<td>636</td>
+<td>8636</td>
+<td>9272</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td>909</td>
+<td>9091</td>
+<td>10000</td>
+</tr>
+</tbody>
+</table>
+<p>Out of the 728 significant findings, it turns out the 5333 of them are true. Therefore, the proportion of significant findings is 273/728 = 0.375.</p>
+<p>We notice that the proportion of significant findings is <em>very</em> dependent on not only the power, but also on the proportion of experiments which are null to start with. The 6 important corollaries in the Ioannidis paper all follow from the tables (table 1 and others like it) which reflect on the state of testing beyond just controlling for type I errors using a level of significance of 0.05. The 6 corollaries contain important ideas to think about in doing science.</p>
+<p>Q6. In the Dance of the p-values (https://www.youtube.com/watch?v=5OL1RqHrZQ8), what is the narrator arguing?</p>
+<p><strong>Solution:</strong></p>
+<p>The point being made in the Dance of the p-values is that the p-value gives virtually no information about the effect of interest. A confidence interval gives not only the magnitude of the effect but also the variability associated with the estimate. That is, the degree of uncertainty in the effect is captured by the width of the interval. Additionally, in replicates of the same experiment, the p-value can vary widely (from significant to non-significant) whereas a confidence interval captures the true parameter 95% of the time (albeit sometimes overlapping the null value, too).</p>
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><a href="https://hardin47.netlify.app/research/"></a> <a href="https://hardin47.netlify.app/resume.pdf" target="_blank"><i class="fa-solid fa-bookmark"></i></a> <a href="mailto:jo.hardin@pomona.edu" target="_blank"><i class="fa-solid fa-at"></i></a> <a href="https://scholar.google.com/citations?user=c5Y77poAAAAJ&amp;hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i></a> <a href="https://www.researchgate.net/scientific-contributions/Johanna-Hardin-9764530" target="_blank"><i class="fa-brands fa-researchgate"></i></a><br>
+<a href="https://mobile.twitter.com/jo_hardin47" target="_blank"><i class="fa-brands fa-twitter"></i></a> <a href="https://github.com/hardin47" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/jo-hardin-b91a4b55" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>   
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ <br> © Jo Hardin, 2023 -- <a href="mailto: jo.hardin@pomona.edu">jo.hardin@pomona.edu</a> -- <a href="https://hardin47.netlify.app/">https://hardin47.netlify.app/</a> <br> <br>
+Math 58B -- Introduction to Biostatistics -- Pomona College, Claremont, CA <br>
+  </li>  
+</ul>
+      </div>
+  </div>
+</footer>
+
+
+
+</body></html>

@@ -994,57 +994,65 @@ Step 3. find exp of the endpoints
 
 ---
 
-```{r echo = FALSE, eval = FALSE}
-73. Sample 1,000,000 people who are over 6’ tall and 1,000,000 people who are under 6’ tall.  Record if the person is in the NBA.  
-What is measurable?
-(a) P(NBA if 6’ tall)
-(b) P(6’ tall if in the NBA)
-(c) both
-(d) neither  
+94. Sample 1,000,000 people who are over 6’ tall and 1,000,000 people who are under 6’ tall.  Record if the person is in the NBA.  
+What is measurable?[^94]
+    (a) P(NBA if 6’ tall)
+    (b) P(6’ tall if in the NBA)
+    (c) both
+    (d) neither  
 
-(cohort: cannot measure the probability of the explanatory variable given the response) 
+[^94]: a. P(NBA if 6' tall) (cohort: cannot measure the probability of the explanatory variable given the response)
 
-74.  Sample 100 people who are in the NBA and 100 people who are not in the NBA. Record if the person is over 6’ tall. What is measurable?
-(a) P(NBA if 6’ tall)
-(b) P(6’ tall if in the NBA)
-(c) both
-(d) neither  
+---
 
-(case-control:  cannot measure the probability of the response variable given a level of the explanatory variable)
- 
-75.  Sample 10,000,000 people.  Record their height and whether or not they are in the NBA.  
-What is measurable?
-(a) P(NBA if 6’ tall)
-(b) P(6’ tall if in the NBA)
-(c) both
-(d) neither  
+95.  Sample 100 people who are in the NBA and 100 people who are not in the NBA. Record if the person is over 6’ tall. What is measurable?[^95]
+     (a) P(NBA if 6’ tall)
+     (b) P(6’ tall if in the NBA)
+     (c) both
+     (d) neither  
 
+[^95]: b. P(6' tall if in the NBA) (case-control:  cannot measure the probability of the response variable given a level of the explanatory variable)
 
-(cross-classification: can measure all the probabilities)
+---
 
-76.  When we randomly select individuals based on the explanatory variable, we cannot accurately measure
-(a) the proportion of people in the population in each explanatory category
-(b) the proportion of people in the population in each response group
-(c) anything about the population
-(d) confounding variables
- 
+96.  Sample 10,000,000 people.  Record their height and whether or not they are in the NBA.  
+What is measurable?[^96]
+     (a) P(NBA if 6’ tall)
+     (b) P(6’ tall if in the NBA)
+     (c) both
+     (d) neither  
 
-77. The odds ratio is invariant to which variable is explanatory and which is response means:
-(a) we always put the bigger odds in the numerator
-(b) we must collect data so that we can estimate the response in the population
-(c) which variable is called the explanatory changes the value of the OR
-(d) which variable is called the explanatory does not change the value of the OR
- 
-78.  One reason we should be careful interpreting relative risks is if:
-(a) we don’t know the difference in proportions
-(b) we don’t know the SE of the relative risk
-(c) we might be dividing by zero
-(d) we don’t know the baseline risk
+[^96]: c. both (cross-classification: can measure all the probabilities)
 
- 
+---
 
-```
+97.  When we randomly select individuals based on the explanatory variable, we cannot accurately measure[^97]
+     (a) the proportion of people in the population in each explanatory category
+     (b) the proportion of people in the population in each response group
+     (c) anything about the population
+     (d) confounding variables
+ 
+[^97]: a. the proportion of people in the population in each explanatory category
 
+---
+
+98. The odds ratio is invariant to which variable is explanatory and which is response means:[^98]
+    (a) we always put the bigger odds in the numerator
+    (b) we must collect data so that we can estimate the response in the population
+    (c) which variable is called the explanatory changes the value of the OR
+    (d) which variable is called the explanatory does not change the value of the OR
+
+[^98]: d. which variable is called the explanatory does not change the value of the OR 
+
+---
+
+99.  One reason we should be careful interpreting relative risks is if:[^99]
+     (a) we don’t know the difference in proportions
+     (b) we don’t know the SE of the relative risk
+     (c) we might be dividing by zero
+     (d) we don’t know the baseline risk
+
+[^99]: d. we don't know the baseline risk
 
 
 ```{r eval = FALSE, echo = FALSE}
