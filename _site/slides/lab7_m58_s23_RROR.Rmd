@@ -96,7 +96,7 @@ Because the data come from a case-control study, we'll choose to investigate the
 $H_0: OR = 1$  
 $H_A: OR > 1$
 
-The p-value is 0.042 (you might have gotten a slightly differnt answer if you set a different seed).  We can reject the null hypothesis and claim that the true probability ("risk") of earning more than $25,000 is higher for those who have a college degree than those who don't.
+The p-value is 0.007 (you might have gotten a slightly different answer if you set a different seed). We can reject the null hypothesis and claim that the true odds (NOT “risk”) of cancer is higher for those dogs with exposure to the 2, 4-D herbicide.
 
 ```{r eval = FALSE}
 set.seed(4774)
