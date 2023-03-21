@@ -1054,6 +1054,71 @@ What is measurable?[^96]
 
 [^99]: d. we don't know the baseline risk
 
+---
+
+100. If the null hypothesis is true, the observed counts will equal the expected counts.[^100]
+     (a) True
+     (b) False
+
+[^100]: b. False
+
+---
+
+101. To reject the null hypothesis we want to see[^101]
+     (a) a small $X^2$ value
+     (b) a big $X^2$ value
+
+[^101]: b. a big $X^2$ value
+
+
+---
+
+102. A chi-square test has a[^102]
+     (a) one-sided alt hypothesis, and we only consider the upper end of the sampling distribution
+     (b) one-sided alt hypothesis, and we consider both ends of the sampling distribution
+     (c) two-sided alt hypothesis, and we only consider the upper end of the sampling distribution
+     (d) two-sided alt hypothesis, and we consider both ends of the sampling distribution 
+
+[^102]: d. two-sided alt hypothesis, and we consider both ends of the sampling distribution
+
+---
+
+103. For the lighting study, which variable is the explanatory variable?[^103]
+     (a) sleeping light
+     (b) eye sightedness
+     (c) child
+     (d) parent
+
+[^103]: a. sleeping light
+
+---
+
+104. If we sample randomly from a population, the conclusions we can make are about:[^104]
+     (a) causation 
+     (b) population characteristics
+
+[^104]: b. population characteristics
+
+---
+
+105. Based on the night light / myopia example, the correct conclusion is:[^105]
+     (a) the p-value is small, so sleeping in a lit room makes it more likely that you are near-sighted. 
+     (b) the p-value is small, so sleeping in a dark room makes it more likely that you are near-sighted. 
+     (c) the p-value is small, so a higher proportion of children who sleep in light rooms are near-sighted than who sleep in dark rooms. 
+     (d) $\hat{p}_{\mbox{near}}$ if lit room = 41/75 = 0.547 and    $\hat{p}_{\mbox{near}}$ if dark = 18/172 = 0.105, therefore sleeping with the light on is bad for you. 
+
+[^105]: c. the p-value is small, so a higher proportion of children who sleep in light rooms are near-sighted than who sleep in dark rooms.
+
+---
+
+106. A possible confounding variable for the night light study is:[^106]
+     (a) low birth weight
+     (b) race (70% of the children were white)
+     (c) region of the country where the clinic was located
+
+[^106]: a. low birth weight (the argument needs to be made that the confounding variable is associated with both the explanatory and the response variable)
+
+---
 
 ```{r eval = FALSE, echo = FALSE}
 
