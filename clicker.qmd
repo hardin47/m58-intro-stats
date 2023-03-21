@@ -1079,7 +1079,7 @@ What is measurable?[^96]
      (c) two-sided alt hypothesis, and we only consider the upper end of the sampling distribution
      (d) two-sided alt hypothesis, and we consider both ends of the sampling distribution 
 
-[^102]: d. two-sided alt hypothesis, and we consider both ends of the sampling distribution
+[^102]: c. two-sided alt hypothesis, and we only consider the upper end of the sampling distribution
 
 ---
 
