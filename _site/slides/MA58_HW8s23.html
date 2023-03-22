@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.256">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="your name here">
+<meta name="dcterms.date" content="2023-03-30">
+
+<title>Introduction to Biostatistics - HW 8 – Math 58B</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="https://m58-intro-stats.netlify.app/" class="navbar-brand navbar-brand-logo">
+    <img src="../images/st47s.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="https://m58-intro-stats.netlify.app/">
+    <span class="navbar-title">Introduction to Biostatistics</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../notes.html">
+ <span class="menu-text">Class Notes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../project.html">
+ <span class="menu-text">Project</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../clicker_study.html">
+ <span class="menu-text">Clicker Q</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">HW 8 – Math 58B</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>your name here </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 30, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="assignment-summary-goals" class="level3">
+<h3 class="anchored" data-anchor-id="assignment-summary-goals">Assignment Summary (Goals)</h3>
+<ul>
+<li>chi-squared tests of independence</li>
+</ul>
+<section id="q1.-learning-community-q" class="level4">
+<h4 class="anchored" data-anchor-id="q1.-learning-community-q">Q1. Learning Community Q</h4>
+<p>Describe one thing you learned from someone in your learning community this week (it could be: content, logistical help, background material, R information, etc.) 1-3 sentences.</p>
+</section>
+<section id="q2.-true-or-false-part-i" class="level4">
+<h4 class="anchored" data-anchor-id="q2.-true-or-false-part-i">Q2. True or false, Part I<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></h4>
+<p>Determine if the statements below are true or false. For each false statement, suggest an alternative wording to make it a true statement. (a) The chi-squared distribution, just like the normal distribution, has two parameters, mean and standard deviation. (b) The chi-squared distribution is always right skewed, regardless of the value of the degrees of freedom parameter. (c) The chi-squared statistic is always positive. (d) As the degrees of freedom increases, the shape of the chi-squared distribution becomes more skewed.</p>
+</section>
+<section id="q3.-true-or-false-part-ii" class="level4">
+<h4 class="anchored" data-anchor-id="q3.-true-or-false-part-ii">Q3. True or false, Part II<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></h4>
+<p>Determine if the statements below are true or false. For each false statement, suggest an alternative wording to make it a true statement.</p>
+<ol type="a">
+<li><p>As the degrees of freedom increases, the mean of the chi-squared distribution increases.</p></li>
+<li><p>If you found <span class="math inline">\(X^2 = 10\)</span> with df = 5 you would fail to reject <span class="math inline">\(H_0\)</span> at the 5% significance level. [Use <code>xpchisq()</code>.]</p></li>
+<li><p>When finding the p-value of a chi-squared test, we always shade the tail areas in both the upper and the lower tails.</p></li>
+</ol>
+</section>
+<section id="q4.-us-volunteerism-i" class="level4">
+<h4 class="anchored" data-anchor-id="q4.-us-volunteerism-i">Q4. US Volunteerism I<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></h4>
+<p>The 2003 study on volunteerism conducted by the Bureau of Labor Statistics reported the sample percentages who performed volunteer work, broken down by many other variables. For example, respondents were categorized by age. The following reports the percentage of sample respondents in each age group who had performed volunteer work in the previous year:</p>
+<table class="table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Age group</th>
+<th>16–24 years</th>
+<th>25–34 years</th>
+<th>35–44 years</th>
+<th>45–54 years</th>
+<th>55–64 years</th>
+<th>65 or more</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>% volunteer</td>
+<td>21.9%</td>
+<td>24.8%</td>
+<td>34.1%</td>
+<td>31.3%</td>
+<td>27.5%</td>
+<td>22.7%</td>
+</tr>
+</tbody>
+</table>
+<ol type="a">
+<li><p>Is this information sufficient to construct a segmented bar graph for comparing the proportions of volunteers across the various age categories?</p></li>
+<li><p>Explain why the information (the group proportions only) is <strong>not</strong> sufficient to conduct a chi-squared test of whether these sample proportions differ significantly across the age categories.</p></li>
+</ol>
+<p>The sample sizes in each age group are not given in the report, but based on other information we can estimate them to be as follows:</p>
+<table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 14%">
+<col style="width: 15%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 15%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Age group</th>
+<th>16–24 years</th>
+<th>25–34 years</th>
+<th>35–44 years</th>
+<th>45–54 years</th>
+<th>55–64 years</th>
+<th>65 or more</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sample size</td>
+<td>9719</td>
+<td>10613</td>
+<td>12070</td>
+<td>10959</td>
+<td>7329</td>
+<td>9310</td>
+</tr>
+</tbody>
+</table>
+<ol start="3" type="a">
+<li>Use this information to produce a table of counts with age groups in rows and volunteer status (yes or no) in columns. Make sure that you know how to create the 6x2 table of counts by hand. You can use the <code>table()</code> function in R.</li>
+</ol>
+<div class="cell" data-layout-align="center" data-hash="MA58_HW8s23_cache/html/unnamed-chunk-1_cd5bb76c772551467bcf5442943185c7">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>vol_data <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">2128</span>, <span class="dv">2632</span>, <span class="dv">4116</span>, <span class="dv">3430</span>, <span class="dv">2015</span>, <span class="dv">2113</span>, <span class="dv">7591</span>, <span class="dv">7981</span>, <span class="dv">7954</span>, <span class="dv">7529</span>, <span class="dv">5314</span>, <span class="dv">7197</span>), </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                   <span class="at">ncol=</span><span class="dv">6</span>, <span class="at">byrow=</span><span class="cn">TRUE</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>vol <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"Vol"</span>, <span class="st">"noVol"</span>), <span class="dv">6</span>), <span class="at">times =</span> vol_data)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>year <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"y1624"</span>,<span class="st">"y2534"</span>,<span class="st">"y3544"</span>,<span class="st">"y4554"</span>,<span class="st">"y5564"</span>, <span class="st">"y65plus"</span>), <span class="at">each =</span> <span class="dv">2</span>), <span class="at">times =</span> vol_data)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>volunteer <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(vol, year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="4" type="a">
+<li>Create a segmented barplot. The x-axis should be the age (look at the data to see what the variables are called!), the fill should be the information about whether or not each person volunteers</li>
+</ol>
+<p>The R code will look something like this:</p>
+<pre><code>ggplot(___) +
+  geom_bar(aes(x = ___, fill = ____ ), position = "fill") +
+  xlab("Age Group")+
+  ylab("Percent")</code></pre>
+<ol start="5" type="a">
+<li>Conduct the chi-squared test. Report the hypotheses, check of technical conditions (for the distribution to work out, we need at least 5 observations in each cell of the table), sampling distribution, chi-squared test statistic, and chi-squared p-value. (Provide the details of your calculations and/or relevant computer output.) Summarize your conclusion.</li>
+</ol>
+<p>The R code for running a chi-squared test will look something like this:</p>
+<pre><code>your_data %&gt;%
+  select(var_1, var_2) %&gt;%
+  table() %&gt;%
+  chisq.test()</code></pre>
+<ol start="6" type="a">
+<li>Construct a 6 <span class="math inline">\(\times\)</span> 2 table with the same row and column headings as in (c), but containing only + and – signs indicating whether the observed count is larger (+) or smaller (–) than expected in that cell. Does this table reveal a pattern? Explain what that pattern suggests about the relationship between age group and volunteerism.</li>
+</ol>
+<p>Note that if we keep (using <code>&lt;-</code>) the output of <code>chisq.test</code>, we can pull out the observed and expected tables from the output. Try the following: <code>name_of_your_X2_output$observed</code> and <code>name_of_your_X2_output$expected</code>.</p>
+<ol start="7" type="a">
+<li>Run a randomization test which uses the same test statistic (<span class="math inline">\(X^2\)</span>) but does not use the chi-squared probability (mathematical) distribution to find a p-value. Note that the change from “chi-squared test” to “randomization test” is <strong>not</strong> the statistic you calculate (the statistic is the same as the full chi-squared test above!). The difference is how the p-value is calculated (mathematical function vs.&nbsp;computer simulation). Ask if that doesn’t make sense! The data are permuted (shuffled) to find the sampling distribution of the <span class="math inline">\(X^2\)</span> statistic assuming <span class="math inline">\(H_0\)</span> is true.</li>
+</ol>
+<p>The only change to previous randomization tests with this syntax (e.g., <code>type = "permute"</code>) is that the statistic is now specified as <code>stat = "Chisq"</code>.</p>
+<p>As with the mathematical chi-squared test, for the permutation test: state the hypotheses, find the observed <span class="math inline">\(X^2\)</span> value, calculate the p-value, and provide a conclusion in words of the problem.</p>
+<p>Note: although the two tests use the same statistic (<span class="math inline">\(X^2\)</span>), the name of the test comes from the mathematical distribution which is called the “chi-squared distribution.” When we use the computational method (and not the mathematical distribution), we no longer call it a chi-sq test. For ease in understanding, the developers of the <strong>infer</strong> package that we use call the <span class="math inline">\(X^2\)</span> statistic “Chisq” because it is the same statistic used in the Chi-sq test.</p>
+</section>
+<section id="q5.-us-volunteerism-ii" class="level4">
+<h4 class="anchored" data-anchor-id="q5.-us-volunteerism-ii">Q5. US Volunteerism II<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></h4>
+<p>Reconsider the previous question about volunteerism. Suppose that the sample sizes had all been smaller by a factor of 100 (so that the entire study included only about 600 subjects) but that the conditional proportions of volunteerism within each age group had all turned out the same.</p>
+<ol type="a">
+<li><p>How (if at all) would you expect the segmented bar graph to change? Explain.</p></li>
+<li><p>How (if at all) would you expect the test statistic to change? Explain.</p></li>
+<li><p>How (if at all) would you expect the p-value to change? Explain.</p></li>
+<li><p>How (if at all) would you expect your conclusion to change? Explain.</p></li>
+<li><p>Repeat the chi-squared analysis (no need to repeat the randomization test) with this greatly reduced sample size (round the observed counts in the new table to the nearest integer). Confirm or correct your answers to (b)–(d) in light of this analysis.</p></li>
+</ol>
+<div class="cell" data-layout-align="center" data-hash="MA58_HW8s23_cache/html/unnamed-chunk-2_791d317902cee0a5ecc2c911fd6e8976">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">praise</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "You are mathematical!"</code></pre>
+</div>
+</div>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>From OpenIntro Statistics, exercise 3.37<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>From OpenIntro Statistics, exercise 3.38<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>From ISCAM, HW 5.6<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>From ISCAM, HW 5.7<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><a href="https://hardin47.netlify.app/research/"></a> <a href="https://hardin47.netlify.app/resume.pdf" target="_blank"><i class="fa-solid fa-bookmark"></i></a> <a href="mailto:jo.hardin@pomona.edu" target="_blank"><i class="fa-solid fa-at"></i></a> <a href="https://scholar.google.com/citations?user=c5Y77poAAAAJ&amp;hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i></a> <a href="https://www.researchgate.net/scientific-contributions/Johanna-Hardin-9764530" target="_blank"><i class="fa-brands fa-researchgate"></i></a><br>
+<a href="https://mobile.twitter.com/jo_hardin47" target="_blank"><i class="fa-brands fa-twitter"></i></a> <a href="https://github.com/hardin47" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/jo-hardin-b91a4b55" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>   
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ <br> © Jo Hardin, 2023 -- <a href="mailto: jo.hardin@pomona.edu">jo.hardin@pomona.edu</a> -- <a href="https://hardin47.netlify.app/">https://hardin47.netlify.app/</a> <br> <br>
+Math 58B -- Introduction to Biostatistics -- Pomona College, Claremont, CA <br>
+  </li>  
+</ul>
+      </div>
+  </div>
+</footer>
+
+
+
+</body></html>
