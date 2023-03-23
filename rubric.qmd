@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Assessment Criteria
 
-The <a href = "https://m58-intro-stats.netlify.app/slides/Rubric_m58_s22_Islands.docx" target = "_blank">grading rubric</a> tries to lay out the main aspects of the project inluding the analysis parts and the communication parts.  Please ask if you have any questions.
+The <a href = "https://m58-intro-stats.netlify.app/slides/Rubric_m58_s23_Islands.docx" target = "_blank">grading rubric</a> tries to lay out the main aspects of the project inluding the analysis parts and the communication parts.  Please ask if you have any questions.
 
 ## Final Report
 

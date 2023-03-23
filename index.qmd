@@ -101,12 +101,12 @@ schedule <- tribble(
   "Week 10 <br> 3.28.23", '1 mean +<br>pred interval',"• dist of X-bar <br> • SE(X-bar) <br> • t-test of μ<br> • t-CI for μ <br> • PI for X_{n+1}", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean1inf" target = "_blank"><i class="fas fa-book-open"></i> 1 mean</a> <br> <a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean1inf" target = "_blank"><i class="fas fa-book-open"></i> pred int</a>  <br> <a href="https://openintro-ims.netlify.app/inference-one-mean.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 19</a>',
   '<a href="https://static1.squarespace.com/static/5d2633cb0ef5e4000134fa02/t/5d72cb394452727586b69c2e/1567804217938/policy_brief_indigenous_data_sovereignty_in_the_united_states.pdf" target = "_blank"><i class="fas fa-newspaper"><br> </i> Data sovereignty</a> <br> no lab on 3.31.23 <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/paisano.html" target = "_blank">Edna Paisano</a>',
-  '<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW8s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 8 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW8s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 8 Rmd</a> <br> <br> Pilot Study Due',
+  '<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW8s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 8 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW8s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 8 Rmd</a> <br> <br> Pilot Study Due <br> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab8_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 8 doc</a>',
 
 '<font color = "#114B5F"><b>3.28.23</b></font>', '<font color = "#114B5F"><b>Proj 1: Pilot</b></font>',"", 
   '',
   '',
-  '<a href="https://m58-intro-stats.netlify.app/slides/Pilot_m58_s22_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 1: Pilot</a>',
+  '<a href="https://m58-intro-stats.netlify.app/slides/Pilot_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 1: Pilot</a>',
   
   "Week 11 <br> 4.4.23", '2 means +<br>t-proced',"• dist of X-bar_1 - X-bar_2 <br> • SE(X-bar_1 - X-bar_2) <br> • t-test of μ_1 - μ_2 <br> • t-CI for μ_1 - μ_2", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean2inf" target = "_blank"><i class="fas fa-book-open"></i> 2 means</a>  <br> <a href = "http://www.rossmanchance.com/applets/index2021.html" target = "_blank"><i class="fas fa-gamepad"></i> 2 samples</a> <br> <a href="https://openintro-ims.netlify.app/inference-two-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 20</a>',
@@ -115,7 +115,7 @@ schedule <- tribble(
 
 '<font color = "#114B5F"><b>4.4.23</b></font>', '<font color = "#114B5F"><b>Proj 2: Power Analysis</b></font>',"", 
   '','',
-  '<a href="https://m58-intro-stats.netlify.app/slides/Power_m58_s22_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 2: Power Analysis</a>',
+  '<a href="https://m58-intro-stats.netlify.app/slides/Power_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 2: Power Analysis</a>',
 
   "Week 12 <br> 4.11.23", 'ANOVA',"• MSG <br> • MSE <br>• F-test ", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#ANOVA" target = "_blank"><i class="fas fa-book-open"></i> ANOVA</a>  <br> <a href="https://st47s.com/Math58/Notes/reginf.html#infbeta1" target = "_blank"><i class="fas fa-book-open"></i> Inf on β_1</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class="fas fa-gamepad"></i> slopes</a> <br> <a href="https://openintro-ims.netlify.app/inference-many-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 22</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-slr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 24</a>',
@@ -129,7 +129,7 @@ schedule <- tribble(
 
 '<font color = "#114B5F"><b>4.18.23</b></font>', '<font color = "#114B5F"><b>Proj 3: Analysis</b></font>',"", 
   '','',
-  '<a href="https://m58-intro-stats.netlify.app/slides/PreliminaryAnalysis_m58_s22_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 3: Preliminary Analysis</a>',
+  '<a href="https://m58-intro-stats.netlify.app/slides/PreliminaryAnalysis_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 3: Preliminary Analysis</a>',
 
   "Week 14 <br> 4.25.23", 'catch-up',"", 
   '<i class="fas fa-book-open"></i> study materials <br> (see Canvas) <br> <a href="https://m58-intro-stats.netlify.app/slides/param_est_58.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> when to use what</a>',
@@ -143,15 +143,15 @@ schedule <- tribble(
 
 '<font color = "#114B5F"><b>5.2.23</b></font>', '<font color = "#114B5F"><b>Proj 4: Full draft</b></font>',"", 
   '','',
-  '<a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s22_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 4: Full draft</a>',
+  '<a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 4: Full draft</a>',
 
 '<font color = "#114B5F"><b>5.4 + 12.23</b></font>', '<font color = "#114B5F"><b>Proj Presentation</b></font>',"", 
   '','',
-  '<a href="https://m58-intro-stats.netlify.app/slides/Presentation_m58_s22_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj Presentation</a>',
+  '<a href="https://m58-intro-stats.netlify.app/slides/Presentation_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj Presentation</a>',
 
 '<font color = "#114B5F"><b>5.12.23</b></font>', '<font color = "#114B5F"><b>Proj 5: Final Project</b></font>',"", 
   '','',
-  '<a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s22_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 5: Final Project</a>'
+  '<a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 5: Final Project</a>'
   
     )
 ```
