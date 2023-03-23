@@ -1120,6 +1120,146 @@ What is measurable?[^96]
 
 ---
 
+107. Which dataset has the smallest standard deviation?[^107]
+     (a)	A: left
+     (b)	B: center
+     (c)	C: right
+
+```{r fig.height=4}
+#| echo: false
+#| warning: false
+#| message: false
+
+set.seed(47)
+par(mfrow = c(1,3))
+hist(runif(50,0,10), xlab="A", xlim = c(0,10), main = "")
+hist(10 - rchisq(50,1), xlab = "B", xlim = c(0,10), main = "")
+hist(rnorm(50,5,2), xlab = "C", xlim = c(0,10), main = "")
+```
+[^107]: b. B: center (the typical distance from the mean is smallest)
+
+---
+
+108. Which of the two dotplots displays the dataset with the smaller IQR?[^108]
+     (a)	A
+     (b)	B
+
+```{r fig.height=4.2}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+set.seed(4704)
+data <- data.frame(x = c(sample(25:35, 16, replace = TRUE), 11, 13, 50, 60,
+                         sample(15:50, 20, replace = TRUE)),
+                   group = c(rep("A", 20), rep("B", 20)))
+
+#create stacked dot plot
+ggplot(data, aes(y = x, x = group)) +
+  geom_dotplot(binaxis = "y", stackdir = "up") + 
+  xlab("") + 
+  coord_flip()
+```
+
+[^108]: a. A (the IQR measures the middle 10 points in each group, the middle 10 points in group A are closer together than the middle 10 points in group B)
+
+---
+
+109. The standard deviation of weights (mean = 167 lbs) is approximately[^109]
+     (a) 1
+     (b) 5
+     (c) 10
+     (d) 35
+     (e) 100
+
+[^109]: d. 35 (none of the other answers are reasonable)
+
+---
+
+110. The standard deviation of average weights (mean = 167 lbs) in a sample of size 10 is approximately[^110]
+     (a) 1
+     (b) 5
+     (c) 10
+     (d) 35
+     (e) 100
+
+[^110]: c. 10 ($\approx 35/\sqrt{10}$)
+
+---
+
+111. The standard deviation of average weights (mean = 167 lbs) in a sample of size 50 is approximately[^111]
+     (a) 1
+     (b) 5
+     (c) 10
+     (d) 35
+     (e) 100
+
+[^111]: b. 5 ($\approx 35/\sqrt{100}$)
+---
+
+112. The standard deviation of average weights (mean = 167 lbs) in a sample of size 1000 is approximately[^112]
+     (a) 1
+     (b) 5
+     (c) 10
+     (d) 35
+     (e) 100
+     
+[^112]: a. 1 ( $\approx 35/\sqrt{1000}$)
+     
+---
+
+Q: what is the most confusing part of understanding the difference between the variability of the weights and the variability of the average of the weights?
+
+---
+
+113. The sampling distribution of the mean will be[^113]
+     (a) centered below the data distribution
+     (b) centered at the same place as the data distribution
+     (c) centered above the data distribution
+     (d) unrelated to the center of the data distribution
+
+[^113]: b. centered at the same place as the data distribution
+
+---
+
+114. The sampling distribution of the mean will be[^114]
+     (a) less variable than the data distribution
+     (b) the same variability as the data distribution
+     (c) more variable than the data distribution
+     (d) unrelated to the variability of the data distribution
+
+[^114]: a. less variable than the data distribution
+
+---
+
+115. Why did we switch from talking about total weight to talking about average weight?[^115]
+     (a) So that it is easier to infer from the sample to the population.
+     (b) Because the Coast Guard certifies vessels according to average weight.
+     (c) Because the average is less variable than the sum.
+     (d) Because the average has a normal distribution and the sum doesn’t.
+
+[^115]: a. So that it is easier to infer from the sample to the population
+
+---
+
+116. When the population is skewed right, the sampling distribution for the sample mean will be[^116]
+     (a) always skewed right
+     (b) skewed right if n is big enough
+     (c) always normal
+     (d) normal if n is big enough
+
+[^116]: d. normal if n is big enough
+
+---
+
+117. What does the CLT say?[^117]
+
+
+[^117]: Describing random samples (of size n) from the population, the sampling distribution of the sample mean is normal if the sample size (n) is large enough.
+
+---
+
 ```{r eval = FALSE, echo = FALSE}
 
 63.	A newspaper article claims that the average age for people who receive food stamps is 40 years. You believe that the average age is less than that. You take a random sample of 100 people who receive food stamps and find their average age to be 39.2 years. You find that this is significantly lower than the age of 40 stated in the article (p < 0.05). What would be an appropriate interpretation of this result?
