@@ -1309,123 +1309,133 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-123.  What is the correct interpretation of the 92% CI for $\mu$ which is given as (98.2, 98.3)?[^123]
+123. What is the difference between t* and a t score?[^123]
+     a. t score comes from the data, t* and is a pre-defined unit of measurement.
+     b. t* comes from the data, and t score is a pre-defined unit of measurement
+     c. t score assumes the null hypothesis is true and t* doesn't.
+     d. t* assumes the null hypothesis is true, and t score doesn't
+
+[^123]: a. t score comes from the data, t* and is a pre-defined unit of measurement.
+
+---
+
+124.  What is the correct interpretation of the 92% CI for $\mu$ which is given as (98.2, 98.3)?[^124]
       (a) 92% of intervals will be (98.2, 98.3).
       (b) 92% of individual temperatures will be between (98.2, 98.3).
       (c) There is a 0.92 probability that the true temperature is between (98.2, 98.3).
       (d) There is a 0.92 probability that the true average temperature is between (98.2, 98.3).
       (e) In repeated samples, 92% of the intervals will contain $\mu$.
 
-[^123]: e. In repeated samples, 92% of the intervals will contain $\mu$. Also good interpretation for a CI: f. We are 92% confident that the interval (98.2, 98.3) captures the true average temperature, $\mu$.
+[^124]: e. In repeated samples, 92% of the intervals will contain $\mu$. Also good interpretation for a CI: f. We are 92% confident that the interval (98.2, 98.3) captures the true average temperature, $\mu$.
 
 ---
 
-124. Let's say you *truly* believe that the true average body temp is between (98.2, 98.3). (Your CI is green.) You record a temp of 98.6 F.  Do you think you are sick?[^124]
+125. Let's say you *truly* believe that the true average body temp is between (98.2, 98.3). (Your CI is green.) You record a temp of 98.6 F.  Do you think you are sick?[^125]
      a. Yes, it is outside the range above.
      b. No, I still believe $\mu$ is 98.6.
      c. No, 98.6 isn't too far above the upper bound.
      d. No, the interval isn't for individual people.
 
-[^124]: d. No, the interval isn't for individual people.
+[^125]: d. No, the interval isn't for individual people.
 
 ---
 
-125.  The variability associated with $\overline{X}$ is[^125]
+126.  The variability associated with $\overline{X}$ is[^126]
       (a) less than the variability of X
       (b) more than the variability of X
       (c) the same as the variability of X
       (d) unrelated to the variability of X
       (e) some other function of X
 
-[^125]: a. less than the variability of X
+[^126]: a. less than the variability of X
 
 ---
 
-126.  The variability associated with predicting a new value, $X_{n+1}$,[^126]
+127.  The variability associated with predicting a new value, $X_{n+1}$,[^127]
       (a) is less than the variability of $\overline{X}$
       (b) is more than the variability of $\overline{X}$
       (c) is the same as variability of $\overline{X}$
       (d) is less than the variability of X
       (e) is more than the variability of X
 
-[^126]: b. is more than the variability of $\overline{X}$
+[^127]: b. is more than the variability of $\overline{X}$
 
 ---
 
-127.  Prediction intervals are[^127]
+128.  Prediction intervals are[^128]
       (a) smaller than confidence intervals
       (b) about the same width as confidence intervals
       (c) larger than confidence intervals
       (d) unrelated to confidence intervals
 
-[^127]: c. larger than confidence intervals
+[^128]: c. larger than confidence intervals
 
 ---
 
-128. Where should a prediction interval for a new value, $X_{n+1}$, be centered?[^128]
+129. Where should a prediction interval for a new value, $X_{n+1}$, be centered?[^129]
       (a) $\overline{X}$
       (b) $\mu$
       (c) 98.6
       (d) $X_1$ (the first person in the dataset)
       (e) $X_n$ (the last person in the dataset)
   
-[^128]: a. $\overline{X}$
+[^129]: a. $\overline{X}$
 
 ---
 
-129.  What is the correct interpretation of the 95% PI for $X_{n+1}$ which is given as (96.79, 99.70)?[^129]
+130. What is the correct interpretation of the 95% PI for $X_{n+1}$ which is given as (96.79, 99.70)?[^130]
       (a) 95% of intervals will be (96.79, 99.70).
       (b) 95% of individual temperatures will be between (96.79, 99.70).
       (c) There is a 0.95 probability that the true temperature is between (96.79, 99.70).
       (d) There is a 0.95 probability that the true average temperature is between (96.79, 99.70).
       (e) In repeated samples, 95% of the intervals will contain $\mu$.
 
-[^129]: b. 95% of individual temperatures will be between (96.79, 99.70).
+[^130]: b. 95% of individual temperatures will be between (96.79, 99.70).
 
 ---
 
-130. Prediction intervals have[^130]
+131. Prediction intervals have[^131]
       (a) the same technical conditions as CIs
       (b) stricter technical conditions than CIs
       (c) more lenient technical conditions than CIs
       (d) technical conditions which are unrelated to CIs
 
-[^130]: b. stricter technical conditions than CIs
+[^131]: b. stricter technical conditions than CIs
 
 ---
 
-131.  When the population is skewed right, the sampling distribution for the sample mean will be[^131]
+132. When the population is skewed right, the sampling distribution for the sample mean will be[^132]
       (a) always skewed right
       (b) skewed right if n is big enough
       (c) always normal
       (d) normal if n is big enough
 
-[^131]: d. normal if n is big enough
+[^132]: d. normal if n is big enough
 
 ---
 
-132.  When the population is skewed right, the distribution for the data will be[^132]
+133.  When the population is skewed right, the distribution for the data will be[^133]
       (a) always skewed right
       (b) skewed right if n is big enough
       (c) always normal
       (d) normal if n is big enough
 
-[^132]: a. always skewed right
+[^133]: a. always skewed right
 
 ---
 
-133. A newspaper article claims that the average age for people who receive food stamps is 40 years. You believe that the average age is lower. You take a random sample of 100 people who receive food stamps and find their average age to be 39.2 years. You find that 39.2 is significantly lower than the age of 40 stated in the article (p < 0.05). What would be an appropriate interpretation of the result?[^133]
+134. A newspaper article claims that the average age for people who receive food stamps is 40 years. You believe that the average age is lower. You take a random sample of 100 people who receive food stamps and find their average age to be 39.2 years. You find that 39.2 is significantly lower than the age of 40 stated in the article (p < 0.05). What would be an appropriate interpretation of the result?[^134]
       (a) The statistically significant result indicates that the majority of people who receive food stamps is younger than 40.
       (b) Although the result is statistically significant, the difference in age is not of practical importance.
       (c) An error must have been made. This difference is too small to be statistically significant.
 
-[^133]: b. Although the result is statistically significant, the difference in age is not of practical importance.
+[^134]: b. Although the result is statistically significant, the difference in age is not of practical importance.
 
 ---
 
-134. In order to investigate a claim that the average time required for the county fire department to respond to a reported fire is greater than 5 minutes, county staff determined the response times for 40 randomly selected fire reports.  The data were used to test $H_0: \mu = 5$ versus $H_a:  \mu > 5$, and the computed p-value was 0.12.  If a 0.05 level of significance is used, what conclusions can be drawn?[^134]
+135. In order to investigate a claim that the average time required for the county fire department to respond to a reported fire is greater than 5 minutes, county staff determined the response times for 40 randomly selected fire reports.  The data were used to test $H_0: \mu = 5$ versus $H_a:  \mu > 5$, and the computed p-value was 0.12.  If a 0.05 level of significance is used, what conclusions can be drawn?[^135]
       (a) There is convincing evidence that the mean response time is 5 minutes (or less).
       (b) There is convincing evidence that the mean response time is greater than 5 minutes.
       (c) There is not convincing evidence that the mean response time is greater than 5 minutes.
 
-[^134]: c. There is not convincing evidence that the mean response time is greater than 5 minutes.
+[^135]: c. There is not convincing evidence that the mean response time is greater than 5 minutes.
