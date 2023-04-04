@@ -1439,3 +1439,170 @@ Q: what is the most confusing part of understanding the difference between the v
       (c) There is not convincing evidence that the mean response time is greater than 5 minutes.
 
 [^135]: c. There is not convincing evidence that the mean response time is greater than 5 minutes.
+
+---
+
+136. You have two samples of size n = 50.  You sample with replacement 1000 times (to get 1000 bootstrap resamples). What is the sample size of each bootstrap resample?[^136]
+     (a) 50
+     (b) 1000
+
+[^136]: a. 50 (bootstrap 50 resamples separately from each group.)
+
+---
+
+137. You have two samples of size n = 50.  You sample with replacement 1000 times (to get 1000 bootstrap resamples). How many bootstrap statistics will you have?[^137]
+     (a) 50
+     (b) 1000
+
+[^137]: b. 1000 statistics (here the statistic is $\overline{X}_1 - \overline{X}_2)$
+
+---
+
+138. You have two samples of size n = 50.  You shuffle the explanatory and response variables (i.e., sample without replacement) 1000 times. What is the sample size of each group after shuffling?[^138]
+     (a) 50
+     (b) 1000
+
+[^138]: a. 50 (shuffling maintains the exact same number in each group)
+
+---
+
+139. You have two samples of size n = 50.  You shuffle the explanatory and response variables (i.e., sample without replacement) 1000 times. How many randomization statistics will you have?[^139]
+     (a) 50
+     (b) 1000
+
+[^139]: b. 1000 statistics (here the statistic is $\overline{X}_1 - \overline{X}_2)$
+
+---
+
+140. We typically compare means instead of medians because[^140]
+     (a) we don't know the SE of the difference of medians
+     (b) means are inherently more interesting than medians
+     (c) the randomization applet (or R code) doesn't work with medians
+     (d) the Central Limit Theorem doesn't apply for medians
+
+[^140]: a. we don't know the SE of the difference of medians and d. the Central Limit Theorem doesn't apply for medians
+
+---
+
+141. $SE(\overline{X}_1 - \overline{X}_2)$ is:[^141]
+      a. $\sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}$
+      b. $\sqrt{\frac{\sigma_1^2}{n_1} - \frac{\sigma_2^2}{n_2}}$
+      c. $\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$
+      d. $\sqrt{\frac{s_1^2}{n_1} - \frac{s_2^2}{n_2}}$
+      e. $\sqrt{s_1^2 - s_2^2}$
+
+[^141]: c. $\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$
+
+---
+
+142. The distribution of age of death is:[^142]
+     a. right skewed
+     b. left skewed
+     c. symmetric
+     d. can't tell with this information
+
+[^142]: b. left skewed
+
+---
+
+143. The standard deviation for the age of death is likely around:[^143]
+     (a) 1 year
+     (b) 10 years
+     (c) 20 years
+     (d) 50 years
+     (e) 100 years
+
+[^143]: I don't know.  10 or 20 both seem like reasonable values.  I don't think 1, 50, or 100 are reasonable.
+
+---
+
+144. The number of left handed people is likely:[^144]
+     (a) 10
+     (b) 100
+     (c) 300
+     (d) 500
+     (e) 900
+
+[^144]: b. 100, which is roughly 10% of the sample
+
+---
+
+145. Are the two samples (lefties and righties) independent?[^145]
+     (a) yes
+     (b) no
+     (c) we can't tell
+
+[^145]: a. yes.  They are not a pure random sample.  however, there is no reason to think that knowledge about one person in the sample tells you anything about about the lifetime of other people in the sample.
+
+---
+
+146.  For the handedness example, which has a lower p-value?[^146]
+      a. Scenario 2
+      b. Scenario 3
+
+[^146]: a. Scenario 2 (because the sample SDs are smaller)
+
+---
+
+147. For the handedness example, which has a lower p-value?[^147]
+      a. Scenario 3
+      b. Scenario 4
+
+[^147]: a. Scenario 3 (because the samples are more balanced)
+
+---
+
+148. How does each affect the power?[^148]
+(i) increasing the sample sizes of both groups
+     (a) increases the power
+     (b) doesn't change the power
+     (c) decreases the power
+     
+--- 
+
+(ii) larger variability within the groups 
+     (a) increases the power
+     (b) doesn't change the power
+     (c) decreases the power
+
+---
+
+(iii) larger difference in actual (population) group means
+      (a) increases the power
+      (b) doesn't change the power
+      (c) decreases the power
+
+[^148]: i. a. increases power; ii. c. decreases power; iii. a. increases power
+
+---
+
+149. We use the t-distribution (instead of the z-distribution) because:[^149]
+     (a) the CLT makes the test statistic normal
+     (b) the CLT makes the numerator of the test statistic normal
+     (c) the variability in the denominator makes the test statistic more variable
+     (d) the variability in the denominator makes the test statistic less variable
+
+[^149]: c. the variability in the denominator makes the test statistic more variable
+
+---
+
+150.  If we use the SE and the z-curve (instead of t-curve) to find the p-value (assuming $\overline{X}$ values are reasonably different):[^150]
+      (a) the p-value will be too small
+      (b) the p-value will be too big
+      (c) the p-value will be just right
+      (d) the p-value is unrelated to the curve
+      (e) we should use the SD instead
+
+[^150]: a. the p-value will be too small
+
+---
+ 
+151.  If we use the SE and the z-curve (instead of t-curve) to find a 95% CI:[^151]
+      a. The capture rate will be at 95% over the long run.
+      b. The capture rate will be higher than 95% over the long run.
+      c. The capture rate will be lower than 95% over the long run.
+
+[^151]: c. The capture rate will be lower than 95% over the long run.
+
+---
+
