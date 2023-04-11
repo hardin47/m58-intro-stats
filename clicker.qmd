@@ -1617,8 +1617,8 @@ Q: what is the most confusing part of understanding the difference between the v
 
 152. In the ANOVA setting, the null hypothesis is always: $$H_0: \mu_1 = \mu_2 = \mu_3 = \ldots = \mu_I$$
 What is the alternative hypothesis?[^152]
-     (a) $H_0: \mu_1 \ne \mu_2 \ne \mu_3 \ne \ldots \ne \mu_I$
-     (b) $H_0: \mu_1 = \mu_2 = \mu_3 = \ldots = \mu_I = \mu$ (for some $\mu$ value)
+     (a) $H_a: \mu_1 \ne \mu_2 \ne \mu_3 \ne \ldots \ne \mu_I$
+     (b) $H_a: \mu_1 = \mu_2 = \mu_3 = \ldots = \mu_I = \mu$ (for some $\mu$ value)
      (c) $H_a$: at least one $\mu_i$ is different
      (d) $H_a$: at least one $\mu_i$ is significantly different
      (e) $H_a$: at least one $\mu_i$ is a lot different
@@ -1638,11 +1638,11 @@ What is the alternative hypothesis?[^152]
 
 ---
 
-154. Which is more significant?[^154] 
-    (a) A
-    (b) B
-    (c) They are the same
-    (d) We can't tell
+154. Which is more significant?[^154]
+     (a) A
+     (b) B
+     (c) They are the same
+     (d) We can't tell
     
 ```{r fig.cap = "",  out.width="95%", fig.align='center', echo=FALSE}
 knitr::include_graphics("images/anova_boxplots.png")
