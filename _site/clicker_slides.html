@@ -1525,6 +1525,14 @@ What is measurable?<a href="#/footnotes" class="footnote-ref" id="fnref94" role=
 <aside></aside></section>
 <section class="slide level2">
 
+<p>From the NYT, March 21, 2023, https://www.nytimes.com/2023/03/21/sports/basketball/tall-basketball-march-madness.html</p>
+<blockquote>
+<p>The average W.N.B.A. player, at a shade taller than 6 feet, towers over the average American woman (5 feet 3.5 inches). American men who are between 6 feet and 6-2 — significantly taller than the 5-9 average — have about a five in a million chance of making the N.B.A., according to “The Sports Gene,” a 2013 book by David Epstein about the science of athletic performance. But if you hit the genetic lottery and happen to be 7 feet tall, your chances of landing in the N.B.A. are roughly one in six. (There are 38 players on active rosters who are 7 feet or taller, according to N.B.A. Advanced Stats; the average height of an N.B.A. player is 6 feet 6.5 inches.)</p>
+</blockquote>
+<p>https://davidepstein.com/david-epstein-the-sports-gene/</p>
+</section>
+<section class="slide level2">
+
 <ol start="97" type="1">
 <li>When we randomly select individuals based on the explanatory variable, we cannot accurately measure<a href="#/footnotes" class="footnote-ref" id="fnref95" role="doc-noteref" data-footnote-href="#/fn95" onclick=""><sup>95</sup></a>
 <ol type="a">
@@ -2203,6 +2211,81 @@ What is measurable?<a href="#/footnotes" class="footnote-ref" id="fnref94" role=
 <aside></aside></section>
 <section class="slide level2">
 
+<ol start="152" type="1">
+<li>In the ANOVA setting, the null hypothesis is always: <span class="math display">\[H_0: \mu_1 = \mu_2 = \mu_3 = \ldots = \mu_I\]</span> What is the alternative hypothesis?<a href="#/footnotes" class="footnote-ref" id="fnref150" role="doc-noteref" data-footnote-href="#/fn150" onclick=""><sup>150</sup></a>
+<ol type="a">
+<li><span class="math inline">\(H_0: \mu_1 \ne \mu_2 \ne \mu_3 \ne \ldots \ne \mu_I\)</span></li>
+<li><span class="math inline">\(H_0: \mu_1 = \mu_2 = \mu_3 = \ldots = \mu_I = \mu\)</span> (for some <span class="math inline">\(\mu\)</span> value)</li>
+<li><span class="math inline">\(H_a\)</span>: at least one <span class="math inline">\(\mu_i\)</span> is different</li>
+<li><span class="math inline">\(H_a\)</span>: at least one <span class="math inline">\(\mu_i\)</span> is significantly different</li>
+<li><span class="math inline">\(H_a\)</span>: at least one <span class="math inline">\(\mu_i\)</span> is a lot different</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="153" type="1">
+<li>In order to tell whether the differences in sample means are significant, we need to ALSO know:<a href="#/footnotes" class="footnote-ref" id="fnref151" role="doc-noteref" data-footnote-href="#/fn151" onclick=""><sup>151</sup></a>
+<ol type="a">
+<li>how variable the observations are</li>
+<li>the distribution of the observations</li>
+<li>the sample sizes</li>
+<li>all of the above</li>
+<li>some of the above</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="154" type="1">
+<li>Which is more significant?<a href="#/footnotes" class="footnote-ref" id="fnref152" role="doc-noteref" data-footnote-href="#/fn152" onclick=""><sup>152</sup></a> (a) A (b) B (c) They are the same (d) We can’t tell</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/anova_boxplots.png" style="width:95.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="155" type="1">
+<li>We reject the null hypothesis if:<a href="#/footnotes" class="footnote-ref" id="fnref153" role="doc-noteref" data-footnote-href="#/fn153" onclick=""><sup>153</sup></a>
+<ol type="a">
+<li>the between group variability is much bigger than the within group variability</li>
+<li>the within group variability is much bigger than the between group variability</li>
+<li>the within group variability and the between group variability are both quite large</li>
+<li>the within group variability and the between group variability are both quite small</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="156" type="1">
+<li>What types of values will the F-ratio have when the null hypothesis is false, that is, when the population means are not all equal?<a href="#/footnotes" class="footnote-ref" id="fnref154" role="doc-noteref" data-footnote-href="#/fn154" onclick=""><sup>154</sup></a>
+<ol type="a">
+<li>large, positive</li>
+<li>large, negative</li>
+<li>small, positive</li>
+<li>small, negative</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
+<ol start="157" type="1">
+<li>With ANOVA, if the null hypothesis is true, then<a href="#/footnotes" class="footnote-ref" id="fnref155" role="doc-noteref" data-footnote-href="#/fn155" onclick=""><sup>155</sup></a> <span class="math display">\[H_0: \overline{X}_1 = \overline{X}_2 = \overline{X}_3 = \ldots = \overline{X}_I\]</span>
+<ol type="a">
+<li>TRUE</li>
+<li>FALSE</li>
+</ol></li>
+</ol>
+<aside></aside></section>
+<section class="slide level2">
+
 
 <div class="footer footer-default">
 
@@ -2786,6 +2869,30 @@ What is measurable?<a href="#/footnotes" class="footnote-ref" id="fnref94" role=
 </li>
 <li id="fn149"><ol start="3" type="a">
 <li>The capture rate will be lower than 95% over the long run.</li>
+</ol>
+</li>
+<li id="fn150"><ol start="3" type="a">
+<li><span class="math inline">\(H_a\)</span>: at least one <span class="math inline">\(\mu_i\)</span> is different</li>
+</ol>
+</li>
+<li id="fn151"><ol type="a">
+<li>how variable the observations are and c.&nbsp;the sample sizes for sure. We also need b. the distribution of the observations if the sample sizes are small.</li>
+</ol>
+</li>
+<li id="fn152"><ol start="2" type="a">
+<li>B</li>
+</ol>
+</li>
+<li id="fn153"><ol type="a">
+<li>the between group variability is much bigger than the within group variability</li>
+</ol>
+</li>
+<li id="fn154"><ol type="a">
+<li>large, positive</li>
+</ol>
+</li>
+<li id="fn155"><ol start="2" type="a">
+<li>FALSE</li>
 </ol>
 </li>
 </ol>

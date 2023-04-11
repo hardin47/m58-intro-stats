@@ -1026,6 +1026,15 @@ What is measurable?[^96]
 
 ---
 
+From the NYT, March 21, 2023, https://www.nytimes.com/2023/03/21/sports/basketball/tall-basketball-march-madness.html
+
+> The average W.N.B.A. player, at a shade taller than 6 feet, towers over the average American woman (5 feet 3.5 inches). American men who are between 6 feet and 6-2 — significantly taller than the 5-9 average — have about a five in a million chance of making the N.B.A., according to "The Sports Gene," a 2013 book by David Epstein about the science of athletic performance. But if you hit the genetic lottery and happen to be 7 feet tall, your chances of landing in the N.B.A. are roughly one in six. (There are 38 players on active rosters who are 7 feet or taller, according to N.B.A. Advanced Stats; the average height of an N.B.A. player is 6 feet 6.5 inches.)
+
+
+https://davidepstein.com/david-epstein-the-sports-gene/
+
+---
+
 97.  When we randomly select individuals based on the explanatory variable, we cannot accurately measure[^97]
      (a) the proportion of people in the population in each explanatory category
      (b) the proportion of people in the population in each response group
@@ -1597,12 +1606,78 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
  
-151.  If we use the SE and the z-curve (instead of t-curve) to find a 95% CI:[^151]
+151. If we use the SE and the z-curve (instead of t-curve) to find a 95% CI:[^151]
       a. The capture rate will be at 95% over the long run.
       b. The capture rate will be higher than 95% over the long run.
       c. The capture rate will be lower than 95% over the long run.
 
 [^151]: c. The capture rate will be lower than 95% over the long run.
 
+---
+
+152. In the ANOVA setting, the null hypothesis is always: $$H_0: \mu_1 = \mu_2 = \mu_3 = \ldots = \mu_I$$
+What is the alternative hypothesis?[^152]
+     (a) $H_0: \mu_1 \ne \mu_2 \ne \mu_3 \ne \ldots \ne \mu_I$
+     (b) $H_0: \mu_1 = \mu_2 = \mu_3 = \ldots = \mu_I = \mu$ (for some $\mu$ value)
+     (c) $H_a$: at least one $\mu_i$ is different
+     (d) $H_a$: at least one $\mu_i$ is significantly different
+     (e) $H_a$: at least one $\mu_i$ is a lot different
+
+[^152]: c. $H_a$: at least one $\mu_i$ is different
+
+---
+
+153. In order to tell whether the differences in sample means are significant, we need to ALSO know:[^153]
+     (a) how variable the observations are
+     (b) the distribution of the observations
+     (c) the sample sizes
+     (d) all of the above
+     (e) some of the above
+
+[^153]: a. how variable the observations are and c. the sample sizes for sure. We also need b. the distribution of the observations if the sample sizes are small.
+
+---
+
+154. Which is more significant?[^154] 
+    (a) A
+    (b) B
+    (c) They are the same
+    (d) We can't tell
+    
+```{r fig.cap = "",  out.width="95%", fig.align='center', echo=FALSE}
+knitr::include_graphics("images/anova_boxplots.png")
+```
+
+[^154]: b. B
+
+---
+
+155. We reject the null hypothesis if:[^155]
+     (a) the between group variability is much bigger than the within group variability
+     (b) the within group variability is much bigger than the between group variability
+     (c) the within group variability and the between group variability are both quite large
+     (d) the within group variability and the between group variability are both quite small
+
+[^155]: a. the between group variability is much bigger than the within group variability
+
+---
+
+156. What types of values will the F-ratio have when the null hypothesis is false, that is, when the population means are not all equal?[^156]
+     (a) large, positive
+     (b) large, negative
+     (c) small, positive
+     (d) small, negative
+
+[^156]: a. large, positive
+
+---
+
+
+157.  With ANOVA, if the null hypothesis is true, then[^157]
+$$H_0: \overline{X}_1 = \overline{X}_2 = \overline{X}_3 = \ldots = \overline{X}_I$$
+      a. TRUE
+      b. FALSE
+
+[^157]: b. FALSE
 ---
 
