@@ -1681,3 +1681,24 @@ $$H_0: \overline{X}_1 = \overline{X}_2 = \overline{X}_3 = \ldots = \overline{X}_
 [^157]: b. FALSE
 ---
 
+158. How can I figure out which $\mu_i$ is different?[^158]
+      a. The ANOVA reports it
+      b. Do repeated one sample mean tests, but worry about type I errors
+      c. Do repeated one sample mean tests, but worry about type II errors
+      d. Do repeated two sample mean tests, but worry about type I errors
+      e. Do repeated two sample mean tests, but worry about type II errors
+      
+[^158]: d. Do repeated two sample mean tests, but worry about type I errors
+
+---
+
+159. When using a categorical variable, with 4 levels, how many variables show up in the linear model output?[^159]
+      a. 1
+      b. 3
+      c. 4
+      d. n-4
+      e. n
+
+[^159]: b. 3, there will always be one fewer variables in the linear model because the baseline group will be part of the intercept.
+
+---
