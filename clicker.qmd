@@ -1692,7 +1692,7 @@ $$H_0: \overline{X}_1 = \overline{X}_2 = \overline{X}_3 = \ldots = \overline{X}_
 
 ---
 
-159. When using a categorical variable, with 4 levels, how many variables show up in the linear model output?[^159]
+159. Consider a categorical variable with 4 levels. In addition to the intercept how many variables show up in the linear model output?[^159]
       a. 1
       b. 3
       c. 4
@@ -1702,3 +1702,226 @@ $$H_0: \overline{X}_1 = \overline{X}_2 = \overline{X}_3 = \ldots = \overline{X}_
 [^159]: b. 3, there will always be one fewer variables in the linear model because the baseline group will be part of the intercept.
 
 ---
+
+```{r eval = FALSE, echo = FALSE}
+
+154.  If there is no relationship in the population (true correlation  = 0), then r=0.
+
+(a) TRUE
+(b) FALSE
+
+
+
+
+155.  If there is no relationship in the population (true slope 1 = 0), then b1=0.
+
+(a) TRUE
+(b) FALSE
+
+
+
+
+If we set a parameter equal to XXXX, should we expect the statistic to be XXXX?
+
+No.  Because statistics vary from sample to sample. 
+
+
+156. A smaller variability around the regression line (can be thought of as: σ or MSE or variability of the ei):
+
+(a) increases the variability of b1.
+(b) decreases the variability of b1.
+(c) doesn’t necessarily change the variability of b1.
+
+151. A smaller variability in the explanatory variable (SD(X) = sx):
+
+(a) increases the variability of b1.
+(b) decreases the variability of b1.
+(c) doesn’t necessarily change the variability of b1.
+
+157.  A smaller sample size (n):
+(a) increases the variability of b1.
+(b) decreases the variability of b1.
+(c) doesn’t necessarily change the variability of b1.
+
+
+
+
+158.  The regression technical assumptions include:
+(a) The Y variable is normally distributed at each X
+(b) The X variable is normally distributed
+(c)  The residuals are normally distributed
+(d) The slope coefficient is normally distributed
+(e) The intercept coefficient is normally distributed
+
+
+
+
+
+
+
+
+
+159. The technical conditions do not include:
+(a) normally distributed residuals
+(b) normally distributed response
+(c) normally distributed explanatory variable
+(d) constant variance
+(e) independence of observations
+
+
+
+
+
+160.  What happens if the technical conditions are not met?
+
+	The line does not minimize the sum of squared residuals.
+	R^2 does not measure the proportion of variability explained by the line.
+	The distribution of b1 is wrong (therefore incorrect p-values and CI).
+	The computer (R) will produce an error when running the linear model.
+
+161. Which linear regression condition is violated?
+ 
+(a) linearity 
+(b) equal variance of errors
+(c) independent errors
+(d) normal errors
+(e) outliers
+
+162. Which linear regression condition is violated?
+ 
+(a) linearity
+(b) constant errors
+(c) independent errors
+(d) normal errors
+(e) outliers
+163. Which linear regression condition is violated?
+
+ 
+(a) linearity
+(b) constant errors
+(c) independent errors
+(d) normal errors
+(e) outliers
+164. Which of the below correctly describes the roles of variables in this regression model?
+Est 			SE 		t value 	Pr(>|t|)
+(Intercept) 	197.96 		59.20 	3.34     0.0058
+volume 	0.71 		0.06 	11.67 	0.0000
+coverpb 	-184.05 	40.49 	-4.55 	0.0007
+(a) response: weight 
+explanatory: volume, paperback cover
+(b) response: weight 
+explanatory: volume, hardcover cover
+(c) response: volume 
+explanatory: weight, cover type
+(d) response: weight 
+explanatory: volume, cover type 
+
+165. An econometrician is interested in evaluating the relation of demand for building materials to mortgage rates in LA and SF. 
+Y ̂ = 10 + 5X1 + 8X2
+where	
+X1 = mortgage rate in % 
+X2 = 1 if SF, 0 if LA
+Y = demand in $100 per capita
+holding constant the effect of city, each additional increase of 1%  in the mortgage rate would lead to an estimated average ________ in the mean demand.
+(a) predicted $500 more per capita
+(b) predicted $500 less per capita
+(c) predicted $5 more per capita
+(d) predicted $5 less per capita
+
+
+166. Referring to 
+Y ̂ = 10 + 5X1 + 8X2
+where	
+X1 = mortgage rate in %
+X2 = 1 if SF, 0 if LA
+Y = demand in $100 per capita
+the effect of living in LA rather than SF is a ________ demand by an estimated ________ holding the effect of mortgage rate constant.
+(a) larger; $800 per capita
+(b) smaller; $800 per capita
+(c) larger, $8 per capita
+(d) smaller, $8 per capita
+
+
+167. Consider the housing model, 
+Y ̂= 12.2 + 0.000468⋅sqft − 0.0603⋅# bedrooms
+
+the coefficient on bedrooms (− 0.0603) can be interpreted as the change in predicted ln(price)…
+	for a one unit increase in bedrooms
+	for a home that adds a bedroom to the existing structure (without adding square feet)
+	for a one unit increase in bedrooms when comparing homes that have identical square feet
+	for a one unit increase in square feet
+	for a one unit increase in square feet when comparing homes that have identical number of bedrooms
+
+
+
+168. To test if there is convincing evidence that the slope of the regression line between ln(price) and square feet (only, no bedroom here) is different from zero, 
+
+what are the appropriate hypotheses?
+
+(a)	H0: b0 = 0
+ 	Ha: b0 ≠ 0
+(b) 	H0: b1 = 0
+ 	Ha: b1 ≠ 0
+(c) 	H0: β0 = 0
+ 	Ha: β0 ≠ 0
+(d) 	H0: β1 = 0
+ 	Ha: β1 ≠ 0
+
+
+p-value = probability of observed data (b1) or more extreme if H0 is true (β1 = 0). 
+169. With # bedrooms in the model, 
+Y ̂= 12.2 + 0.000468⋅sqft − 0.0603⋅# bedrooms
+the test is now:
+H0: β1 = 0
+Ha: β1 ≠ 0
+In words, the test asks if there is convincing evidence that:
+	the slope of the regression line between ln(price) and square feet is different from zero
+	the slope of the regression line between ln(price) and square feet is different from zero when # bedrooms is included in the model
+	adding square footage to your house causes the value to increase
+	the slope of the regression line between ln(price) and bedrooms is different from zero
+	the slope of the regression line between ln(price) and bedrooms is different from zero when square feet is included in the model
+
+
+170. We created a 95% confidence interval for the mean GPA given 10 absences to be (3.20, 3.42).  What is the correct interpretation?
+(a) There is a 95% chance that the mean GPA of students with 10 absences is between 3.20 and 3.42.
+(b) 95% of GPA averages (for students with 10 absences) are between 3.20 and 3.42.
+(c) 95% of GPAs (for students with 10 absences) are between 3.20 and 3.42.
+(d) We are 95% confident that the true mean GPA (for students with 10 absences) is between 3.20 and 3.42.
+(e) 95% of our intervals will have a mean GPA between 3.20 and 3.42.
+
+
+
+
+171. We created a 95% prediction interval for an individual GPA given 10 absences to be (3, 3.62).  What is the correct interpretation?
+(a) There is a 95% chance that the mean GPA of students with 10 absences is between 3 and 3.62.
+(b) 95% of GPA averages (for students with 10 absences) are between 3 and 3.62.
+(c) 95% of GPAs (for students with 10 absences) are between 3 and 3.62.
+(d) We are 95% confident that the true mean GPA (for students with 10 absences) is between 3 and 3.62.
+(e) 95% of our intervals will have a mean GPA between 3 and 3.62.
+Ok: there is a 95% chance that if I randomly select someone with 10 absences, their GPA will be between 3 and 3.62. 
+
+
+
+
+172. Prediction intervals and confidence intervals have the same technical conditions:
+(a) TRUE
+(b) FALSE
+(c) sort of
+
+
+
+
+173.  It is often a good idea to transform the variable(s)…
+(a) … to find the highest R2 value.
+(b) … when the X variable is not normally distributed.
+(c) … to make the model easier to interpret.
+(d) … so that the technical conditions are met.
+
+
+174. A large value of R2 says…
+	the technical conditions hold.
+	the variability in the response is well explained by the explanatory variables.
+	the explanatory variables determine the response variable.  
+	the explanatory variables are significant. 
+```
+

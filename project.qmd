@@ -57,4 +57,6 @@ The <a href = "https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_
 
 Along with the final project report, each student will fill out an individual reflection piece and a group dynamic report.
 
+A detailed <a href = "https://m58-intro-stats.netlify.app/slides/Rubric_m58_s23_Islands.docx" target = "_blank">grading rubric</a> is provided to assist you in putting the entire project together.
+
 
