@@ -1768,7 +1768,7 @@ What is measurable?<a href="#fn94" class="footnote-ref" id="fnref94" role="doc-n
 </ol>
 <hr>
 <ol start="159" type="1">
-<li>When using a categorical variable, with 4 levels, how many variables show up in the linear model output?<a href="#fn157" class="footnote-ref" id="fnref157" role="doc-noteref"><sup>157</sup></a>
+<li>Consider a categorical variable with 4 levels. In addition to the intercept how many variables show up in the linear model output?<a href="#fn157" class="footnote-ref" id="fnref157" role="doc-noteref"><sup>157</sup></a>
 <ol type="a">
 <li>1</li>
 <li>3</li>
@@ -1778,6 +1778,155 @@ What is measurable?<a href="#fn94" class="footnote-ref" id="fnref94" role="doc-n
 </ol></li>
 </ol>
 <hr>
+<ol start="160" type="1">
+<li>If there is no relationship in the population (true correlation <span class="math inline">\(\rho = 0\)</span>), then <span class="math inline">\(r=0.\)</span><a href="#fn158" class="footnote-ref" id="fnref158" role="doc-noteref"><sup>158</sup></a>
+<ol type="a">
+<li>TRUE</li>
+<li>FALSE</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="161" type="1">
+<li>If there is no relationship in the population (true slope <span class="math inline">\(\beta_1 = 0\)</span>), then <span class="math inline">\(b_1=0.\)</span><a href="#fn159" class="footnote-ref" id="fnref159" role="doc-noteref"><sup>159</sup></a>
+<ol type="a">
+<li>TRUE</li>
+<li>FALSE</li>
+</ol></li>
+</ol>
+<hr>
+<p>If we set a parameter equal to XXXX, should we expect the statistic to be XXXX?</p>
+<p>No.&nbsp;Because statistics vary from sample to sample.</p>
+<hr>
+<ol start="162" type="1">
+<li>A smaller variability around the regression line (can be thought of as: <span class="math inline">\(\sigma\)</span> or MSE or variability of the <span class="math inline">\(e_i\)</span>):<a href="#fn160" class="footnote-ref" id="fnref160" role="doc-noteref"><sup>160</sup></a>
+<ol type="a">
+<li>increases the variability of <span class="math inline">\(b_1.\)</span></li>
+<li>decreases the variability of <span class="math inline">\(b_1.\)</span></li>
+<li>doesn’t necessarily change the variability of <span class="math inline">\(b_1.\)</span></li>
+</ol></li>
+</ol>
+<hr>
+<ol start="163" type="1">
+<li>A smaller variability in the explanatory variable (SD(X) = <span class="math inline">\(s_x\)</span>):<a href="#fn161" class="footnote-ref" id="fnref161" role="doc-noteref"><sup>161</sup></a>
+<ol type="a">
+<li>increases the variability of <span class="math inline">\(b_1.\)</span></li>
+<li>decreases the variability of <span class="math inline">\(b_1.\)</span></li>
+<li>doesn’t necessarily change the variability of <span class="math inline">\(b_1.\)</span></li>
+</ol></li>
+</ol>
+<hr>
+<ol start="164" type="1">
+<li>A smaller sample size (<span class="math inline">\(n\)</span>):<a href="#fn162" class="footnote-ref" id="fnref162" role="doc-noteref"><sup>162</sup></a>
+<ol type="a">
+<li>increases the variability of <span class="math inline">\(b_1.\)</span></li>
+<li>decreases the variability of <span class="math inline">\(b_1.\)</span></li>
+<li>doesn’t necessarily change the variability of <span class="math inline">\(b_1.\)</span></li>
+</ol></li>
+</ol>
+<hr>
+<ol start="165" type="1">
+<li>The regression technical assumptions include:<a href="#fn163" class="footnote-ref" id="fnref163" role="doc-noteref"><sup>163</sup></a>
+<ol type="a">
+<li>The Y variable is normally distributed at each X</li>
+<li>The X variable is normally distributed</li>
+<li>The residuals are normally distributed</li>
+<li>The slope coefficient is normally distributed</li>
+<li>The intercept coefficient is normally distributed</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="166" type="1">
+<li>The technical conditions do not include:<a href="#fn164" class="footnote-ref" id="fnref164" role="doc-noteref"><sup>164</sup></a>
+<ol type="a">
+<li>normally distributed residuals</li>
+<li>normally distributed response</li>
+<li>normally distributed explanatory variable</li>
+<li>constant variance</li>
+<li>independence of observations</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="167" type="1">
+<li>What happens if the technical conditions are not met?<a href="#fn165" class="footnote-ref" id="fnref165" role="doc-noteref"><sup>165</sup></a>
+<ol type="a">
+<li>The line does not minimize the sum of squared residuals.</li>
+<li><span class="math inline">\(R^2\)</span> does not measure the proportion of variability explained by the line.</li>
+<li>The null sampling distribution of <span class="math inline">\(b_1\)</span> is wrong (therefore incorrect p-values and CI).</li>
+<li>The computer (R) will produce an error when running the linear model.</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="168" type="1">
+<li>Which linear regression condition is violated?<a href="#fn166" class="footnote-ref" id="fnref166" role="doc-noteref"><sup>166</sup></a>
+<ol type="a">
+<li>linearity</li>
+<li>equal variance of errors</li>
+<li>independent errors</li>
+<li>normal errors</li>
+<li>outliers</li>
+</ol></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="clicker_study_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<hr>
+<ol start="169" type="1">
+<li>Which linear regression condition is violated?<a href="#fn167" class="footnote-ref" id="fnref167" role="doc-noteref"><sup>167</sup></a>
+<ol type="a">
+<li>linearity</li>
+<li>constant errors</li>
+<li>independent errors</li>
+<li>normal errors</li>
+<li>outliers</li>
+</ol></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="clicker_study_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<hr>
+<ol start="170" type="1">
+<li>Which linear regression condition is violated?<a href="#fn168" class="footnote-ref" id="fnref168" role="doc-noteref"><sup>168</sup></a>
+<ol type="a">
+<li>linearity</li>
+<li>constant errors</li>
+<li>independent errors</li>
+<li>normal errors</li>
+<li>outliers</li>
+</ol></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="clicker_study_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<hr>
+<ol start="171" type="1">
+<li>Which of the below correctly describes the roles of variables in this regression model?<a href="#fn169" class="footnote-ref" id="fnref169" role="doc-noteref"><sup>169</sup></a>
+<ol type="a">
+<li>response: weight; explanatory: volume, paperback cover</li>
+<li>response: weight; explanatory: volume, hardcover cover</li>
+<li>response: volume; explanatory: weight, cover type</li>
+<li>response: weight; explanatory: volume, cover type</li>
+</ol></li>
+</ol>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 5
+  term        estimate std.error statistic      p.value
+  &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;
+1 (Intercept)  198.      59.2         3.34 0.00584     
+2 volume         0.718    0.0615     11.7  0.0000000660
+3 coverpb     -184.      40.5        -4.55 0.000672    </code></pre>
+</div>
+</div>
+<hr>
+<div class="cell">
+
+</div>
 
 
 </section>
@@ -2395,6 +2544,48 @@ What is measurable?<a href="#fn94" class="footnote-ref" id="fnref94" role="doc-n
 <li>3, there will always be one fewer variables in the linear model because the baseline group will be part of the intercept.</li>
 </ol>
 <a href="#fnref157" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn158"><p>FALSE, we never think that the statistic will be the same as the parameter, regardless of the value of the parameter.<a href="#fnref158" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn159"><p>FALSE, we never think that the statistic will be the same as the parameter, regardless of the value of the parameter.<a href="#fnref159" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn160"><ol start="2" type="a">
+<li>decreases the variability of <span class="math inline">\(b_1.\)</span></li>
+</ol>
+<a href="#fnref160" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn161"><ol type="a">
+<li>increases the variability of <span class="math inline">\(b_1.\)</span></li>
+</ol>
+<a href="#fnref161" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn162"><ol type="a">
+<li>increases the variability of <span class="math inline">\(b_1.\)</span></li>
+</ol>
+<a href="#fnref162" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn163"><ol type="a">
+<li>The Y variable is normally distributed at each X or c.&nbsp;The residuals are normally distributed. (b. is not true as there are no technical conditions on X. d.&nbsp;and e. are both a result of either a. or c.&nbsp;being true.)</li>
+</ol>
+<a href="#fnref163" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn164"><ol start="3" type="a">
+<li>normally distributed explanatory variable (there are no technical conditions on X)</li>
+</ol>
+<a href="#fnref164" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn165"><ol start="3" type="a">
+<li>The null sampling distribution of <span class="math inline">\(b_1\)</span> is wrong (therefore incorrect p-values and CI).</li>
+</ol>
+<a href="#fnref165" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn166"><ol start="2" type="a">
+<li>equal variance of errors</li>
+</ol>
+<a href="#fnref166" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn167"><ol type="a">
+<li>linearity (or maybe e. outliers???)</li>
+</ol>
+<a href="#fnref167" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn168"><ol start="4" type="a">
+<li>normal errors</li>
+</ol>
+<a href="#fnref168" class="footnote-back" role="doc-backlink">↩︎</a></li>
+<li id="fn169"><ol start="4" type="a">
+<li>response: weight explanatory: volume, cover type</li>
+</ol>
+<a href="#fnref169" class="footnote-back" role="doc-backlink">↩︎</a></li>
 </ol>
 </section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div quarto-reuse="quarto-reuse" class="quarto-appendix-contents"><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

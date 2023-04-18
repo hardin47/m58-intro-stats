@@ -1703,118 +1703,192 @@ $$H_0: \overline{X}_1 = \overline{X}_2 = \overline{X}_3 = \ldots = \overline{X}_
 
 ---
 
-```{r eval = FALSE, echo = FALSE}
 
-154.  If there is no relationship in the population (true correlation  = 0), then r=0.
+160. If there is no relationship in the population (true correlation $\rho = 0$), then $r=0.$[^160]
+     (a) TRUE
+     (b) FALSE
 
-(a) TRUE
-(b) FALSE
+[^160]: FALSE, we never think that the statistic will be the same as the parameter, regardless of the value of the parameter.
 
+---
 
+161. If there is no relationship in the population (true slope $\beta_1 = 0$), then $b_1=0.$[^161]
+     (a) TRUE
+     (b) FALSE
 
+[^161]: FALSE, we never think that the statistic will be the same as the parameter, regardless of the value of the parameter.
 
-155.  If there is no relationship in the population (true slope 1 = 0), then b1=0.
-
-(a) TRUE
-(b) FALSE
-
-
-
+---
 
 If we set a parameter equal to XXXX, should we expect the statistic to be XXXX?
 
-No.  Because statistics vary from sample to sample. 
+No.  Because statistics vary from sample to sample.
+
+---
+
+162. A smaller variability around the regression line (can be thought of as: $\sigma$ or MSE or variability of the $e_i$):[^162]
+     (a) increases the variability of $b_1.$
+     (b) decreases the variability of $b_1.$
+     (c) doesn't necessarily change the variability of $b_1.$
+
+[^162]: b. decreases the variability of $b_1.$
+
+---
+
+163. A smaller variability in the explanatory variable (SD(X) = $s_x$):[^163]
+     (a) increases the variability of $b_1.$
+     (b) decreases the variability of $b_1.$
+     (c) doesn't necessarily change the variability of $b_1.$
+
+[^163]: a. increases the variability of $b_1.$
+
+---
+
+164. A smaller sample size ($n$):[^164]
+     (a) increases the variability of $b_1.$
+     (b) decreases the variability of $b_1.$
+     (c) doesn't necessarily change the variability of $b_1.$
+
+[^164]: a. increases the variability of $b_1.$
+
+---
+
+165. The regression technical assumptions include:[^165]
+     (a) The Y variable is normally distributed at each X
+     (b) The X variable is normally distributed
+     (c) The residuals are normally distributed
+     (d) The slope coefficient is normally distributed
+     (e) The intercept coefficient is normally distributed
+
+[^165]: a. The Y variable is normally distributed at each X  or c. The residuals are normally distributed.  (b. is not true as there are no technical conditions on X.  d. and e. are both a result of either a. or c. being true.) 
+
+---
+
+166. The technical conditions do not include:[^166]
+     (a) normally distributed residuals
+     (b) normally distributed response
+     (c) normally distributed explanatory variable
+     (d) constant variance
+     (e) independence of observations
+
+[^166]: c. normally distributed explanatory variable (there are no technical conditions on X)
+
+---
+
+167. What happens if the technical conditions are not met?[^167]
+     a. The line does not minimize the sum of squared residuals.
+     b. $R^2$ does not measure the proportion of variability explained by the line.
+     c. The null sampling distribution of $b_1$ is wrong (therefore incorrect p-values and CI).
+     d. The computer (R) will produce an error when running the linear model.
+
+[^167]: c. The null sampling distribution of $b_1$ is wrong (therefore incorrect p-values and CI).
+
+---
+
+168. Which linear regression condition is violated?[^168]
+     (a) linearity 
+     (b) equal variance of errors
+     (c) independent errors
+     (d) normal errors
+     (e) outliers
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-height: 4
+
+library(openintro)
+
+mammals %>%
+  ggplot(aes(x = gestation, y = life_span)) + 
+  geom_point() + 
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+[^168]: b. equal variance of errors
+
+---
+
+169. Which linear regression condition is violated?[^169]
+     (a) linearity
+     (b) constant errors
+     (c) independent errors
+     (d) normal errors
+     (e) outliers
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-height: 4
 
 
-156. A smaller variability around the regression line (can be thought of as: σ or MSE or variability of the ei):
+mammals %>%
+  ggplot(aes(y = gestation, x = body_wt)) + 
+  geom_point() + 
+  geom_smooth(method = "lm", se = FALSE)
+```
 
-(a) increases the variability of b1.
-(b) decreases the variability of b1.
-(c) doesn’t necessarily change the variability of b1.
-
-151. A smaller variability in the explanatory variable (SD(X) = sx):
-
-(a) increases the variability of b1.
-(b) decreases the variability of b1.
-(c) doesn’t necessarily change the variability of b1.
-
-157.  A smaller sample size (n):
-(a) increases the variability of b1.
-(b) decreases the variability of b1.
-(c) doesn’t necessarily change the variability of b1.
+[^169]: a. linearity (or maybe e. outliers???)
 
 
+---
+
+170. Which linear regression condition is violated?[^170]
+     (a) linearity
+     (b) constant errors
+     (c) independent errors
+     (d) normal errors
+     (e) outliers
+
+```{r}
+#| message: false
+#| echo: false
+#| warning: false
+#| fig-height: 4
+
+set.seed(470)
+ex <- runif(100, 35, 60)
+why <- 2 + .7*ex + rexp(100, .1)
+
+data.frame(ex, why) %>%
+  ggplot(aes(x = ex, y = why)) + 
+  geom_point() + 
+  geom_smooth(method = "lm", se = FALSE)
+```
 
 
-158.  The regression technical assumptions include:
-(a) The Y variable is normally distributed at each X
-(b) The X variable is normally distributed
-(c)  The residuals are normally distributed
-(d) The slope coefficient is normally distributed
-(e) The intercept coefficient is normally distributed
+[^170]: d. normal errors
 
+---
 
+171. Which of the below correctly describes the roles of variables in this regression model?[^171]
+     (a) response: weight; explanatory: volume, paperback cover
+     (b) response: weight; explanatory: volume, hardcover cover
+     (c) response: volume; explanatory: weight, cover type
+     (d) response: weight; explanatory: volume, cover type
 
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
 
+library(DAAG)
+library(broom)
+library(tidyverse)
 
+allbacks %>%
+  lm(weight ~ volume + cover, data = .) %>%
+  tidy()
+```
 
+[^171]: d. response: weight 
+explanatory: volume, cover type
 
+---
 
-
-159. The technical conditions do not include:
-(a) normally distributed residuals
-(b) normally distributed response
-(c) normally distributed explanatory variable
-(d) constant variance
-(e) independence of observations
-
-
-
-
-
-160.  What happens if the technical conditions are not met?
-
-	The line does not minimize the sum of squared residuals.
-	R^2 does not measure the proportion of variability explained by the line.
-	The distribution of b1 is wrong (therefore incorrect p-values and CI).
-	The computer (R) will produce an error when running the linear model.
-
-161. Which linear regression condition is violated?
- 
-(a) linearity 
-(b) equal variance of errors
-(c) independent errors
-(d) normal errors
-(e) outliers
-
-162. Which linear regression condition is violated?
- 
-(a) linearity
-(b) constant errors
-(c) independent errors
-(d) normal errors
-(e) outliers
-163. Which linear regression condition is violated?
-
- 
-(a) linearity
-(b) constant errors
-(c) independent errors
-(d) normal errors
-(e) outliers
-164. Which of the below correctly describes the roles of variables in this regression model?
-Est 			SE 		t value 	Pr(>|t|)
-(Intercept) 	197.96 		59.20 	3.34     0.0058
-volume 	0.71 		0.06 	11.67 	0.0000
-coverpb 	-184.05 	40.49 	-4.55 	0.0007
-(a) response: weight 
-explanatory: volume, paperback cover
-(b) response: weight 
-explanatory: volume, hardcover cover
-(c) response: volume 
-explanatory: weight, cover type
-(d) response: weight 
-explanatory: volume, cover type 
+```{r eval = FALSE, echo = FALSE}
 
 165. An econometrician is interested in evaluating the relation of demand for building materials to mortgage rates in LA and SF. 
 Y ̂ = 10 + 5X1 + 8X2
