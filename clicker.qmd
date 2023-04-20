@@ -1888,114 +1888,125 @@ explanatory: volume, cover type
 
 ---
 
-```{r eval = FALSE, echo = FALSE}
+172. An econometrician is interested in evaluating the relation of demand for building materials to mortgage rates in LA and SF.[^172] 
+$$\hat{Y} =  10 + 5X_1 + 8X_2$$
+     (a) predicted $500 more per capita
+     (b) predicted $500 less per capita
+     (c) predicted $5 more per capita
+     (d) predicted $5 less per capita
 
-165. An econometrician is interested in evaluating the relation of demand for building materials to mortgage rates in LA and SF. 
-Y ̂ = 10 + 5X1 + 8X2
-where	
-X1 = mortgage rate in % 
-X2 = 1 if SF, 0 if LA
-Y = demand in $100 per capita
-holding constant the effect of city, each additional increase of 1%  in the mortgage rate would lead to an estimated average ________ in the mean demand.
-(a) predicted $500 more per capita
-(b) predicted $500 less per capita
-(c) predicted $5 more per capita
-(d) predicted $5 less per capita
+$X_1$ = mortgage rate in %   
+$X_2$ = 1 if SF, 0 if LA  
+$Y$ = demand in $100 per capita  
+Holding constant the effect of city, each additional increase of 1%  in the mortgage rate would lead to an estimated average ________ in the mean demand.
 
+[^172]: c. predicted $5 more per capita
 
-166. Referring to 
-Y ̂ = 10 + 5X1 + 8X2
-where	
-X1 = mortgage rate in %
-X2 = 1 if SF, 0 if LA
-Y = demand in $100 per capita
-the effect of living in LA rather than SF is a ________ demand by an estimated ________ holding the effect of mortgage rate constant.
-(a) larger; $800 per capita
-(b) smaller; $800 per capita
-(c) larger, $8 per capita
-(d) smaller, $8 per capita
+---
 
+173. Referring to 
+$$\hat{Y} =  10 + 5X_1 + 8X_2$$
+the effect of living in LA rather than SF is a ________ demand by an estimated ________ holding the effect of mortgage rate constant.[^173]
+     (a) larger; $800 per capita
+     (b) smaller; $800 per capita
+     (c) larger, $8 per capita
+     (d) smaller, $8 per capita
 
-167. Consider the housing model, 
-Y ̂= 12.2 + 0.000468⋅sqft − 0.0603⋅# bedrooms
+[^173]: b. smaller; $800 per capita
 
-the coefficient on bedrooms (− 0.0603) can be interpreted as the change in predicted ln(price)…
-	for a one unit increase in bedrooms
-	for a home that adds a bedroom to the existing structure (without adding square feet)
-	for a one unit increase in bedrooms when comparing homes that have identical square feet
-	for a one unit increase in square feet
-	for a one unit increase in square feet when comparing homes that have identical number of bedrooms
+---
 
+174. Consider the housing model, (Y = ln price)
+$$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \mbox{\# bedrooms}$$
+the coefficient on bedrooms (-0.0603) can be interpreted as the change in predicted ln(price) ...[^174]
+      a. for a one unit increase in bedrooms
+      b. for a home that adds a bedroom to the existing structure (without adding square feet)
+      c. for a one unit increase in bedrooms when comparing homes that have identical square feet
+      d. for a one unit increase in square feet
+      e. for a one unit increase in square feet when comparing homes that have identical number of bedrooms
 
+[^174]: c. for a one unit increase in bedrooms when comparing homes that have identical square feet
 
-168. To test if there is convincing evidence that the slope of the regression line between ln(price) and square feet (only, no bedroom here) is different from zero, 
+---
 
-what are the appropriate hypotheses?
+175. To test if there is convincing evidence that the slope of the regression line between ln(price) and square feet (only, no bedroom here) is different from zero, what are the appropriate hypotheses?[^175]
+     (a)	$H_0: b_0 = 0$
+      	  $H_a: b_0 \ne 0$
+     (b) 	$H_0: b_1 = 0$
+      	  $H_a: b_1 \ne 0$
+     (c) 	$H_0: \beta_0 = 0$
+      	  $H_a: \beta_0 \ne 0$
+     (d) 	$H_0: \beta_1 = 0$
+ 	        $H_a: \beta_1 \ne 0$
 
-(a)	H0: b0 = 0
- 	Ha: b0 ≠ 0
-(b) 	H0: b1 = 0
- 	Ha: b1 ≠ 0
-(c) 	H0: β0 = 0
- 	Ha: β0 ≠ 0
-(d) 	H0: β1 = 0
- 	Ha: β1 ≠ 0
+[^175]: d. $H_0: \beta_1 = 0$ and $H_a: \beta_1 \ne 0$
 
+---
 
-p-value = probability of observed data (b1) or more extreme if H0 is true (β1 = 0). 
-169. With # bedrooms in the model, 
-Y ̂= 12.2 + 0.000468⋅sqft − 0.0603⋅# bedrooms
-the test is now:
-H0: β1 = 0
-Ha: β1 ≠ 0
-In words, the test asks if there is convincing evidence that:
-	the slope of the regression line between ln(price) and square feet is different from zero
-	the slope of the regression line between ln(price) and square feet is different from zero when # bedrooms is included in the model
-	adding square footage to your house causes the value to increase
-	the slope of the regression line between ln(price) and bedrooms is different from zero
-	the slope of the regression line between ln(price) and bedrooms is different from zero when square feet is included in the model
+p-value = probability of observed data ($b_1$) or more extreme if $H_0$ is true ($\beta_1 = 0).$
 
+---
 
-170. We created a 95% confidence interval for the mean GPA given 10 absences to be (3.20, 3.42).  What is the correct interpretation?
-(a) There is a 95% chance that the mean GPA of students with 10 absences is between 3.20 and 3.42.
-(b) 95% of GPA averages (for students with 10 absences) are between 3.20 and 3.42.
-(c) 95% of GPAs (for students with 10 absences) are between 3.20 and 3.42.
-(d) We are 95% confident that the true mean GPA (for students with 10 absences) is between 3.20 and 3.42.
-(e) 95% of our intervals will have a mean GPA between 3.20 and 3.42.
+176. With # bedrooms in the model, in words, the test $(H_0: \beta_1 = 0 \ \ \ \ \ \ H_a: \beta_1 \ne 0)$ asks:[^176]
+$$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \mbox{\# bedrooms}$$
+      a. the slope of the regression line between ln(price) and square feet is different from zero
+      b. the slope of the regression line between ln(price) and square feet is different from zero when # bedrooms is included in the model
+      c. adding square footage to your house causes the value to increase
+      d. the slope of the regression line between ln(price) and bedrooms is different from zero
+      e. the slope of the regression line between ln(price) and bedrooms is different from zero when square feet is included in the model
 
+[^176]: b. the slope of the regression line between ln(price) and square feet is different from zero when # bedrooms is included in the model
 
+---
 
+177. We created a 95% confidence interval for the mean GPA given 10 absences to be (3.20, 3.42).  What is the correct interpretation?[^177]
+     (a) There is a 95% chance that the mean GPA of students with 10 absences is between 3.20 and 3.42.
+     (b) 95% of GPA averages (for students with 10 absences) are between 3.20 and 3.42.
+     (c) 95% of GPAs (for students with 10 absences) are between 3.20 and 3.42.
+     (d) We are 95% confident that the true mean GPA (for students with 10 absences) is between 3.20 and 3.42.
+     (e) 95% of our intervals will have a mean GPA between 3.20 and 3.42.
 
-171. We created a 95% prediction interval for an individual GPA given 10 absences to be (3, 3.62).  What is the correct interpretation?
-(a) There is a 95% chance that the mean GPA of students with 10 absences is between 3 and 3.62.
-(b) 95% of GPA averages (for students with 10 absences) are between 3 and 3.62.
-(c) 95% of GPAs (for students with 10 absences) are between 3 and 3.62.
-(d) We are 95% confident that the true mean GPA (for students with 10 absences) is between 3 and 3.62.
-(e) 95% of our intervals will have a mean GPA between 3 and 3.62.
-Ok: there is a 95% chance that if I randomly select someone with 10 absences, their GPA will be between 3 and 3.62. 
+[^177]: d. We are 95% confident that the true mean GPA (for students with 10 absences) is between 3.20 and 3.42.
 
+---
 
+178. We created a 95% prediction interval for an individual GPA given 10 absences to be (3, 3.62).  What is the correct interpretation?[^178]
+     (a) There is a 95% chance that the mean GPA of students with 10 absences is between 3 and 3.62.
+     (b) 95% of GPA averages (for students with 10 absences) are between 3 and 3.62.
+     (c) 95% of GPAs (for students with 10 absences) are between 3 and 3.62.
+     (d) We are 95% confident that the true mean GPA (for students with 10 absences) is between 3 and 3.62.
+     (e) 95% of our intervals will have a mean GPA between 3 and 3.62.
 
+[^178]: b. 95% of GPA averages (for students with 10 absences) are between 3 and 3.62.  It is also totally okay to interpret the interval as: there is a 95% chance that if I randomly select someone with 10 absences, their GPA will be between 3 and 3.62. 
 
-172. Prediction intervals and confidence intervals have the same technical conditions:
-(a) TRUE
-(b) FALSE
-(c) sort of
-
+---
 
 
+179. Prediction intervals and confidence intervals have the same technical conditions:[^179]
+     (a) TRUE
+     (b) FALSE
+     (c) sort of
 
-173.  It is often a good idea to transform the variable(s)…
-(a) … to find the highest R2 value.
-(b) … when the X variable is not normally distributed.
-(c) … to make the model easier to interpret.
-(d) … so that the technical conditions are met.
+[^179]: c. sort of.  Both methods require the data to be normally distributed (for one sample mean, the variable is normal; for linear regression, the residuals are normal).  However, if you have a large enough sample size, the CLT kicks in when building the mean interval  The CLT does not ever help for prediction intervals, so you always need normal data to have reasonable prediction intervals.
 
+---
 
-174. A large value of R2 says…
-	the technical conditions hold.
-	the variability in the response is well explained by the explanatory variables.
-	the explanatory variables determine the response variable.  
-	the explanatory variables are significant. 
-```
+180. It is often a good idea to transform the variable(s)...[^180]
+     (a) ... to find the highest R2 value.
+     (b) ... when the X variable is not normally distributed.
+     (c) ... to make the model easier to interpret.
+     (d) ... so that the technical conditions are met.
+
+[^180]: d. ... so that the technical conditions are met. (And often transforming makes the results harder to interpret.)
+
+---
+
+181. A large value of $R^2$ says...[^181]
+      a. the technical conditions hold.
+      b. the variability in the response is well explained by the explanatory variable(s).
+      c. the explanatory variable(s) determine the response variable.  
+      d. the explanatory variable(s) are significant.
+
+[^181]: b. the variability in the response is well explained by the explanatory variable(s).
+
 
