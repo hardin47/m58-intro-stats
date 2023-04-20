@@ -1888,7 +1888,7 @@ explanatory: volume, cover type
 
 ---
 
-172. An econometrician is interested in evaluating the relation of demand for building materials to mortgage rates in LA and SF.[^172] 
+172. Holding constant the city, additional 1% of mortgage rate would predict average ________ in the mean demand.[^172] 
 $$\hat{Y} =  10 + 5X_1 + 8X_2$$
      (a) predicted $500 more per capita
      (b) predicted $500 less per capita
@@ -1898,7 +1898,7 @@ $$\hat{Y} =  10 + 5X_1 + 8X_2$$
 $X_1$ = mortgage rate in %   
 $X_2$ = 1 if SF, 0 if LA  
 $Y$ = demand in $100 per capita  
-Holding constant the effect of city, each additional increase of 1%  in the mortgage rate would lead to an estimated average ________ in the mean demand.
+
 
 [^172]: c. predicted $5 more per capita
 
@@ -1917,8 +1917,8 @@ the effect of living in LA rather than SF is a ________ demand by an estimated _
 ---
 
 174. Consider the housing model, (Y = ln price)
-$$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \mbox{\# bedrooms}$$
-the coefficient on bedrooms (-0.0603) can be interpreted as the change in predicted ln(price) ...[^174]
+$$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}$$
+coef on bedrooms (-0.0603) is change in pred ln(price) ...[^174]
       a. for a one unit increase in bedrooms
       b. for a home that adds a bedroom to the existing structure (without adding square feet)
       c. for a one unit increase in bedrooms when comparing homes that have identical square feet
@@ -1948,10 +1948,10 @@ p-value = probability of observed data ($b_1$) or more extreme if $H_0$ is true 
 ---
 
 176. With # bedrooms in the model, in words, the test $(H_0: \beta_1 = 0 \ \ \ \ \ \ H_a: \beta_1 \ne 0)$ asks:[^176]
-$$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \mbox{\# bedrooms}$$
+$$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}$$
       a. the slope of the regression line between ln(price) and square feet is different from zero
       b. the slope of the regression line between ln(price) and square feet is different from zero when # bedrooms is included in the model
-      c. adding square footage to your house causes the value to increase
+      c. adding sq ft to your house causes the value to increase
       d. the slope of the regression line between ln(price) and bedrooms is different from zero
       e. the slope of the regression line between ln(price) and bedrooms is different from zero when square feet is included in the model
 
