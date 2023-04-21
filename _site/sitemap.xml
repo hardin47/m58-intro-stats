@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://m58-intro-stats.netlify.app/index.html</loc>
-    <lastmod>2023-04-20T15:39:52.034Z</lastmod>
+    <lastmod>2023-04-21T03:46:50.705Z</lastmod>
   </url>
   <url>
     <loc>https://m58-intro-stats.netlify.app/project.html</loc>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://m58-intro-stats.netlify.app/clicker_slides.html</loc>
-    <lastmod>2023-04-20T15:57:57.797Z</lastmod>
+    <lastmod>2023-04-20T16:37:00.942Z</lastmod>
   </url>
   <url>
     <loc>https://m58-intro-stats.netlify.app/notes.html</loc>
@@ -123,5 +123,9 @@
   <url>
     <loc>https://m58-intro-stats.netlify.app/slides/lab11_m58_s23_ANOVAplus.html</loc>
     <lastmod>2023-04-18T16:03:21.662Z</lastmod>
+  </url>
+  <url>
+    <loc>https://m58-intro-stats.netlify.app/slides/lab12_m58_s23_MLR.html</loc>
+    <lastmod>2023-04-21T03:46:47.589Z</lastmod>
   </url>
 </urlset>

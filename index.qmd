@@ -134,7 +134,7 @@ schedule <- tribble(
   "Week 14 <br> 4.25.23", 'catch-up',"", 
   '<i class="fas fa-book-open"></i> study materials <br> (see Canvas) <br> <br> <a href="https://m58-intro-stats.netlify.app/slides/adviceExam2_s23.docx" target = "_blank"><i class="fas fa-pencil-alt"></i>advice for exam 2</a> <br> <br> <a href="https://m58-intro-stats.netlify.app/slides/param_est_58.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> when to use what</a>',
   '',
-  '',
+  '<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW12s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 12 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW12s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 12 Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab12_m58_s23_MLR.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 12 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab12_m58_s23_MLR.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 12 Rmd</a>',
   
 '<font color = "#114B5F"><b>4.27.23</b></font>', '<font color = "#114B5F"><b>Exam 2</b></font>',"", 
   '',
