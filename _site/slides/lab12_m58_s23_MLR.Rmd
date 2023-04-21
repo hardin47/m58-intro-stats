@@ -289,11 +289,11 @@ m_full <- lm(score ~ rank + ethnicity + gender + language + age + cls_perc_eval
 ```
 
 
-#### Q2. Ethnicity
+#### Q3. Ethnicity
 
 Interpret the coefficient associated with the ethnicity variable.
 
-#### Q3. Pare down the model
+#### Q4. Pare down the model
 
 Drop the variable with the highest p-value and re-fit the model. Did the
     coefficients and significance of the other explanatory variables change?
@@ -305,19 +305,19 @@ Drop the variable with the highest p-value and re-fit the model. Did the
 Should we keep going and remove other variables?  Which one(s)?  Remove any variables (one at a time) that do not seem to be important to predicting `score`.
 
 
-#### Q4. Technical Conditions
+#### Q5. Technical Conditions
 
 Verify that the conditions for this model are reasonable using a scatterplot or two.  Or feel free to try out a residual plot.
 
 
-#### Q5. Model Interpretation
+#### Q6. Model Interpretation
 
 Based on your final model, describe the characteristics of a professor and 
     course at University of Texas at Austin that would be associated with a high
     evaluation score.
     
 
-#### Q6. Independence technical condition?
+#### Q7. Independence technical condition?
 The original paper describes how these data were gathered by taking a
     sample of professors from the University of Texas at Austin and including 
     all courses that they have taught. Considering that each row represents a 
@@ -325,7 +325,7 @@ The original paper describes how these data were gathered by taking a
     of linear regression?
 
 
-#### Q7. Infer to what population?
+#### Q8. Infer to what population?
 Would you be comfortable generalizing your conclusions to apply to professors
     generally (at any university)? Why or why not?
     
