@@ -1900,7 +1900,7 @@ $X_2$ = 1 if SF, 0 if LA
 $Y$ = demand in $100 per capita  
 
 
-[^172]: c. predicted $5 more per capita
+[^172]: a. predicted $500 more per capita
 
 ---
 
