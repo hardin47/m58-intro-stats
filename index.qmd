@@ -78,7 +78,7 @@ schedule <- tribble(
   'Week 8 <br> 3.7.23', 'catch-up',
   "",
   '<i class="fas fa-book-open"></i> study materials <br> (see Canvas) <br> <a href="https://m58-intro-stats.netlify.app/slides/adviceExam1_s23.docx" target = "_blank"><i class="fas fa-pencil-alt"></i>advice for exam 1</a>',
-  "no lab on 3.10.23",
+  '<a href="https://m58-intro-stats.netlify.app/slides/drinking.pdf" target = "_blank"><i class="fas fa-newspaper"><br> </i>A Little Alcohol Won’t Kill You or Make You Stronger</a> <br> <a href="https://www.wsj.com/articles/alcohol-long-term-health-risks-c6d572d2" target = "_blank"><i class="fas fa-newspaper"><br> </i>A Little Alcohol Won’t Kill You or Make You Stronger</a> <br> <br> no lab on 3.10.23',
   '<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW7s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW pdf - not due ever</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW7s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW Rmd - not due ever</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab7_m58_s23_RROR.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 7 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab7_m58_s23_RROR.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 7 Rmd</a>',
   
   
