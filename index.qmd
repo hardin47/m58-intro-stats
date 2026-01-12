@@ -23,17 +23,17 @@ In order to use the icons, you need the fontawesome extension, https://github.co
 
 quarto add quarto-ext/fontawesome
 
-Then need to restart R (to get the icons to show up in the table).
+Also, need to use gt, not kable, to make the table.
 -->
 
 Here's your roadmap for the semester!
 Each week, follow the general process outlined below:
 
-- Before class on Tuesday, read the suggested article <i class="fas fa-newspaper"></i>
+- Before class on Monday, read the suggested article <i class="fas fa-newspaper"></i>
 
 - Enjoy the notes / readings <i class="fas fa-book-open"></i>  
 
-- Attend class, review the warm-up <i class="fas fa-pencil-alt"></i> if you have any questions after completing it during class.
+- Attend class, review the <i class="fas fa-pencil-alt"></i> worksheet and solution.
 
 - Complete the Lab <i class="fas fa-desktop"></i> and HW <i class="fas fa-laptop"></i> assignments 
    - Lab due every Tuesday by 11:59pm
@@ -50,119 +50,119 @@ Each week, follow the general process outlined below:
 ```{r}
 #| echo: false
 schedule <- tribble(
-  ~`date`, ~topic, ~agenda, ~readings, ~`article (Tues)`, ~assignments,
+  ~date, ~topic, ~agenda, ~readings, ~`article (Mon)`, ~assignments,
   "Week 1 <br> 1.19.26", 'Intro + <br> variables &  <br> studies <br> SLR',"• course info <br> • tests <br> • studies <br> • causation", 
-  '{{< fa book-open >}} <a href="https://st47s.com/Math58/Notes/intro.html#intro" target = "_blank">Introduction</a> <br> <a href="https://st47s.com/Math58/Notes/intro.html#experim" target = "_blank"><i class="fas fa-book-open"></i> Studies</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 1.1</a> <br> <a href="https://openintro-ims.netlify.app/data-hello.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 1 + 2</a>',
-  '<i class="fas fa-newspaper"></i> none <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/enders.html" target = "_blank">Felicity Enders</a>',
-  '<a href="https://m58-intro-stats.netlify.app/slides/wu1_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU1</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/wu2_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU2</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW0s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 0 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW0s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 0 Rmd</a>',
+  '<a href="https://st47s.com/Math58/Notes/intro.html#intro" target = "_blank">{{< fa book-open >}}  Introduction</a> <br> <a href="https://st47s.com/Math58/Notes/intro.html#experim" target = "_blank"><i class="fas fa-book-open"></i> Studies</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 1.1</a> <br> <a href="https://openintro-ims.netlify.app/data-hello.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 1 + 2</a>',
+  '<i class="fas fa-newspaper"></i> none <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/enders.html" target = "_blank">{{< fa user >}}Felicity Enders</a>',
+  '<a href="https://m58-intro-stats.netlify.app/slides/wu1_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU1</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/wu2_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU2</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW0s23.pdf" target = "_blank"><i class="fas fa-laptop"></i> HW 0 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW0s23.Rmd" target = "_blank"><i class="fas fa-laptop"></i> HW 0 Rmd</a>',
   
   
-  "Week 2 <br> 1.24.23", 'Correlation + <br>Least<br>squares<br> ',"• correlation<br> • linear model <br> • R^2", 
+  "Week 2 <br> 1.26.26", 'Correlation + <br>Least<br>squares<br> ',"• correlation<br> • linear model <br> • R^2", 
   '<a href="https://st47s.com/Math58/Notes/regdesc.html#cor" target = "_blank"><i class="fas fa-book-open"></i> Cor</a> <br> <a href="https://st47s.com/Math58/Notes/regdesc.html#ls" target = "_blank"><i class="fas fa-book-open"></i> Least Sq</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 5.6, 5.7, 5.8</a> <br> <a href="https://openintro-ims.netlify.app/model-slr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 7</a> <br> <a href = "http://www.rossmanchance.com/applets/2021/guesscorrelation/GuessCorrelation.html" target = "_blank"><i class = "fas fa-gamepad"></i> guess corr</a> <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class = "fas fa-gamepad"></i> least sq</a>',
-  '<a href="https://www.wired.com/story/the-astrazeneca-covid-vaccine-data-isnt-up-to-snuff/" target = "_blank"><i class="fas fa-newspaper"></i> AstraZeneca</a> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/dubois.html" target = "_blank">W.E.B. Du Bois</a>',
+  '<a href="https://www.wired.com/story/the-astrazeneca-covid-vaccine-data-isnt-up-to-snuff/" target = "_blank"><i class="fas fa-newspaper"></i> AstraZeneca</a> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/dubois.html" target = "_blank">{{< fa user >}} W.E.B. Du Bois</a>',
   ' ',
   
-  "Week 3 <br> 1.31.23", 'Hyp Test + <br>Randomization<br>Test<br> ',"•  structure of<br> hypothesis<br> testing", 
+  "Week 3 <br> 2.2.26", 'Hyp Test + <br>Randomization<br>Test<br> ',"•  structure of<br> hypothesis<br> testing", 
   '<a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#randtest" target = "_blank"><i class="fas fa-book-open"></i> Tests</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/chisqshuffle/ChiSqShuffle.htm?twobytwo=1" target = "_blank"><i class = "fas fa-gamepad"></i> 2x2 Rand</a> <br> <a href="https://openintro-ims.netlify.app/foundations-randomization.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 11</a>',
   ' ',
   ' ',
   
-  "Week 4 <br> 2.7.23", 'Bootstrapping',"• boot samp dist <br> • boot CI ", 
+  "Week 4 <br> 2.9.26", 'Bootstrapping',"• boot samp dist <br> • boot CI ", 
   '<a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#boot" target = "_blank"><i class="fas fa-book-open"></i> Bootstrapping</a> <br> <a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#bootCI" target = "_blank"><i class="fas fa-book-open"></i> Boot CIs</a>  <br> <a href = "https://www.lock5stat.com/StatKey/" target = "_blank"><i class="fas fa-gamepad"></i> StatKey </a> <br> <a href = "http://www.rossmanchance.com/applets/2021/confsim/ConfSim.html" target = "_blank"><i class = "fas fa-gamepad"></i> CIs</a> <br> <a href="https://openintro-ims.netlify.app/foundations-bootstrapping.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 12</a>',
   ' ',
     ' ',
   
-  "Week 5 <br> 2.14.23", 'normality +<br>CLT',"• normal dist<br> • CLT<br> • Z-score <br> • empirical rule <br> • conf int <br> • norm prob <br> • hyp test", 
+  "Week 5 <br> 2.16.26", 'normality +<br>CLT',"• normal dist<br> • CLT<br> • Z-score <br> • empirical rule <br> • conf int <br> • norm prob <br> • hyp test", 
   '<a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#CLT" target = "_blank"><i class="fas fa-book-open"></i>CLT </a> <br> <a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#norm" target = "_blank"><i class="fas fa-book-open"></i> Norm dist</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/sampling/OneSample.html" target = "_blank"><i class="fas fa-gamepad"></i> Samp Dist </a> <br> <a href="https://openintro-ims.netlify.app/.html" target = "_blank"><i class="fas fa-book-open"></i> IMS </a>',
   ' ',
       ' ',
   
-  "Week 6 <br> 2.21.23", 'Errors + <br>Power +<br>Sampling',"• Type I error <br> • Type II error <br> • Power <br> • biased samples", 
+  "Week 6 <br> 2.23.26", 'Errors + <br>Power +<br>Sampling',"• Type I error <br> • Type II error <br> • Power <br> • biased samples", 
   '<a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#errors" target = "_blank"><i class="fas fa-book-open"></i> Errors</a> <br> <a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#samp" target = "_blank"><i class="fas fa-book-open"></i> Sampling</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/power/power.html" target = "_blank"><i class="fas fa-gamepad"></i> Power</a> <br> <a href="https://openintro-ims.netlify.app/decerr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 14 + 2</a>',
   ' ',
         ' ',
   
-  "Week 7 <br> 2.28.23", 'Rel Risk +<br>Odds Ratios',"•  RR <br> • OR<br> • Case-control <br> • Cohort ", 
+  "Week 7 <br> 3.2.26", 'Rel Risk +<br>Odds Ratios',"•  RR <br> • OR<br> • Case-control <br> • Cohort ", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#diffprop" target = "_blank"><i class="fas fa-book-open"></i> diff props</a> <br> <a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#rr" target = "_blank"><i class="fas fa-book-open"></i> RR</a>  <br> <a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#or" target = "_blank"><i class="fas fa-book-open"></i> OR</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 3.9-3.11</a> <br> <a href="https://openintro-ims.netlify.app/inference-two-props.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 17</a>',
   '  ',
   ' ',
 
-  'Week 8 <br> 3.7.23', 'catch-up',
-  "",
+  'Week 8 <br> 3.9.26', 'catch-up',
+  " ",
   '<i class="fas fa-book-open"></i> study materials <br> (see Canvas) <br> <a href="https://m58-intro-stats.netlify.app/slides/adviceExam1_s23.docx" target = "_blank"><i class="fas fa-pencil-alt"></i>advice for exam 1</a>',
   ' <br> no lab on 3.13.26',
   ' ',
   
   
-'<font color = "#114B5F"><b>3.9.23</b></font>', '<font color = "#114B5F"><b>Exam 1</b></font>',"", 
-  '',
-  '',
-  '',    
+'<font color = "#114B5F"><b>3.9.23</b></font>', '<font color = "#114B5F"><b>Exam 1</b></font>'," ", 
+  ' ',
+  ' ',
+  ' ',    
 
-  '3.14.23', 'spring break',"", 
-  '',
-  '',
-  '', 
+  '3.16.26', 'spring break'," ", 
+  ' ',
+  ' ',
+  ' ', 
   
   
-  "Week 9 <br> 3.21.23", 'χ^2 Test',"• expected counts <br> • X^2 statistic <br> • χ^2 test", 
+  "Week 9 <br> 3.23.26", 'χ^2 Test',"• expected counts <br> • X^2 statistic <br> • χ^2 test", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#chisq2" target = "_blank"><i class="fas fa-book-open"></i> χ^2 Test</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 3.2</a> <br> <a href="https://openintro-ims.netlify.app/inference-tables.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 18</a>',
   ' ',
   ' ',
   
-  "Week 10 <br> 3.28.23", '1 mean +<br>pred interval',"• dist of X-bar <br> • SE(X-bar) <br> • t-test of μ<br> • t-CI for μ <br> • PI for X_{n+1}", 
+  "Week 10 <br> 3.30.26", '1 mean +<br>pred interval',"• dist of X-bar <br> • SE(X-bar) <br> • t-test of μ<br> • t-CI for μ <br> • PI for X_{n+1}", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean1inf" target = "_blank"><i class="fas fa-book-open"></i> 1 mean</a> <br> <a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean1inf" target = "_blank"><i class="fas fa-book-open"></i> pred int</a>  <br> <a href="https://openintro-ims.netlify.app/inference-one-mean.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 19</a>',
   ' ',
   ' ',
 
-'<font color = "#114B5F"><b>3.28.23</b></font>', '<font color = "#114B5F"><b>Proj 1: Pilot</b></font>',"", 
-  '',
-  '',
+'<font color = "#114B5F"><b>3.28.23</b></font>', '<font color = "#114B5F"><b>Proj 1: Pilot</b></font>'," ", 
+  ' ',
+  ' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/Pilot_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 1: Pilot</a>',
   
-  "Week 11 <br> 4.4.23", '2 means +<br>t-proced',"• dist of X-bar_1 - X-bar_2 <br> • SE(X-bar_1 - X-bar_2) <br> • t-test of μ_1 - μ_2<br> • randomization test of μ_1 - μ_2 <br> • t-CI for μ_1 - μ_2 <br> • bootstrap CI for μ_1 - μ_2", 
+  "Week 11 <br> 4.6.26", '2 means +<br>t-proced',"• dist of X-bar_1 - X-bar_2 <br> • SE(X-bar_1 - X-bar_2) <br> • t-test of μ_1 - μ_2<br> • randomization test of μ_1 - μ_2 <br> • t-CI for μ_1 - μ_2 <br> • bootstrap CI for μ_1 - μ_2", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean2inf" target = "_blank"><i class="fas fa-book-open"></i> 2 means</a>  <br> <a href = "http://www.rossmanchance.com/applets/index2021.html" target = "_blank"><i class="fas fa-gamepad"></i> 2 samples</a> <br> <a href="https://openintro-ims.netlify.app/inference-two-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 20</a>',
   ' ',
   ' ',
 
-'<font color = "#114B5F"><b>4.4.23</b></font>', '<font color = "#114B5F"><b>Proj 2: Power Analysis</b></font>',"", 
-  '','',
+'<font color = "#114B5F"><b>4.4.23</b></font>', '<font color = "#114B5F"><b>Proj 2: Power Analysis</b></font>'," ", 
+  ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/Power_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 2: Power Analysis</a>',
 
-  "Week 12 <br> 4.11.23", 'ANOVA',"• MSG <br> • MSE <br>• F-test ", 
+  "Week 12 <br> 4.13.26", 'ANOVA',"• MSG <br> • MSE <br>• F-test ", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#ANOVA" target = "_blank"><i class="fas fa-book-open"></i> ANOVA</a>  <br> <a href="https://st47s.com/Math58/Notes/reginf.html#infbeta1" target = "_blank"><i class="fas fa-book-open"></i> Inf on β_1</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class="fas fa-gamepad"></i> slopes</a> <br> <a href="https://openintro-ims.netlify.app/inference-many-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 22</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-slr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 24</a>',
   '  ',
   ' ',
   
-  "Week 13 <br> 4.18.23", 'Inference β_1 + <br>Tech cond + <br>MLR',"•  SE(β_1) <br> • residual plots <br> • multiple X", 
+  "Week 13 <br> 4.20.26", 'Inference β_1 + <br>Tech cond + <br>MLR',"•  SE(β_1) <br> • residual plots <br> • multiple X", 
   '<a href="https://st47s.com/Math58/Notes/reginf.html#lmtechcond" target = "_blank"><i class="fas fa-book-open"></i> Tech Cond</a>  <br> <a href = "https://st47s.com/Math58/Notes/reginf.html#MLR" target = "_blank"><i class="fas fa-gamepad"></i> MLR</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-mlr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 25</a>',
   '  ',
   ' ',
 
-'<font color = "#114B5F"><b>4.18.23</b></font>', '<font color = "#114B5F"><b>Proj 3: Analysis</b></font>',"", 
-  '','',
+'<font color = "#114B5F"><b>4.18.23</b></font>', '<font color = "#114B5F"><b>Proj 3: Analysis</b></font>'," ", 
+  ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/PreliminaryAnalysis_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 3: Preliminary Analysis</a>',
 
-  "Week 14 <br> 4.25.23", 'catch-up',"", 
+  "Week 14 <br> 4.27.26", 'catch-up'," ", 
   '<i class="fas fa-book-open"></i> study materials <br> (see Canvas) <br> <br> <a href="https://m58-intro-stats.netlify.app/slides/adviceExam2_s23.docx" target = "_blank"><i class="fas fa-pencil-alt"></i>advice for exam 2</a> <br> <br> <a href="https://m58-intro-stats.netlify.app/slides/param_est_58.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> when to use what</a>',
   ' ',
   ' ',
   
-'<font color = "#114B5F"><b>4.27.23</b></font>', '<font color = "#114B5F"><b>Exam 2</b></font>',"", 
-  '',
-  '',
+'<font color = "#114B5F"><b>4.27.23</b></font>', '<font color = "#114B5F"><b>Exam 2</b></font>'," ", 
+  ' ',
+  ' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/param_est_58.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> when to use what</a>', 
 
-'<font color = "#114B5F"><b>5.2.23</b></font>', '<font color = "#114B5F"><b>Proj 4: Full draft</b></font>',"", 
-  '','',
+'<font color = "#114B5F"><b>5.2.23</b></font>', '<font color = "#114B5F"><b>Proj 4: Full draft</b></font>'," ", 
+  ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 4: Full draft</a>',
 
-'<font color = "#114B5F"><b>5.4 + 12.23</b></font>', '<font color = "#114B5F"><b>Proj Presentation</b></font>',"", 
-  '','',
+'<font color = "#114B5F"><b>5.4 + 12.23</b></font>', '<font color = "#114B5F"><b>Proj Presentation</b></font>'," ", 
+  ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/Presentation_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj Presentation</a>',
 
-'<font color = "#114B5F"><b>5.12.23</b></font>', '<font color = "#114B5F"><b>Proj 5: Final Project</b></font>',"", 
-  '','',
+'<font color = "#114B5F"><b>5.12.23</b></font>', '<font color = "#114B5F"><b>Proj 5: Final Project</b></font>'," ", 
+  ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 5: Final Project</a>'
   
     )
@@ -173,7 +173,7 @@ schedule <- tribble(
 #| echo: false
 #| eval: false
 schedule <- tribble(
-  ~`date`, ~topic, ~agenda, ~readings, ~`article (Monday)`, ~assignments,
+  ~`date`, ~topic, ~agenda, ~readings, ~`article (Tues)`, ~assignments,
   "Week 2 <br> 1.24.23", 'Correlation + <br>Least<br>squares<br> ',"• correlation<br> • linear model <br> • R^2", 
   '<a href="https://st47s.com/Math58/Notes/regdesc.html#cor" target = "_blank"><i class="fas fa-book-open"></i> Cor</a> <br> <a href="https://st47s.com/Math58/Notes/regdesc.html#ls" target = "_blank"><i class="fas fa-book-open"></i> Least Sq</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 5.6, 5.7, 5.8</a> <br> <a href="https://openintro-ims.netlify.app/model-slr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 7</a> <br> <a href = "http://www.rossmanchance.com/applets/2021/guesscorrelation/GuessCorrelation.html" target = "_blank"><i class = "fas fa-gamepad"></i> guess corr</a> <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class = "fas fa-gamepad"></i> least sq</a>',
   '<a href="https://www.wired.com/story/the-astrazeneca-covid-vaccine-data-isnt-up-to-snuff/" target = "_blank"><i class="fas fa-newspaper"></i> AstraZeneca</a> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/dubois.html" target = "_blank">W.E.B. Du Bois</a>',
@@ -205,21 +205,21 @@ schedule <- tribble(
   '<a href="https://m58-intro-stats.netlify.app/slides/wu13_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU13</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/wu14_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU14</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW6s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 6 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW6s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 6 Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab6_m58_s23_errors.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 6 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab6_m58_s23_errors.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 6 Rmd</a>',
 
   'Week 8 <br> 3.7.23', 'catch-up',
-  "",
+  " ",
   '<i class="fas fa-book-open"></i> study materials <br> (see Canvas) <br> <a href="https://m58-intro-stats.netlify.app/slides/adviceExam1_s23.docx" target = "_blank"><i class="fas fa-pencil-alt"></i>advice for exam 1</a>',
   '<a href="https://m58-intro-stats.netlify.app/slides/drinking.pdf" target = "_blank"><i class="fas fa-newspaper"><br> </i>A Little Alcohol Won’t Kill You or Make You Stronger</a> <br> <a href="https://www.wsj.com/articles/alcohol-long-term-health-risks-c6d572d2" target = "_blank"><i class="fas fa-newspaper"><br> </i>A Little Alcohol Won’t Kill You or Make You Stronger</a> <br> <br> no lab on 3.10.23',
   '<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW7s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW pdf - not due ever</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW7s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW Rmd - not due ever</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab7_m58_s23_RROR.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 7 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab7_m58_s23_RROR.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 7 Rmd</a>',
   
   
-'<font color = "#114B5F"><b>3.9.23</b></font>', '<font color = "#114B5F"><b>Exam 1</b></font>',"", 
-  '',
-  '',
-  '',    
+'<font color = "#114B5F"><b>3.9.23</b></font>', '<font color = "#114B5F"><b>Exam 1</b></font>'," ", 
+  ' ',
+  ' ',
+  ' ',    
 
-  '3.14.23', 'spring break',"", 
-  '',
-  '',
-  '', 
+  '3.14.23', 'spring break'," ", 
+  ' ',
+  ' ',
+  ' ', 
   
   
   "Week 9 <br> 3.21.23", 'χ^2 Test',"• expected counts <br> • X^2 statistic <br> • χ^2 test", 
@@ -232,9 +232,9 @@ schedule <- tribble(
   '<a href="https://static1.squarespace.com/static/58e9b10f9de4bb8d1fb5ebbc/t/5b297686f950b7690cf0f9a9/1529443976962/Policy+Brief+Indigenous+Data+Sovereignty+in+the+United+States+V0.3+copy.pdf" target = "_blank"><i class="fas fa-newspaper"><br> </i> Data sovereignty</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/Policy+Brief+Indigenous+Data+Sovereignty+in+the+United+States.pdf" target = "_blank"><i class="fas fa-newspaper"><br> </i> this might be a better link to Data sovereignty</a> <br> <br> no lab on 3.31.23 <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/paisano.html" target = "_blank">Edna Paisano</a>',
   '<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW8s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 8 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW8s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 8 Rmd</a> <br> <br> Pilot Study Due <br> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab8_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 8 doc</a> <br> <br> <a href="https://m58-intro-stats.netlify.app/slides/wu16_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU16</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/wu17_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU17</a> ',
 
-'<font color = "#114B5F"><b>3.28.23</b></font>', '<font color = "#114B5F"><b>Proj 1: Pilot</b></font>',"", 
-  '',
-  '',
+'<font color = "#114B5F"><b>3.28.23</b></font>', '<font color = "#114B5F"><b>Proj 1: Pilot</b></font>'," ", 
+  ' ',
+  ' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/Pilot_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 1: Pilot</a>',
   
   "Week 11 <br> 4.4.23", '2 means +<br>t-proced',"• dist of X-bar_1 - X-bar_2 <br> • SE(X-bar_1 - X-bar_2) <br> • t-test of μ_1 - μ_2<br> • randomization test of μ_1 - μ_2 <br> • t-CI for μ_1 - μ_2 <br> • bootstrap CI for μ_1 - μ_2", 
@@ -242,8 +242,8 @@ schedule <- tribble(
   '<a href="http://www.nytimes.com/2010/09/19/health/research/19trial.html?hp" target = "_blank"><i class="fas fa-newspaper"></i> clinical trials</a> <br> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/ortega.html" target = "_blank">Omayra Ortega</a>',
   '<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW9s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 9 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW9s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 9 Rmd</a> <br> <br> Power Analysis Due <br> <br>  <a href="https://m58-intro-stats.netlify.app/slides/wu18_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU18</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/wu19_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU19</a> ',
 
-'<font color = "#114B5F"><b>4.4.23</b></font>', '<font color = "#114B5F"><b>Proj 2: Power Analysis</b></font>',"", 
-  '','',
+'<font color = "#114B5F"><b>4.4.23</b></font>', '<font color = "#114B5F"><b>Proj 2: Power Analysis</b></font>'," ", 
+  ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/Power_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 2: Power Analysis</a>',
 
   "Week 12 <br> 4.11.23", 'ANOVA',"• MSG <br> • MSE <br>• F-test ", 
@@ -256,30 +256,30 @@ schedule <- tribble(
   '<a href="https://jamanetwork.com/journals/jama/fullarticle/208354" target = "_blank"><i class="fas fa-newspaper"></i> 1918 flu</a> <br> ',
   '<a href="https://m58-intro-stats.netlify.app/slides/wu22_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU22</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/wu23_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU23</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW11s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 11 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW11s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 11 Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab11_m58_s23_ANOVAplus.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 11 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab11_m58_s23_ANOVAplus.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 11 Rmd</a>',
 
-'<font color = "#114B5F"><b>4.18.23</b></font>', '<font color = "#114B5F"><b>Proj 3: Analysis</b></font>',"", 
-  '','',
+'<font color = "#114B5F"><b>4.18.23</b></font>', '<font color = "#114B5F"><b>Proj 3: Analysis</b></font>'," ", 
+  ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/PreliminaryAnalysis_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 3: Preliminary Analysis</a>',
 
-  "Week 14 <br> 4.25.23", 'catch-up',"", 
+  "Week 14 <br> 4.25.23", 'catch-up'," ", 
   '<i class="fas fa-book-open"></i> study materials <br> (see Canvas) <br> <br> <a href="https://m58-intro-stats.netlify.app/slides/adviceExam2_s23.docx" target = "_blank"><i class="fas fa-pencil-alt"></i>advice for exam 2</a> <br> <br> <a href="https://m58-intro-stats.netlify.app/slides/param_est_58.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> when to use what</a>',
-  '',
+  ' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW12s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 12 pdf (not due ever)</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW12s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 12 Rmd (not due ever)</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab12_m58_s23_MLR.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 12 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab12_m58_s23_MLR.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 12 Rmd</a>',
   
-'<font color = "#114B5F"><b>4.27.23</b></font>', '<font color = "#114B5F"><b>Exam 2</b></font>',"", 
-  '',
-  '',
+'<font color = "#114B5F"><b>4.27.23</b></font>', '<font color = "#114B5F"><b>Exam 2</b></font>'," ", 
+  ' ',
+  ' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/param_est_58.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> when to use what</a>', 
 
-'<font color = "#114B5F"><b>5.2.23</b></font>', '<font color = "#114B5F"><b>Proj 4: Full draft</b></font>',"", 
-  '','',
+'<font color = "#114B5F"><b>5.2.23</b></font>', '<font color = "#114B5F"><b>Proj 4: Full draft</b></font>'," ", 
+  ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 4: Full draft</a>',
 
-'<font color = "#114B5F"><b>5.4 + 12.23</b></font>', '<font color = "#114B5F"><b>Proj Presentation</b></font>',"", 
-  '','',
+'<font color = "#114B5F"><b>5.4 + 12.23</b></font>', '<font color = "#114B5F"><b>Proj Presentation</b></font>'," ", 
+  ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/Presentation_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj Presentation</a>',
 
-'<font color = "#114B5F"><b>5.12.23</b></font>', '<font color = "#114B5F"><b>Proj 5: Final Project</b></font>',"", 
-  '','',
+'<font color = "#114B5F"><b>5.12.23</b></font>', '<font color = "#114B5F"><b>Proj 5: Final Project</b></font>'," ", 
+  ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 5: Final Project</a>'
   
     )
@@ -287,7 +287,24 @@ schedule <- tribble(
 
 
 
+
+
 ```{r}
+#| echo: false
+#| column: screen-inset
+# can also use column: screen-inset also the entire page??
+# can use column: page for the entire page
+# can use column: body-outset to bleed outside the center column of text
+schedule |> 
+  gt::gt() |> 
+  gt::fmt_markdown(columns = everything()) |> 
+    gt::cols_width(date ~ pct(8),
+                 everything() ~ pct(18.4)) 
+```
+
+
+```{r}
+#| eval: false
 #| echo: false
 #| column: screen-inset
 # can use column: page for the entire page

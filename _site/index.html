@@ -70,8 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
 </head>
@@ -156,13 +154,13 @@ In order to use the icons, you need the fontawesome extension, https://github.co
 
 quarto add quarto-ext/fontawesome
 
-Then need to restart R (to get the icons to show up in the table).
+Also, need to use gt, not kable, to make the table.
 -->
 <p>Here’s your roadmap for the semester! Each week, follow the general process outlined below:</p>
 <ul>
-<li><p>Before class on Tuesday, read the suggested article <i class="fas fa-newspaper"></i></p></li>
+<li><p>Before class on Monday, read the suggested article <i class="fas fa-newspaper"></i></p></li>
 <li><p>Enjoy the notes / readings <i class="fas fa-book-open"></i></p></li>
-<li><p>Attend class, review the warm-up <i class="fas fa-pencil-alt"></i> if you have any questions after completing it during class.</p></li>
+<li><p>Attend class, review the <i class="fas fa-pencil-alt"></i> worksheet and solution.</p></li>
 <li><p>Complete the Lab <i class="fas fa-desktop"></i> and HW <i class="fas fa-laptop"></i> assignments</p>
 <ul>
 <li>Lab due every Tuesday by 11:59pm</li>
@@ -178,332 +176,668 @@ Then need to restart R (to get the icons to show up in the table).
 </ul>
 <div class="cell page-columns page-full">
 <div class="cell-output-display column-screen-inset">
-<table class="table table-striped table-hover caption-top table-sm small" data-quarto-postprocess="true">
+<div id="cjrttmilod" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#cjrttmilod table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#cjrttmilod thead, #cjrttmilod tbody, #cjrttmilod tfoot, #cjrttmilod tr, #cjrttmilod td, #cjrttmilod th {
+  border-style: none;
+}
+
+#cjrttmilod p {
+  margin: 0;
+  padding: 0;
+}
+
+#cjrttmilod .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#cjrttmilod .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#cjrttmilod .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#cjrttmilod .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#cjrttmilod .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cjrttmilod .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cjrttmilod .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#cjrttmilod .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#cjrttmilod .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#cjrttmilod .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#cjrttmilod .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#cjrttmilod .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#cjrttmilod .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#cjrttmilod .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#cjrttmilod .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#cjrttmilod .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#cjrttmilod .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#cjrttmilod .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#cjrttmilod .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cjrttmilod .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#cjrttmilod .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#cjrttmilod .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#cjrttmilod .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cjrttmilod .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#cjrttmilod .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#cjrttmilod .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cjrttmilod .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cjrttmilod .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#cjrttmilod .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cjrttmilod .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#cjrttmilod .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#cjrttmilod .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cjrttmilod .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cjrttmilod .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#cjrttmilod .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#cjrttmilod .gt_left {
+  text-align: left;
+}
+
+#cjrttmilod .gt_center {
+  text-align: center;
+}
+
+#cjrttmilod .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#cjrttmilod .gt_font_normal {
+  font-weight: normal;
+}
+
+#cjrttmilod .gt_font_bold {
+  font-weight: bold;
+}
+
+#cjrttmilod .gt_font_italic {
+  font-style: italic;
+}
+
+#cjrttmilod .gt_super {
+  font-size: 65%;
+}
+
+#cjrttmilod .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#cjrttmilod .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#cjrttmilod .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#cjrttmilod .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#cjrttmilod .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#cjrttmilod .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#cjrttmilod .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#cjrttmilod .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#cjrttmilod div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 8%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
 </colgroup>
 <thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">date</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">topic</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">agenda</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">readings</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">article (Tues)</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">assignments</th>
+<tr class="gt_col_headings header">
+<th id="date" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">date</th>
+<th id="topic" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">topic</th>
+<th id="agenda" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">agenda</th>
+<th id="readings" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">readings</th>
+<th id="article (Mon)" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">article (Mon)</th>
+<th id="assignments" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">assignments</th>
 </tr>
 </thead>
-<tbody>
+<tbody class="gt_table_body">
 <tr class="odd">
-<td style="text-align: left; vertical-align: top;">Week 1<br>
-1.19.26</td>
-<td style="text-align: left; vertical-align: top;">Intro +<br>
-variables &amp;<br>
-studies<br>
-SLR</td>
-<td style="text-align: left; vertical-align: top;">• course info<br>
-• tests<br>
-• studies<br>
-• causation</td>
-<td style="text-align: left; vertical-align: top;">{{}} <a href="https://st47s.com/Math58/Notes/intro.html#intro" target="_blank">Introduction</a><br>
-<a href="https://st47s.com/Math58/Notes/intro.html#experim" target="_blank"><em></em> Studies</a><br>
-<a href="http://www.rossmanchance.com/iscam3/" target="_blank"><em></em> ISCAM 1.1</a><br>
-<a href="https://openintro-ims.netlify.app/data-hello.html" target="_blank"><em></em> IMS 1 + 2</a></td>
-<td style="text-align: left; vertical-align: top;"><em></em> none<br>
-<br>
-<a href="https://hardin47.github.io/CURV/scholars/enders.html" target="_blank">Felicity Enders</a></td>
-<td style="text-align: left; vertical-align: top;"><a href="https://m58-intro-stats.netlify.app/slides/wu1_ma58b_s23.pdf" target="_blank"><em></em> WU1</a><br>
-<a href="https://m58-intro-stats.netlify.app/slides/wu2_ma58b_s23.pdf" target="_blank"><em></em> WU2</a><br>
-<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW0s23.pdf" target="_blank"><em></em> HW 0 pdf</a><br>
-<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW0s23.Rmd" target="_blank"><em></em> HW 0 Rmd</a></td>
+<td class="gt_row gt_left" headers="date"><p>Week 1 <br> 1.19.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>Intro + <br> variables &amp; <br> studies <br> SLR</p></td>
+<td class="gt_row gt_left" headers="agenda"><p>• course info <br> • tests <br> • studies <br> • causation</p></td>
+<td class="gt_row gt_left" headers="readings"><p><a href="https://st47s.com/Math58/Notes/intro.html#intro" target="_blank"><i class="fa-solid fa-book-open" aria-label="book-open"></i> Introduction</a> <br> <a href="https://st47s.com/Math58/Notes/intro.html#experim" target="_blank"><i class="fas fa-book-open"></i> Studies</a> <br> <a href="http://www.rossmanchance.com/iscam3/" target="_blank"><i class="fas fa-book-open"></i> ISCAM 1.1</a> <br> <a href="https://openintro-ims.netlify.app/data-hello.html" target="_blank"><i class="fas fa-book-open"></i> IMS 1 + 2</a></p></td>
+<td class="gt_row gt_left" headers="article (Mon)"><p><i class="fas fa-newspaper"></i> none <br> <br> <a href="https://hardin47.github.io/CURV/scholars/enders.html" target="_blank"><i class="fa-solid fa-user" aria-label="user"></i>Felicity Enders</a></p></td>
+<td class="gt_row gt_left" headers="assignments"><p><a href="https://m58-intro-stats.netlify.app/slides/wu1_ma58b_s23.pdf" target="_blank"><i class="fas fa-pencil-alt"></i> WU1</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/wu2_ma58b_s23.pdf" target="_blank"><i class="fas fa-pencil-alt"></i> WU2</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW0s23.pdf" target="_blank"><i class="fas fa-laptop"></i> HW 0 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW0s23.Rmd" target="_blank"><i class="fas fa-laptop"></i> HW 0 Rmd</a></p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left; vertical-align: top;">Week 2<br>
-1.24.23</td>
-<td style="text-align: left; vertical-align: top;">Correlation +<br>
-Least<br>
-squares<br>
-</td>
-<td style="text-align: left; vertical-align: top;">• correlation<br>
-• linear model<br>
-• R^2</td>
-<td style="text-align: left; vertical-align: top;"><a href="https://st47s.com/Math58/Notes/regdesc.html#cor" target="_blank"><em></em> Cor</a><br>
-<a href="https://st47s.com/Math58/Notes/regdesc.html#ls" target="_blank"><em></em> Least Sq</a><br>
-<a href="http://www.rossmanchance.com/iscam3/" target="_blank"><em></em> ISCAM 5.6, 5.7, 5.8</a><br>
-<a href="https://openintro-ims.netlify.app/model-slr.html" target="_blank"><em></em> IMS 7</a><br>
-<a href="http://www.rossmanchance.com/applets/2021/guesscorrelation/GuessCorrelation.html" target="_blank"><em></em> guess corr</a><br>
-<a href="http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target="_blank"><em></em> least sq</a></td>
-<td style="text-align: left; vertical-align: top;"><a href="https://www.wired.com/story/the-astrazeneca-covid-vaccine-data-isnt-up-to-snuff/" target="_blank"><em></em> AstraZeneca</a><br>
-<br>
-<a href="https://hardin47.github.io/CURV/scholars/dubois.html" target="_blank">W.E.B. Du Bois</a></td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p>Week 2 <br> 1.26.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>Correlation + <br>Least<br>squares<br></p></td>
+<td class="gt_row gt_left" headers="agenda"><p>• correlation<br> • linear model <br> • R^2</p></td>
+<td class="gt_row gt_left" headers="readings"><p><a href="https://st47s.com/Math58/Notes/regdesc.html#cor" target="_blank"><i class="fas fa-book-open"></i> Cor</a> <br> <a href="https://st47s.com/Math58/Notes/regdesc.html#ls" target="_blank"><i class="fas fa-book-open"></i> Least Sq</a> <br> <a href="http://www.rossmanchance.com/iscam3/" target="_blank"><i class="fas fa-book-open"></i> ISCAM 5.6, 5.7, 5.8</a> <br> <a href="https://openintro-ims.netlify.app/model-slr.html" target="_blank"><i class="fas fa-book-open"></i> IMS 7</a> <br> <a href="http://www.rossmanchance.com/applets/2021/guesscorrelation/GuessCorrelation.html" target="_blank"><i class="fas fa-gamepad"></i> guess corr</a> <br> <a href="http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target="_blank"><i class="fas fa-gamepad"></i> least sq</a></p></td>
+<td class="gt_row gt_left" headers="article (Mon)"><p><a href="https://www.wired.com/story/the-astrazeneca-covid-vaccine-data-isnt-up-to-snuff/" target="_blank"><i class="fas fa-newspaper"></i> AstraZeneca</a> <br> <br> <a href="https://hardin47.github.io/CURV/scholars/dubois.html" target="_blank"><i class="fa-solid fa-user" aria-label="user"></i> W.E.B. Du Bois</a></p></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left; vertical-align: top;">Week 3<br>
-1.31.23</td>
-<td style="text-align: left; vertical-align: top;">Hyp Test +<br>
-Randomization<br>
-Test<br>
-</td>
-<td style="text-align: left; vertical-align: top;">• structure of<br>
-hypothesis<br>
-testing</td>
-<td style="text-align: left; vertical-align: top;"><a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#randtest" target="_blank"><em></em> Tests</a><br>
-<a href="http://www.rossmanchance.com/applets/2021/chisqshuffle/ChiSqShuffle.htm?twobytwo=1" target="_blank"><em></em> 2x2 Rand</a><br>
-<a href="https://openintro-ims.netlify.app/foundations-randomization.html" target="_blank"><em></em> IMS 11</a></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p>Week 3 <br> 2.2.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>Hyp Test + <br>Randomization<br>Test<br></p></td>
+<td class="gt_row gt_left" headers="agenda"><p>• structure of<br> hypothesis<br> testing</p></td>
+<td class="gt_row gt_left" headers="readings"><p><a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#randtest" target="_blank"><i class="fas fa-book-open"></i> Tests</a> <br> <a href="http://www.rossmanchance.com/applets/2021/chisqshuffle/ChiSqShuffle.htm?twobytwo=1" target="_blank"><i class="fas fa-gamepad"></i> 2x2 Rand</a> <br> <a href="https://openintro-ims.netlify.app/foundations-randomization.html" target="_blank"><i class="fas fa-book-open"></i> IMS 11</a></p></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left; vertical-align: top;">Week 4<br>
-2.7.23</td>
-<td style="text-align: left; vertical-align: top;">Bootstrapping</td>
-<td style="text-align: left; vertical-align: top;">• boot samp dist<br>
-• boot CI</td>
-<td style="text-align: left; vertical-align: top;"><a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#boot" target="_blank"><em></em> Bootstrapping</a><br>
-<a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#bootCI" target="_blank"><em></em> Boot CIs</a><br>
-<a href="https://www.lock5stat.com/StatKey/" target="_blank"><em></em> StatKey</a><br>
-<a href="http://www.rossmanchance.com/applets/2021/confsim/ConfSim.html" target="_blank"><em></em> CIs</a><br>
-<a href="https://openintro-ims.netlify.app/foundations-bootstrapping.html" target="_blank"><em></em> IMS 12</a></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p>Week 4 <br> 2.9.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>Bootstrapping</p></td>
+<td class="gt_row gt_left" headers="agenda"><p>• boot samp dist <br> • boot CI</p></td>
+<td class="gt_row gt_left" headers="readings"><p><a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#boot" target="_blank"><i class="fas fa-book-open"></i> Bootstrapping</a> <br> <a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#bootCI" target="_blank"><i class="fas fa-book-open"></i> Boot CIs</a> <br> <a href="https://www.lock5stat.com/StatKey/" target="_blank"><i class="fas fa-gamepad"></i> StatKey </a> <br> <a href="http://www.rossmanchance.com/applets/2021/confsim/ConfSim.html" target="_blank"><i class="fas fa-gamepad"></i> CIs</a> <br> <a href="https://openintro-ims.netlify.app/foundations-bootstrapping.html" target="_blank"><i class="fas fa-book-open"></i> IMS 12</a></p></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left; vertical-align: top;">Week 5<br>
-2.14.23</td>
-<td style="text-align: left; vertical-align: top;">normality +<br>
-CLT</td>
-<td style="text-align: left; vertical-align: top;">• normal dist<br>
-• CLT<br>
-• Z-score<br>
-• empirical rule<br>
-• conf int<br>
-• norm prob<br>
-• hyp test</td>
-<td style="text-align: left; vertical-align: top;"><a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#CLT" target="_blank"><em></em>CLT</a><br>
-<a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#norm" target="_blank"><em></em> Norm dist</a><br>
-<a href="http://www.rossmanchance.com/applets/2021/sampling/OneSample.html" target="_blank"><em></em> Samp Dist</a><br>
-<a href="https://openintro-ims.netlify.app/.html" target="_blank"><em></em> IMS</a></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p>Week 5 <br> 2.16.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>normality +<br>CLT</p></td>
+<td class="gt_row gt_left" headers="agenda"><p>• normal dist<br> • CLT<br> • Z-score <br> • empirical rule <br> • conf int <br> • norm prob <br> • hyp test</p></td>
+<td class="gt_row gt_left" headers="readings"><p><a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#CLT" target="_blank"><i class="fas fa-book-open"></i>CLT </a> <br> <a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#norm" target="_blank"><i class="fas fa-book-open"></i> Norm dist</a> <br> <a href="http://www.rossmanchance.com/applets/2021/sampling/OneSample.html" target="_blank"><i class="fas fa-gamepad"></i> Samp Dist </a> <br> <a href="https://openintro-ims.netlify.app/.html" target="_blank"><i class="fas fa-book-open"></i> IMS </a></p></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left; vertical-align: top;">Week 6<br>
-2.21.23</td>
-<td style="text-align: left; vertical-align: top;">Errors +<br>
-Power +<br>
-Sampling</td>
-<td style="text-align: left; vertical-align: top;">• Type I error<br>
-• Type II error<br>
-• Power<br>
-• biased samples</td>
-<td style="text-align: left; vertical-align: top;"><a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#errors" target="_blank"><em></em> Errors</a><br>
-<a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#samp" target="_blank"><em></em> Sampling</a><br>
-<a href="http://www.rossmanchance.com/applets/2021/power/power.html" target="_blank"><em></em> Power</a><br>
-<a href="https://openintro-ims.netlify.app/decerr.html" target="_blank"><em></em> IMS 14 + 2</a></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p>Week 6 <br> 2.23.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>Errors + <br>Power +<br>Sampling</p></td>
+<td class="gt_row gt_left" headers="agenda"><p>• Type I error <br> • Type II error <br> • Power <br> • biased samples</p></td>
+<td class="gt_row gt_left" headers="readings"><p><a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#errors" target="_blank"><i class="fas fa-book-open"></i> Errors</a> <br> <a href="https://st47s.com/Math58/Notes/foundations-for-inference.html#samp" target="_blank"><i class="fas fa-book-open"></i> Sampling</a> <br> <a href="http://www.rossmanchance.com/applets/2021/power/power.html" target="_blank"><i class="fas fa-gamepad"></i> Power</a> <br> <a href="https://openintro-ims.netlify.app/decerr.html" target="_blank"><i class="fas fa-book-open"></i> IMS 14 + 2</a></p></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left; vertical-align: top;">Week 7<br>
-2.28.23</td>
-<td style="text-align: left; vertical-align: top;">Rel Risk +<br>
-Odds Ratios</td>
-<td style="text-align: left; vertical-align: top;">• RR<br>
-• OR<br>
-• Case-control<br>
-• Cohort</td>
-<td style="text-align: left; vertical-align: top;"><a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#diffprop" target="_blank"><em></em> diff props</a><br>
-<a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#rr" target="_blank"><em></em> RR</a><br>
-<a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#or" target="_blank"><em></em> OR</a><br>
-<a href="http://www.rossmanchance.com/iscam3/" target="_blank"><em></em> ISCAM 3.9-3.11</a><br>
-<a href="https://openintro-ims.netlify.app/inference-two-props.html" target="_blank"><em></em> IMS 17</a></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p>Week 7 <br> 3.2.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>Rel Risk +<br>Odds Ratios</p></td>
+<td class="gt_row gt_left" headers="agenda"><p>• RR <br> • OR<br> • Case-control <br> • Cohort</p></td>
+<td class="gt_row gt_left" headers="readings"><p><a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#diffprop" target="_blank"><i class="fas fa-book-open"></i> diff props</a> <br> <a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#rr" target="_blank"><i class="fas fa-book-open"></i> RR</a> <br> <a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#or" target="_blank"><i class="fas fa-book-open"></i> OR</a> <br> <a href="http://www.rossmanchance.com/iscam3/" target="_blank"><i class="fas fa-book-open"></i> ISCAM 3.9-3.11</a> <br> <a href="https://openintro-ims.netlify.app/inference-two-props.html" target="_blank"><i class="fas fa-book-open"></i> IMS 17</a></p></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left; vertical-align: top;">Week 8<br>
-3.7.23</td>
-<td style="text-align: left; vertical-align: top;">catch-up</td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"><em></em> study materials<br>
-(see Canvas)<br>
-<a href="https://m58-intro-stats.netlify.app/slides/adviceExam1_s23.docx" target="_blank"><em></em>advice for exam 1</a></td>
-<td style="text-align: left; vertical-align: top;"><br>
-no lab on 3.13.26</td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p>Week 8 <br> 3.9.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>catch-up</p></td>
+<td class="gt_row gt_left" headers="agenda"></td>
+<td class="gt_row gt_left" headers="readings"><p><i class="fas fa-book-open"></i> study materials <br> (see Canvas) <br> <a href="https://m58-intro-stats.netlify.app/slides/adviceExam1_s23.docx" target="_blank"><i class="fas fa-pencil-alt"></i>advice for exam 1</a></p></td>
+<td class="gt_row gt_left" headers="article (Mon)"><p><br> no lab on 3.13.26</p></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>3.9.23</strong></font></td>
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>Exam 1</strong></font></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p><font color="#114B5F"><b>3.9.23</b></font></p></td>
+<td class="gt_row gt_left" headers="topic"><p><font color="#114B5F"><b>Exam 1</b></font></p></td>
+<td class="gt_row gt_left" headers="agenda"></td>
+<td class="gt_row gt_left" headers="readings"></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left; vertical-align: top;">3.14.23</td>
-<td style="text-align: left; vertical-align: top;">spring break</td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p>3.16.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>spring break</p></td>
+<td class="gt_row gt_left" headers="agenda"></td>
+<td class="gt_row gt_left" headers="readings"></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left; vertical-align: top;">Week 9<br>
-3.21.23</td>
-<td style="text-align: left; vertical-align: top;">χ^2 Test</td>
-<td style="text-align: left; vertical-align: top;">• expected counts<br>
-• X^2 statistic<br>
-• χ^2 test</td>
-<td style="text-align: left; vertical-align: top;"><a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#chisq2" target="_blank"><em></em> χ^2 Test</a><br>
-<a href="http://www.rossmanchance.com/iscam3/" target="_blank"><em></em> ISCAM 3.2</a><br>
-<a href="https://openintro-ims.netlify.app/inference-tables.html" target="_blank"><em></em> IMS 18</a></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p>Week 9 <br> 3.23.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>χ^2 Test</p></td>
+<td class="gt_row gt_left" headers="agenda"><p>• expected counts <br> • X^2 statistic <br> • χ^2 test</p></td>
+<td class="gt_row gt_left" headers="readings"><p><a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#chisq2" target="_blank"><i class="fas fa-book-open"></i> χ^2 Test</a> <br> <a href="http://www.rossmanchance.com/iscam3/" target="_blank"><i class="fas fa-book-open"></i> ISCAM 3.2</a> <br> <a href="https://openintro-ims.netlify.app/inference-tables.html" target="_blank"><i class="fas fa-book-open"></i> IMS 18</a></p></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left; vertical-align: top;">Week 10<br>
-3.28.23</td>
-<td style="text-align: left; vertical-align: top;">1 mean +<br>
-pred interval</td>
-<td style="text-align: left; vertical-align: top;">• dist of X-bar<br>
-• SE(X-bar)<br>
-• t-test of μ<br>
-• t-CI for μ<br>
-• PI for X_{n+1}</td>
-<td style="text-align: left; vertical-align: top;"><a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean1inf" target="_blank"><em></em> 1 mean</a><br>
-<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean1inf" target="_blank"><em></em> pred int</a><br>
-<a href="https://openintro-ims.netlify.app/inference-one-mean.html" target="_blank"><em></em> IMS 19</a></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p>Week 10 <br> 3.30.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>1 mean +<br>pred interval</p></td>
+<td class="gt_row gt_left" headers="agenda"><p>• dist of X-bar <br> • SE(X-bar) <br> • t-test of μ<br> • t-CI for μ <br> • PI for X_{n+1}</p></td>
+<td class="gt_row gt_left" headers="readings"><p><a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean1inf" target="_blank"><i class="fas fa-book-open"></i> 1 mean</a> <br> <a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean1inf" target="_blank"><i class="fas fa-book-open"></i> pred int</a> <br> <a href="https://openintro-ims.netlify.app/inference-one-mean.html" target="_blank"><i class="fas fa-book-open"></i> IMS 19</a></p></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>3.28.23</strong></font></td>
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>Proj 1: Pilot</strong></font></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"><a href="https://m58-intro-stats.netlify.app/slides/Pilot_m58_s23_Islands.docx" target="_blank"><em></em> Proj 1: Pilot</a></td>
+<td class="gt_row gt_left" headers="date"><p><font color="#114B5F"><b>3.28.23</b></font></p></td>
+<td class="gt_row gt_left" headers="topic"><p><font color="#114B5F"><b>Proj 1: Pilot</b></font></p></td>
+<td class="gt_row gt_left" headers="agenda"></td>
+<td class="gt_row gt_left" headers="readings"></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"><p><a href="https://m58-intro-stats.netlify.app/slides/Pilot_m58_s23_Islands.docx" target="_blank"><i class="fas fa-desktop"></i> Proj 1: Pilot</a></p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left; vertical-align: top;">Week 11<br>
-4.4.23</td>
-<td style="text-align: left; vertical-align: top;">2 means +<br>
-t-proced</td>
-<td style="text-align: left; vertical-align: top;">• dist of X-bar_1 - X-bar_2<br>
-• SE(X-bar_1 - X-bar_2)<br>
-• t-test of μ_1 - μ_2<br>
-• randomization test of μ_1 - μ_2<br>
-• t-CI for μ_1 - μ_2<br>
-• bootstrap CI for μ_1 - μ_2</td>
-<td style="text-align: left; vertical-align: top;"><a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean2inf" target="_blank"><em></em> 2 means</a><br>
-<a href="http://www.rossmanchance.com/applets/index2021.html" target="_blank"><em></em> 2 samples</a><br>
-<a href="https://openintro-ims.netlify.app/inference-two-means.html" target="_blank"><em></em> IMS 20</a></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p>Week 11 <br> 4.6.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>2 means +<br>t-proced</p></td>
+<td class="gt_row gt_left" headers="agenda"><p>• dist of X-bar_1 - X-bar_2 <br> • SE(X-bar_1 - X-bar_2) <br> • t-test of μ_1 - μ_2<br> • randomization test of μ_1 - μ_2 <br> • t-CI for μ_1 - μ_2 <br> • bootstrap CI for μ_1 - μ_2</p></td>
+<td class="gt_row gt_left" headers="readings"><p><a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean2inf" target="_blank"><i class="fas fa-book-open"></i> 2 means</a> <br> <a href="http://www.rossmanchance.com/applets/index2021.html" target="_blank"><i class="fas fa-gamepad"></i> 2 samples</a> <br> <a href="https://openintro-ims.netlify.app/inference-two-means.html" target="_blank"><i class="fas fa-book-open"></i> IMS 20</a></p></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>4.4.23</strong></font></td>
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>Proj 2: Power Analysis</strong></font></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"><a href="https://m58-intro-stats.netlify.app/slides/Power_m58_s23_Islands.docx" target="_blank"><em></em> Proj 2: Power Analysis</a></td>
+<td class="gt_row gt_left" headers="date"><p><font color="#114B5F"><b>4.4.23</b></font></p></td>
+<td class="gt_row gt_left" headers="topic"><p><font color="#114B5F"><b>Proj 2: Power Analysis</b></font></p></td>
+<td class="gt_row gt_left" headers="agenda"></td>
+<td class="gt_row gt_left" headers="readings"></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"><p><a href="https://m58-intro-stats.netlify.app/slides/Power_m58_s23_Islands.docx" target="_blank"><i class="fas fa-desktop"></i> Proj 2: Power Analysis</a></p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left; vertical-align: top;">Week 12<br>
-4.11.23</td>
-<td style="text-align: left; vertical-align: top;">ANOVA</td>
-<td style="text-align: left; vertical-align: top;">• MSG<br>
-• MSE<br>
-• F-test</td>
-<td style="text-align: left; vertical-align: top;"><a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#ANOVA" target="_blank"><em></em> ANOVA</a><br>
-<a href="https://st47s.com/Math58/Notes/reginf.html#infbeta1" target="_blank"><em></em> Inf on β_1</a><br>
-<a href="http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target="_blank"><em></em> slopes</a><br>
-<a href="https://openintro-ims.netlify.app/inference-many-means.html" target="_blank"><em></em> IMS 22</a><br>
-<a href="https://openintro-ims.netlify.app/inf-model-slr.html" target="_blank"><em></em> IMS 24</a></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p>Week 12 <br> 4.13.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>ANOVA</p></td>
+<td class="gt_row gt_left" headers="agenda"><p>• MSG <br> • MSE <br>• F-test</p></td>
+<td class="gt_row gt_left" headers="readings"><p><a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#ANOVA" target="_blank"><i class="fas fa-book-open"></i> ANOVA</a> <br> <a href="https://st47s.com/Math58/Notes/reginf.html#infbeta1" target="_blank"><i class="fas fa-book-open"></i> Inf on β_1</a> <br> <a href="http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target="_blank"><i class="fas fa-gamepad"></i> slopes</a> <br> <a href="https://openintro-ims.netlify.app/inference-many-means.html" target="_blank"><i class="fas fa-book-open"></i> IMS 22</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-slr.html" target="_blank"><i class="fas fa-book-open"></i> IMS 24</a></p></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left; vertical-align: top;">Week 13<br>
-4.18.23</td>
-<td style="text-align: left; vertical-align: top;">Inference β_1 +<br>
-Tech cond +<br>
-MLR</td>
-<td style="text-align: left; vertical-align: top;">• SE(β_1)<br>
-• residual plots<br>
-• multiple X</td>
-<td style="text-align: left; vertical-align: top;"><a href="https://st47s.com/Math58/Notes/reginf.html#lmtechcond" target="_blank"><em></em> Tech Cond</a><br>
-<a href="https://st47s.com/Math58/Notes/reginf.html#MLR" target="_blank"><em></em> MLR</a><br>
-<a href="https://openintro-ims.netlify.app/inf-model-mlr.html" target="_blank"><em></em> IMS 25</a></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p>Week 13 <br> 4.20.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>Inference β_1 + <br>Tech cond + <br>MLR</p></td>
+<td class="gt_row gt_left" headers="agenda"><p>• SE(β_1) <br> • residual plots <br> • multiple X</p></td>
+<td class="gt_row gt_left" headers="readings"><p><a href="https://st47s.com/Math58/Notes/reginf.html#lmtechcond" target="_blank"><i class="fas fa-book-open"></i> Tech Cond</a> <br> <a href="https://st47s.com/Math58/Notes/reginf.html#MLR" target="_blank"><i class="fas fa-gamepad"></i> MLR</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-mlr.html" target="_blank"><i class="fas fa-book-open"></i> IMS 25</a></p></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>4.18.23</strong></font></td>
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>Proj 3: Analysis</strong></font></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"><a href="https://m58-intro-stats.netlify.app/slides/PreliminaryAnalysis_m58_s23_Islands.docx" target="_blank"><em></em> Proj 3: Preliminary Analysis</a></td>
+<td class="gt_row gt_left" headers="date"><p><font color="#114B5F"><b>4.18.23</b></font></p></td>
+<td class="gt_row gt_left" headers="topic"><p><font color="#114B5F"><b>Proj 3: Analysis</b></font></p></td>
+<td class="gt_row gt_left" headers="agenda"></td>
+<td class="gt_row gt_left" headers="readings"></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"><p><a href="https://m58-intro-stats.netlify.app/slides/PreliminaryAnalysis_m58_s23_Islands.docx" target="_blank"><i class="fas fa-desktop"></i> Proj 3: Preliminary Analysis</a></p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left; vertical-align: top;">Week 14<br>
-4.25.23</td>
-<td style="text-align: left; vertical-align: top;">catch-up</td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"><em></em> study materials<br>
-(see Canvas)<br>
-<br>
-<a href="https://m58-intro-stats.netlify.app/slides/adviceExam2_s23.docx" target="_blank"><em></em>advice for exam 2</a><br>
-<br>
-<a href="https://m58-intro-stats.netlify.app/slides/param_est_58.pdf" target="_blank"><em></em> when to use what</a></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
+<td class="gt_row gt_left" headers="date"><p>Week 14 <br> 4.27.26</p></td>
+<td class="gt_row gt_left" headers="topic"><p>catch-up</p></td>
+<td class="gt_row gt_left" headers="agenda"></td>
+<td class="gt_row gt_left" headers="readings"><p><i class="fas fa-book-open"></i> study materials <br> (see Canvas) <br> <br> <a href="https://m58-intro-stats.netlify.app/slides/adviceExam2_s23.docx" target="_blank"><i class="fas fa-pencil-alt"></i>advice for exam 2</a> <br> <br> <a href="https://m58-intro-stats.netlify.app/slides/param_est_58.pdf" target="_blank"><i class="fas fa-pencil-alt"></i> when to use what</a></p></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>4.27.23</strong></font></td>
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>Exam 2</strong></font></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"><a href="https://m58-intro-stats.netlify.app/slides/param_est_58.pdf" target="_blank"><em></em> when to use what</a></td>
+<td class="gt_row gt_left" headers="date"><p><font color="#114B5F"><b>4.27.23</b></font></p></td>
+<td class="gt_row gt_left" headers="topic"><p><font color="#114B5F"><b>Exam 2</b></font></p></td>
+<td class="gt_row gt_left" headers="agenda"></td>
+<td class="gt_row gt_left" headers="readings"></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"><p><a href="https://m58-intro-stats.netlify.app/slides/param_est_58.pdf" target="_blank"><i class="fas fa-pencil-alt"></i> when to use what</a></p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>5.2.23</strong></font></td>
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>Proj 4: Full draft</strong></font></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"><a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_Islands.docx" target="_blank"><em></em> Proj 4: Full draft</a></td>
+<td class="gt_row gt_left" headers="date"><p><font color="#114B5F"><b>5.2.23</b></font></p></td>
+<td class="gt_row gt_left" headers="topic"><p><font color="#114B5F"><b>Proj 4: Full draft</b></font></p></td>
+<td class="gt_row gt_left" headers="agenda"></td>
+<td class="gt_row gt_left" headers="readings"></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"><p><a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_Islands.docx" target="_blank"><i class="fas fa-desktop"></i> Proj 4: Full draft</a></p></td>
 </tr>
 <tr class="even">
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>5.4 + 12.23</strong></font></td>
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>Proj Presentation</strong></font></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"><a href="https://m58-intro-stats.netlify.app/slides/Presentation_m58_s23_Islands.docx" target="_blank"><em></em> Proj Presentation</a></td>
+<td class="gt_row gt_left" headers="date"><p><font color="#114B5F"><b>5.4 + 12.23</b></font></p></td>
+<td class="gt_row gt_left" headers="topic"><p><font color="#114B5F"><b>Proj Presentation</b></font></p></td>
+<td class="gt_row gt_left" headers="agenda"></td>
+<td class="gt_row gt_left" headers="readings"></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"><p><a href="https://m58-intro-stats.netlify.app/slides/Presentation_m58_s23_Islands.docx" target="_blank"><i class="fas fa-desktop"></i> Proj Presentation</a></p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>5.12.23</strong></font></td>
-<td style="text-align: left; vertical-align: top;"><font color="#114B5F"><strong>Proj 5: Final Project</strong></font></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"></td>
-<td style="text-align: left; vertical-align: top;"><a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_Islands.docx" target="_blank"><em></em> Proj 5: Final Project</a></td>
+<td class="gt_row gt_left" headers="date"><p><font color="#114B5F"><b>5.12.23</b></font></p></td>
+<td class="gt_row gt_left" headers="topic"><p><font color="#114B5F"><b>Proj 5: Final Project</b></font></p></td>
+<td class="gt_row gt_left" headers="agenda"></td>
+<td class="gt_row gt_left" headers="readings"></td>
+<td class="gt_row gt_left" headers="article (Mon)"></td>
+<td class="gt_row gt_left" headers="assignments"><p><a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_Islands.docx" target="_blank"><i class="fas fa-desktop"></i> Proj 5: Final Project</a></p></td>
 </tr>
 </tbody>
 </table>
 
-
 </div>
+</div>
+</div>
+<div class="cell column-screen-inset">
+
 </div>
 
 
