@@ -882,11 +882,11 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-83.	 Would it be reasonable for the alien to conclude, with 95% confidence, that between 16.5% and 33.5% of US Senators in the year 2023 self-identify as female?[^83]
+83.	 Would it be reasonable for the alien to conclude, with 95% confidence, that between 17.4% and 34.6% of US Senators in the year 2026 self-identify as female?[^83]
      (a)	Yes
      (b)	No
 
-[^83]: b. No. We know (for sure, with 100% confidence) that exactly 25% of U.S. senators in 2019 self identify as female. If that's the entire population of interest, there's no reason to calculate a confidence interval.
+[^83]: b. No. We know (for sure, with 100% confidence) that exactly 26% of U.S. senators in 2026 self identify as female. If that's the entire population of interest, there's no reason to calculate a confidence interval.
 
 ---
 
