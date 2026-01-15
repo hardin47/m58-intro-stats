@@ -20,17 +20,17 @@ knitr::include_graphics("images/project.png")
 :::{.callout-tip icon=false}
 ## Important dates
 
-* 3/28/23 (Tuesday) Project 1: Pilot
-* 4/4/23 (Tuesday) Project 2: Power
-* 4/18/23 (Tuesday) Project 3: Analysis
-* 5/2/23 (Tuesday) Project 4: Full draft
-* 5/4 or 12/23 (Friday) Project presentation
-* 5/12/23 (Friday) Project 5: Final (edited) Project
+* 3/24/26 (Tuesday) Project 1: Pilot
+* 3/31/26 (Tuesday) Project 2: Power
+* 4/14/26 (Tuesday) Project 3: Analysis
+* 5/5/26 (Tuesday) Project 4: Full draft
+* 5/7 or 14/26 (Thursdays) Project presentation
+* 5/14/26 (Thursday) Project 5: Final (edited) Project
 ::: 
 
 ## Pilot
 
-The <a href = "https://m58-intro-stats.netlify.app/slides/Pilot_m58_s23_Islands.docx" target = "_blank">pilot project</a> will be based on a preliminary data collection.
+The <a href = "https://m58-intro-stats.netlify.app/slides/Pilot_m58_s26_Islands.docx" target = "_blank">pilot project</a> will be based on a preliminary data collection.
 Details about the structure of the data are given in the assignment, note that the response variable must be numerical.
 You will have an opportunity to collect more data as we go, but the better the original data are, the better the follow-up data collection will be.
 The goal of the pilot study assignment is to develop a preliminary research question and to collect some initial data, both in preparation for your group Island project.
@@ -40,28 +40,28 @@ In a real study, we would use a clinically relevant effect size and calculate po
 
 ## Power
 
-The <a href = "https://m58-intro-stats.netlify.app/slides/Power_m58_s23_Islands.docx" target = "_blank">power analysis</a> will use the pilot data to estimate the sample size which will be needed to see the effect of interest.  Most of the code will be written by the professor, but you will need to understand both **why** the power analysis is important and **how** the power analysis is implemented.  The goal of the power analysis assignment is to estimate how many observations are needed for an Islands project to reach significance.
+The <a href = "https://m58-intro-stats.netlify.app/slides/Power_m58_s26_Islands.docx" target = "_blank">power analysis</a> will use the pilot data to estimate the sample size which will be needed to see the effect of interest.  Most of the code will be written by the professor, but you will need to understand both **why** the power analysis is important and **how** the power analysis is implemented.  The goal of the power analysis assignment is to estimate how many observations are needed for an Islands project to reach significance.
 ## Preliminary Analysis
 
-The <a href = "https://m58-intro-stats.netlify.app/slides/PreliminaryAnalysis_m58_s23_Islands.docx" target = "_blank">preliminary analysis</a> will contain numerical and graphical summaries.  Additionally, one regression model should be run. The goal of the preliminary data analysis assignment is to start working with the variables including visualizations, numerical summaries, and modeling.
+The <a href = "https://m58-intro-stats.netlify.app/slides/PreliminaryAnalysis_m58_s26_Islands.docx" target = "_blank">preliminary analysis</a> will contain numerical and graphical summaries.  Additionally, one regression model should be run. The goal of the preliminary data analysis assignment is to start working with the variables including visualizations, numerical summaries, and modeling.
 
 ## Full Draft
 
-The <a href = "https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_Islands.docx" target = "_blank">complete draft</a> of the project will contain a full set of analyses designed to answer the research question (and practice with multiple regression).  The paper will continue to have sections which communicate the study background and methods to the reader.  All plots and tables should be well labelled. The goal of the assignment is to provide a complete analysis of the data collected on the Islands as a research project.
+The <a href = "https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s26_Islands.docx" target = "_blank">complete draft</a> of the project will contain a full set of analyses designed to answer the research question (and practice with multiple regression).  The paper will continue to have sections which communicate the study background and methods to the reader.  All plots and tables should be well labelled. The goal of the assignment is to provide a complete analysis of the data collected on the Islands as a research project.
 
 ## Presentation
 
-The <a href = "https://m58-intro-stats.netlify.app/slides/Presentation_m58_s23_Islands.docx" target = "_blank">presentation</a> will bring together your work and showcase your ideas.  You will have 5 minutes to report on your study, using slides (visualizations from your analyses).  Each group member will be expected to talk.  The goal of this assignment is to synthesize your study and your results into a clear and succinct presentation to your peers.
+The <a href = "https://m58-intro-stats.netlify.app/slides/Presentation_m58_s26_Islands.docx" target = "_blank">presentation</a> will bring together your work and showcase your ideas.  You will have 5 minutes to report on your study, using slides (visualizations from your analyses).  Each group member will be expected to talk.  The goal of this assignment is to synthesize your study and your results into a clear and succinct presentation to your peers.
 
 Your group may choose whether to present during reading days (May 6, 2022) or during the time allocated to our course for the final exam (May 13, 2022).
 
 
 ## Final Project
 
-The <a href = "https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_Islands.docx" target = "_blank">final project</a> will compile all of the project pieces together into a beautiful and clear report. The paper will  have sections which communicate the study background and methods to the reader as well a conclusions of the experiment.  All plots and tables should be well labelled. The goal of the assignment is to provide a complete analysis of the data collected on the Islands as a research project.
+The <a href = "https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s26_Islands.docx" target = "_blank">final project</a> will compile all of the project pieces together into a beautiful and clear report. The paper will  have sections which communicate the study background and methods to the reader as well a conclusions of the experiment.  All plots and tables should be well labelled. The goal of the assignment is to provide a complete analysis of the data collected on the Islands as a research project.
 
 Along with the final project report, each student will fill out an individual reflection piece and a group dynamic report.
 
-A detailed <a href = "https://m58-intro-stats.netlify.app/slides/Rubric_m58_s23_Islands.docx" target = "_blank">grading rubric</a> is provided to assist you in putting the entire project together.
+A detailed <a href = "https://m58-intro-stats.netlify.app/slides/Rubric_m58_s26_Islands.docx" target = "_blank">grading rubric</a> is provided to assist you in putting the entire project together.
 
 
