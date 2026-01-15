@@ -6,8 +6,8 @@ format: html
 # Introduction to Biostatistics
 ## Math 58B, Spring 2026
 
-Class: Mondays & Wednesday, 11am - 12:15pm  
-Lab: Fridays, 11-11:50am  
+Class: Monday & Wednesday, 11am - 12:15pm  
+Lab: Friday, 11-11:50am  
 
 Jo Hardin  
 2351 Estella  
@@ -16,18 +16,15 @@ jo.hardin@pomona.edu
 
 #### Office Hours (Estella 2351)
 
-Monday 1:30-3pm  
-Tuesday 2:30-3:30pm  
-Wednesday 9-11am  
-Thursday 3-4pm   
+TBD
 or by appointment
 
 ##### Mentor Sessions:     
-Mentors:  
+Mentors: Neha Dixit & Maren Rusk
 
-Tuesday 8-10pm  
-Thursday 8-10pm  
-Estella 2131
+Tuesday 6-8pm  
+Thursday 6-8pm  
+Estella 2393
 
 ```{r fig.cap = "Artwork by @allison_horst.", fig.alt = "Baby normal curves who think they came from the same population because they look very similar.  The big parent (population) normal curves are very distinct.", preview = TRUE, echo = FALSE}
 knitr::include_graphics("images/type_2_errors.png")
@@ -91,16 +88,16 @@ I (like many people) am still in the process of learning about diverse perspecti
    - <a href = "https://www.lock5stat.com/StatKey/" target = "_blank">StatKey (boostrapping) applets</a>
 
 :::{.callout-tip icon=false}
-## Important dates
+## Important due dates
 
-* 3/9/23 (Thursday) Exam 1
-* 3/28/23 (Tuesday) Project 1: Pilot
-* 4/4/23 (Tuesday) Project 2: Power
-* 4/18/23 (Tuesday) Project 3: Analysis
-* 4/27/23 (Thursday) Exam 2
-* 5/2/23 (Tuesday) Project 4: Full draft
-* 5/4 or 12/23 (Friday) Project presentation
-* 5/12/23 (Friday) Project 5: Final (edited) Project
+* 6 Quizzes on Wednesdays: 2/11/26, 2/25/26, 3/11/26, 4/8/26, 4/22/26, 5/6/26
+
+* 3/24/26 (Tuesday) Project 1: Pilot
+* 3/31/26 (Tuesday) Project 2: Power
+* 4/14/26 (Tuesday) Project 3: Analysis
+* 5/5/26 (Tuesday) Project 4: Full draft
+* 5/7 or 14/26 (Thursdays) Project presentation
+* 5/14/26 (Thursday) Project 5: Final (edited) Project
 :::
 
 #### R links:
