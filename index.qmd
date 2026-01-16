@@ -141,9 +141,13 @@ schedule <- tribble(
   '<a href = "https://st47s.com/Math58/Notes/06-CorRegInf.html#MLR" target = "_blank"><i class="fas fa-book-open"></i> MLR</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-mlr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 25</a>',
   ' ', ' ',
 
+'Week 15 <br> 5.4.26',' ', ' ',
+  ' ',' ',
+  ' <i class="fa-solid fa-question"></i> Quiz 6 on 5/6/26',
+
 '<font color = "#114B5F"><b>5.5.26</b></font>', '<font color = "#114B5F"><b>Proj 4: Full draft</b></font>',' ', 
   ' ',' ',
-  '<a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s26_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 4: Full draft</a> <br> <i class="fa-solid fa-question"></i> Quiz 6 on 5/6/26',
+  '<a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s26_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 4: Full draft</a>',
 
 '<font color = "#114B5F"><b>5.7 or 14.26</b></font>', '<font color = "#114B5F"><b>Proj Presentation</b></font>'," ", 
   ' ',' ',
