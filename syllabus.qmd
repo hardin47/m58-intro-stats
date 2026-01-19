@@ -23,6 +23,7 @@ Thursday 2:30-4pm
 ##### Mentor Sessions:     
 Mentors: Neha Dixit & Maren Rusk
 
+Sunday  
 Tuesday 8-10pm  
 Thursday 8-10pm  
 Estella 
@@ -150,7 +151,7 @@ Labs will be turned in via Gradescope on Canvas.
 Homework and Lab assignments will be graded out of 5 points, which are based on a combination of accuracy and effort. Below are rough guidelines for grading.
 
 [5] All problems completed with detailed solutions provided and 75% or more of the problems are fully correct. Additionally, there are no extraneous messages, warnings, or printed lists of numbers.  
-[4] All problems completed with detailed solutions and 50-75% correct; OR close to all problems completed and 75%-100% correct. **Or all problems are completed and there are extraneous messages, warnings, or printed lists of numbers.**  
+[4] All problems completed with detailed solutions and 50-75% correct; OR close to all problems completed and 75%-100% correct. Or all problems are completed and there are extraneous messages, warnings, or printed lists of numbers. [<a href = "https://ds002r-fds.netlify.app/superfluous_material.html" target = "_blank">Here is an example</a> of extraneous messages and printed lists of numbers.]   
 [3] Close to all problems completed with less than 75% correct.  
 [2] More than half but fewer than all problems completed and > 75% correct.  
 [1] More than half but fewer than all problems completed and < 75% correct; OR less than half of problems completed.  
@@ -244,13 +245,13 @@ Please email and / or set up a time to talk if you have any questions about or d
 The goals of the course including **learning** core content and becoming skilled at using analysis tools accurately and effectively. While sometimes quite helpful, there are ways that AI can get in the way of the **learning**, for example:
 
 * Learning takes struggle, and LLMs often remove the struggle.
-* AI will often be wrong, maybe because it doesn’t understand the prompt or maybe because it is hallucinating.
+* AI will often be wrong, maybe because it doesn't understand the prompt or maybe because it is hallucinating.
 * Learning takes practice, particularly by building muscles related to creative and independent thinking. LLMs remove the practice.
 
 There are also ways that AI can be **ethically problematic**, for example:
 
 * LLM queries use large amounts of resources.
-* LLMs is based on intellectual property (often illegally) taken from scholars, artists, and journalists.
+* LLMs are based on intellectual property (often illegally) taken from scholars, artists, and journalists.
 * The rise of LLMs impact the number of jobs available to people like you.
 
 I encourage you to reflect on your use of AI in this class and elsewhere. Is your use consistent with the **learning** that brings you to a place like Pomona College? Are you considering the **ethical ramifications** associated with using AI?  See the academic honesty part of the syllabus for generative AI policy.
