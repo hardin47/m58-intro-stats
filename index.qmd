@@ -153,6 +153,12 @@ schedule <- tribble(
   ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/Presentation_m58_s26_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj Presentation</a>',
 
+
+'<font color = "#d35836"><b>seniors</b></font> <br> 5.7.25',  ' ', ' ', ' ', ' ',
+  'everything due for seniors <br> by 5.7.26',
+  
+
+
 '<font color = "#114B5F"><b>5.14.26</b></font>', '<font color = "#114B5F"><b>Proj 5: Final Project</b></font>'," ", 
   ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s26_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 5: Final Project</a>'
@@ -281,6 +287,7 @@ schedule <- tribble(
 '<font color = "#114B5F"><b>5.4 + 12.23</b></font>', '<font color = "#114B5F"><b>Proj Presentation</b></font>'," ", 
   ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/Presentation_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj Presentation</a>',
+
 
 '<font color = "#114B5F"><b>5.12.23</b></font>', '<font color = "#114B5F"><b>Proj 5: Final Project</b></font>'," ", 
   ' ',' ',
