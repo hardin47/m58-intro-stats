@@ -261,7 +261,7 @@ I encourage you to reflect on your use of AI in this class and elsewhere. Is you
 :::{.callout-tip icon=false}
 ## Grading
   * 20% Homework
-  * 50% Midterms 
+  * 50% Quizzes 
   * 25% Group Project & Presentation 
   * 5% Class Participation 
 :::
