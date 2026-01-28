@@ -3,6 +3,11 @@ format:
   revealjs:
     footnotes-hover: true
     reference-location: document
+    embed-resources: true
+    code-line-numbers: true
+    html-math-method: mathjax
+    scrollable: true
+    css: enumerate.css
 ---
 
 ```{=html}
