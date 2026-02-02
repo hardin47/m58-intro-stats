@@ -380,8 +380,8 @@ p-value = probability of the observed data or more extreme given the null hypoth
 
 34. People check-in
     (a) So far, so good
-    (b) I can go to office hours / mentor sessions / learning community check-ins, but I didn't go this week.
-    (c) I can't make the scheduled office hours / mentor sessions / learning community check-ins
+    (b) I can go to office hours / mentor sessions, but I didn't go this week.
+    (c) I can't make the scheduled office hours / mentor sessions
     (d) I'm looking for someone to study with
     
 ---
