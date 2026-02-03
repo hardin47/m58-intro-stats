@@ -364,7 +364,7 @@ p-value = probability of the observed data or more extreme given the null hypoth
 32. If we consider those in the study with back pain to be representative of all people with back pain, what would you conclude about the percentage of people who will have reduced back pain if they use Botox?[^32]
     (a) Substantially greater than 50%
     (b) Substantially less than 50%
-    (c) Very close to 50%
+    (c) Close to 50%
 
 [^32]: c. Close to 50%  (the point estimate is 0.6)
 
