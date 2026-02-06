@@ -58,8 +58,7 @@ licorice_study <- readr::read_csv("http://pages.pomona.edu/~jsh04747/courses/mat
   select(gargle, cough) |> 
   drop_na()
 
-licorice_study |>
-  table(useNA = "ifany")
+licorice_study
 ```
 
 
@@ -77,8 +76,6 @@ licorice_study |>
 ```{r}
 # to control the randomness
 set.seed(47)
-
-licorice_study |> head()
 
 licorice_study |> table()
 ```
@@ -246,7 +243,7 @@ Calculate 1000 null test statistics from 1000 different permutations of the data
 
 #### Q5. Visualize
 
-Using the results from Q5, make a histogram to visualize the observed test statistic.  Include the observed statistic, and shade the area of the histogram which is "more extreme" from the observed statistic.  (Remember that the hypothesis claim here is that the treatments are different.)
+Using the results from Q5, make a histogram to visualize the observed test statistic.  Include the observed statistic, and convince yourself which area of the histogram which is "more extreme" from the observed statistic.  (Remember that the hypothesis claim here is that the treatments are different.)
 
 
 
