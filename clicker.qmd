@@ -496,7 +496,7 @@ See Canvas front page for **anonymous** survey / feedback for the class.  Also, 
 
 ---
 
-(@) Let's say you take a random sample and compute $\hat{p}=0.3.$  After bootstrapping, you see that the bootstrapped resamples produce almost all the $\hat{p}_{boot}$ within plus or minus 0.01 of your original statistic. It seems that the parameter $p$ is probably:[^46]
+(@) First study: Let's say you take a random sample and compute $\hat{p}=0.3.$  After bootstrapping, you see that the bootstrapped resamples produce almost all the $\hat{p}_{boot}$ within plus or minus 0.01 of your original statistic. It seems that the parameter $p$ is probably:[^46]
 	   a. 0.3
 	   b. between (0.2, 0.4)
 	   c. between (0.29, 0.31)
@@ -513,11 +513,11 @@ See Canvas front page for **anonymous** survey / feedback for the class.  Also, 
     (c) neither
     (d) both
 
-[^47]: d. both.  the intervals will be less likely (long-run) to capture the parameter *and* they will be narrower.
+[^47]: d. both. The intervals will be less likely (long-run) to capture the parameter *and* they will be narrower.
 
 ---
 
-(@) In a second study, I set out to obtain twice as much data (as in the first study) in order to create a 95% CI for the true proportion $p.$ What is the impact (of the larger sample) on the CI?[^48]
+(@) In a third study, I set out to obtain twice as much data (as in the first study) in order to create a 95% CI for the true proportion $p.$ What is the impact (of the larger sample) on the CI?[^48]
     (a) narrower
     (b) more likely (long-run) to capture the parameter
     (c) neither
