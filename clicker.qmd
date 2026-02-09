@@ -15,7 +15,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-1. If 16 infants with **no genuine preference** choose 16 toys, what is the most likely number of "helping" toys that will be chosen?[^1]
+(@) If 16 infants with **no genuine preference** choose 16 toys, what is the most likely number of "helping" toys that will be chosen?[^1]
    (a)	4
    (b)	7
    (c)	8
@@ -27,7 +27,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-2. How likely is it that exactly 8 helpers will be chosen (if there is no preference)?[^2]
+(@) How likely is it that exactly 8 helpers will be chosen (if there is no preference)?[^2]
    (a)	0-15% 
    (b)	16-30% 
    (c)	31-49%
@@ -39,7 +39,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-3. What if we flipped a coin 160 times?  What percent of the time will the simulation flip exactly 80 heads?[^3]
+(@) What if we flipped a coin 160 times?  What percent of the time will the simulation flip exactly 80 heads?[^3]
    (a)	0-15% 
    (b)	16-30% 
    (c)	31-49%
@@ -50,7 +50,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-4. Is our actual result of 14 (under the coin model)...[^4]
+(@) Is our actual result of 14 (under the coin model)...[^4]
    (a) very surprising?
    (b) somewhat surprising?
    (c) not very surprising?
@@ -59,7 +59,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-5.	Based on the first handwriting study, can we conclude that cursive causes higher scores (on average)?[^5]
+(@) Based on the first handwriting study, can we conclude that cursive causes higher scores (on average)?[^5]
     (a)	Yes
     (b)	No
     (c)	It depends
@@ -68,7 +68,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-6.	Based on the second handwriting study, can we conclude that cursive causes higher scores (on average)?[^6]
+(@) Based on the second handwriting study, can we conclude that cursive causes higher scores (on average)?[^6]
     (a)	Yes
     (b)	No
     (c)	It depends
@@ -77,7 +77,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-7. A possible confounding variable for the handwriting study is:[^7]
+(@) A possible confounding variable for the handwriting study is:[^7]
    (a) grade of the student (age)
    (b) region of country where the SAT was taken
    (c) academic ability of the student
@@ -88,7 +88,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-8. The main reason we randomly assign the explanatory variable is:[^8]
+(@) The main reason we randomly assign the explanatory variable is:[^8]
    (a) To get the smallest p-value possible
    (b) To balance the expected causal mechanism across the two groups
    (c) To balance every possible variable except the causal mechanism across the two groups
@@ -99,7 +99,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-9. The main reason we take random samples from the population is:[^9]
+(@) The main reason we take random samples from the population is:[^9]
    (a) To get the smallest p-value possible
    (b) To balance the expected causal mechanism across the two groups
    (c) To balance every possible variable except the expected causal mechanism across the two groups
@@ -110,7 +110,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-10. Are there effects of second-hand smoke on the health of children?[^10]
+(@) Are there effects of second-hand smoke on the health of children?[^10]
     (a) definitely obs study
     (b) definitely experiment
     (c) unhappily obs study
@@ -120,7 +120,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-11. Do people tend to spend more money in stores located next to food outlets with pleasing smells?[^11]
+(@) Do people tend to spend more money in stores located next to food outlets with pleasing smells?[^11]
     (a) definitely obs study
     (b) definitely experiment
     (c) unhappily obs study
@@ -129,7 +129,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 [^11]: a. definitely obs study (do we care about causation?  maybe.  maybe not.)
 ---
 
-12. Does cell phone use increase the rate of automobile accidents?[^12]
+(@) Does cell phone use increase the rate of automobile accidents?[^12]
     (a) definitely obs study
     (b) definitely experiment
     (c) unhappily obs study
@@ -139,7 +139,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-13. Do people consume different amounts of ice cream depending on the size of bowl used?[^13]
+(@) Do people consume different amounts of ice cream depending on the size of bowl used?[^13]
     (a) definitely obs study
     (b) definitely experiment
     (c) unhappily obs study
@@ -149,7 +149,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-14.	Which is more effective: diet A or diet B?[^14]
+(@) Which is more effective: diet A or diet B?[^14]
     (a) definitely obs study
     (b) definitely experiment
     (c) unhappily obs study
@@ -159,7 +159,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-15. Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored ten points higher on the final than on the midterm:[^15]
+(@) Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored ten points higher on the final than on the midterm:[^15]
     (a) r = -1
     (b) -1 < r < 0
     (c) r = 0
@@ -170,7 +170,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-16. Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored five points lower on the final than on the midterm:[^16]
+(@) Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored five points lower on the final than on the midterm:[^16]
     (a) r = -1
     (b) -1 < r < 0
     (c) r = 0
@@ -181,7 +181,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-17. Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored twice as many points on the final than on the midterm:[^17]
+(@) Suppose that we record the midterm exam score and the final exam score for every student in a class.  What would the value of the correlation coefficient be if every student in the class scored twice as many points on the final than on the midterm:[^17]
     (a) r = -1
     (b) -1 < r < 0
     (c) r = 0
@@ -192,7 +192,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-18. Suppose you guessed every value correctly (guess the correlation applet), what would be the value of the correlation coefficient between your guesses and the actual correlations?[^18]
+(@) Suppose you guessed every value correctly (guess the correlation applet), what would be the value of the correlation coefficient between your guesses and the actual correlations?[^18]
     (a) r = -1
     (b) -1 < r < 0
     (c) r = 0
@@ -203,7 +203,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-19. Suppose each of your guesses was too high by 0.2 from the actual value of the correlation coefficient, what would be the value of the correlation coefficient between your guesses and the actual correlations?[^19]
+(@) Suppose each of your guesses was too high by 0.2 from the actual value of the correlation coefficient, what would be the value of the correlation coefficient between your guesses and the actual correlations?[^19]
     (a) r = -1
     (b) -1 < r < 0
     (c) r = 0
@@ -214,7 +214,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-20. A correlation coefficient equal to 1 indicates that you are a good guesser.[^20]
+(@) A correlation coefficient equal to 1 indicates that you are a good guesser.[^20]
     (a) TRUE
     (b) FALSE
 
@@ -222,7 +222,7 @@ to go with **Introduction to Modern Statistics** by Çentinkaya-Rundel & Hardin.
 
 ---
 
-21. Perfect Correlation... if not for a single outlier  
+(@) Perfect Correlation... if not for a single outlier  
 n = 101 observations:  1 observation in top left, 25 observations in each in of the points near the bottom right.    
 The value of the correlation, r, is:[^21]
     (a)	-1   < r < -0.9
@@ -233,6 +233,7 @@ The value of the correlation, r, is:[^21]
 
 
 [^21]: c. r = -0.416    
+
 ---
 
 ```{r}
@@ -254,7 +255,7 @@ ggplot(data.frame(x_value, y_value)) +
 
 ---
 
-22. The sum of residuals from the sample mean (no X):[^22] 
+(@) The sum of residuals from the sample mean (no X):[^22] 
 $$\sum_{i=1}^n(Y_i - \overline{Y})$$
     (a) is positive
     (b) is negative
@@ -265,7 +266,7 @@ $$\sum_{i=1}^n(Y_i - \overline{Y})$$
 
 ---
 
-23. A good measure of how well the prediction (of the sample mean) fits the data is:[^23]
+(@) A good measure of how well the prediction (of the sample mean) fits the data is:[^23]
     (a) $\sum_{i=1}^n(Y_i - \overline{Y})$
     (b) $\sum_{i=1}^n(Y_i - \overline{Y})^2$
     (c) $\sum_{i=1}^n|Y_i - \overline{Y}|$
@@ -277,7 +278,7 @@ $$\sum_{i=1}^n(Y_i - \overline{Y})$$
 ---
 
 
-24. A good measure of how well the prediction (of the regression line) fits the data is:[^24]
+(@) A good measure of how well the prediction (of the regression line) fits the data is:[^24]
     (a) $\sum_{i=1}^n(Y_i - \hat{Y}_i)$
     (b) $\sum_{i=1}^n(Y_i - \hat{Y}_i)^2$
     (c) $\sum_{i=1}^n|Y_i - \hat{Y}_i|$
@@ -288,7 +289,7 @@ $$\sum_{i=1}^n(Y_i - \overline{Y})$$
 
 ---
 
-25. What math is used to find the value of $m$ that minimizes:[^25]
+(@) What math is used to find the value of $m$ that minimizes:[^25]
 $$\sum_{i=1}^n(Y_i - m)^2$$
     (a) combinatorics
     (b) derivative
@@ -299,7 +300,7 @@ $$\sum_{i=1}^n(Y_i - m)^2$$
 
 ---
 
-26. $\sum_i(Y_i - \overline{Y})^2$ is sometimes $\geq \sum_i(Y_i - \hat{Y}_i)^2$[^26]
+(@) $\sum_i(Y_i - \overline{Y})^2$ is sometimes $\geq \sum_i(Y_i - \hat{Y}_i)^2$[^26]
     a. TRUE
     b. FALSE, $\sum_i(Y_i - \overline{Y})^2$ is always $\geq \sum_i(Y_i - \hat{Y}_i)^2$
     c. FALSE, $\sum_i(Y_i - \overline{Y})^2$ is never $\geq \sum_i(Y_i - \hat{Y}_i)^2$
@@ -308,7 +309,7 @@ $$\sum_{i=1}^n(Y_i - m)^2$$
 
 ---
 
-27. When writing the regression equation, why is there a hat ( ^) on the response variable?[^27]
+(@) When writing the regression equation, why is there a hat ( ^) on the response variable?[^27]
     (a) because the prediction is an estimate
     (b) because the prediction is an average
     (c) because the prediction may be due to extrapolation
@@ -319,7 +320,7 @@ $$\sum_{i=1}^n(Y_i - m)^2$$
 
 ---
 
-28. "Observed data or more extreme" is:[^28]
+(@) "Observed data or more extreme" is:[^28]
     (a) fewer than 9
     (b) 9 or fewer
     (c) 9 or more
@@ -329,7 +330,7 @@ $$\sum_{i=1}^n(Y_i - m)^2$$
 
 ---
 
-29. What is the mean value of the null sampling distribution for the number of Botox therapy who showed pain reduction?[^29]
+(@) What is the mean value of the null sampling distribution for the number of Botox therapy who showed pain reduction?[^29]
     (a) 0
     (b) 9
     (c) 5.3
@@ -340,7 +341,7 @@ $$\sum_{i=1}^n(Y_i - m)^2$$
 
 ---
 
-30. In the Botox and Pain Relief example, the p-value is calculated.  What does "probability" refer to?[^30]
+(@) In the Botox and Pain Relief example, the p-value is calculated.  What does "probability" refer to?[^30]
     (a) random allocation
     (b) random sample
 
@@ -352,7 +353,7 @@ p-value = probability of the observed data or more extreme given the null hypoth
 
 ---
 
-31. What conclusion would you draw from the Back Pain and Botox study?[^31]
+(@) What conclusion would you draw from the Back Pain and Botox study?[^31]
     (a) Not enough evidence to conclude that Botox is more effective than the placebo.
     (b) Strong evidence that Botox is equally as effective as the placebo.
     (c) Strong evidence that Botox is more effective than the placebo.
@@ -361,7 +362,7 @@ p-value = probability of the observed data or more extreme given the null hypoth
 
 ---
 
-32. If we consider those in the study with back pain to be representative of all people with back pain, what would you conclude about the percentage of people who will have reduced back pain if they use Botox?[^32]
+(@) If we consider those in the study with back pain to be representative of all people with back pain, what would you conclude about the percentage of people who will have reduced back pain if they use Botox?[^32]
     (a) Substantially greater than 50%
     (b) Substantially less than 50%
     (c) Close to 50%
@@ -370,7 +371,78 @@ p-value = probability of the observed data or more extreme given the null hypoth
 
 ---
 
-33. Material check-in
+
+(@) If communication medium and cheating are independent variables, how many of the email senders (out of 26) would you expect to cheat?[^35]
+    (a)	10 (ish)
+    (b)	13 (ish)
+    (c)	16 (ish)
+    (d)	20 (ish)
+    (e)	24 (ish)
+
+[^35]: d. 20 (ish), 26*(38/48) = 20.58
+
+---
+
+(@) When looking at the null differences, is the observed result of 28.7%:[^36]
+    (a)	Very surprising
+    (b)	Somewhat surprising
+    (c)	Not very surprising
+
+[^36]: b. Somewhat surprising, p-value was 0.04
+
+---
+
+(@) Hypothesis: the number of hours that grade-school children spend doing homework predicts their future success on standardized tests.[^37]
+    (a) null, one sided
+    (b) null, two sided
+    (c) alternative, one sided
+    (d) alternative, two sided
+
+[^37]: c. alternative, one sided (because probably we are studying that it **increases** their success rate)
+
+---
+
+(@) Hypothesis: king cheetahs on average run the same speed as standard spotted cheetahs.[^38]
+    (a) null, one sided
+    (b) null, two sided
+    (c) alternative, one sided
+    (d) alternative, two sided
+
+[^38]: a. null, two sided (because I have no idea which cheetah might run faster)
+
+---
+
+(@) Hypothesis: the mean length of African elephant tusks has changed over the last 100 years.[^39]
+    (a) null, one sided
+    (b) null, two sided
+    (c) alternative, one sided
+    (d) alternative, two sided
+
+[^39]: d. alternative, two sided (because I have no idea whether they've increased or decreased)
+
+---
+
+(@) Hypothesis: the risk of facial clefts is equal for babies born to mothers who take folic acid supplements compared with those from mothers who do not.[^40]
+    (a) null, one sided
+    (b) null, two sided
+    (c) alternative, one sided
+    (d) alternative, two sided
+
+[^40]: a. null, one sided (because I happen to know that folic acid is thought to prevent facial clefts)
+
+---
+
+(@) Hypothesis: caffeine intake during pregnancy affects mean birth weight.[^41]
+    (a) null, one sided
+    (b) null, two sided
+    (c) alternative, one sided
+    (d) alternative, two sided
+
+[^41]: c. alternative, one sided (because I happen to know that caffeine is thought to decrease baby's birth weight)
+
+---
+
+(@) Material check-in
     (a) So far, so good
     (b) Concepts are good, R is confusing
     (c) R is good, concepts are confusing
@@ -378,7 +450,7 @@ p-value = probability of the observed data or more extreme given the null hypoth
     
 ---
 
-34. People check-in
+(@) People check-in
     (a) So far, so good
     (b) I can go to office hours / mentor sessions, but I didn't go this week.
     (c) I can't make the scheduled office hours / mentor sessions
@@ -390,77 +462,31 @@ See Canvas front page for **anonymous** survey / feedback for the class.  Also, 
 
 ---
 
-35. If communication medium and cheating are independent variables, how many of the email senders (out of 26) would you expect to cheat?[^35]
-    (a)	10 (ish)
-    (b)	13 (ish)
-    (c)	16 (ish)
-    (d)	20 (ish)
-    (e)	24 (ish)
+(@) I know where to find: the solutions to the worksheets, the clicker questions (with solutions), and the HW/Lab solutions[^43]
+     (a) TRUE
+     (b) FALSE
+     
+[^43]: The worksheet solutions and clicker questions are on the main course website.  The HW & Lab solutions are on Canvas under Files.
+    
+---
 
-[^35]: d. 20 (ish), 26*(38/48) = 20.58
+(@) You have a sample of size n = 50.  You sample with replacement 1000 times (to get 1000 bootstrap resamples). What is the sample size of each bootstrap resample?[^44]
+    (a) 50
+    (b) 1000
+
+[^44]: a. 50
 
 ---
 
-36. When looking at the null differences, is the observed result of 28.7%:[^36]
-    (a)	Very surprising
-    (b)	Somewhat surprising
-    (c)	Not very surprising
+(@) You have a sample of size n = 50.  You sample with replacement 1000 times (to get 1000 bootstrap resamples). How many bootstrap statistics will you have?[^45] 
+     (a) 50
+     (b) 1000
 
-[^36]: b. Somewhat surprising, p-value was 0.04
-
----
-
-37. Hypothesis: the number of hours that grade-school children spend doing homework predicts their future success on standardized tests.[^37]
-    (a) null, one sided
-    (b) null, two sided
-    (c) alternative, one sided
-    (d) alternative, two sided
-
-[^37]: c. alternative, one sided (because probably we are studying that it **increases** their success rate)
+[^45]: b. 1000
 
 ---
 
-38. Hypothesis: king cheetahs on average run the same speed as standard spotted cheetahs.[^38]
-    (a) null, one sided
-    (b) null, two sided
-    (c) alternative, one sided
-    (d) alternative, two sided
-
-[^38]: a. null, two sided (because I have no idea which cheetah might run faster)
-
----
-
-39. Hypothesis: the mean length of African elephant tusks has changed over the last 100 years.[^39]
-    (a) null, one sided
-    (b) null, two sided
-    (c) alternative, one sided
-    (d) alternative, two sided
-
-[^39]: d. alternative, two sided (because I have no idea whether they've increased or decreased)
-
----
-
-40. Hypothesis: the risk of facial clefts is equal for babies born to mothers who take folic acid supplements compared with those from mothers who do not.[^40]
-    (a) null, one sided
-    (b) null, two sided
-    (c) alternative, one sided
-    (d) alternative, two sided
-
-[^40]: a. null, one sided (because I happen to know that folic acid is thought to prevent facial clefts)
-
----
-
-41. Hypothesis: caffeine intake during pregnancy affects mean birth weight.[^41]
-    (a) null, one sided
-    (b) null, two sided
-    (c) alternative, one sided
-    (d) alternative, two sided
-
-[^41]: c. alternative, one sided (because I happen to know that caffeine is thought to decrease baby's birth weight)
-
----
-
-42. In this class, the word parameter means:[^42]
+(@) In this class, the word parameter means:[^42]
     (a) The values in a model
     (b) Numbers that need to be tuned
     (c) A number which is calculated from a sample of data.
@@ -470,30 +496,7 @@ See Canvas front page for **anonymous** survey / feedback for the class.  Also, 
 
 ---
 
-43. I know where to find: the solutions to the worksheets, the clicker questions (with solutions), and the HW/Lab solutions[^43]
-     (a) TRUE
-     (b) FALSE
-     
-[^43]: The worksheet solutions and clicker questions are on the main course website.  The HW & Lab solutions are on Canvas under Files.
-    
----
-
-44. You have a sample of size n = 50.  You sample with replacement 1000 times (to get 1000 bootstrap resamples). What is the sample size of each bootstrap resample?[^44]
-    (a) 50
-    (b) 1000
-
-[^44]: a. 50
-
----
-
-45. You have a sample of size n = 50.  You sample with replacement 1000 times (to get 1000 bootstrap resamples). How many bootstrap statistics will you have?[^45] 
-     (a) 50
-     (b) 1000
-
-[^45]: b. 1000
----
-
-46. Let's say you take a random sample and compute $\hat{p}=0.3.$  After bootstrapping, you see that the bootstrapped resamples produce almost all the $\hat{p}_{boot}$ within plus or minus 0.01 of your original statistic. It seems that the parameter $p$ is probably:[^46]
+(@) Let's say you take a random sample and compute $\hat{p}=0.3.$  After bootstrapping, you see that the bootstrapped resamples produce almost all the $\hat{p}_{boot}$ within plus or minus 0.01 of your original statistic. It seems that the parameter $p$ is probably:[^46]
 	   a. 0.3
 	   b. between (0.2, 0.4)
 	   c. between (0.29, 0.31)
@@ -504,7 +507,7 @@ See Canvas front page for **anonymous** survey / feedback for the class.  Also, 
 
 ---
 
-47. In a second analysis, I create a 90% CI for the true proportion $p.$ What is the impact (of switching from 95% to 90%) on the CI?[^47]
+(@) In a second analysis, I create a 90% CI for the true proportion $p.$ What is the impact (of switching from 95% to 90%) on the CI?[^47]
     (a) narrower
     (b) less likely (long-run) to capture the parameter
     (c) neither
@@ -514,7 +517,7 @@ See Canvas front page for **anonymous** survey / feedback for the class.  Also, 
 
 ---
 
-48. In a second study, I set out to obtain twice as much data (as in the first study) in order to create a 95% CI for the true proportion $p.$ What is the impact (of the larger sample) on the CI?[^48]
+(@) In a second study, I set out to obtain twice as much data (as in the first study) in order to create a 95% CI for the true proportion $p.$ What is the impact (of the larger sample) on the CI?[^48]
     (a) narrower
     (b) more likely (long-run) to capture the parameter
     (c) neither
@@ -524,7 +527,7 @@ See Canvas front page for **anonymous** survey / feedback for the class.  Also, 
 
 ---
 
-49. What is one main reason to use bootstrapping to find a confidence interval?[^49]
+(@) What is one main reason to use bootstrapping to find a confidence interval?[^49]
     (a) larger coverage probabilities
     (b) narrower intervals
     (c) more resistant to outliers
@@ -534,7 +537,7 @@ See Canvas front page for **anonymous** survey / feedback for the class.  Also, 
 
 ---
  
-50. 95% CI for the true median mercury:[^50]
+(@) 95% CI for the true median mercury:[^50]
     (a) (0.025 mg/kg, 0.975 mg/kg)
     (b) (0.469 mg/kg, 0.053 mg/kg)
     (c) (0.053 mg/kg, 0.469 mg/kg)
@@ -550,7 +553,7 @@ knitr::include_graphics("images/merc_boot.jpg")
 
 ---
 
-51. What are the observational units for your individual candy study?[^51]
+(@) What are the observational units for your individual candy study?[^51]
      a. Color of the candy
      b. Piece of candy
      c. Cup of candy
@@ -561,7 +564,7 @@ knitr::include_graphics("images/merc_boot.jpg")
 
 ---
 
-52. What are the observational units for the class compilation (dotplot)?[^52]
+(@) What are the observational units for the class compilation (dotplot)?[^52]
      a. Color of the candy
      b. Piece of candy
      c. Cup of candy
@@ -572,7 +575,7 @@ knitr::include_graphics("images/merc_boot.jpg")
 
 ---
 
-53. How does the sampling distribution for the sample proportion change as n changes (for a fixed p)?[^53]
+(@) How does the sampling distribution for the sample proportion change as n changes (for a fixed p)?[^53]
      a. The spread changes
      b. The symmetry changes
      c. The center changes
@@ -582,7 +585,7 @@ knitr::include_graphics("images/merc_boot.jpg")
 
 ---
 
-54. How does the sampling distribution change as p changes (for a fixed n)?[^54]
+(@) How does the sampling distribution change as p changes (for a fixed n)?[^54]
      a. The spread changes
      b. The symmetry changes
      c. The center changes
@@ -592,7 +595,7 @@ knitr::include_graphics("images/merc_boot.jpg")
 
 ---
 
-55. The Central Limit Theorem says that the distribution of $\hat{p}$ will be approximately normal with what center:[^55]
+(@) The Central Limit Theorem says that the distribution of $\hat{p}$ will be approximately normal with what center:[^55]
     (a) $\hat{p}$
     (b) $p$
     (c) 0.5
@@ -603,7 +606,7 @@ knitr::include_graphics("images/merc_boot.jpg")
 
 ---
 
-56. Would you rather have an extra 20 points on the SAT or an extra 10 points on the ACT?[^56]
+(@) Would you rather have an extra 20 points on the SAT or an extra 10 points on the ACT?[^56]
      a. +20 on the SAT
      b. +10 on the ACT
 
@@ -611,7 +614,7 @@ knitr::include_graphics("images/merc_boot.jpg")
 
 ---
 
-57. The standardized score (z-score) counts:[^57]
+(@) The standardized score (z-score) counts:[^57]
     (a) the number of standard deviations from the mean
     (b) the number of standard deviations above the mean
     (c) the number of standard deviations below the mean
@@ -622,7 +625,7 @@ knitr::include_graphics("images/merc_boot.jpg")
 
 ---
 
-58. If the normal distribution is a good model, we would expect the large majority of our z scores to be:[^58]
+(@) If the normal distribution is a good model, we would expect the large majority of our z scores to be:[^58]
     (a) within $\pm$ 1 of the mean
     (b) within $\pm$ 2 of the mean
     (c) within $\pm$ 1 
@@ -632,7 +635,7 @@ knitr::include_graphics("images/merc_boot.jpg")
 
 ---
 
-59. With your cup of candy, you personally got a Z score of:[^59]
+(@) With your cup of candy, you personally got a Z score of:[^59]
     (a) between (-1, 1) (not including 1)
     (b) between (-2, -1] or [1, 2)
     (c) between (-3, -2] or [2, 3)
@@ -642,7 +645,7 @@ knitr::include_graphics("images/merc_boot.jpg")
 
 ---
 
-60. Assume n = 100 and p= 0.8  (note: $\sqrt{(0.8 \cdot 0.2)/100} = 0.4/10 = 0.04$)  
+(@) Assume n = 100 and p= 0.8  (note: $\sqrt{(0.8 \cdot 0.2)/100} = 0.4/10 = 0.04$)  
 What is the largest reasonable distance between $\hat{p}$ and $p$?  
 That is, we would expect $\hat{p}$ and $p$ to be no more than _____ apart[^60]
     (a) 0.04
@@ -655,8 +658,7 @@ That is, we would expect $\hat{p}$ and $p$ to be no more than _____ apart[^60]
 
 ---
 
-
-61. Assume n = 100 and p= 0.8  (note: $\sqrt{(0.8 \cdot 0.2)/100} = 0.4/10 = 0.04$) Which statement is true?[^61]
+(@) Assume n = 100 and p= 0.8  (note: $\sqrt{(0.8 \cdot 0.2)/100} = 0.4/10 = 0.04$) Which statement is true?[^61]
     (a) 95% of $\hat{p}$ are between (0.76, 0.84)
     (b) 95% of $\hat{p}$ are between (0.72, 0.88)
     (c) 95% of $\hat{p}$ are between (0.68, 0.92)
@@ -667,7 +669,7 @@ That is, we would expect $\hat{p}$ and $p$ to be no more than _____ apart[^60]
 
 ---
 
-62.  If you want a 90% confidence interval for p, your z* multiplier should be[^62]
+(@) If you want a 90% confidence interval for p, your z* multiplier should be[^62]
      (a) less than 1
      (b) less than 2 (but greater than 1)
      (c) equal to 2
@@ -678,7 +680,7 @@ That is, we would expect $\hat{p}$ and $p$ to be no more than _____ apart[^60]
 
 ---
 
-63. What is the difference between Z* and a Z score?[^63]
+(@) What is the difference between Z* and a Z score?[^63]
      a. Z score comes from the data, Z* and is a pre-defined unit of measurement.
      b. Z* comes from the data, and Z score is a pre-defined unit of measurement
      c. Z score assumes the null hypothesis is true and Z* doesn't.
@@ -688,7 +690,7 @@ That is, we would expect $\hat{p}$ and $p$ to be no more than _____ apart[^60]
 
 ---
 
-64. Let's say we are making confidence intervals (not doing a hypothesis test), what is your best guess for $SE(\hat{p})$?[^64]
+(@) Let's say we are making confidence intervals (not doing a hypothesis test), what is your best guess for $SE(\hat{p})$?[^64]
     (a) $\sqrt{0.5 \cdot (1 - 0.5) / n}$
     (b) $\sqrt{p \cdot (1 - p) / n}$
     (c) $\sqrt{\hat{p} \cdot (1 - \hat{p}) / n}$
@@ -699,7 +701,7 @@ That is, we would expect $\hat{p}$ and $p$ to be no more than _____ apart[^60]
 
 ---
 
-65. The following is a correct interpretation of the CI:[^65]  
+(@) The following is a correct interpretation of the CI:[^65]  
 
 > 95% confident that the interval includes the sample proportion who believe that the global poverty rate has doubled. 
 
@@ -710,7 +712,7 @@ That is, we would expect $\hat{p}$ and $p$ to be no more than _____ apart[^60]
 
 ---
 
-66.  The following is a correct interpretation of the CI:[^66]  
+(@) The following is a correct interpretation of the CI:[^66]  
 
 > If researchers were to select a new sample of 1005 adult Americans, then we're 95% confident that between 56% and 62% of those people would answer "doubled" to the question. 
 
@@ -721,7 +723,7 @@ That is, we would expect $\hat{p}$ and $p$ to be no more than _____ apart[^60]
 
 ---
 
-67.  Let's say that the null hypothesis (e.g., p=0.47) is TRUE.   My level of significance is 0.03 (reject if p-value < 0.03). How often will I reject the null hypothesis?[^67]
+(@) Let's say that the null hypothesis (e.g., p=0.47) is TRUE.   My level of discernibility is 0.03 (reject if p-value < 0.03). How often will I reject the null hypothesis?[^67]
      (a) 1 % of the time
      (b) 3% of the time
      (c) 5 % of the time
@@ -738,7 +740,7 @@ It means in repeated samples.  That is, in 3% of all datasets we'd take from tha
 
 ---
 
-68. Let's say that the null hypothesis (e.g., p=0.47) is TRUE.   My level of significance is 0.03.  
+(@) Let's say that the null hypothesis (e.g., p=0.47) is TRUE.   My level of discernibility is 0.03.  
 How often will p be in a 97% confidence interval?[^68]
     (a) 1 % of the time
     (b) 3% of the time
@@ -756,7 +758,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-69.  Suppose the sample is 10 times larger.  The SE of the statistic:[^69]
+(@) Suppose the sample is 10 times larger.  The SE of the statistic:[^69]
      a. increases
      b. stays the same
      c. decrease
@@ -765,7 +767,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-70.  Suppose the population is 10 times larger.  The SE of the statistic:[^70]
+(@) Suppose the population is 10 times larger.  The SE of the statistic:[^70]
      a. increases
      b. stays the same
      c. decrease
@@ -774,7 +776,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-71. Suppose the sample is 10 times larger.  The variability of the data:[^71]
+(@) Suppose the sample is 10 times larger.  The variability of the data:[^71]
      a. increases
      b. stays the same
      c. decrease
@@ -784,7 +786,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-72. How many hits out of 20 at bats would make you believe him?[^72]
+(@) How many hits out of 20 at bats would make you believe him?[^72]
     (a)	5
     (b)	6
     (c)	7
@@ -795,7 +797,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-73. Type I error is[^73]
+(@) Type I error is[^73]
     (a)	We give him a raise when he deserves it.
     (b)	We don't give him a raise when he deserves it.
     (c)	We give him a raise when he doesn't deserve it.
@@ -805,7 +807,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-74. Type II error is[^74]
+(@) Type II error is[^74]
     (a)	We give him a raise when he deserves it.
     (b)	We don't give him a raise when he deserves it.
     (c)	We give him a raise when he doesn't deserve it.
@@ -815,7 +817,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-75. Power is the probability that:[^75]
+(@) Power is the probability that:[^75]
     (a)	We give him a raise when he deserves it.
     (b)	We don't give him a raise when he deserves it.
     (c)	We give him a raise when he doesn't deserve it.
@@ -825,7 +827,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-76. The player is more worried about[^76]
+(@) The player is more worried about[^76]
     (a)	A type I error
     (b)	A type II error
 
@@ -833,7 +835,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-77. The manager is more worried about[^77]
+(@) The manager is more worried about[^77]
     (a)	A type I error
     (b)	A type II error
 
@@ -841,7 +843,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-78. Increasing your sample size[^78]
+(@) Increasing your sample size[^78]
     (a)	Increases your power
     (b)	Decreases your power
 
@@ -849,7 +851,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-79. Making your significance level more stringent ($\alpha$ smaller)[^79]
+(@) Making your discernibility level more stringent ($\alpha$ smaller)[^79]
     (a)	Increases your power
     (b)	Decreases your power
 
@@ -857,7 +859,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-80. A more extreme alternative[^80]:
+(@) A more extreme alternative[^80]:
     (a)	Increases your power
     (b)	Decreases your power
 
@@ -865,7 +867,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-81. Is the Alien's interval for the true proportion of all humans who self-identify as female consistent with your lived experience?[^81]
+(@) Is the Alien's interval for the true proportion of all humans who self-identify as female consistent with your lived experience?[^81]
     (a) Yes
     (b) No
     (c) I don't understand what the confidence interval represents.
@@ -874,7 +876,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-82. As we've seen with the applet, about 5% of all 95% intervals fail to capture the actual value of the population parameter.  Do you think the alien just got a "red" interval?[^82]
+(@) As we've seen with the applet, about 5% of all 95% intervals fail to capture the actual value of the population parameter.  Do you think the alien just got a "red" interval?[^82]
     (a)	Yes
     (b)	No
 
@@ -882,7 +884,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-83.	 Would it be reasonable for the alien to conclude, with 95% confidence, that between 17.4% and 34.6% of US Senators in the year 2026 self-identify as female?[^83]
+(@) Would it be reasonable for the alien to conclude, with 95% confidence, that between 17.4% and 34.6% of US Senators in the year 2026 self-identify as female?[^83]
      (a)	Yes
      (b)	No
 
@@ -890,7 +892,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-84. The "random" part in clinical trials typically comes from:[^84]
+(@) The "random" part in clinical trials typically comes from:[^84]
     (a) random samples
     (b) random allocation of treatment
 
@@ -898,7 +900,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-85. The "random" part in polling typically comes from:[^85]
+(@) The "random" part in polling typically comes from:[^85]
     (a) random samples
     (b) random allocation of treatment
 
@@ -906,7 +908,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-86. You want to collect data to investigate whether teenagers in the United States have read fewer Harry Potter books than teenagers in the United Kingdom.  Would you make use of random sampling, random assignment, both, or neither?[^86]
+(@) You want to collect data to investigate whether teenagers in the United States have read fewer Harry Potter books than teenagers in the United Kingdom.  Would you make use of random sampling, random assignment, both, or neither?[^86]
     (a)	Random sampling
     (b)	Random assignment
     (c)	Both
@@ -916,7 +918,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-87.	An instructor wants to investigate whether using a red pen to grade assignments leads to lower scores on exams than using a blue pen to grade assignments.  Would you advise the professor to make use of random sampling, random assignment, both, or neither?[^87]
+(@) An instructor wants to investigate whether using a red pen to grade assignments leads to lower scores on exams than using a blue pen to grade assignments.  Would you advise the professor to make use of random sampling, random assignment, both, or neither?[^87]
     (a)	Random sampling
     (b)	Random assignment
     (c)	Both
@@ -926,7 +928,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-88.	A student decides to investigate whether NFL football games played in indoor stadiums tend to have more points scored than games played outdoors.  The student examines points scored in every NFL game of the 2022 season. Has the student used random sampling, random assignment, both, or neither?[^88]
+(@) A student decides to investigate whether NFL football games played in indoor stadiums tend to have more points scored than games played outdoors.  The student examines points scored in every NFL game of the 2022 season. Has the student used random sampling, random assignment, both, or neither?[^88]
     (a)	Random sampling
     (b)	Random assignment
     (c)	Both
@@ -937,7 +939,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-89. Relative Risk is[^89]
+(@) Relative Risk is[^89]
     (a) the difference of two proportions
     (b) the ratio of two proportions
     (c) the log of the ratio of two proportions
@@ -947,7 +949,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-90. In order to find a CI for the true RR, our steps are:[^90]  
+(@) In order to find a CI for the true RR, our steps are:[^90]  
 Step 1. ln(RR-hat)  
 Step 2. add ± z* sqrt( 1/A - 1/(A+C) + 1/B - 1/(B+D) )  
 Step 3. find exp of the endpoints   
@@ -960,7 +962,7 @@ Step 3. find exp of the endpoints
 
 ---
 
-91. In finding a CI for $p_1$/$p_2$, why is it okay to exponentiate the end points of the interval for ln($p_1$/$p_2$)?[^91] 
+(@) In finding a CI for $p_1$/$p_2$, why is it okay to exponentiate the end points of the interval for ln($p_1$/$p_2$)?[^91] 
     (a) if ln($p_1$/$p_2$) is in the natural log-interval, $p_1$/$p_2$ will be in the exponentiated interval.
     (b) the natural log of the RR makes the distribution approximately normal.
     (c) the natural log compresses values that are > 1 and spreads values < 1.
@@ -969,7 +971,7 @@ Step 3. find exp of the endpoints
 
 ---
 
-92.   Usually, the CI for  $p_1$/$p_2$ is considered to be "significant" if[^92] 
+(@) Usually, the CI for  $p_1$/$p_2$ is considered to be "discernible" if[^92] 
       (a) $p_1$/$p_2$ is not in the interval
       (b) $\hat{p}_1 / \hat{p}_2$ is not in the interval
       (c) 0 is not in the interval
@@ -979,7 +981,7 @@ Step 3. find exp of the endpoints
 
 ---
 
-93. In order to find a CI for the true OR, our steps are:[^93]  
+(@) In order to find a CI for the true OR, our steps are:[^93]  
 Step 1. ln(OR-hat)  
 Step 2. add ± z* sqrt( 1/A + 1/B + 1/C + 1/D )  
 Step 3. find exp of the endpoints   
@@ -992,7 +994,7 @@ Step 3. find exp of the endpoints
 
 ---
 
-94. Sample 1,000,000 people who are over 6' tall and 1,000,000 people who are under 6' tall.  Record if the person is in the NBA.  
+(@) Sample 1,000,000 people who are over 6' tall and 1,000,000 people who are under 6' tall.  Record if the person is in the NBA.  
 What is measurable?[^94]
     (a) P(NBA if 6' tall)
     (b) P(6' tall if in the NBA)
@@ -1003,7 +1005,7 @@ What is measurable?[^94]
 
 ---
 
-95.  Sample 100 people who are in the NBA and 100 people who are not in the NBA. Record if the person is over 6' tall. What is measurable?[^95]
+(@) Sample 100 people who are in the NBA and 100 people who are not in the NBA. Record if the person is over 6' tall. What is measurable?[^95]
      (a) P(NBA if 6' tall)
      (b) P(6' tall if in the NBA)
      (c) both
@@ -1013,7 +1015,7 @@ What is measurable?[^94]
 
 ---
 
-96.  Sample 10,000,000 people.  Record their height and whether or not they are in the NBA.  
+(@) Sample 10,000,000 people.  Record their height and whether or not they are in the NBA.  
 What is measurable?[^96]
      (a) P(NBA if 6' tall)
      (b) P(6' tall if in the NBA)
@@ -1033,7 +1035,7 @@ https://davidepstein.com/david-epstein-the-sports-gene/
 
 ---
 
-97.  When we randomly select individuals based on the explanatory variable, we cannot accurately measure[^97]
+(@) When we randomly select individuals based on the explanatory variable, we cannot accurately measure[^97]
      (a) the proportion of people in the population in each explanatory category
      (b) the proportion of people in the population in each response group
      (c) anything about the population
@@ -1043,7 +1045,7 @@ https://davidepstein.com/david-epstein-the-sports-gene/
 
 ---
 
-98. The odds ratio is invariant to which variable is explanatory and which is response means:[^98]
+(@) The odds ratio is invariant to which variable is explanatory and which is response means:[^98]
     (a) we always put the bigger odds in the numerator
     (b) we must collect data so that we can estimate the response in the population
     (c) which variable is called the explanatory changes the value of the OR
@@ -1053,7 +1055,7 @@ https://davidepstein.com/david-epstein-the-sports-gene/
 
 ---
 
-99.  One reason we should be careful interpreting relative risks is if:[^99]
+(@) One reason we should be careful interpreting relative risks is if:[^99]
      (a) we don't know the difference in proportions
      (b) we don't know the SE of the relative risk
      (c) we might be dividing by zero
@@ -1063,7 +1065,7 @@ https://davidepstein.com/david-epstein-the-sports-gene/
 
 ---
 
-100. If the null hypothesis is true, the observed counts will equal the expected counts.[^100]
+(@) If the null hypothesis is true, the observed counts will equal the expected counts.[^100]
      (a) True
      (b) False
 
@@ -1071,7 +1073,7 @@ https://davidepstein.com/david-epstein-the-sports-gene/
 
 ---
 
-101. To reject the null hypothesis we want to see[^101]
+(@) To reject the null hypothesis we want to see[^101]
      (a) a small $X^2$ value
      (b) a big $X^2$ value
 
@@ -1080,7 +1082,7 @@ https://davidepstein.com/david-epstein-the-sports-gene/
 
 ---
 
-102. A chi-square test has a[^102]
+(@) A chi-square test has a[^102]
      (a) one-sided alt hypothesis, and we only consider the upper end of the sampling distribution
      (b) one-sided alt hypothesis, and we consider both ends of the sampling distribution
      (c) two-sided alt hypothesis, and we only consider the upper end of the sampling distribution
@@ -1090,7 +1092,7 @@ https://davidepstein.com/david-epstein-the-sports-gene/
 
 ---
 
-103. For the lighting study, which variable is the explanatory variable?[^103]
+(@) For the lighting study, which variable is the explanatory variable?[^103]
      (a) sleeping light
      (b) eye sightedness
      (c) child
@@ -1100,7 +1102,7 @@ https://davidepstein.com/david-epstein-the-sports-gene/
 
 ---
 
-104. If we sample randomly from a population, the conclusions we can make are about:[^104]
+(@) If we sample randomly from a population, the conclusions we can make are about:[^104]
      (a) causation 
      (b) population characteristics
 
@@ -1108,7 +1110,7 @@ https://davidepstein.com/david-epstein-the-sports-gene/
 
 ---
 
-105. Based on the night light / myopia example, the correct conclusion is:[^105]
+(@) Based on the night light / myopia example, the correct conclusion is:[^105]
      (a) the p-value is small, so sleeping in a lit room makes it more likely that you are near-sighted. 
      (b) the p-value is small, so sleeping in a dark room makes it more likely that you are near-sighted. 
      (c) the p-value is small, so a higher proportion of children who sleep in light rooms are near-sighted than who sleep in dark rooms. 
@@ -1118,7 +1120,7 @@ https://davidepstein.com/david-epstein-the-sports-gene/
 
 ---
 
-106. A possible confounding variable for the night light study is:[^106]
+(@) A possible confounding variable for the night light study is:[^106]
      (a) low birth weight
      (b) race (70% of the children were white)
      (c) region of the country where the clinic was located
@@ -1127,7 +1129,7 @@ https://davidepstein.com/david-epstein-the-sports-gene/
 
 ---
 
-107. Which dataset has the smallest standard deviation?[^107]
+(@) Which dataset has the smallest standard deviation?[^107]
      (a)	A: left
      (b)	B: center
      (c)	C: right
@@ -1147,7 +1149,7 @@ hist(rnorm(50,5,2), xlab = "C", xlim = c(0,10), main = "")
 
 ---
 
-108. Which of the two dotplots displays the dataset with the smaller IQR?[^108]
+(@) Which of the two dotplots displays the dataset with the smaller IQR?[^108]
      (a)	A
      (b)	B
 
@@ -1173,7 +1175,7 @@ ggplot(data, aes(y = x, x = group)) +
 
 ---
 
-109. The standard deviation of weights (mean = 167 lbs) is approximately[^109]
+(@) The standard deviation of weights (mean = 167 lbs) is approximately[^109]
      (a) 1
      (b) 5
      (c) 10
@@ -1184,7 +1186,7 @@ ggplot(data, aes(y = x, x = group)) +
 
 ---
 
-110. The standard deviation of average weights (mean = 167 lbs) in repeated samples of size 10 is approximately[^110]
+(@) The standard deviation of average weights (mean = 167 lbs) in repeated samples of size 10 is approximately[^110]
      (a) 1
      (b) 5
      (c) 10
@@ -1195,7 +1197,7 @@ ggplot(data, aes(y = x, x = group)) +
 
 ---
 
-111. The standard deviation of average weights (mean = 167 lbs) in repeated samples of size 50 is approximately[^111]
+(@) The standard deviation of average weights (mean = 167 lbs) in repeated samples of size 50 is approximately[^111]
      (a) 1
      (b) 5
      (c) 10
@@ -1205,7 +1207,7 @@ ggplot(data, aes(y = x, x = group)) +
 [^111]: b. 5 ($\approx 35/\sqrt{100}$)
 ---
 
-112. The standard deviation of average weights (mean = 167 lbs) in repeated samples of size 1000 is approximately[^112]
+(@) The standard deviation of average weights (mean = 167 lbs) in repeated samples of size 1000 is approximately[^112]
      (a) 1
      (b) 5
      (c) 10
@@ -1220,7 +1222,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-113. The sampling distribution of the mean will be[^113]
+(@) The sampling distribution of the mean will be[^113]
      (a) centered below the data distribution
      (b) centered at the same place as the data distribution
      (c) centered above the data distribution
@@ -1230,7 +1232,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-114. The sampling distribution of the mean will be[^114]
+(@) The sampling distribution of the mean will be[^114]
      (a) less variable than the data distribution
      (b) the same variability as the data distribution
      (c) more variable than the data distribution
@@ -1240,7 +1242,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-115. Why did we switch from talking about total weight to talking about average weight?[^115]
+(@) Why did we switch from talking about total weight to talking about average weight?[^115]
      (a) So that it is easier to infer from the sample to the population.
      (b) Because the Coast Guard certifies vessels according to average weight.
      (c) Because the average is less variable than the sum.
@@ -1250,7 +1252,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-116. When the population is skewed right, the sampling distribution for the sample mean will be[^116]
+(@) When the population is skewed right, the sampling distribution for the sample mean will be[^116]
      (a) always skewed right
      (b) skewed right if n is big enough
      (c) always normal
@@ -1260,14 +1262,14 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-117. What does the CLT say?[^117]
+(@) What does the CLT say?[^117]
 
 
 [^117]: Describing random samples (of size n) from the population, the sampling distribution of the sample mean is normal if the sample size (n) is large enough.
 
 ---
 
-118. What type of variable is "healthy body temp"?[^118]
+(@) What type of variable is "healthy body temp"?[^118]
      a. explanatory
      b. response
 
@@ -1275,7 +1277,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-119.  We use $s$ instead of $\sigma$ because[^119]
+(@) We use $s$ instead of $\sigma$ because[^119]
       (a) we know $s$ and we don't know $\sigma$ 
       (b) $s$ is a better estimate of the st dev
       (c) $s$ is less variable than $\sigma$
@@ -1286,7 +1288,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-120.  The variability associated with $\overline{X}$ is[^120]
+(@) The variability associated with $\overline{X}$ is[^120]
       (a) less than the variability of X
       (b) more than the variability of X
       (c) the same as the variability of X
@@ -1297,7 +1299,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-121. If asked to "determine how many standard errors the sample mean (98.249) falls from the hypothesized value of 98.6", which formula should you use?[^121]
+(@) If asked to "determine how many standard errors the sample mean (98.249) falls from the hypothesized value of 98.6", which formula should you use?[^121]
       (a) $\frac{(98.249-98.6)}{s}$
       (b) $\frac{(98.249-98.6)}{s/\sqrt{n}}$
       (c) $\frac{(98.249-98.6)}{\sigma}$
@@ -1307,7 +1309,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-122.  When we use $s$ instead of $\sigma$ in the CI for $\mu$, but still keep z* (instead of using a t* multiplier), the resulting CI has coverage[^122]
+(@) When we use $s$ instead of $\sigma$ in the CI for $\mu$, but still keep z* (instead of using a t* multiplier), the resulting CI has coverage[^122]
       (a) **LESS** than the stated confidence level
       (b) **MORE** than the stated confidence level
       (c) **OF** the stated confidence level
@@ -1316,7 +1318,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-123. What is the difference between t* and a t score?[^123]
+(@) What is the difference between t* and a t score?[^123]
      a. t score comes from the data, t* and is a pre-defined unit of measurement.
      b. t* comes from the data, and t score is a pre-defined unit of measurement
      c. t score assumes the null hypothesis is true and t* doesn't.
@@ -1326,7 +1328,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-124.  What is the correct interpretation of the 92% CI for $\mu$ which is given as (98.2, 98.3)?[^124]
+(@) What is the correct interpretation of the 92% CI for $\mu$ which is given as (98.2, 98.3)?[^124]
       (a) 92% of intervals will be (98.2, 98.3).
       (b) 92% of individual temperatures will be between (98.2, 98.3).
       (c) There is a 0.92 probability that the true temperature is between (98.2, 98.3).
@@ -1337,7 +1339,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-125. Let's say you *truly* believe that the true average body temp is between (98.2, 98.3). (Your CI is green.) You record a temp of 98.6 F.  Do you think you are sick?[^125]
+(@) Let's say you *truly* believe that the true average body temp is between (98.2, 98.3). (Your CI is green.) You record a temp of 98.6 F.  Do you think you are sick?[^125]
      a. Yes, it is outside the range above.
      b. No, I still believe $\mu$ is 98.6.
      c. No, 98.6 isn't too far above the upper bound.
@@ -1347,7 +1349,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-126.  The variability associated with $\overline{X}$ is[^126]
+(@) The variability associated with $\overline{X}$ is[^126]
       (a) less than the variability of X
       (b) more than the variability of X
       (c) the same as the variability of X
@@ -1358,7 +1360,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-127.  The variability associated with predicting a new value, $X_{n+1}$,[^127]
+(@) The variability associated with predicting a new value, $X_{n+1}$,[^127]
       (a) is less than the variability of $\overline{X}$
       (b) is more than the variability of $\overline{X}$
       (c) is the same as variability of $\overline{X}$
@@ -1369,7 +1371,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-128.  Prediction intervals are[^128]
+(@) Prediction intervals are[^128]
       (a) smaller than confidence intervals
       (b) about the same width as confidence intervals
       (c) larger than confidence intervals
@@ -1379,7 +1381,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-129. Where should a prediction interval for a new value, $X_{n+1}$, be centered?[^129]
+(@) Where should a prediction interval for a new value, $X_{n+1}$, be centered?[^129]
       (a) $\overline{X}$
       (b) $\mu$
       (c) 98.6
@@ -1390,7 +1392,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-130. What is the correct interpretation of the 95% PI for $X_{n+1}$ which is given as (96.79, 99.70)?[^130]
+(@) What is the correct interpretation of the 95% PI for $X_{n+1}$ which is given as (96.79, 99.70)?[^130]
       (a) 95% of intervals will be (96.79, 99.70).
       (b) 95% of individual temperatures will be between (96.79, 99.70).
       (c) There is a 0.95 probability that the true temperature is between (96.79, 99.70).
@@ -1401,17 +1403,17 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-131. Prediction intervals have[^131]
+(@) Prediction intervals have[^131]
       (a) the same technical conditions as CIs
       (b) stricter technical conditions than CIs
       (c) more lenient technical conditions than CIs
       (d) technical conditions which are unrelated to CIs
 
-[^131]: b. stricter technical conditions than CIs
+[^131]: b. stricter technical conditions than CIs, becausse the CLT does not apply.
 
 ---
 
-132. When the population is skewed right, the sampling distribution for the sample mean will be[^132]
+(@) When the population is skewed right, the sampling distribution for the sample mean will be[^132]
       (a) always skewed right
       (b) skewed right if n is big enough
       (c) always normal
@@ -1421,7 +1423,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-133.  When the population is skewed right, the distribution for the data will be[^133]
+(@) When the population is skewed right, the distribution for the data will be[^133]
       (a) always skewed right
       (b) skewed right if n is big enough
       (c) always normal
@@ -1431,16 +1433,16 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-134. A newspaper article claims that the average age for people who receive food stamps is 40 years. You believe that the average age is lower. You take a random sample of 100 people who receive food stamps and find their average age to be 39.2 years. You find that 39.2 is significantly lower than the age of 40 stated in the article (p < 0.05). What would be an appropriate interpretation of the result?[^134]
-      (a) The statistically significant result indicates that the majority of people who receive food stamps is younger than 40.
-      (b) Although the result is statistically significant, the difference in age is not of practical importance.
-      (c) An error must have been made. This difference is too small to be statistically significant.
+(@) A newspaper article claims that the average age for people who receive food stamps is 40 years. You believe that the average age is lower. You take a random sample of 100 people who receive food stamps and find their average age to be 39.2 years. You find that 39.2 is discernibly lower than the age of 40 stated in the article (p < 0.05). What would be an appropriate interpretation of the result?[^134]
+      (a) The statistically discernible result indicates that the majority of people who receive food stamps is younger than 40.
+      (b) Although the result is statistically discernible, the difference in age is not of practical importance.
+      (c) An error must have been made. This difference is too small to be statistically discernible.
 
-[^134]: b. Although the result is statistically significant, the difference in age is not of practical importance.
+[^134]: b. Although the result is statistically discernible, the difference in age is not of practical importance.
 
 ---
 
-135. In order to investigate a claim that the average time required for the county fire department to respond to a reported fire is greater than 5 minutes, county staff determined the response times for 40 randomly selected fire reports.  The data were used to test $H_0: \mu = 5$ versus $H_a:  \mu > 5$, and the computed p-value was 0.12.  If a 0.05 level of significance is used, what conclusions can be drawn?[^135]
+(@) In order to investigate a claim that the average time required for the county fire department to respond to a reported fire is greater than 5 minutes, county staff determined the response times for 40 randomly selected fire reports.  The data were used to test $H_0: \mu = 5$ versus $H_a:  \mu > 5$, and the computed p-value was 0.12.  If a 0.05 level of discernibility is used, what conclusions can be drawn?[^135]
       (a) There is convincing evidence that the mean response time is 5 minutes (or less).
       (b) There is convincing evidence that the mean response time is greater than 5 minutes.
       (c) There is not convincing evidence that the mean response time is greater than 5 minutes.
@@ -1449,7 +1451,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-136. You have two samples of size n = 50.  You sample with replacement 1000 times (to get 1000 bootstrap resamples). What is the sample size of each bootstrap resample?[^136]
+(@) You have two samples of size n = 50.  You sample with replacement 1000 times (to get 1000 bootstrap resamples). What is the sample size of each bootstrap resample?[^136]
      (a) 50
      (b) 1000
 
@@ -1457,7 +1459,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-137. You have two samples of size n = 50.  You sample with replacement 1000 times (to get 1000 bootstrap resamples). How many bootstrap statistics will you have?[^137]
+(@) You have two samples of size n = 50.  You sample with replacement 1000 times (to get 1000 bootstrap resamples). How many bootstrap statistics will you have?[^137]
      (a) 50
      (b) 1000
 
@@ -1465,7 +1467,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-138. You have two samples of size n = 50.  You shuffle the explanatory and response variables (i.e., sample without replacement) 1000 times. What is the sample size of each group after shuffling?[^138]
+(@) You have two samples of size n = 50.  You shuffle the explanatory and response variables (i.e., sample without replacement) 1000 times. What is the sample size of each group after shuffling?[^138]
      (a) 50
      (b) 1000
 
@@ -1473,7 +1475,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-139. You have two samples of size n = 50.  You shuffle the explanatory and response variables (i.e., sample without replacement) 1000 times. How many randomization statistics will you have?[^139]
+(@) You have two samples of size n = 50.  You shuffle the explanatory and response variables (i.e., sample without replacement) 1000 times. How many randomization statistics will you have?[^139]
      (a) 50
      (b) 1000
 
@@ -1481,7 +1483,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-140. We typically compare means instead of medians because[^140]
+(@) We typically compare means instead of medians because[^140]
      (a) we don't know the SE of the difference of medians
      (b) means are inherently more interesting than medians
      (c) the randomization applet (or R code) doesn't work with medians
@@ -1491,7 +1493,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-141. $SE(\overline{X}_1 - \overline{X}_2)$ is:[^141]
+(@) $SE(\overline{X}_1 - \overline{X}_2)$ is:[^141]
       a. $\sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}$
       b. $\sqrt{\frac{\sigma_1^2}{n_1} - \frac{\sigma_2^2}{n_2}}$
       c. $\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$
@@ -1502,7 +1504,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-142. The distribution of age of death is:[^142]
+(@) The distribution of age of death is:[^142]
      a. right skewed
      b. left skewed
      c. symmetric
@@ -1512,7 +1514,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-143. The standard deviation for the age of death is likely around:[^143]
+(@) The standard deviation for the age of death is likely around:[^143]
      (a) 1 year
      (b) 10 years
      (c) 20 years
@@ -1523,7 +1525,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-144. The number of left handed people is likely:[^144]
+(@) The number of left handed people is likely:[^144]
      (a) 10
      (b) 100
      (c) 300
@@ -1534,7 +1536,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-145. Are the two samples (lefties and righties) independent?[^145]
+(@) Are the two samples (lefties and righties) independent?[^145]
      (a) yes
      (b) no
      (c) we can't tell
@@ -1543,7 +1545,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-146.  For the handedness example, which has a lower p-value?[^146]
+(@) For the handedness example, which has a lower p-value?[^146]
       a. Scenario 2
       b. Scenario 3
 
@@ -1551,7 +1553,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-147. For the handedness example, which has a lower p-value?[^147]
+(@) For the handedness example, which has a lower p-value?[^147]
       a. Scenario 3
       b. Scenario 4
 
@@ -1559,7 +1561,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-148. How does each affect the power?[^148]
+(@) How does each affect the power?[^148]
 (i) increasing the sample sizes of both groups
      (a) increases the power
      (b) doesn't change the power
@@ -1583,7 +1585,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-149. We use the t-distribution (instead of the z-distribution) because:[^149]
+(@) We use the t-distribution (instead of the z-distribution) because:[^149]
      (a) the CLT makes the test statistic normal
      (b) the CLT makes the numerator of the test statistic normal
      (c) the variability in the denominator makes the test statistic more variable
@@ -1593,7 +1595,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-150.  If we use the SE and the z-curve (instead of t-curve) to find the p-value (assuming $\overline{X}$ values are reasonably different):[^150]
+(@) If we use the SE and the z-curve (instead of t-curve) to find the p-value (assuming $\overline{X}$ values are reasonably different):[^150]
       (a) the p-value will be too small
       (b) the p-value will be too big
       (c) the p-value will be just right
@@ -1604,7 +1606,7 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
  
-151. If we use the SE and the z-curve (instead of t-curve) to find a 95% CI:[^151]
+(@) If we use the SE and the z-curve (instead of t-curve) to find a 95% CI:[^151]
       a. The capture rate will be at 95% over the long run.
       b. The capture rate will be higher than 95% over the long run.
       c. The capture rate will be lower than 95% over the long run.
@@ -1613,19 +1615,19 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
-152. In the ANOVA setting, the null hypothesis is always: $$H_0: \mu_1 = \mu_2 = \mu_3 = \ldots = \mu_I$$
+(@) In the ANOVA setting, the null hypothesis is always: $$H_0: \mu_1 = \mu_2 = \mu_3 = \ldots = \mu_I$$
 What is the alternative hypothesis?[^152]
      (a) $H_a: \mu_1 \ne \mu_2 \ne \mu_3 \ne \ldots \ne \mu_I$
      (b) $H_a: \mu_1 = \mu_2 = \mu_3 = \ldots = \mu_I = \mu$ (for some $\mu$ value)
      (c) $H_a$: at least one $\mu_i$ is different
-     (d) $H_a$: at least one $\mu_i$ is significantly different
+     (d) $H_a$: at least one $\mu_i$ is discernibly different
      (e) $H_a$: at least one $\mu_i$ is a lot different
 
 [^152]: c. $H_a$: at least one $\mu_i$ is different
 
 ---
 
-153. In order to tell whether the differences in sample means are significant, we need to ALSO know:[^153]
+(@) In order to tell whether the differences in sample means are discernible, we need to ALSO know:[^153]
      (a) how variable the observations are
      (b) the distribution of the observations
      (c) the sample sizes
@@ -1636,7 +1638,7 @@ What is the alternative hypothesis?[^152]
 
 ---
 
-154. Which is more significant?[^154]
+(@) Which is more discernible?[^154]
      (a) A
      (b) B
      (c) They are the same
@@ -1650,7 +1652,7 @@ knitr::include_graphics("images/anova_boxplots.png")
 
 ---
 
-155. We reject the null hypothesis if:[^155]
+(@) We reject the null hypothesis if:[^155]
      (a) the between group variability is much bigger than the within group variability
      (b) the within group variability is much bigger than the between group variability
      (c) the within group variability and the between group variability are both quite large
@@ -1660,7 +1662,7 @@ knitr::include_graphics("images/anova_boxplots.png")
 
 ---
 
-156. What types of values will the F-ratio have when the null hypothesis is false, that is, when the population means are not all equal?[^156]
+(@) What types of values will the F-ratio have when the null hypothesis is false, that is, when the population means are not all equal?[^156]
      (a) large, positive
      (b) large, negative
      (c) small, positive
@@ -1671,7 +1673,7 @@ knitr::include_graphics("images/anova_boxplots.png")
 ---
 
 
-157.  With ANOVA, if the null hypothesis is true, then[^157]
+(@) With ANOVA, if the null hypothesis is true, then[^157]
 $$H_0: \overline{X}_1 = \overline{X}_2 = \overline{X}_3 = \ldots = \overline{X}_I$$
       a. TRUE
       b. FALSE
@@ -1679,7 +1681,7 @@ $$H_0: \overline{X}_1 = \overline{X}_2 = \overline{X}_3 = \ldots = \overline{X}_
 [^157]: b. FALSE
 ---
 
-158. How can I figure out which $\mu_i$ is different?[^158]
+(@) How can I figure out which $\mu_i$ is different?[^158]
       a. The ANOVA reports it
       b. Do repeated one sample mean tests, but worry about type I errors
       c. Do repeated one sample mean tests, but worry about type II errors
@@ -1690,7 +1692,7 @@ $$H_0: \overline{X}_1 = \overline{X}_2 = \overline{X}_3 = \ldots = \overline{X}_
 
 ---
 
-159. Consider a categorical variable with 4 levels. In addition to the intercept how many variables show up in the linear model output?[^159]
+(@) Consider a categorical variable with 4 levels. In addition to the intercept how many variables show up in the linear model output?[^159]
       a. 1
       b. 3
       c. 4
@@ -1702,7 +1704,7 @@ $$H_0: \overline{X}_1 = \overline{X}_2 = \overline{X}_3 = \ldots = \overline{X}_
 ---
 
 
-160. If there is no relationship in the population (true correlation $\rho = 0$), then $r=0.$[^160]
+(@) If there is no relationship in the population (true correlation $\rho = 0$), then $r=0.$[^160]
      (a) TRUE
      (b) FALSE
 
@@ -1710,7 +1712,7 @@ $$H_0: \overline{X}_1 = \overline{X}_2 = \overline{X}_3 = \ldots = \overline{X}_
 
 ---
 
-161. If there is no relationship in the population (true slope $\beta_1 = 0$), then $b_1=0.$[^161]
+(@) If there is no relationship in the population (true slope $\beta_1 = 0$), then $b_1=0.$[^161]
      (a) TRUE
      (b) FALSE
 
@@ -1718,13 +1720,15 @@ $$H_0: \overline{X}_1 = \overline{X}_2 = \overline{X}_3 = \ldots = \overline{X}_
 
 ---
 
-If we set a parameter equal to XXXX, should we expect the statistic to be XXXX?
+(@) If we set a parameter equal to XXXX, should we expect the statistic to be XXXX?[^161a]
+     (a) Yes
+     (b) No
 
-No.  Because statistics vary from sample to sample.
+[^161a]: No. Because statistics vary from sample to sample, always.
 
 ---
 
-162. A smaller variability around the regression line (can be thought of as: $\sigma$ or MSE or variability of the $e_i$):[^162]
+(@) A smaller variability around the regression line (can be thought of as: $\sigma$ or MSE or variability of the $e_i$):[^162]
      (a) increases the variability of $b_1.$
      (b) decreases the variability of $b_1.$
      (c) doesn't necessarily change the variability of $b_1.$
@@ -1733,7 +1737,7 @@ No.  Because statistics vary from sample to sample.
 
 ---
 
-163. A smaller variability in the explanatory variable (SD(X) = $s_x$):[^163]
+(@) A smaller variability in the explanatory variable (SD(X) = $s_x$):[^163]
      (a) increases the variability of $b_1.$
      (b) decreases the variability of $b_1.$
      (c) doesn't necessarily change the variability of $b_1.$
@@ -1742,7 +1746,7 @@ No.  Because statistics vary from sample to sample.
 
 ---
 
-164. A smaller sample size ($n$):[^164]
+(@) A smaller sample size ($n$):[^164]
      (a) increases the variability of $b_1.$
      (b) decreases the variability of $b_1.$
      (c) doesn't necessarily change the variability of $b_1.$
@@ -1751,7 +1755,7 @@ No.  Because statistics vary from sample to sample.
 
 ---
 
-165. The regression technical assumptions include:[^165]
+(@) The regression technical assumptions include:[^165]
      (a) The Y variable is normally distributed at each X
      (b) The X variable is normally distributed
      (c) The residuals are normally distributed
@@ -1762,7 +1766,7 @@ No.  Because statistics vary from sample to sample.
 
 ---
 
-166. The technical conditions do not include:[^166]
+(@) The technical conditions do not include:[^166]
      (a) normally distributed residuals
      (b) normally distributed response
      (c) normally distributed explanatory variable
@@ -1773,7 +1777,7 @@ No.  Because statistics vary from sample to sample.
 
 ---
 
-167. What happens if the technical conditions are not met?[^167]
+(@) What happens if the technical conditions are not met?[^167]
      a. The line does not minimize the sum of squared residuals.
      b. $R^2$ does not measure the proportion of variability explained by the line.
      c. The null sampling distribution of $b_1$ is wrong (therefore incorrect p-values and CI).
@@ -1783,7 +1787,7 @@ No.  Because statistics vary from sample to sample.
 
 ---
 
-168. Which linear regression condition is violated?[^168]
+(@) Which linear regression condition is violated?[^168]
      (a) linearity 
      (b) equal variance of errors
      (c) independent errors
@@ -1808,7 +1812,7 @@ mammals %>%
 
 ---
 
-169. Which linear regression condition is violated?[^169]
+(@) Which linear regression condition is violated?[^169]
      (a) linearity
      (b) constant errors
      (c) independent errors
@@ -1833,7 +1837,7 @@ mammals %>%
 
 ---
 
-170. Which linear regression condition is violated?[^170]
+(@) Which linear regression condition is violated?[^170]
      (a) linearity
      (b) constant errors
      (c) independent errors
@@ -1861,7 +1865,7 @@ data.frame(ex, why) %>%
 
 ---
 
-171. Which of the below correctly describes the roles of variables in this regression model?[^171]
+(@) Which of the below correctly describes the roles of variables in this regression model?[^171]
      (a) response: weight; explanatory: volume, paperback cover
      (b) response: weight; explanatory: volume, hardcover cover
      (c) response: volume; explanatory: weight, cover type
@@ -1886,7 +1890,7 @@ explanatory: volume, cover type
 
 ---
 
-172. Holding constant the city, additional 1% of mortgage rate would predict average ________ in the mean demand.[^172] 
+(@) Holding constant the city, additional 1% of mortgage rate would predict average ________ in the mean demand.[^172] 
 $$\hat{Y} =  10 + 5X_1 + 8X_2$$
      (a) predicted $500 more per capita
      (b) predicted $500 less per capita
@@ -1902,7 +1906,7 @@ $Y$ = demand in $100 per capita
 
 ---
 
-173. Referring to 
+(@) Referring to 
 $$\hat{Y} =  10 + 5X_1 + 8X_2$$
 the effect of living in LA rather than SF is a ________ demand by an estimated ________ holding the effect of mortgage rate constant.[^173]
      (a) larger; $800 per capita
@@ -1914,7 +1918,7 @@ the effect of living in LA rather than SF is a ________ demand by an estimated _
 
 ---
 
-174. Consider the housing model, (Y = ln price)
+(@) Consider the housing model, (Y = ln price)
 $$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}$$
 coef on bedrooms (-0.0603) is change in pred ln(price) ...[^174]
       a. for a one unit increase in bedrooms
@@ -1927,7 +1931,7 @@ coef on bedrooms (-0.0603) is change in pred ln(price) ...[^174]
 
 ---
 
-175. To test if there is convincing evidence that the slope of the regression line between ln(price) and square feet (only, no bedroom here) is different from zero, what are the appropriate hypotheses?[^175]
+(@) To test if there is convincing evidence that the slope of the regression line between ln(price) and square feet (only, no bedroom here) is different from zero, what are the appropriate hypotheses?[^175]
      (a)	$H_0: b_0 = 0$
       	  $H_a: b_0 \ne 0$
      (b) 	$H_0: b_1 = 0$
@@ -1945,7 +1949,7 @@ p-value = probability of observed data ($b_1$) or more extreme if $H_0$ is true 
 
 ---
 
-176. With # bedrooms in the model, in words, the test $(H_0: \beta_1 = 0 \ \ \ \ \ \ H_a: \beta_1 \ne 0)$ asks:[^176]
+(@) With # bedrooms in the model, in words, the test $(H_0: \beta_1 = 0 \ \ \ \ \ \ H_a: \beta_1 \ne 0)$ asks:[^176]
 $$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}$$
       a. the slope of the regression line between ln(price) and square feet is different from zero
       b. the slope of the regression line between ln(price) and square feet is different from zero when # bedrooms is included in the model
@@ -1957,7 +1961,7 @@ $$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}
 
 ---
 
-177. We created a 95% confidence interval for the mean GPA given 10 absences to be (3.20, 3.42).  What is the correct interpretation?[^177]
+(@) We created a 95% confidence interval for the mean GPA given 10 absences to be (3.20, 3.42).  What is the correct interpretation?[^177]
      (a) There is a 95% chance that the mean GPA of students with 10 absences is between 3.20 and 3.42.
      (b) 95% of GPA averages (for students with 10 absences) are between 3.20 and 3.42.
      (c) 95% of GPAs (for students with 10 absences) are between 3.20 and 3.42.
@@ -1968,7 +1972,7 @@ $$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}
 
 ---
 
-178. We created a 95% prediction interval for an individual GPA given 10 absences to be (3, 3.62).  What is the correct interpretation?[^178]
+(@) We created a 95% prediction interval for an individual GPA given 10 absences to be (3, 3.62).  What is the correct interpretation?[^178]
      (a) There is a 95% chance that the mean GPA of students with 10 absences is between 3 and 3.62.
      (b) 95% of GPA averages (for students with 10 absences) are between 3 and 3.62.
      (c) 95% of GPAs (for students with 10 absences) are between 3 and 3.62.
@@ -1980,7 +1984,7 @@ $$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}
 ---
 
 
-179. Prediction intervals and confidence intervals have the same technical conditions:[^179]
+(@) Prediction intervals and confidence intervals have the same technical conditions:[^179]
      (a) TRUE
      (b) FALSE
      (c) sort of
@@ -1989,7 +1993,7 @@ $$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}
 
 ---
 
-180. It is often a good idea to transform the variable(s)...[^180]
+(@) It is often a good idea to transform the variable(s)...[^180]
      (a) ... to find the highest R2 value.
      (b) ... when the X variable is not normally distributed.
      (c) ... to make the model easier to interpret.
@@ -1999,11 +2003,11 @@ $$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}
 
 ---
 
-181. A large value of $R^2$ says...[^181]
+(@) A large value of $R^2$ says...[^181]
       a. the technical conditions hold.
       b. the variability in the response is well explained by the explanatory variable(s).
       c. the explanatory variable(s) determine the response variable.  
-      d. the explanatory variable(s) are significant.
+      d. the explanatory variable(s) are discernible.
 
 [^181]: b. the variability in the response is well explained by the explanatory variable(s).
 
