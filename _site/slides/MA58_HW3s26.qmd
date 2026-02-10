@@ -66,7 +66,7 @@ p_obs_right <- kissing |>
 p_obs_right   #  did the computer print the correct number?
 
 # now apply the framework to get the p-value
-null_kiss <- ___  |>
+null_kiss_right <- ___  |>
   specify(response = ___ , success = "___ ") |>
   hypothesize(null = "point", p = .8) |>    # new null hypothesis!  Here H0: p = 0.8
   generate(reps = 1000, type = "simulate") |> 
