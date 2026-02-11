@@ -496,7 +496,7 @@ See Canvas front page for **anonymous** survey / feedback for the class.  Also, 
 
 ---
 
-(@) First study: Let's say you take a random sample and compute $\hat{p}=0.3.$  After bootstrapping, you see that the bootstrapped resamples produce almost all the $\hat{p}_{boot}$ within plus or minus 0.01 of your original statistic. It seems that the parameter $p$ is probably:[^46]
+(@) First study: Let's say you take a random sample and compute $\hat{p}=0.3.$  After bootstrapping, you see that 95% of the bootstrapped resamples ($\hat{p}_{boot}$) are within plus or minus 0.01 of your original statistic ($\hat{p}$). It seems that the parameter $p$ is probably:[^46]
 	   a. 0.3
 	   b. between (0.2, 0.4)
 	   c. between (0.29, 0.31)
