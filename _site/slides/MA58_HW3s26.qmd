@@ -149,18 +149,8 @@ cardio<- data.frame(treatment = c(rep("Rosiglitazone", ___),
 
 (a) Construct hypotheses regarding whether or not crime should receive special attention by the Chinese government according to the 1-in-5 guideline.  [Remember, each hypothesis is a separate claim (i.e., sentence, although it may look like a mathematical equation) about the **population**.]
 
-**Solution**
-
-$H_0: p = 0.2$  The null hypothesis is that only 20% of adults in China (not more) think crime is an issue.
-
-$H_A: p > 0.2$  The alternative hypothesis (the research question of interest!) is that more than 20% of adult Chinese think crime is an issue.
-
 
 (b) Discuss the appropriateness of using a one-sided or two-sided test for this exercise. Consider: for this decision process, would we care about one or both directions?
-
-**Solution**
-
-In the example, the goal is to use the data to argue whether or not the issue (here: crime) will get special attention from the Chinese government.  The government is focused on the situation when concern is **over** 20% (the argument is that they will not pursue issues with less than 20% concern).  So the hypothesis (and resulting test) will be a one-sided test.
 
 (c) Consider the hypothesis testing framework (that is, the last few steps where a probability is found and a conclusion is made).
 
@@ -168,20 +158,6 @@ In the example, the goal is to use the data to argue whether or not the issue (h
 * If you can use any **coin** (that is, a coin with any particular probability of heads), how could you use the coin to calculate the desired probability? Be specific so someone could follow your instructions. 
 * What are the possible conclusion outcomes for the study given the probability calculation?
 
-**Solution**
-
-* We need to know the probability of seeing 24% or more (of 563 people) who believe crime is an issue if in fact only 20% of people are worried in the population.  
-* We can use a 20% coin and flip it 563 times to get the proportion of people in the sample who believe that crime is an issue.  We repeat that process many many times and model the possible values for the sample proportion when the true proportion is really 0.2.  To get the p-value, we measure the proportion of times the sample proportion (in the null hypothesis alternative universes) was 0.24 or greater.
-* If the p-value is very small (say, less than 0.05), we conclude that more than 20% of people believe that crime is an issue.
-* If the p-value is big (say, over 0.05), we cannot claim anything about the value of the true proportion of people who think crime is an issue.
-
-
-It turns out that the p-value is quite small.  Below, the calculation using a mathematical model which we will cover in class soon. If 20% of Chinese adults think that crime is an issue, it would be pretty unusual (only happen in 1.3% of samples) to see a sample that has 24% or more Chinese adults reporting crime as an issue of concern.
-
-```{r}
-library(mosaic)
-xpnorm( (0.24 - 0.2) / 0.018, 0, 1, plot = TRUE)
-```
 
 
 ```{r}
