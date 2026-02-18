@@ -723,7 +723,7 @@ That is, we would expect $\hat{p}$ and $p$ to be no more than _____ apart[^60]
 
 ---
 
-(@) Let's say that the null hypothesis (e.g., p=0.47) is TRUE.   My level of discernibility is 0.03 (reject if p-value < 0.03). How often will I reject the null hypothesis?[^67]
+(@) Let's say that the null hypothesis (e.g., p=0.47) is TRUE.   I reject $H_0$ if the p-value < 0.03. How often will I reject the null hypothesis?[^67]
      (a) 1 % of the time
      (b) 3% of the time
      (c) 5 % of the time
@@ -740,8 +740,7 @@ It means in repeated samples.  That is, in 3% of all datasets we'd take from tha
 
 ---
 
-(@) Let's say that the null hypothesis (e.g., p=0.47) is TRUE.   My level of discernibility is 0.03.  
-How often will p be in a 97% confidence interval?[^68]
+(@) Let's say that the null hypothesis (e.g., p=0.47) is TRUE.   I reject $H_0$ if the p-value < 0.03. How often will p be in a 97% confidence interval?[^68]
     (a) 1 % of the time
     (b) 3% of the time
     (c) 5 % of the time
