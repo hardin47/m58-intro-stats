@@ -222,6 +222,11 @@ Ask in class / talk to your neighbor / use the applet to make sure the logic of 
 
 Consider the original study.  Provide one sentence (not a number) describing each of the following:
 
+* observational unit: 
+* variable: 
+* statistic: 
+* parameter: 
+
 #### Q2.Bar plot
 
 Create a bar plot of the first sample you took (above).  Use `geom_bar()`.
