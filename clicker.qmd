@@ -708,7 +708,7 @@ That is, we would expect $\hat{p}$ and $p$ to be no more than _____ apart[^60]
    a. TRUE
    b. FALSE
 
-[^65]: a. TRUE
+[^65]: a. FALSE.  We are 100% confident that the interval contains the sample proportion! The statement should be "95% confident that the interval includes the population proportion who believe that the global poverty rate has doubled."
 
 ---
 
