@@ -866,7 +866,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-(@) Is the Alien's interval for the true proportion of all humans who self-identify as female consistent with your lived experience?[^81]
+(@) Alien example (see notes 4.6.1): Is the Alien's interval for the true proportion of all humans who self-identify as female consistent with your lived experience?[^81]
     (a) Yes
     (b) No
     (c) I don't understand what the confidence interval represents.
@@ -875,7 +875,7 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-(@) As we've seen with the applet, about 5% of all 95% intervals fail to capture the actual value of the population parameter.  Do you think the alien just got a "red" interval?[^82]
+(@) Alien example (see notes 4.6.1): As we've seen with the applet, about 5% of all 95% intervals fail to capture the actual value of the population parameter.  Do you think the alien just got a "red" interval?[^82]
     (a)	Yes
     (b)	No
 
@@ -883,11 +883,20 @@ It means in repeated samples.  That is, in 97% of all datasets we'd take from th
 
 ---
 
-(@) Would it be reasonable for the alien to conclude, with 95% confidence, that between 17.4% and 34.6% of US Senators in the year 2026 self-identify as female?[^83]
+(@) Alien example (see notes 4.6.1): Would it be reasonable for the alien to conclude, with 95% confidence, that between 17.4% and 34.6% of US Senators in the year 2026 self-identify as female?[^83]
      (a)	Yes
      (b)	No
 
 [^83]: b. No. We know (for sure, with 100% confidence) that exactly 26% of U.S. senators in 2026 self identify as female. If that's the entire population of interest, there's no reason to calculate a confidence interval.
+
+---
+
+(@) Gettysburg example (see notes 4.6.2): As we've seen with the applet, about 5% of all 95% intervals fail to capture the actual value of the population parameter.  Do you think you just got a "red" interval for proportion of short words?[^82a]
+    (a)	Yes
+    (b)	No
+
+[^82a]: b. No.  You didn't just "get unlucky".  Instead, the reason the interval failed to capture the true parameter is because the sample was not representative of the population. There was not a simple random sample.
+
 
 ---
 
