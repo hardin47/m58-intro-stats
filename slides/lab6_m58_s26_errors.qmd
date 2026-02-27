@@ -113,8 +113,8 @@ $$\mbox{Z score} = \frac{(\hat{p}_1 - \hat{p}_2) - 0}{\sqrt{\frac{\hat{p}_1(1-\h
    $$SE(\hat{p}_1 - \hat{p}_2) = \sqrt{\frac{\hat{p}_1(1-\hat{p_1})}{n_1} + \frac{\hat{p}_2(1-\hat{p_2})}{n_2}} = \sqrt{\frac{0.5(1-0.5)}{14} + \frac{0.5(1-0.5)}{15}} = 0.186$$
    * Your PI (Principal Investigator = research boss) tells you that she had originally expected the difference in sample proportions to be -0.25. 
    * You know that you would have rejected $H_0$ if your Z score was less than -1.645 (if your level of discernibility is 0.05).  
-      i. What value of $\hat{p}_1 - \hat{p}_2$ would make you reject $H_0$?
-      ii. What is the power of the test when the true difference is $p_1 - p_2 = -0.25$?
+      i. What value of $\hat{p}_1 - \hat{p}_2$ would make you reject $H_0$ (assume $SE(\hat{p}_1 - \hat{p}_2) = 0.186$)?
+      ii. Estimate the power of the test when the true difference is $p_1 - p_2 = -0.25$ (assume $SE(\hat{p}_1 - \hat{p}_2) = 0.186$)?
    
 
 
