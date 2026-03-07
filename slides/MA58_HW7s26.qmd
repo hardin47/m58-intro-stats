@@ -24,7 +24,7 @@ library(kableExtra)
 
 
 
-#### Q3. Conserving Hotel Towels? (HW 3.8 ISCAM) 
+#### Q1. Conserving Hotel Towels? (HW 3.8 ISCAM) 
 
 Many hotels have begun a conservation program that encourages guests to re-use towels rather than have them washed on a daily basis. A recent study examined whether one method of encouragement might work better than another. Different signs explaining the conservation program were placed in the bathrooms of the hotel rooms, with random assignment determining which rooms received which sign. One sign mentioned the importance of environmental protection, whereas another sign claimed that 75% of the hotel's guests choose to participate in the program.  Researchers used the hotel staff (a mid-sized, mid-priced hotel in the Southwest that was part of a well-known national hotel chain) to record whether guests staying for multiple nights agreed to reuse their towel after the first night. "Success", in the study, means that the guest did agree to reuse the towel.
 
