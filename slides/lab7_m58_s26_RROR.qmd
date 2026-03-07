@@ -83,7 +83,7 @@ cancer_in_dogs |>
   ___(null = "independence") |>
   ___(reps = 1000, type = "permute") |>
   ___(stat = "odds ratio", order = c("2,4-D", "no 2,4-D")) |>
-  ___() +
+  ___() +  # two lines of code for ggplot
   xlab("statistic = odds ratio")
 ```
 
@@ -116,7 +116,8 @@ Note that the sampling distribution is not symmetric!
 set.seed(4774)
 obs_or <- cancer_in_dogs |>
   specify(___ ~ ___, ___ = "___") |>
-  calculate(stat = "___", order = c("___", "___")) 
+  calculate(stat = "___", order = c("___", "___")) |>
+  pull()
 
 obs_or
   
