@@ -89,7 +89,7 @@ schedule <- tribble(
 
   'Week 8 <br> 3.9.26', ' Case-control + <br> cohort studies', '• Case-control <br> • Cohort ',
   '<a href="https://st47s.com/Math58/Notes/03-InfCat.html#rr" target = "_blank"><i class="fas fa-book-open"></i> RR</a>  <br> <a href="https://st47s.com/Math58/Notes/03-InfCat.html#or" target = "_blank"><i class="fas fa-book-open"></i> OR</a>',
-  ' <br> there is lab on 3.13.26 <br> <a href = "https://www.kff.org/policy-watch/a-look-at-federal-health-data-taken-offline/" target = "_blank"><i class="fas fa-newspaper"></i> health data taken offline</a> <br> <a href="https://www.notus.org/trump-white-house/federal-data-is-disappearing" target = "_blank"><i class="fas fa-newspaper"></i> disappearing data</a> ',
+  ' <br> there is lab on 3.13.26 <br> <a href = "https://www.kff.org/policy-watch/a-look-at-federal-health-data-taken-offline/" target = "_blank"><i class="fas fa-newspaper"></i> health data taken offline</a> <br> <a href="https://www.notus.org/trump-white-house/federal-data-is-disappearing" target = "_blank"><i class="fas fa-newspaper"></i> disappearing data</a> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/echo-hawk.html" target = "_blank">Abigail Echo-Hawk</a>',
   '<i class="fa-solid fa-question"></i> Quiz 3 on 3/11/26 <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW7s26.pdf" target = "_blank"><i class="fas fa-laptop"></i> HW 7 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW7s26.qmd" target = "_blank"><i class="fas fa-laptop"></i> HW 7 qmd</a>',
   
 
@@ -104,24 +104,25 @@ schedule <- tribble(
   '<br> no lab on 3.27.26',
   ' ',
   
+  '<font color = "#114B5F"><b>3.24.26</b></font>', '<font color = "#114B5F"><b>Proj 1: Pilot</b></font>'," ", 
+  ' ',
+  ' ',
+  '<a href="https://m58-intro-stats.netlify.app/slides/Pilot_m58_s26_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 1: Pilot</a>',
+  
   "Week 10 <br> 3.30.26", '1 mean +<br>pred interval',"• dist of X-bar <br> • SE(X-bar) <br> • t-test of μ<br> • t-CI for μ <br> • PI for X_{n+1}", 
   '<a href="https://st47s.com/Math58/Notes/04-InfNum.html#mean1inf" target = "_blank"><i class="fas fa-book-open"></i> 1 mean</a> <br> <a href="https://st47s.com/Math58/Notes/04-InfNum.html#mean1inf" target = "_blank"><i class="fas fa-book-open"></i> pred int</a>  <br> <a href="https://openintro-ims.netlify.app/inference-one-mean.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 19</a>',
   ' ',
   ' ',
-
-'<font color = "#114B5F"><b>3.24.26</b></font>', '<font color = "#114B5F"><b>Proj 1: Pilot</b></font>'," ", 
-  ' ',
-  ' ',
-  '<a href="https://m58-intro-stats.netlify.app/slides/Pilot_m58_s26_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 1: Pilot</a>',
+  
+'<font color = "#114B5F"><b>3.31.26</b></font>', '<font color = "#114B5F"><b>Proj 2: Power Analysis</b></font>'," ", 
+  ' ',' ',
+  '<a href="https://m58-intro-stats.netlify.app/slides/Power_m58_s26_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 2: Power Analysis</a>',
   
   "Week 11 <br> 4.6.26", '2 means +<br>t-proced',"• dist of X-bar_1 - X-bar_2 <br> • SE(X-bar_1 - X-bar_2) <br> • t-test of μ_1 - μ_2<br> • randomization test of μ_1 - μ_2 <br> • t-CI for μ_1 - μ_2 <br> • bootstrap CI for μ_1 - μ_2", 
   '<a href="https://st47s.com/Math58/Notes/04-InfNum.html#mean2inf" target = "_blank"><i class="fas fa-book-open"></i> 2 means</a>  <br> <a href = "https://www.rossmanchance.com/applets/2021/anovashuffle/AnovaShuffle.htm?hideExtras=2" target = "_blank"><i class="fas fa-gamepad"></i> 2 samples</a> <br> <a href="https://openintro-ims.netlify.app/inference-two-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 20</a>',
   ' ',
   '<i class="fa-solid fa-question"></i> Quiz 4 on 4/8/26',
 
-'<font color = "#114B5F"><b>3.31.26</b></font>', '<font color = "#114B5F"><b>Proj 2: Power Analysis</b></font>'," ", 
-  ' ',' ',
-  '<a href="https://m58-intro-stats.netlify.app/slides/Power_m58_s26_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 2: Power Analysis</a>',
 
   "Week 12 <br> 4.13.26", 'ANOVA',"• MSG <br> • MSE <br>• F-test ", 
   '<a href="https://st47s.com/Math58/Notes/04-InfNum.html#ANOVA" target = "_blank"><i class="fas fa-book-open"></i> ANOVA</a>  <br> <a href="https://st47s.com/Math58/Notes/06-CorRegInf.html#infbeta1" target = "_blank"><i class="fas fa-book-open"></i> Inf on β_1</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class="fas fa-gamepad"></i> slopes</a> <br> <a href="https://openintro-ims.netlify.app/inference-many-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 22</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-slr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 24</a>',
@@ -186,10 +187,6 @@ schedule <- tribble(
   ~`date`, ~topic, ~agenda, ~readings, ~`article (Tues)`, ~assignments,
   
   
-  "Week 7 <br> 2.28.23", 'Rel Risk +<br>Odds Ratios',"•  RR <br> • OR<br> • Case-control <br> • Cohort ", 
-  '<a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#diffprop" target = "_blank"><i class="fas fa-book-open"></i> diff props</a> <br> <a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#rr" target = "_blank"><i class="fas fa-book-open"></i> RR</a>  <br> <a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#or" target = "_blank"><i class="fas fa-book-open"></i> OR</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 3.9-3.11</a> <br> <a href="https://openintro-ims.netlify.app/inference-two-props.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 17</a>',
-  '<a href="https://www.covid-datascience.com/post/israeli-data-how-can-efficacy-vs-severe-disease-be-strong-when-60-of-hospitalized-are-vaccinated" target = "_blank"><i class="fas fa-newspaper"></i> interaction</a> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/jackson.html" target = "_blank">Monica Jackson</a> ',
-  '<a href="https://m58-intro-stats.netlify.app/slides/wu13_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU13</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/wu14_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU14</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW6s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 6 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW6s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 6 Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab6_m58_s23_errors.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 6 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab6_m58_s23_errors.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 6 Rmd</a>',
 
   'Week 8 <br> 3.7.23', 'catch-up',
   " ",
