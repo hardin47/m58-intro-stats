@@ -36,7 +36,7 @@ You will have an opportunity to collect more data as we go, but the better the o
 The goal of the pilot study assignment is to develop a preliminary research question and to collect some initial data, both in preparation for your group Island project.
 
 
-One cavear: read about <a href = "https://www.nccih.nih.gov/grants/pilot-studies-common-uses-and-misuses" target = "_blank">common uses and misuses of pilot studies</a>.  Note that generally pilot studies are not used for sample size calculations because the estimated effect size is typically quite unstable.
+One caveat: read about <a href = "https://www.nccih.nih.gov/grants/pilot-studies-common-uses-and-misuses" target = "_blank">common uses and misuses of pilot studies</a>.  Note that generally pilot studies are not used for sample size calculations because the estimated effect size is typically quite unstable.
 In a real study, we would use a clinically relevant effect size and calculate power from there.
  
 
