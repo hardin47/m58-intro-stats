@@ -87,8 +87,8 @@ schedule <- tribble(
   '<a href="https://www.covid-datascience.com/post/israeli-data-how-can-efficacy-vs-severe-disease-be-strong-when-60-of-hospitalized-are-vaccinated" target = "_blank"><i class="fas fa-newspaper"></i> interaction</a>  <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/jackson.html" target = "_blank">Monica Jackson</a>',
   '<a href="https://m58-intro-stats.netlify.app/slides/ws11_ma58b_s26_efficacy.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WS 11 - effectiveness</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/ws12_ma58b_s26_OR.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WS 12 - odds ratios</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW6s26.pdf" target = "_blank"><i class="fas fa-laptop"></i> HW 6 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW6s26.qmd" target = "_blank"><i class="fas fa-laptop"></i> HW 6 qmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab7_m58_s26_RROR.pdf" target = "_blank"><i class="fas fa-laptop"></i> Lab 7 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab7_m58_s26_RROR.qmd" target = "_blank"><i class="fas fa-laptop"></i> Lab 7 qmd</a>',
 
-  'Week 8 <br> 3.9.26', ' Case-control + <br> cohort studies', '• Case-control <br> • Cohort ',
-  '<a href="https://st47s.com/Math58/Notes/03-InfCat.html#rr" target = "_blank"><i class="fas fa-book-open"></i> RR</a>  <br> <a href="https://st47s.com/Math58/Notes/03-InfCat.html#or" target = "_blank"><i class="fas fa-book-open"></i> OR</a>',
+  'Week 8 <br> 3.9.26', ' Case-control + <br> cohort studies <br> χ^2 Test', '• Case-control <br> • Cohort <br> • expected counts <br> • X^2 statistic <br> • χ^2 test',
+  '<a href="https://st47s.com/Math58/Notes/03-InfCat.html#rr" target = "_blank"><i class="fas fa-book-open"></i> RR</a>  <br> <a href="https://st47s.com/Math58/Notes/03-InfCat.html#or" target = "_blank"><i class="fas fa-book-open"></i> OR</a> <br> <a href="https://st47s.com/Math58/Notes/03-InfCat.html#chisq2" target = "_blank"><i class="fas fa-book-open"></i> χ^2 Test</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 3.2</a> <br> <a href="https://openintro-ims.netlify.app/inference-tables.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 18</a>',
   ' <br> there is lab on 3.13.26 <br> <a href = "https://www.kff.org/policy-watch/a-look-at-federal-health-data-taken-offline/" target = "_blank"><i class="fas fa-newspaper"></i> health data taken offline</a> <br> <a href="https://www.notus.org/trump-white-house/federal-data-is-disappearing" target = "_blank"><i class="fas fa-newspaper"></i> disappearing data</a> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/echo-hawk.html" target = "_blank">Abigail Echo-Hawk</a>',
   '<i class="fa-solid fa-question"></i> Quiz 3 on 3/11/26 <br> <br> <a href="https://m58-intro-stats.netlify.app/slides/ws13_ma58b_s26_invariance.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WS 13 - invariance of OR</a> <br><a href="https://m58-intro-stats.netlify.app/slides/MA58_HW7s26.pdf" target = "_blank"><i class="fas fa-laptop"></i> HW 7 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW7s26.qmd" target = "_blank"><i class="fas fa-laptop"></i> HW 7 qmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab8_m58_s26_Islands.docx" target = "_blank"><i class="fas fa-laptop"></i> Lab 8 Islands</a>',
   
@@ -99,17 +99,17 @@ schedule <- tribble(
   ' ', 
   
   
-  "Week 9 <br> 3.23.26", 'χ^2 Test',"• expected counts <br> • X^2 statistic <br> • χ^2 test", 
-  '<a href="https://st47s.com/Math58/Notes/03-InfCat.html#chisq2" target = "_blank"><i class="fas fa-book-open"></i> χ^2 Test</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 3.2</a> <br> <a href="https://openintro-ims.netlify.app/inference-tables.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 18</a>',
-  '<br> no lab on 3.27.26',
-  ' ',
+  "Week 9 <br> 3.23.26", '1 mean',"• dist of X-bar <br> • SE(X-bar) <br> • t-test of μ", 
+  '<a href="https://st47s.com/Math58/Notes/04-InfNum.html#mean1inf" target = "_blank"><i class="fas fa-book-open"></i> 1 mean</a> <br> <a href="https://openintro-ims.netlify.app/inference-one-mean.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 19</a>',
+  '<br> no lab on 3.27.26 <br> <a href="https://static1.squarespace.com/static/58e9b10f9de4bb8d1fb5ebbc/t/5b297686f950b7690cf0f9a9/1529443976962/Policy+Brief+Indigenous+Data+Sovereignty+in+the+United+States+V0.3+copy.pdf" target = "_blank"><i class="fas fa-newspaper"><br> </i> Data sovereignty</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/Policy+Brief+Indigenous+Data+Sovereignty+in+the+United+States.pdf" target = "_blank"><i class="fas fa-newspaper"><br> </i> this might be a better link to Data sovereignty</a> <br> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/cruz.html" target = "_blank">Maricela Cruz</a>',
+  '<br><a href="https://m58-intro-stats.netlify.app/slides/MA58_HW8s26.pdf" target = "_blank"><i class="fas fa-laptop"></i> HW 8 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW8s26.qmd" target = "_blank"><i class="fas fa-laptop"></i> HW 8 qmd</a>',
   
   '<font color = "#114B5F"><b>3.24.26</b></font>', '<font color = "#114B5F"><b>Proj 1: Pilot</b></font>'," ", 
   ' ',
   ' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/Pilot_m58_s26_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 1: Pilot</a>',
   
-  "Week 10 <br> 3.30.26", '1 mean +<br>pred interval',"• dist of X-bar <br> • SE(X-bar) <br> • t-test of μ<br> • t-CI for μ <br> • PI for X_{n+1}", 
+  "Week 10 <br> 3.30.26", 'CI <br>pred interval',"• t-CI for μ <br> • PI for X_{n+1}", 
   '<a href="https://st47s.com/Math58/Notes/04-InfNum.html#mean1inf" target = "_blank"><i class="fas fa-book-open"></i> 1 mean</a> <br> <a href="https://st47s.com/Math58/Notes/04-InfNum.html#mean1inf" target = "_blank"><i class="fas fa-book-open"></i> pred int</a>  <br> <a href="https://openintro-ims.netlify.app/inference-one-mean.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 19</a>',
   ' ',
   ' ',
@@ -188,26 +188,12 @@ schedule <- tribble(
   
   
 
-  'Week 8 <br> 3.7.23', 'catch-up',
-  " ",
-  '<i class="fas fa-book-open"></i> study materials <br> (see Canvas) <br> <a href="https://m58-intro-stats.netlify.app/slides/adviceExam1_s23.docx" target = "_blank"><i class="fas fa-pencil-alt"></i>advice for exam 1</a>',
-  '<a href="https://m58-intro-stats.netlify.app/slides/drinking.pdf" target = "_blank"><i class="fas fa-newspaper"><br> </i>A Little Alcohol Won’t Kill You or Make You Stronger</a> <br> <a href="https://www.wsj.com/articles/alcohol-long-term-health-risks-c6d572d2" target = "_blank"><i class="fas fa-newspaper"><br> </i>A Little Alcohol Won’t Kill You or Make You Stronger</a> <br> <br> no lab on 3.10.23',
-  '<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW7s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW pdf - not due ever</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW7s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW Rmd - not due ever</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab7_m58_s23_RROR.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 7 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab7_m58_s23_RROR.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 7 Rmd</a>',
-  
-  
-'<font color = "#114B5F"><b>3.9.23</b></font>', '<font color = "#114B5F"><b>Exam 1</b></font>'," ", 
-  ' ',
-  ' ',
-  ' ',    
 
-  '3.14.23', 'spring break'," ", 
-  ' ',
-  ' ',
-  ' ', 
+  '<a href="https://m58-intro-stats.netlify.app/slides/drinking.pdf" target = "_blank"><i class="fas fa-newspaper"><br> </i>A Little Alcohol Won’t Kill You or Make You Stronger</a> <br> <a href="https://www.wsj.com/articles/alcohol-long-term-health-risks-c6d572d2" target = "_blank"><i class="fas fa-newspaper"><br> </i>A Little Alcohol Won’t Kill You or Make You Stronger</a> <br> <br> no lab on 3.10.23',
+
+
   
-  
-  "Week 9 <br> 3.21.23", 'χ^2 Test',"• expected counts <br> • X^2 statistic <br> • χ^2 test", 
-  '<a href="https://st47s.com/Math58/Notes/inference-for-categorical-data.html#chisq2" target = "_blank"><i class="fas fa-book-open"></i> χ^2 Test</a>  <br> <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><i class="fas fa-book-open"></i> ISCAM 3.2</a> <br> <a href="https://openintro-ims.netlify.app/inference-tables.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 18</a>',
+
   '<a href="https://wwwnc.cdc.gov/eid/article/26/11/20-3003_article" target = "_blank"><i class="fas fa-newspaper"></i> masks</a> <br> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/cruz.html" target = "_blank">Maricela Cruz</a>',
   ' <a href="https://m58-intro-stats.netlify.app/slides/wu15_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU15</a> <br> ',
   
