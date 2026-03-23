@@ -99,13 +99,6 @@ ggplot(___) +
 ```
 
 
-```{r}
-ggplot(volunteer) +
-  geom_bar(aes(x = year, fill = vol), position = "fill") +
-  labs(x = "Age Group",
-       y = "Percent")
-```
-
 
 (e)	Conduct the chi-squared test.  Report the hypotheses, check of technical conditions (for the distribution to work out, we need at least 5 observations in each cell of the table), sampling distribution, chi-squared test statistic, and chi-squared p-value.  (Provide the details of your calculations and/or relevant computer output.)  Summarize your conclusion.  
 
