@@ -1341,9 +1341,9 @@ Q: what is the most confusing part of understanding the difference between the v
       (b) 92% of individual temperatures will be between (98.2, 98.3).
       (c) There is a 0.92 probability that the true temperature is between (98.2, 98.3).
       (d) There is a 0.92 probability that the true average temperature is between (98.2, 98.3).
-      (e) In repeated samples, 92% of the intervals will contain $\mu$.
+      (e) In repeated samples, 92% of the intervals will contain $\mu.$
 
-[^124]: e. In repeated samples, 92% of the intervals will contain $\mu$. Also good interpretation for a CI: f. We are 92% confident that the interval (98.2, 98.3) captures the true average temperature, $\mu$.
+[^124]: e. In repeated samples, 92% of the intervals will contain $\mu.$ Also good interpretation for a CI: f. We are 92% confident that the interval (98.2, 98.3) captures the true average temperature, $\mu.$
 
 ---
 
@@ -1405,7 +1405,7 @@ Q: what is the most confusing part of understanding the difference between the v
       (b) 95% of individual temperatures will be between (96.79, 99.70).
       (c) There is a 0.95 probability that the true temperature is between (96.79, 99.70).
       (d) There is a 0.95 probability that the true average temperature is between (96.79, 99.70).
-      (e) In repeated samples, 95% of the intervals will contain $\mu$.
+      (e) In repeated samples, 95% of the intervals will contain $\mu.$
 
 [^130]: b. 95% of individual temperatures will be between (96.79, 99.70).
 
@@ -1433,9 +1433,9 @@ Q: what is the most confusing part of understanding the difference between the v
 
 (@) When the population is skewed right, the distribution for the data will be[^133]
       (a) always skewed right
-      (b) skewed right if n is big enough
+      (b) skewed right if $n$ is big enough
       (c) always normal
-      (d) normal if n is big enough
+      (d) normal if $n$ is big enough
 
 [^133]: a. always skewed right
 
