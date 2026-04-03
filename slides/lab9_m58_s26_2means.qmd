@@ -46,18 +46,7 @@ data(births14)
 
 Try `geom_point()`, `geom_boxplot()`, `geom_jitter()`, `geom_bar()`,...
 
-```{r}
-births14 |>
-  ggplot(aes(x = weeks, y = weight, color = habit)) + 
-  geom_point()
 
-# check out geom_jitter.... just like geom_point with a little bit of noise added!
-# in the geom_jitter you can adjust `width = ...` or `height = ...`
-
-births14 |>
-  ggplot(aes(x = premie, y = habit, color = marital)) + 
-  geom_jitter()
-```
 
 ### Variablity of $\overline{X}_1 - \overline{X}_2$ when $H_0$ is true
 
@@ -77,30 +66,7 @@ $H_0: \mu_Y = \mu_M$
 
 $H_A: \mu_Y \ne \mu_M$
 
-```{r}
-set.seed(470)
-
-wks_obs <- births14 |>
-  specify(weeks ~ mature) |>
-  calculate(stat = "diff in means", order = c("mature mom", "younger mom")) |>
-  pull()
-wks_obs
-
-null_wks <- births14 |>
-  specify(weeks ~ mature) |>
-  hypothesize(null = "independence") |>
-  generate(reps = 1000, type = "permute") |>
-  calculate(stat = "diff in means", order = c("mature mom", "younger mom"))
-
-null_wks |>
-  ggplot() + 
-  geom_histogram(aes(x = stat)) + 
-  geom_vline(xintercept = wks_obs) + 
-  labs(x = "null differences in mean weeks")
-
-null_wks |>
-  summarize(p_val = 2 * mean(stat <= wks_obs))
-```
+Use the **infer** syntax to do a two sample randomization test of means.
 
 
 ### Variablity of $\overline{X}_1 - \overline{X}_2$  with no hypothesis stated
@@ -112,45 +78,16 @@ See bootstrapping applet:
 
 Note that the variability of the statistics (the sampling distribution) can be displayed by applying the same ideas that were used on the difference in sample proportions.  It is important to observe that the distribution  (of $\overline{X}_1 - \overline{X}_2$ ) is not centered at 0.
 
+Use the **infer** syntax to estimate the sampling distribution of $\overline{X}_1 - \overline{X}_2$.
 
-```{r}
-set.seed(5)
-births14 |>
-  specify(weeks ~ mature) |>
-  generate(reps = 1000, type = "bootstrap") |>  # no hypothesize step!!!
-  calculate(stat = "diff in means", order = c("mature mom", "younger mom")) |>
-  visualize() +
-  xlab("bootstrap differences in mean weeks")
-```
 
 ### Bootstrap Confidence Interval for $\mu_1 - \mu_2$
 
-Using the distributions above, the CI for $\mu_Y - \mu_M$ can be taken directly from the bootstrap sampling distributions.
-
-We are 93% confident that the true difference in average weeks of gestation between mature versus younger moms is between -0.524 weeks and 0.227 weeks.  Note that because the confidence interval overlaps zero, we know that the value of zero is a plausible parameter.
+Using the distributions above, find the CI for $\mu_Y - \mu_M$, taken directly from the bootstrap sampling distributions.
 
 
-```{r}
-set.seed(314)
-boot_diff <- births14 |>
-  specify(weeks ~ mature) |>
-  generate(reps = 1000, type = "bootstrap") |>  # no hypothesize step!!!
-  calculate(stat = "diff in means", order = c("mature mom", "younger mom"))
 
-
-ci_diff_93 <- boot_diff |>
-  summarize(lower = quantile(stat, probs = 0.035),
-            upper = quantile(stat, probs = 0.965))
-
-ci_diff_93
-
-boot_diff |>
-  ggplot() +
-  geom_histogram(aes(stat)) + 
-  geom_vline(xintercept = ci_diff_93$lower, color = "red") + 
-  geom_vline(xintercept = ci_diff_93$upper, color = "red") + 
-  labs(x = "bootstrap differences in mean weeks")
-```
+Conclusion: We are 93% confident that the true difference in average weeks of gestation between mature versus younger moms is between -0.524 weeks and 0.227 weeks.  Note that because the confidence interval overlaps zero, we know that the value of zero is a plausible parameter.
 
 
 ***
