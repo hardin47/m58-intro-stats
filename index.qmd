@@ -120,7 +120,7 @@ schedule <- tribble(
   
   "Week 11 <br> 4.6.26", '2 means +<br>t-proced',"• dist of X-bar_1 - X-bar_2 <br> • SE(X-bar_1 - X-bar_2) <br> • t-test of μ_1 - μ_2<br> • randomization test of μ_1 - μ_2 <br> • t-CI for μ_1 - μ_2 <br> • bootstrap CI for μ_1 - μ_2", 
   '<a href="https://st47s.com/Math58/Notes/04-InfNum.html#mean2inf" target = "_blank"><i class="fas fa-book-open"></i> 2 means</a>  <br> <a href = "https://www.rossmanchance.com/applets/2021/anovashuffle/AnovaShuffle.htm?hideExtras=2" target = "_blank"><i class="fas fa-gamepad"></i> 2 samples</a> <br> <a href="https://openintro-ims.netlify.app/inference-two-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 20</a>',
-  ' ',
+  '<a href="http://www.nytimes.com/2010/09/19/health/research/19trial.html?hp" target = "_blank"><i class="fas fa-newspaper"></i> clinical trials</a> <br> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/ortega.html" target = "_blank">Omayra Ortega</a>',
   '<i class="fa-solid fa-question"></i> Quiz 4 on 4/8/26',
 
 
@@ -186,17 +186,6 @@ schedule <- tribble(
 schedule <- tribble(
   ~`date`, ~topic, ~agenda, ~readings, ~`article (Tues)`, ~assignments,
 
-
-  
-  "Week 10 <br> 3.28.23", '1 mean +<br>pred interval',"• dist of X-bar <br> • SE(X-bar) <br> • t-test of μ<br> • t-CI for μ <br> • PI for X_{n+1}", 
-  '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean1inf" target = "_blank"><i class="fas fa-book-open"></i> 1 mean</a> <br> <a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean1inf" target = "_blank"><i class="fas fa-book-open"></i> pred int</a>  <br> <a href="https://openintro-ims.netlify.app/inference-one-mean.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 19</a>',
-  '<a href="https://static1.squarespace.com/static/58e9b10f9de4bb8d1fb5ebbc/t/5b297686f950b7690cf0f9a9/1529443976962/Policy+Brief+Indigenous+Data+Sovereignty+in+the+United+States+V0.3+copy.pdf" target = "_blank"><i class="fas fa-newspaper"><br> </i> Data sovereignty</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/Policy+Brief+Indigenous+Data+Sovereignty+in+the+United+States.pdf" target = "_blank"><i class="fas fa-newspaper"><br> </i> this might be a better link to Data sovereignty</a> <br> <br> no lab on 3.31.23 <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/paisano.html" target = "_blank">Edna Paisano</a>',
-  '<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW8s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 8 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW8s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 8 Rmd</a> <br> <br> Pilot Study Due <br> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab8_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 8 doc</a> <br> <br> <a href="https://m58-intro-stats.netlify.app/slides/wu16_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU16</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/wu17_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU17</a> ',
-
-'<font color = "#114B5F"><b>3.28.23</b></font>', '<font color = "#114B5F"><b>Proj 1: Pilot</b></font>'," ", 
-  ' ',
-  ' ',
-  '<a href="https://m58-intro-stats.netlify.app/slides/Pilot_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 1: Pilot</a>',
   
   "Week 11 <br> 4.4.23", '2 means +<br>t-proced',"• dist of X-bar_1 - X-bar_2 <br> • SE(X-bar_1 - X-bar_2) <br> • t-test of μ_1 - μ_2<br> • randomization test of μ_1 - μ_2 <br> • t-CI for μ_1 - μ_2 <br> • bootstrap CI for μ_1 - μ_2", 
   '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#mean2inf" target = "_blank"><i class="fas fa-book-open"></i> 2 means</a>  <br> <a href = "http://www.rossmanchance.com/applets/index2021.html" target = "_blank"><i class="fas fa-gamepad"></i> 2 samples</a> <br> <a href="https://openintro-ims.netlify.app/inference-two-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 20</a>',
