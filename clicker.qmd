@@ -1623,6 +1623,39 @@ Q: what is the most confusing part of understanding the difference between the v
 
 ---
 
+(@) What is the primary reason to use a matched pairs design?[^151a]
+      a. To increase the sample size
+      b. To ensure that not everyone is assigned to the treatment group.
+      c. To reduce the variability
+      d. To find a better estimate of $\mu_1 - \mu_2$
+
+[^151a]: c. To reduce the variability
+---
+
+(@) A farmer wants to see whether referring to cows by name increases their milk production. He selects half of his cows at random, gives them names, and frequently calls them by name. The other half of his cows he does not call by name. Then he measures the milk production of each cow over a one-week period.[^151b]
+      a. paired
+      b. independent
+
+[^151b]: b. independent
+---
+
+(@) A farmer wants to know whether hand-milking or machine-milking tends to produce more milk from cows. He examines records of how much milk the cows have produced in the past, and orders them from most to least productive. For the top two milk producers, randomly assign one to hand-milking and the other to machine-milking. Do the same for the next two and the next two and so on.[^151c]
+      a. paired
+      b. independent
+
+[^151c]: a. paired
+
+---
+
+(@) You wonder whether students at your school tend to drive newer cars than faculty at your school. You take a random sample of 20 students and a random sample of 10 faculty members, and ask each person how old their car is.[^151d]
+      a. paired
+      b. independent
+
+[^151d]: b. independent
+
+
+---
+
 (@) In the ANOVA setting, the null hypothesis is always: $$H_0: \mu_1 = \mu_2 = \mu_3 = \ldots = \mu_I$$
 What is the alternative hypothesis?[^152]
      (a) $H_a: \mu_1 \ne \mu_2 \ne \mu_3 \ne \ldots \ne \mu_I$
