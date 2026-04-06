@@ -118,13 +118,13 @@ schedule <- tribble(
   ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/Power_m58_s26_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 2: Power Analysis</a>',
   
-  "Week 11 <br> 4.6.26", 'ANOVA',"• MSG <br> • MSE <br> • F-test", 
-  '<a href="https://st47s.com/Math58/Notes/04-InfNum.html#ANOVA" target = "_blank"><i class="fas fa-book-open"></i> ANOVA</a>  <br> <a href="https://st47s.com/Math58/Notes/06-CorRegInf.html#infbeta1" target = "_blank"><i class="fas fa-book-open"></i> Inf on β_1</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class="fas fa-gamepad"></i> slopes</a> <br> <a href="https://openintro-ims.netlify.app/inference-many-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 22</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-slr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 24</a>',
+  "Week 11 <br> 4.6.26", 'paired samples <br> ANOVA',"• μ_d <br> • MSG <br> • MSE <br> • F-test", 
+  '<a href="https://st47s.com/Math58/Notes/04-InfNum.html#ANOVA" target = "_blank"><i class="fas fa-book-open"></i> ANOVA</a>  <br>  <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class="fas fa-gamepad"></i> slopes</a> <br> <a href="https://openintro-ims.netlify.app/inference-many-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 22</a>',
   '<a href="http://www.nytimes.com/2010/09/19/health/research/19trial.html?hp" target = "_blank"><i class="fas fa-newspaper"></i> clinical trials</a> <br> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/ortega.html" target = "_blank">Omayra Ortega</a>',
   '<i class="fa-solid fa-question"></i> Quiz 4 on 4/8/26',
 
 
-  "Week 12 <br> 4.13.26", 'ANOVA',"• MSG <br> • MSE <br>• F-test ", 
+  "Week 12 <br> 4.13.26", 'ANOVA <br> SLR',"• MSG <br> • MSE <br>• F-test <br>• β_1", 
   '<a href="https://st47s.com/Math58/Notes/04-InfNum.html#ANOVA" target = "_blank"><i class="fas fa-book-open"></i> ANOVA</a>  <br> <a href="https://st47s.com/Math58/Notes/06-CorRegInf.html#infbeta1" target = "_blank"><i class="fas fa-book-open"></i> Inf on β_1</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class="fas fa-gamepad"></i> slopes</a> <br> <a href="https://openintro-ims.netlify.app/inference-many-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 22</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-slr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 24</a>',
   '  ',
   ' ',
