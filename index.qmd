@@ -124,8 +124,8 @@ schedule <- tribble(
   '<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW10s26.pdf" target = "_blank"><i class="fas fa-laptop"></i> HW 10 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW10s26.qmd" target = "_blank"><i class="fas fa-laptop"></i> HW 10 qmd</a>  <br> <i class="fa-solid fa-question"></i> Quiz 4 on 4/8/26',
 
 
-  "Week 12 <br> 4.13.26", 'ANOVA <br> SLR',"• MSG <br> • MSE <br>• F-test <br>• β_1", 
-  '<a href="https://st47s.com/Math58/Notes/04-InfNum.html#ANOVA" target = "_blank"><i class="fas fa-book-open"></i> ANOVA</a>  <br> <a href="https://st47s.com/Math58/Notes/06-CorRegInf.html#infbeta1" target = "_blank"><i class="fas fa-book-open"></i> Inf on β_1</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class="fas fa-gamepad"></i> slopes</a> <br> <a href="https://openintro-ims.netlify.app/inference-many-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 22</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-slr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 24</a>',
+  "Week 12 <br> 4.13.26", 'SLR',"• β_1", 
+  '<a href="https://st47s.com/Math58/Notes/06-CorRegInf.html#infbeta1" target = "_blank"><i class="fas fa-book-open"></i> Inf on β_1</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class="fas fa-gamepad"></i> slopes</a>  <br> <a href="https://openintro-ims.netlify.app/inf-model-slr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 24</a>',
   '  ',
   ' ',
 
