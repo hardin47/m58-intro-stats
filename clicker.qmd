@@ -1906,6 +1906,38 @@ data.frame(ex, why) %>%
 
 ---
 
+(@) We created a 95% confidence interval for the mean GPA given 10 absences to be (3.20, 3.42).  What is the correct interpretation?[^177]
+     (a) There is a 95% chance that the mean GPA of students with 10 absences is between 3.20 and 3.42.
+     (b) 95% of GPA averages (for students with 10 absences) are between 3.20 and 3.42.
+     (c) 95% of GPAs (for students with 10 absences) are between 3.20 and 3.42.
+     (d) We are 95% confident that the true mean GPA (for students with 10 absences) is between 3.20 and 3.42.
+     (e) 95% of our intervals will have a mean GPA between 3.20 and 3.42.
+
+[^177]: d. We are 95% confident that the true mean GPA (for students with 10 absences) is between 3.20 and 3.42.
+
+---
+
+(@) We created a 95% prediction interval for an individual GPA given 10 absences to be (3, 3.62).  What is the correct interpretation?[^178]
+     (a) There is a 95% chance that the mean GPA of students with 10 absences is between 3 and 3.62.
+     (b) 95% of GPA averages (for students with 10 absences) are between 3 and 3.62.
+     (c) 95% of GPAs (for students with 10 absences) are between 3 and 3.62.
+     (d) We are 95% confident that the true mean GPA (for students with 10 absences) is between 3 and 3.62.
+     (e) 95% of our intervals will have a mean GPA between 3 and 3.62.
+
+[^178]: b. 95% of GPA averages (for students with 10 absences) are between 3 and 3.62.  It is also totally okay to interpret the interval as: there is a 95% chance that if I randomly select someone with 10 absences, their GPA will be between 3 and 3.62. 
+
+---
+
+
+(@) Prediction intervals and confidence intervals have the same technical conditions:[^179]
+     (a) TRUE
+     (b) FALSE
+     (c) sort of
+
+[^179]: c. sort of.  Both methods require the data to be normally distributed (for one sample mean, the variable is normal; for linear regression, the residuals are normal).  However, if you have a large enough sample size, the CLT kicks in when building the mean interval  The CLT does not ever help for prediction intervals, so you always need normal data to have reasonable prediction intervals.
+
+---
+
 (@) Which of the below correctly describes the roles of variables in this regression model?[^171]
      (a) response: weight; explanatory: volume, paperback cover
      (b) response: weight; explanatory: volume, hardcover cover
@@ -1999,38 +2031,6 @@ $$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}
       e. the slope of the regression line between ln(price) and bedrooms is different from zero when square feet is included in the model
 
 [^176]: b. the slope of the regression line between ln(price) and square feet is different from zero when # bedrooms is included in the model
-
----
-
-(@) We created a 95% confidence interval for the mean GPA given 10 absences to be (3.20, 3.42).  What is the correct interpretation?[^177]
-     (a) There is a 95% chance that the mean GPA of students with 10 absences is between 3.20 and 3.42.
-     (b) 95% of GPA averages (for students with 10 absences) are between 3.20 and 3.42.
-     (c) 95% of GPAs (for students with 10 absences) are between 3.20 and 3.42.
-     (d) We are 95% confident that the true mean GPA (for students with 10 absences) is between 3.20 and 3.42.
-     (e) 95% of our intervals will have a mean GPA between 3.20 and 3.42.
-
-[^177]: d. We are 95% confident that the true mean GPA (for students with 10 absences) is between 3.20 and 3.42.
-
----
-
-(@) We created a 95% prediction interval for an individual GPA given 10 absences to be (3, 3.62).  What is the correct interpretation?[^178]
-     (a) There is a 95% chance that the mean GPA of students with 10 absences is between 3 and 3.62.
-     (b) 95% of GPA averages (for students with 10 absences) are between 3 and 3.62.
-     (c) 95% of GPAs (for students with 10 absences) are between 3 and 3.62.
-     (d) We are 95% confident that the true mean GPA (for students with 10 absences) is between 3 and 3.62.
-     (e) 95% of our intervals will have a mean GPA between 3 and 3.62.
-
-[^178]: b. 95% of GPA averages (for students with 10 absences) are between 3 and 3.62.  It is also totally okay to interpret the interval as: there is a 95% chance that if I randomly select someone with 10 absences, their GPA will be between 3 and 3.62. 
-
----
-
-
-(@) Prediction intervals and confidence intervals have the same technical conditions:[^179]
-     (a) TRUE
-     (b) FALSE
-     (c) sort of
-
-[^179]: c. sort of.  Both methods require the data to be normally distributed (for one sample mean, the variable is normal; for linear regression, the residuals are normal).  However, if you have a large enough sample size, the CLT kicks in when building the mean interval  The CLT does not ever help for prediction intervals, so you always need normal data to have reasonable prediction intervals.
 
 ---
 
