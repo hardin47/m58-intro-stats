@@ -1797,19 +1797,19 @@ $$H_0: \overline{X}_1 = \overline{X}_2 = \overline{X}_3 = \ldots = \overline{X}_
 ---
 
 (@) The regression technical assumptions include:[^165]
-     (a) The Y variable is normally distributed at each X
+     (a) The Y variable is normally distributed
      (b) The X variable is normally distributed
      (c) The residuals are normally distributed
      (d) The slope coefficient is normally distributed
      (e) The intercept coefficient is normally distributed
 
-[^165]: a. The Y variable is normally distributed at each X  or c. The residuals are normally distributed.  (b. is not true as there are no technical conditions on X.  d. and e. are both a result of either a. or c. being true.) 
+[^165]: c. The residuals are normally distributed.  (b. is not true as there are no technical conditions on X.  d. and e. are both a result of either a. or c. being true. a. The Y variable is normally distributed is only true if we add "at each X".) 
 
 ---
 
 (@) The technical conditions do not include:[^166]
      (a) normally distributed residuals
-     (b) normally distributed response
+     (b) normally distributed response at each X
      (c) normally distributed explanatory variable
      (d) constant variance
      (e) independence of observations

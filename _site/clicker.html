@@ -1921,7 +1921,7 @@ What is measurable?<a href="#fn95" class="footnote-ref" id="fnref95" role="doc-n
 <ol start="171" class="example" type="1">
 <li>The regression technical assumptions include:<a href="#fn169" class="footnote-ref" id="fnref169" role="doc-noteref"><sup>169</sup></a>
 <ol type="a">
-<li>The Y variable is normally distributed at each X</li>
+<li>The Y variable is normally distributed</li>
 <li>The X variable is normally distributed</li>
 <li>The residuals are normally distributed</li>
 <li>The slope coefficient is normally distributed</li>
@@ -1933,7 +1933,7 @@ What is measurable?<a href="#fn95" class="footnote-ref" id="fnref95" role="doc-n
 <li>The technical conditions do not include:<a href="#fn170" class="footnote-ref" id="fnref170" role="doc-noteref"><sup>170</sup></a>
 <ol type="a">
 <li>normally distributed residuals</li>
-<li>normally distributed response</li>
+<li>normally distributed response at each X</li>
 <li>normally distributed explanatory variable</li>
 <li>constant variance</li>
 <li>independence of observations</li>
@@ -2011,7 +2011,38 @@ What is measurable?<a href="#fn95" class="footnote-ref" id="fnref95" role="doc-n
 </div>
 <hr>
 <ol start="177" class="example" type="1">
-<li>Which of the below correctly describes the roles of variables in this regression model?<a href="#fn175" class="footnote-ref" id="fnref175" role="doc-noteref"><sup>175</sup></a>
+<li>We created a 95% confidence interval for the mean GPA given 10 absences to be (3.20, 3.42). What is the correct interpretation?<a href="#fn175" class="footnote-ref" id="fnref175" role="doc-noteref"><sup>175</sup></a>
+<ol type="a">
+<li>There is a 95% chance that the mean GPA of students with 10 absences is between 3.20 and 3.42.</li>
+<li>95% of GPA averages (for students with 10 absences) are between 3.20 and 3.42.</li>
+<li>95% of GPAs (for students with 10 absences) are between 3.20 and 3.42.</li>
+<li>We are 95% confident that the true mean GPA (for students with 10 absences) is between 3.20 and 3.42.</li>
+<li>95% of our intervals will have a mean GPA between 3.20 and 3.42.</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="178" class="example" type="1">
+<li>We created a 95% prediction interval for an individual GPA given 10 absences to be (3, 3.62). What is the correct interpretation?<a href="#fn176" class="footnote-ref" id="fnref176" role="doc-noteref"><sup>176</sup></a>
+<ol type="a">
+<li>There is a 95% chance that the mean GPA of students with 10 absences is between 3 and 3.62.</li>
+<li>95% of GPA averages (for students with 10 absences) are between 3 and 3.62.</li>
+<li>95% of GPAs (for students with 10 absences) are between 3 and 3.62.</li>
+<li>We are 95% confident that the true mean GPA (for students with 10 absences) is between 3 and 3.62.</li>
+<li>95% of our intervals will have a mean GPA between 3 and 3.62.</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="179" class="example" type="1">
+<li>Prediction intervals and confidence intervals have the same technical conditions:<a href="#fn177" class="footnote-ref" id="fnref177" role="doc-noteref"><sup>177</sup></a>
+<ol type="a">
+<li>TRUE</li>
+<li>FALSE</li>
+<li>sort of</li>
+</ol></li>
+</ol>
+<hr>
+<ol start="180" class="example" type="1">
+<li>Which of the below correctly describes the roles of variables in this regression model?<a href="#fn178" class="footnote-ref" id="fnref178" role="doc-noteref"><sup>178</sup></a>
 <ol type="a">
 <li>response: weight; explanatory: volume, paperback cover</li>
 <li>response: weight; explanatory: volume, hardcover cover</li>
@@ -2030,8 +2061,8 @@ What is measurable?<a href="#fn95" class="footnote-ref" id="fnref95" role="doc-n
 </div>
 </div>
 <hr>
-<ol start="178" class="example" type="1">
-<li>Holding constant the city, additional 1% of mortgage rate would predict average ________ in the mean demand.<a href="#fn176" class="footnote-ref" id="fnref176" role="doc-noteref"><sup>176</sup></a> <span class="math display">\[\hat{Y} =  10 + 5X_1 + 8X_2\]</span>
+<ol start="181" class="example" type="1">
+<li>Holding constant the city, additional 1% of mortgage rate would predict average ________ in the mean demand.<a href="#fn179" class="footnote-ref" id="fnref179" role="doc-noteref"><sup>179</sup></a> <span class="math display">\[\hat{Y} =  10 + 5X_1 + 8X_2\]</span>
 <ol type="a">
 <li>predicted $500 more per capita</li>
 <li>predicted $500 less per capita</li>
@@ -2043,8 +2074,8 @@ What is measurable?<a href="#fn95" class="footnote-ref" id="fnref95" role="doc-n
 <span class="math inline">\(X_2\)</span> = 1 if SF, 0 if LA<br>
 <span class="math inline">\(Y\)</span> = demand in $100 per capita</p>
 <hr>
-<ol start="179" class="example" type="1">
-<li>Referring to <span class="math display">\[\hat{Y} =  10 + 5X_1 + 8X_2\]</span> the effect of living in LA rather than SF is a ________ demand by an estimated ________ holding the effect of mortgage rate constant.<a href="#fn177" class="footnote-ref" id="fnref177" role="doc-noteref"><sup>177</sup></a>
+<ol start="182" class="example" type="1">
+<li>Referring to <span class="math display">\[\hat{Y} =  10 + 5X_1 + 8X_2\]</span> the effect of living in LA rather than SF is a ________ demand by an estimated ________ holding the effect of mortgage rate constant.<a href="#fn180" class="footnote-ref" id="fnref180" role="doc-noteref"><sup>180</sup></a>
 <ol type="a">
 <li>larger; $800 per capita</li>
 <li>smaller; $800 per capita</li>
@@ -2053,8 +2084,8 @@ What is measurable?<a href="#fn95" class="footnote-ref" id="fnref95" role="doc-n
 </ol></li>
 </ol>
 <hr>
-<ol start="180" class="example" type="1">
-<li>Consider the housing model, (Y = ln price) <span class="math display">\[\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}\]</span> coef on bedrooms (-0.0603) is change in pred ln(price) …<a href="#fn178" class="footnote-ref" id="fnref178" role="doc-noteref"><sup>178</sup></a>
+<ol start="183" class="example" type="1">
+<li>Consider the housing model, (Y = ln price) <span class="math display">\[\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}\]</span> coef on bedrooms (-0.0603) is change in pred ln(price) …<a href="#fn181" class="footnote-ref" id="fnref181" role="doc-noteref"><sup>181</sup></a>
 <ol type="a">
 <li>for a one unit increase in bedrooms</li>
 <li>for a home that adds a bedroom to the existing structure (without adding square feet)</li>
@@ -2064,8 +2095,8 @@ What is measurable?<a href="#fn95" class="footnote-ref" id="fnref95" role="doc-n
 </ol></li>
 </ol>
 <hr>
-<ol start="181" class="example" type="1">
-<li>To test if there is convincing evidence that the slope of the regression line between ln(price) and square feet (only, no bedroom here) is different from zero, what are the appropriate hypotheses?<a href="#fn179" class="footnote-ref" id="fnref179" role="doc-noteref"><sup>179</sup></a>
+<ol start="184" class="example" type="1">
+<li>To test if there is convincing evidence that the slope of the regression line between ln(price) and square feet (only, no bedroom here) is different from zero, what are the appropriate hypotheses?<a href="#fn182" class="footnote-ref" id="fnref182" role="doc-noteref"><sup>182</sup></a>
 <ol type="a">
 <li><span class="math inline">\(H_0: b_0 = 0\)</span> <span class="math inline">\(H_a: b_0 \ne 0\)</span></li>
 <li><span class="math inline">\(H_0: b_1 = 0\)</span> <span class="math inline">\(H_a: b_1 \ne 0\)</span></li>
@@ -2076,45 +2107,14 @@ What is measurable?<a href="#fn95" class="footnote-ref" id="fnref95" role="doc-n
 <hr>
 <p>p-value = probability of observed data (<span class="math inline">\(b_1\)</span>) or more extreme if <span class="math inline">\(H_0\)</span> is true (<span class="math inline">\(\beta_1 = 0).\)</span></p>
 <hr>
-<ol start="182" class="example" type="1">
-<li>With # bedrooms in the model, in words, the test <span class="math inline">\((H_0: \beta_1 = 0 \ \ \ \ \ \ H_a: \beta_1 \ne 0)\)</span> asks:<a href="#fn180" class="footnote-ref" id="fnref180" role="doc-noteref"><sup>180</sup></a> <span class="math display">\[\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}\]</span>
+<ol start="185" class="example" type="1">
+<li>With # bedrooms in the model, in words, the test <span class="math inline">\((H_0: \beta_1 = 0 \ \ \ \ \ \ H_a: \beta_1 \ne 0)\)</span> asks:<a href="#fn183" class="footnote-ref" id="fnref183" role="doc-noteref"><sup>183</sup></a> <span class="math display">\[\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}\]</span>
 <ol type="a">
 <li>the slope of the regression line between ln(price) and square feet is different from zero</li>
 <li>the slope of the regression line between ln(price) and square feet is different from zero when # bedrooms is included in the model</li>
 <li>adding sq ft to your house causes the value to increase</li>
 <li>the slope of the regression line between ln(price) and bedrooms is different from zero</li>
 <li>the slope of the regression line between ln(price) and bedrooms is different from zero when square feet is included in the model</li>
-</ol></li>
-</ol>
-<hr>
-<ol start="183" class="example" type="1">
-<li>We created a 95% confidence interval for the mean GPA given 10 absences to be (3.20, 3.42). What is the correct interpretation?<a href="#fn181" class="footnote-ref" id="fnref181" role="doc-noteref"><sup>181</sup></a>
-<ol type="a">
-<li>There is a 95% chance that the mean GPA of students with 10 absences is between 3.20 and 3.42.</li>
-<li>95% of GPA averages (for students with 10 absences) are between 3.20 and 3.42.</li>
-<li>95% of GPAs (for students with 10 absences) are between 3.20 and 3.42.</li>
-<li>We are 95% confident that the true mean GPA (for students with 10 absences) is between 3.20 and 3.42.</li>
-<li>95% of our intervals will have a mean GPA between 3.20 and 3.42.</li>
-</ol></li>
-</ol>
-<hr>
-<ol start="184" class="example" type="1">
-<li>We created a 95% prediction interval for an individual GPA given 10 absences to be (3, 3.62). What is the correct interpretation?<a href="#fn182" class="footnote-ref" id="fnref182" role="doc-noteref"><sup>182</sup></a>
-<ol type="a">
-<li>There is a 95% chance that the mean GPA of students with 10 absences is between 3 and 3.62.</li>
-<li>95% of GPA averages (for students with 10 absences) are between 3 and 3.62.</li>
-<li>95% of GPAs (for students with 10 absences) are between 3 and 3.62.</li>
-<li>We are 95% confident that the true mean GPA (for students with 10 absences) is between 3 and 3.62.</li>
-<li>95% of our intervals will have a mean GPA between 3 and 3.62.</li>
-</ol></li>
-</ol>
-<hr>
-<ol start="185" class="example" type="1">
-<li>Prediction intervals and confidence intervals have the same technical conditions:<a href="#fn183" class="footnote-ref" id="fnref183" role="doc-noteref"><sup>183</sup></a>
-<ol type="a">
-<li>TRUE</li>
-<li>FALSE</li>
-<li>sort of</li>
 </ol></li>
 </ol>
 <hr>
@@ -2790,8 +2790,8 @@ What is measurable?<a href="#fn95" class="footnote-ref" id="fnref95" role="doc-n
 <li>increases the variability of <span class="math inline">\(b_1.\)</span></li>
 </ol>
 <a href="#fnref168" class="footnote-back" role="doc-backlink">↩︎</a></li>
-<li id="fn169"><ol type="a">
-<li>The Y variable is normally distributed at each X or c.&nbsp;The residuals are normally distributed. (b. is not true as there are no technical conditions on X. d.&nbsp;and e. are both a result of either a. or c.&nbsp;being true.)</li>
+<li id="fn169"><ol start="3" type="a">
+<li>The residuals are normally distributed. (b. is not true as there are no technical conditions on X. d.&nbsp;and e. are both a result of either a. or c.&nbsp;being true. a. The Y variable is normally distributed is only true if we add “at each X”.)</li>
 </ol>
 <a href="#fnref169" class="footnote-back" role="doc-backlink">↩︎</a></li>
 <li id="fn170"><ol start="3" type="a">
@@ -2815,39 +2815,39 @@ What is measurable?<a href="#fn95" class="footnote-ref" id="fnref95" role="doc-n
 </ol>
 <a href="#fnref174" class="footnote-back" role="doc-backlink">↩︎</a></li>
 <li id="fn175"><ol start="4" type="a">
-<li>response: weight explanatory: volume, cover type</li>
+<li>We are 95% confident that the true mean GPA (for students with 10 absences) is between 3.20 and 3.42.</li>
 </ol>
 <a href="#fnref175" class="footnote-back" role="doc-backlink">↩︎</a></li>
-<li id="fn176"><ol type="a">
-<li>predicted $500 more per capita</li>
+<li id="fn176"><ol start="2" type="a">
+<li>95% of GPA averages (for students with 10 absences) are between 3 and 3.62. It is also totally okay to interpret the interval as: there is a 95% chance that if I randomly select someone with 10 absences, their GPA will be between 3 and 3.62.</li>
 </ol>
 <a href="#fnref176" class="footnote-back" role="doc-backlink">↩︎</a></li>
-<li id="fn177"><ol start="2" type="a">
-<li>smaller; $800 per capita</li>
+<li id="fn177"><ol start="3" type="a">
+<li>sort of. Both methods require the data to be normally distributed (for one sample mean, the variable is normal; for linear regression, the residuals are normal). However, if you have a large enough sample size, the CLT kicks in when building the mean interval The CLT does not ever help for prediction intervals, so you always need normal data to have reasonable prediction intervals.</li>
 </ol>
 <a href="#fnref177" class="footnote-back" role="doc-backlink">↩︎</a></li>
-<li id="fn178"><ol start="3" type="a">
-<li>for a one unit increase in bedrooms when comparing homes that have identical square feet</li>
+<li id="fn178"><ol start="4" type="a">
+<li>response: weight explanatory: volume, cover type</li>
 </ol>
 <a href="#fnref178" class="footnote-back" role="doc-backlink">↩︎</a></li>
-<li id="fn179"><ol start="4" type="a">
-<li><span class="math inline">\(H_0: \beta_1 = 0\)</span> and <span class="math inline">\(H_a: \beta_1 \ne 0\)</span></li>
+<li id="fn179"><ol type="a">
+<li>predicted $500 more per capita</li>
 </ol>
 <a href="#fnref179" class="footnote-back" role="doc-backlink">↩︎</a></li>
 <li id="fn180"><ol start="2" type="a">
-<li>the slope of the regression line between ln(price) and square feet is different from zero when # bedrooms is included in the model</li>
+<li>smaller; $800 per capita</li>
 </ol>
 <a href="#fnref180" class="footnote-back" role="doc-backlink">↩︎</a></li>
-<li id="fn181"><ol start="4" type="a">
-<li>We are 95% confident that the true mean GPA (for students with 10 absences) is between 3.20 and 3.42.</li>
+<li id="fn181"><ol start="3" type="a">
+<li>for a one unit increase in bedrooms when comparing homes that have identical square feet</li>
 </ol>
 <a href="#fnref181" class="footnote-back" role="doc-backlink">↩︎</a></li>
-<li id="fn182"><ol start="2" type="a">
-<li>95% of GPA averages (for students with 10 absences) are between 3 and 3.62. It is also totally okay to interpret the interval as: there is a 95% chance that if I randomly select someone with 10 absences, their GPA will be between 3 and 3.62.</li>
+<li id="fn182"><ol start="4" type="a">
+<li><span class="math inline">\(H_0: \beta_1 = 0\)</span> and <span class="math inline">\(H_a: \beta_1 \ne 0\)</span></li>
 </ol>
 <a href="#fnref182" class="footnote-back" role="doc-backlink">↩︎</a></li>
-<li id="fn183"><ol start="3" type="a">
-<li>sort of. Both methods require the data to be normally distributed (for one sample mean, the variable is normal; for linear regression, the residuals are normal). However, if you have a large enough sample size, the CLT kicks in when building the mean interval The CLT does not ever help for prediction intervals, so you always need normal data to have reasonable prediction intervals.</li>
+<li id="fn183"><ol start="2" type="a">
+<li>the slope of the regression line between ln(price) and square feet is different from zero when # bedrooms is included in the model</li>
 </ol>
 <a href="#fnref183" class="footnote-back" role="doc-backlink">↩︎</a></li>
 <li id="fn184"><ol start="4" type="a">
