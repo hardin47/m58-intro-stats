@@ -90,7 +90,7 @@ Hint: you probably won't get perfect residual plots, but they should be better t
 
 ### Q5. Find a model
 
-Using the variables from Q4 that led to residual plots with the best technical conditions, find the linear model (least squares regression line) and write it down. For example, you might have:
+Using the variables from Q4 that led to residual plots with the best technical conditions, find the estimated linear model (least squares regression line) and write it down. For example, you might have:
 
 $$\widehat{\sqrt{price}} = 376.9 + 65.69 \cdot Fireplaces$$
 
@@ -101,9 +101,14 @@ lm(responsevariable ~ explanatoryvariable, data = yourdataname) |>
      tidy()   # in the broom package
 ```
 
+### Q6. Inference on the slope
+
+Run a full hypothesis test to assess the discernibility of the slope from the model in Q5. Include the hypotheses, test statistic, p-value, and conclusion. Remember that your conclusion will be in the transformed space.
 
 
-### Q6. Interval estimates
+
+
+### Q7. Interval estimates
 
 Using the model in Q5, create two types of intervals: a confidence interval for the mean response and a prediction interval for the individual responses.
 
@@ -121,7 +126,7 @@ lm(sqrt(price) ~ Fireplaces, data = ames) |>
 
 
 
-### Q7. 2nd explanatory variable
+### Q8. 2nd explanatory variable
 
 Using the same model from Q5, add a second categorical variable to the linear model plot using color (for both the points and the line). (We will create the full linear model next week, for now just make the plot with the two explanatory variables.) Answer the following question: are the different colored lines close to parallel?
 
