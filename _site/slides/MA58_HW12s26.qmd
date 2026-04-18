@@ -1,0 +1,98 @@
+---
+title: "HW 12 -- Math 58B"
+author: "your name here"
+subtitle: "due Thursday, April 23, 2026"
+format: pdf
+execute:
+  warning: false
+  message: false
+---
+
+
+```{r}
+library(tidyverse)
+library(infer)
+library(broom)   # includes the tidy() function
+library(praise)
+```
+
+
+### Assignment Summary (Goals)
+
+* SE of $b_1$
+* Inference on $\beta_1$
+
+
+The HW assignment is based on a sample of births in 2014 from a large database put out by the US Department of Health and Human Services, Centers for Disease control.
+
+```{r}
+library(openintro)
+data(births14)
+```
+
+
+#### Q1. Father's age, randomization.
+
+Using a randomization test (use **infer** syntax) to model baby's weight as a linear function of father's age, answer the following two questions:
+  * Is the linear relationship discernible? (you'll need to calculate a p-value)
+  * What is the approximate SE of the slope coefficient?
+  
+
+Code is slightly different from what you've seen before. I've scaffolded below, but you should be able to tell what is going on!
+
+Don't forget to set a seed so that your results are reproducible.
+
+```
+# first LOOK at the raw ouput:
+___ |>
+  specify(___ ~ ___) |>
+  fit() 
+  
+# then collect the value you want
+obs_slope<- ___ |>
+  specify(___ ~ ___) |>
+  fit() |>
+  filter(term == "___") |>   # use only the b1 row
+  select(___) |>             # select only the 2nd column
+  pull()                     # to get a scalar
+
+
+null_slopes <- ___ |>
+  specify(___ ~ ___) |>
+  hypothesize(null = "independence") |>
+  generate(reps = 1000, type = "permute") |>
+  fit() |>
+  filter(term == "___") |>   # use only the b1 rows
+  select(___)                # select only the 2nd column
+  ungroup()                  # don't need reps grouped
+
+
+then write your own ggplot code
+```
+
+
+
+#### Q2. Father's age, bootstrap
+
+Using the boostrap (use **infer** syntax) to model baby's weight as a linear function of father's age, answer the following two questions:
+
+  * Find and interpret a 95% CI for the true population slope from the linear model which predicts baby's weight from father's age.  (Use words like "weight" and "father's age" in your interpretation.)
+  * What is the approximate SE of the slope coefficient?
+
+
+### Q3. Father's age, mathematical model.
+
+Use the mathematical model to answer the following three questions:
+
+  * Is the linear relationship discernible? (you'll need to calculate a p-value)
+  * Find and interpret a 95% CI for the true population slope from the linear model which predicts baby's weight from father's age.  (Use words like "weight" and "father's age" in your interpretation.)
+  * What is the approximate SE of the slope coefficient?
+
+
+Hint: the `tidy()` function has an argument which is `conf.int = TRUE`.
+
+
+
+```{r}
+praise()
+```

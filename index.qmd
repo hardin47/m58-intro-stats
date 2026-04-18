@@ -137,7 +137,7 @@ schedule <- tribble(
   "Week 13 <br> 4.20.26", 'Intervals <br> MLR',"•  CI / PR <br> • multiple X", 
   '<a href = "https://st47s.com/Math58/Notes/06-CorRegInf.html#MLR" target = "_blank"><i class="fas fa-book-open"></i> MLR</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-mlr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 25</a>',
   '  ',
-  '<i class="fa-solid fa-question"></i> Quiz 5 on 4/22/26',
+  '<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW12s26.pdf" target = "_blank"><i class="fas fa-laptop"></i> HW 12 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW12s26.qmd" target = "_blank"><i class="fas fa-laptop"></i> HW 12 qmd</a>  <br> <br> <i class="fa-solid fa-question"></i> Quiz 5 on 4/22/26',
 
 
   "Week 14 <br> 4.27.26", 'MLR', '• multiple X',
