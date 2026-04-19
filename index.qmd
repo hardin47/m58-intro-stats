@@ -136,7 +136,7 @@ schedule <- tribble(
   
   "Week 13 <br> 4.20.26", 'Intervals <br> MLR',"•  CI / PR <br> • multiple X", 
   '<a href = "https://st47s.com/Math58/Notes/06-CorRegInf.html#MLR" target = "_blank"><i class="fas fa-book-open"></i> MLR</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-mlr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 25</a>',
-  '  ',
+  ' <a href="https://www.nytimes.com/2026/04/15/health/alzheimers-drugs-benefit-anti-amyloid.html?unlocked_article_code=1.cFA.hDol.NZv9NPCi65iV&smid=url-share" target = "_blank"><i class="fas fa-newspaper"></i> Alzheimer&#39;s</a> <br> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/dairyko.html" target = "_blank">Mike Dairyko</a>',
   '<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW12s26.pdf" target = "_blank"><i class="fas fa-laptop"></i> HW 12 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW12s26.qmd" target = "_blank"><i class="fas fa-laptop"></i> HW 12 qmd</a>  <br> <br> <i class="fa-solid fa-question"></i> Quiz 5 on 4/22/26',
 
 
@@ -175,13 +175,6 @@ schedule <- tribble(
 
 
 
-
-
-
-
-
-
-
 ```{r}
 #| echo: false
 #| eval: false
@@ -189,12 +182,6 @@ schedule <- tribble(
   ~`date`, ~topic, ~agenda, ~readings, ~`article (Tues)`, ~assignments,
 
   
-
-
-  "Week 12 <br> 4.11.23", 'ANOVA',"• MSG <br> • MSE <br>• F-test ", 
-  '<a href="https://st47s.com/Math58/Notes/inference-for-numerical-data.html#ANOVA" target = "_blank"><i class="fas fa-book-open"></i> ANOVA</a>  <br> <a href="https://st47s.com/Math58/Notes/reginf.html#infbeta1" target = "_blank"><i class="fas fa-book-open"></i> Inf on β_1</a>  <br> <a href = "http://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm" target = "_blank"><i class="fas fa-gamepad"></i> slopes</a> <br> <a href="https://openintro-ims.netlify.app/inference-many-means.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 22</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-slr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 24</a>',
-  '<a href="https://www.buzzfeednews.com/article/stephaniemlee/brian-wansink-cornell-p-hacking" target = "_blank"><i class="fas fa-newspaper"></i> p-hacking</a> <br> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/washington.html" target = "_blank">Talitha Washington</a> ',
-  '<a href="https://m58-intro-stats.netlify.app/slides/wu20_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU20</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/wu21_ma58b_s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WU21</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW10s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 10 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW10s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 10 Rmd</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab10_m58_s23_2means.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 10 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab10_m58_s23_2means.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 10 Rmd</a>',
   
   "Week 13 <br> 4.18.23", 'Inference β_1 + <br>Tech cond + <br>MLR',"•  SE(β_1) <br> • residual plots <br> • multiple X", 
   '<a href="https://st47s.com/Math58/Notes/reginf.html#lmtechcond" target = "_blank"><i class="fas fa-book-open"></i> Tech Cond</a>  <br> <a href = "https://st47s.com/Math58/Notes/reginf.html#MLR" target = "_blank"><i class="fas fa-gamepad"></i> MLR</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-mlr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 25</a>',
