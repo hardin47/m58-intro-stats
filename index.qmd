@@ -143,7 +143,7 @@ schedule <- tribble(
   
   "Week 14 <br> 4.27.26", 'MLR', '• multiple X',
   '<a href = "https://st47s.com/Math58/Notes/06-CorRegInf.html#MLR" target = "_blank"><i class="fas fa-book-open"></i> MLR</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-mlr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 25</a>',
-  'no lab on 5.1.26 <br> <br> <a href="https://marylandmatters.org/2026/02/17/dynamic-pricing-bill-could-backfire-eliminate-targeted-consumer-discounts-merchants-warn/" target = "_blank"><i class="fas fa-newspaper"></i> Dynamic Pricing</a> <br> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/santos.html" target = "_blank">Robert Santos</a>', ' ',
+  'no lab on 5.1.26 <br> <br> <a href="https://marylandmatters.org/2026/02/17/dynamic-pricing-bill-could-backfire-eliminate-targeted-consumer-discounts-merchants-warn/" target = "_blank"><i class="fas fa-newspaper"></i> Dynamic Pricing</a> <br> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/santos.html" target = "_blank">Robert Santos</a>', '<a href="https://m58-intro-stats.netlify.app/slides/ws23_ma58b_s26_multico.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WS 23 - multicollinearity</a>',
 
 'Week 15 <br> 5.4.26',' ', ' ',
   ' ',' ',
