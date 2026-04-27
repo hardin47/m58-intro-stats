@@ -1906,6 +1906,16 @@ data.frame(ex, why) %>%
 
 ---
 
+(@) It is often a good idea to transform the variable(s)...[^180]
+     (a) ... to find the highest $R^2$ value.
+     (b) ... when the X variable is not normally distributed.
+     (c) ... to make the model easier to interpret.
+     (d) ... so that the technical conditions are met.
+
+[^180]: d. ... so that the technical conditions are met. (And often transforming makes the results harder to interpret.)
+
+---
+
 (@) We created a 95% confidence interval for the mean GPA given 10 absences to be (3.20, 3.42).  What is the correct interpretation?[^177]
      (a) There is a 95% chance that the mean GPA of students with 10 absences is between 3.20 and 3.42.
      (b) 95% of GPA averages (for students with 10 absences) are between 3.20 and 3.42.
@@ -2032,15 +2042,28 @@ $$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}
 
 [^176]: b. the slope of the regression line between ln(price) and square feet is different from zero when # bedrooms is included in the model
 
+
+
 ---
 
-(@) It is often a good idea to transform the variable(s)...[^180]
-     (a) ... to find the highest R2 value.
-     (b) ... when the X variable is not normally distributed.
-     (c) ... to make the model easier to interpret.
-     (d) ... so that the technical conditions are met.
+(@) An interaction term in a multiple regression model may be used when:[^184]
+    a. the coefficient of determination is small.
+    b. there is a quadratic relationship between the response and explanatory variables.
+    c. neither one of two explanatory variables contribute significantly to the regression model.
+    d. the relationship between $X_1$ and $Y$ changes for differing values of $X_2$.
+    e. $X_1$ and $X_2$ are correlated.
 
-[^180]: d. ... so that the technical conditions are met. (And often transforming makes the results harder to interpret.)
+[^184]: d. the relationship between $X_1$ and $Y$ changes for differing values of $X_2$.
+
+---
+
+(@) When comparing Model 1 with $X_1$ versus Model 2 with $X_1$ and $X_2$, consider SSE = $\sum_i(Y_i - \hat{Y}_i)^2$.[^185]
+    a. SSE$_1$ is always bigger than (or equal to) SSE$_2$
+    b. SSE$_1$ is always less than (or equal to) SSE$_2$
+    c. SSE$_1$ is always the same as SSE$_2$
+    d. SSE$_1$ may be bigger or may be smaller than SSE$_2$
+    
+[^185]: a. SSE$_1$ is always bigger than (or equal to) SSE$_2$
 
 ---
 
@@ -2052,4 +2075,39 @@ $$\hat{Y} = 12.2 + 0.000468 \cdot \mbox{sqft} − 0.0603\cdot \# \mbox{bedrooms}
 
 [^181]: b. the variability in the response is well explained by the explanatory variable(s).
 
+---
 
+(@) $R^2$ for the regression line for predicting GPA based on absences is 91.31. The interpretation is that 91.31% of[^182]
+     a. GPAs can be accurately predicted by absence.
+     b. variability in predictions of GPA is explained by absence.
+     c. variability in predictions of absences is explained by GPA.
+     d. variability in GPA is explained by absences.
+     e. variability in absences is explained by GPA.
+     
+[^182]: d. variability in GPA is explained by absences.
+
+---
+
+(@) The adjusted $R^2$ is "adjusted for" the:[^183]
+    a. number of predictors only.
+    b. sample size only.
+    c. number of predictors and the sample size.
+    d. None of the above.
+
+[^183]: c. number of predictors and the sample size.
+
+---
+
+(@) In a multiple regression model, which of the following is correct regarding the value of the adjusted $R^2$?[^184]
+    a. It can be negative.
+    b. It has to be positive.
+    c. It has to be larger than the coefficient of multiple determination $(R^2).$
+    d. It can be larger than 1.
+
+[^184]: a. It can be negative. If the model fits so poorly that it explains less variance than a simple horizontal line (the mean-only model), the adjusted $R^2$ will be negative. This can happen when you have too many useless predictors relative to sample size. (c) and (d) are wrong — adjusted $R^2$ is always $\leq R^2$, never larger, and it can't exceed 1.
+
+---
+
+
+
+---
