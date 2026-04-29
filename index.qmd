@@ -143,7 +143,7 @@ schedule <- tribble(
   
   "Week 14 <br> 4.27.26", 'MLR', '• multiple X',
   '<a href = "https://st47s.com/Math58/Notes/06-CorRegInf.html#MLR" target = "_blank"><i class="fas fa-book-open"></i> MLR</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-mlr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 25</a>',
-  'no lab on 5.1.26 <br> <br> <a href="https://marylandmatters.org/2026/02/17/dynamic-pricing-bill-could-backfire-eliminate-targeted-consumer-discounts-merchants-warn/" target = "_blank"><i class="fas fa-newspaper"></i> Dynamic Pricing</a> <br> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/santos.html" target = "_blank">Robert Santos</a>', '<a href="https://m58-intro-stats.netlify.app/slides/ws23_ma58b_s26_multico.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WS 23 - multicollinearity</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW13s26.pdf" target = "_blank"><i class="fas fa-laptop"></i> HW 13 pdf (last hw!)</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW13s26.qmd" target = "_blank"><i class="fas fa-laptop"></i> HW 13 qmd (last hw!)</a>',
+  'no lab on 5.1.26 <br> <br> <a href="https://marylandmatters.org/2026/02/17/dynamic-pricing-bill-could-backfire-eliminate-targeted-consumer-discounts-merchants-warn/" target = "_blank"><i class="fas fa-newspaper"></i> Dynamic Pricing</a> <br> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/santos.html" target = "_blank">Robert Santos</a>', '<a href="https://m58-intro-stats.netlify.app/slides/ws23_ma58b_s26_multico.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WS 23 - multicollinearity</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/ws24_ma58b_s26_R2.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WS 24 - R2</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW13s26.pdf" target = "_blank"><i class="fas fa-laptop"></i> HW 13 pdf (last hw!)</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW13s26.qmd" target = "_blank"><i class="fas fa-laptop"></i> HW 13 qmd (last hw!)</a>',
 
 'Week 15 <br> 5.4.26',' ', ' ',
   ' ',' ',
@@ -171,42 +171,6 @@ schedule <- tribble(
 ```
 
 
-
-
-
-
-
-```{r}
-#| echo: false
-#| eval: false
-schedule <- tribble(
-  ~`date`, ~topic, ~agenda, ~readings, ~`article (Tues)`, ~assignments,
-
-  
-  
-  ' ',
-  '<a href="https://m58-intro-stats.netlify.app/slides/MA58_HW12s23.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 12 pdf (not due ever)</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW12s23.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> HW 12 Rmd (not due ever)</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab12_m58_s23_MLR.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 12 pdf</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/lab12_m58_s23_MLR.Rmd" target = "_blank"><i class="fas fa-pencil-alt"></i> Lab 12 Rmd</a>',
-  
-'<font color = "#114B5F"><b>4.27.23</b></font>', '<font color = "#114B5F"><b>Exam 2</b></font>'," ", 
-  ' ',
-  ' ',
-  '<a href="https://m58-intro-stats.netlify.app/slides/param_est_58.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> when to use what</a>', 
-
-'<font color = "#114B5F"><b>5.2.23</b></font>', '<font color = "#114B5F"><b>Proj 4: Full draft</b></font>'," ", 
-  ' ',' ',
-  '<a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 4: Full draft</a>',
-
-'<font color = "#114B5F"><b>5.4 + 12.23</b></font>', '<font color = "#114B5F"><b>Proj Presentation</b></font>'," ", 
-  ' ',' ',
-  '<a href="https://m58-intro-stats.netlify.app/slides/Presentation_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj Presentation</a>',
-
-
-'<font color = "#114B5F"><b>5.12.23</b></font>', '<font color = "#114B5F"><b>Proj 5: Final Project</b></font>'," ", 
-  ' ',' ',
-  '<a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s23_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 5: Final Project</a>'
-  
-    )
-```
 
 
 
