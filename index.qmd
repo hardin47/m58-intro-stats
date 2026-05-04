@@ -145,9 +145,9 @@ schedule <- tribble(
   '<a href = "https://st47s.com/Math58/Notes/06-CorRegInf.html#MLR" target = "_blank"><i class="fas fa-book-open"></i> MLR</a> <br> <a href="https://openintro-ims.netlify.app/inf-model-mlr.html" target = "_blank"><i class="fas fa-book-open"></i> IMS 25</a>',
   'no lab on 5.1.26 <br> <br> <a href="https://marylandmatters.org/2026/02/17/dynamic-pricing-bill-could-backfire-eliminate-targeted-consumer-discounts-merchants-warn/" target = "_blank"><i class="fas fa-newspaper"></i> Dynamic Pricing</a> <br> <br> <br> <a href = "https://hardin47.github.io/CURV/scholars/santos.html" target = "_blank">Robert Santos</a>', '<a href="https://m58-intro-stats.netlify.app/slides/ws23_ma58b_s26_multico.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WS 23 - multicollinearity</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/ws24_ma58b_s26_R2.pdf" target = "_blank"><i class="fas fa-pencil-alt"></i> WS 24 - R2</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW13s26.pdf" target = "_blank"><i class="fas fa-laptop"></i> HW 13 pdf (last hw!)</a> <br> <a href="https://m58-intro-stats.netlify.app/slides/MA58_HW13s26.qmd" target = "_blank"><i class="fas fa-laptop"></i> HW 13 qmd (last hw!)</a>',
 
-'Week 15 <br> 5.4.26',' ', ' ',
+'Week 15 <br> 5.4.26',' ', '• wrap-up',
   ' ',' ',
-  ' <i class="fa-solid fa-question"></i> Quiz 6 on 5/6/26',
+  '<a href="https://m58-intro-stats.netlify.app/handout/2026-05-04-fin.html" target = "_blank"><i class="fas fa-desktop"></i> fin</a> <br> <br> <i class="fa-solid fa-question"></i> Quiz 6 on 5/6/26',
 
 '<font color = "#114B5F"><b>5.5.26</b></font>', '<font color = "#114B5F"><b>Proj 4: Full draft</b></font>',' ', 
   ' ',' ',
