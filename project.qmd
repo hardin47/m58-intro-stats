@@ -23,7 +23,7 @@ knitr::include_graphics("images/project.png")
 * 3/24/26 (Tuesday) Project 1: Pilot
 * 3/31/26 (Tuesday) Project 2: Power
 * 4/14/26 (Tuesday) Project 3: Preliminary analysis
-* 5/5/26 (Tuesday) Project 4: Full draft
+* 5/6/26 (Wednesday) Project 4: Full draft
 * 5/7 or 14/26 (Thursdays) Project presentation
 * 5/14/26 (Thursday) Project 5: Final (edited) Project
 ::: 

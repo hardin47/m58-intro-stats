@@ -149,7 +149,7 @@ schedule <- tribble(
   ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/2026-05-04-fin.html" target = "_blank"><i class="fas fa-desktop"></i> fin</a> <br> <br> <i class="fa-solid fa-question"></i> Quiz 6 on 5/6/26',
 
-'<font color = "#114B5F"><b>5.5.26</b></font>', '<font color = "#114B5F"><b>Proj 4: Full draft</b></font>',' ', 
+'<font color = "#114B5F"><b>5.6.26</b></font>', '<font color = "#114B5F"><b>Proj 4: Full draft</b></font>',' ', 
   ' ',' ',
   '<a href="https://m58-intro-stats.netlify.app/slides/CompleteDraft_m58_s26_Islands.docx" target = "_blank"><i class="fas fa-desktop"></i> Proj 4: Full draft</a>',
 
