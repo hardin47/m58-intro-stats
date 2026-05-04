@@ -147,7 +147,7 @@ schedule <- tribble(
 
 'Week 15 <br> 5.4.26',' ', '• wrap-up',
   ' ',' ',
-  '<a href="https://m58-intro-stats.netlify.app/handout/2026-05-04-fin.html" target = "_blank"><i class="fas fa-desktop"></i> fin</a> <br> <br> <i class="fa-solid fa-question"></i> Quiz 6 on 5/6/26',
+  '<a href="https://m58-intro-stats.netlify.app/slides/2026-05-04-fin.html" target = "_blank"><i class="fas fa-desktop"></i> fin</a> <br> <br> <i class="fa-solid fa-question"></i> Quiz 6 on 5/6/26',
 
 '<font color = "#114B5F"><b>5.5.26</b></font>', '<font color = "#114B5F"><b>Proj 4: Full draft</b></font>',' ', 
   ' ',' ',
