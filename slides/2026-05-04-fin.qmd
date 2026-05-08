@@ -41,6 +41,11 @@ options(pillar.width = 70)
 ggplot2::theme_set(ggplot2::theme_minimal(base_size = 20))
 ```
 
+## Inference
+
+```{r fig.cap = "Probability vs. Statistics",  out.width="95%", fig.align='center', echo=FALSE}
+knitr::include_graphics("probstat.jpg")
+```
 
 ## Random
 
@@ -52,12 +57,6 @@ ggplot2::theme_set(ggplot2::theme_minimal(base_size = 20))
 | **Conclusion** | Generalize results from sample to population | Draw cause-and-effect conclusion, if difference in response between groups is statistically significant |
 :::
 
-
-## Inference
-
-```{r fig.cap = "Probability vs. Statistics",  out.width="95%", fig.align='center', echo=FALSE}
-knitr::include_graphics("probstat.jpg")
-```
 
 ## Randomization
 
