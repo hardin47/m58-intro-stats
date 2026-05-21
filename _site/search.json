@@ -25,7 +25,7 @@
     "href": "project.html#power",
     "title": "Semester Project",
     "section": "Power",
-    "text": "Power\nThe power analysis will use the pilot data to estimate the sample size which will be needed to see the effect of interest. Most of the code will be written by the professor, but you will need to understand both why the power analysis is important and how the power analysis is implemented. The goal of the power analysis assignment is to estimate how many observations are needed for an Islands project to reach discernibility."
+    "text": "Power\nThe power analysis will use the pilot data to estimate the sample size which will be needed to see the effect of interest. Most of the code will be written by the professor, but you will need to understand both why the power analysis is important and how the power analysis is implemented. The goal of the power analysis assignment is to estimate how many observations are needed for an Islands project to reach discernibility.\nWhen you write-up the power analysis in the final paper, your goal is to communicate that you understand the power analysis, why it was done, and what it was used for."
   },
   {
     "objectID": "project.html#preliminary-analysis",
