@@ -84,7 +84,7 @@ I (like many people) am still in the process of learning about diverse perspecti
 
 - IMS: <a href = "https://openintro-ims.netlify.app/" target = "_blank"><b>Introduction to Modern Statistics</b></a> by Çetinkaya-Rundel and Hardin.
 
-- ISCAM: <a href = "http://www.rossmanchance.com/iscam3/" target = "_blank"><b>Investigating Statistics, Concepts, Applications, and Methods</b></a> by Chance and Rossman.  Many of the examples come from ISCAM, a pdf of which can be purchased for $5.
+- ISCAM: <a href = "https://runestone.academy/ns/books/published/iscam/frontmatter.html?mode=browsing" target = "_blank"><b>Investigating Statistics, Concepts, Applications, and Methods</b></a> by Chance and Rossman.  Many of the examples come from ISCAM.
    - <a href = "http://www.rossmanchance.com/applets/index2021.html" target = "_blank">ISCAM applets</a>
    - <a href = "https://www.lock5stat.com/StatKey/" target = "_blank">StatKey (bootstrapping) applets</a>
 
